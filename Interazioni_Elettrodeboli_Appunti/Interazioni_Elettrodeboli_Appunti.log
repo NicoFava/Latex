@@ -1,0 +1,3371 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.15)  3 MAR 2026 18:24
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./Interazioni_Elettrodeboli_Appunti.tex
+(Interazioni_Elettrodeboli_Appunti.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/base\bk11.clo
+File: bk11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@chapter=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2026/01/26 v26.2 The multilingual framework for LuaLaTeX, pdfLaT
+eX and XeLaTeX
+\babel@savecnt=\count284
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2078.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2080.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2082.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2083.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2084.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2086.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2111.
+\U@D=\dimen149
+\l@unhyphenated=\language79
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count285
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4206.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/it\babel
+-italian.tex)
+Package babel Info: Importing font and identification data for italian
+(babel)             from babel-it.ini. Reported on input line 4330.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/babel-italian\italian.l
+df
+Language: italian 2026/01/13 v.1.5.02 Italian support for the babel system
+\it@lettering=\count286
+\it@doublequoteactive=\count287
+\it@ISOcompliance=\count288
+))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count289
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\slashed.sty
+Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/cancel\cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip51
+\multirow@cntb=\count290
+\multirow@dima=\skip52
+\bigstrutjot=\dimen150
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks25
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\enitkv@toks@=\toks26
+\labelindent=\skip56
+\enit@outerparindent=\dimen151
+\enit@toks=\toks27
+\enit@inbox=\box53
+\enit@count@id=\count291
+\enitdp@description=\count292
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip57
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks28
+\ex@=\dimen152
+))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen153
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count293
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count294
+\leftroot@=\count295
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count296
+\DOTSCASE@=\count297
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen154
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count298
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count299
+\dotsspace@=\muskip17
+\c@parentequation=\count300
+\dspbrk@lvl=\count301
+\tag@help=\toks29
+\row@=\count302
+\column@=\count303
+\maxfields@=\count304
+\andhelp@=\toks30
+\eqnshift@=\dimen155
+\alignsep@=\dimen156
+\tagshift@=\dimen157
+\tagwidth@=\dimen158
+\totwidth@=\dimen159
+\lineht@=\dimen160
+\@envbody=\toks31
+\multlinegap=\skip58
+\multlinetaggap=\skip59
+\mathdisplay@stack=\toks32
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks33
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/chngcntr\chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/vmargin\vmargin.sty
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+\PaperWidth=\dimen163
+\PaperHeight=\dimen164
+) (C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip60
+\f@nch@offset@elh=\skip61
+\f@nch@offset@erh=\skip62
+\f@nch@offset@olh=\skip63
+\f@nch@offset@orh=\skip64
+\f@nch@offset@elf=\skip65
+\f@nch@offset@erf=\skip66
+\f@nch@offset@olf=\skip67
+\f@nch@offset@orf=\skip68
+\f@nch@height=\skip69
+\f@nch@footalignment=\skip70
+\f@nch@widthL=\skip71
+\f@nch@widthC=\skip72
+\f@nch@widthR=\skip73
+\@temptokenb=\toks34
+) (C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen165
+\WF@size=\dimen166
+\c@WF@wrappedlines=\count305
+\WF@box=\box56
+\WF@everypar=\toks35
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen167
+\captionmargin=\dimen168
+\caption@leftmargin=\dimen169
+\caption@rightmargin=\dimen170
+\caption@width=\dimen171
+\caption@indent=\dimen172
+\caption@parindent=\dimen173
+\caption@hangindent=\dimen174
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count306
+\c@continuedfloat=\count307
+Package caption Info: wrapfig package is loaded.
+)
+\c@KVtest=\count308
+\sf@farskip=\skip74
+\sf@captopadj=\dimen175
+\sf@capskip=\skip75
+\sf@nearskip=\skip76
+\c@subfigure=\count309
+\c@subfigure@save=\count310
+\c@lofdepth=\count311
+\c@subtable=\count312
+\c@subtable@save=\count313
+\c@lotdepth=\count314
+\sf@top=\skip77
+\sf@bottom=\skip78
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/threeparttable\threepar
+ttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box57
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
+Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count315
+\rotFPtop=\skip79
+\rotFPbot=\skip80
+\rot@float@box=\box58
+\rot@mess@toks=\toks36
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/mhchem\mhchem.sty
+Package: mhchem 2024/01/29 v4.10 for typesetting chemical formulae
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2026-01-19 L3 programming layer (loader) 
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count316
+))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
+eys2e.sty
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count317
+\calc@Bcount=\count318
+\calc@Adimen=\dimen176
+\calc@Bdimen=\dimen177
+\calc@Askip=\skip81
+\calc@Bskip=\skip82
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count319
+\calc@Cskip=\skip83
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/chemgreek\chemgreek.sty
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
+ in chemistry (CN)
+\l__chemgreek_tmpa_int=\count320
+\g__chemgreek_tmpa_int=\count321
+)
+\l__mhchem_ce_distanceFromLastComma_int=\count322
+\__mhchem_arrow_extPgfLength_skip=\skip84
+\mhchem@minispace@tmp=\skip85
+\mhchem@minibackspace@tmp=\skip86
+\mhchem@bondwidth=\skip87
+\mhchem@bondheight=\skip88
+\mhchem@smallbondwidth@tmpA=\skip89
+\mhchem@smallbondwidth@tmpB=\skip90
+\mhchem@smallbondwidth=\skip91
+\mhchem@bondtmp@minussidebearingleft=\skip92
+\mhchem@bondtmp@minussidebearingright=\skip93
+\l__mhchem_option_version_int=\count323
+\mhchem@option@minusmathsidebearingleft=\dimen178
+\mhchem@option@minusmathsidebearingright=\dimen179
+\mhchem@option@minustextsidebearingleft=\dimen180
+\mhchem@option@minustextsidebearingright=\dimen181
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count324
+\c@Blindtext=\count325
+\c@blind@countparstart=\count326
+\blind@countxx=\count327
+\blindtext@numBlindtext=\count328
+\blind@countyy=\count329
+\c@blindlist=\count330
+\c@blindlistlevel=\count331
+\c@blindlist@level=\count332
+\blind@listitem=\count333
+\c@blind@listcount=\count334
+\c@blind@levelcount=\count335
+\blind@mathformula=\count336
+\blind@Mathformula=\count337
+\c@blind@randomcount=\count338
+\c@blind@randommax=\count339
+\c@blind@pangramcount=\count340
+\c@blind@pangrammax=\count341
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count342
+\c@@ppsavesec=\count343
+\c@@ppsaveapp=\count344
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count345
+\l_MT_multwidth_dim=\dimen182
+\origjot=\skip94
+\l_MT_shortvdotswithinadjustabove_dim=\dimen183
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen184
+\l_MT_above_intertext_sep=\dimen185
+\l_MT_below_intertext_sep=\dimen186
+\l_MT_above_shortintertext_sep=\dimen187
+\l_MT_below_shortintertext_sep=\dimen188
+\xmathstrut@box=\box59
+\xmathstrut@dim=\dimen189
+) (C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup7
+) (C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen190
+\lightrulewidth=\dimen191
+\cmidrulewidth=\dimen192
+\belowrulesep=\dimen193
+\belowbottomsep=\dimen194
+\aboverulesep=\dimen195
+\abovetopsep=\dimen196
+\cmidrulesep=\dimen197
+\cmidrulekern=\dimen198
+\defaultaddspace=\dimen199
+\@cmidla=\count346
+\@cmidlb=\count347
+\@aboverulesep=\dimen256
+\@belowrulesep=\dimen257
+\@thisruleclass=\count348
+\@lastruleclass=\count349
+\@thisrulewidth=\dimen258
+) (C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count350
+\Gm@cntv=\count351
+\c@Gm@tempcnt=\count352
+\Gm@bindingoffset=\dimen259
+\Gm@wd@mp=\dimen260
+\Gm@odd@mp=\dimen261
+\Gm@even@mp=\dimen262
+\Gm@layoutwidth=\dimen263
+\Gm@layoutheight=\dimen264
+\Gm@layouthoffset=\dimen265
+\Gm@layoutvoffset=\dimen266
+\Gm@dimlist=\toks37
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
+\MT@toks=\toks38
+\MT@tempbox=\box60
+\MT@count=\count353
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks39
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen267
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count354
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdf
+tex.def
+File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip95
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
+File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks40
+\pgfutil@tempdima=\dimen268
+\pgfutil@tempdimb=\dimen269
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box61
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks41
+\pgfkeys@temptoks=\toks42
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks43
+))
+\pgf@x=\dimen270
+\pgf@y=\dimen271
+\pgf@xa=\dimen272
+\pgf@ya=\dimen273
+\pgf@xb=\dimen274
+\pgf@yb=\dimen275
+\pgf@xc=\dimen276
+\pgf@yc=\dimen277
+\pgf@xd=\dimen278
+\pgf@yd=\dimen279
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count355
+\c@pgf@countb=\count356
+\c@pgf@countc=\count357
+\c@pgf@countd=\count358
+\t@pgf@toka=\toks44
+\t@pgf@tokb=\toks45
+\t@pgf@tokc=\toks46
+\pgf@sys@id@count=\count359
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count360
+\pgfsyssoftpath@bigbuffer@items=\count361
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen280
+\pgfmath@count=\count362
+\pgfmath@box=\box62
+\pgfmath@toks=\toks47
+\pgfmath@stack@operand=\toks48
+\pgfmath@stack@operation=\toks49
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count363
+))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen281
+\pgf@picmaxx=\dimen282
+\pgf@picminy=\dimen283
+\pgf@picmaxy=\dimen284
+\pgf@pathminx=\dimen285
+\pgf@pathmaxx=\dimen286
+\pgf@pathminy=\dimen287
+\pgf@pathmaxy=\dimen288
+\pgf@xx=\dimen289
+\pgf@xy=\dimen290
+\pgf@yx=\dimen291
+\pgf@yy=\dimen292
+\pgf@zx=\dimen293
+\pgf@zy=\dimen294
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen295
+\pgf@path@lasty=\dimen296
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen297
+\pgf@shorten@start@additional=\dimen298
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box63
+\pgf@hbox=\box64
+\pgf@layerbox@main=\box65
+\pgf@picture@serial@count=\count364
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen299
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen300
+\pgf@pt@y=\dimen301
+\pgf@pt@temp=\dimen302
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen303
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen304
+\pgf@sys@shading@range@num=\count365
+\pgf@shadingcount=\count366
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box66
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box67
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen305
+\pgf@nodesepend=\dimen306
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen307
+\pgffor@skip=\dimen308
+\pgffor@stack=\toks50
+\pgffor@toks=\toks51
+))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count367
+\pgfplotmarksize=\dimen309
+)
+\tikz@lastx=\dimen310
+\tikz@lasty=\dimen311
+\tikz@lastxsaved=\dimen312
+\tikz@lastysaved=\dimen313
+\tikz@lastmovetox=\dimen314
+\tikz@lastmovetoy=\dimen315
+\tikzleveldistance=\dimen316
+\tikzsiblingdistance=\dimen317
+\tikz@figbox=\box68
+\tikz@figbox@bg=\box69
+\tikz@tempbox=\box70
+\tikz@tempbox@bg=\box71
+\tikztreelevel=\count368
+\tikznumberofchildren=\count369
+\tikznumberofcurrentchild=\count370
+\tikz@fig@count=\count371
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count372
+\pgfmatrixcurrentcolumn=\count373
+\pgf@matrix@numberofcolumns=\count374
+)
+\tikz@expandcount=\count375
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.rev
+ision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.cod
+e.tex
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore
+.code.tex
+\t@pgfplots@toka=\toks52
+\t@pgfplots@tokb=\toks53
+\t@pgfplots@tokc=\toks54
+\pgfplots@tmpa=\dimen318
+\c@pgfplots@coordindex=\count376
+\c@pgfplots@scanlineindex=\count377
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplots
+sysgeneric.code.tex))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplot
+slibrary.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompat
+ib\pgfplotsoldpgfsupp_loader.code.tex
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks55
+\t@pgf@tokb=\toks56
+\t@pgf@tokc=\toks57
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompat
+ib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplot
+sutil.code.tex
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
+e\pgfplotsliststructure.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
+e\pgfplotsliststructureext.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
+e\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count378
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
+e\pgfplotsmatrix.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgf
+plotstableshared.code.tex
+\c@pgfplotstable@counta=\count379
+\t@pgfplotstable@a=\toks58
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
+e\pgfplotsdeque.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplot
+sbinary.code.tex
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplot
+sbinary.data.code.tex))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplot
+sutil.verb.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibr
+arypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count380
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibra
+rypgfplots.surfshading.pgfsys-pdftex.def)))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplot
+scolormap.code.tex
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplot
+scolor.code.tex))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstac
+kedplots.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplot
+handlers.code.tex
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmesh
+plothandler.code.tex
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmesh
+plotimage.code.tex)))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.sca
+ling.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoor
+dprocessing.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.err
+orbars.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.mar
+kers.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotstick
+s.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.pat
+hs.code.tex)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarydecorations.code.tex
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+decorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen319
+\pgfdecoratedremainingdistance=\dimen320
+\pgfdecoratedinputsegmentcompleteddistance=\dimen321
+\pgfdecoratedinputsegmentremainingdistance=\dimen322
+\pgf@decorate@distancetomove=\dimen323
+\pgf@decorate@repeatstate=\count381
+\pgfdecorationsegmentamplitude=\dimen324
+\pgfdecorationsegmentlength=\dimen325
+)
+\tikz@lib@dec@box=\box72
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarydecorations.pathmorphing.code.tex
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorat
+ions\pgflibrarydecorations.pathmorphing.code.tex))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarydecorations.pathreplacing.code.tex
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorat
+ions\pgflibrarydecorations.pathreplacing.code.tex))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlib
+rarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count382
+\pgfplots@xmin@reg=\dimen326
+\pgfplots@xmax@reg=\dimen327
+\pgfplots@ymin@reg=\dimen328
+\pgfplots@ymax@reg=\dimen329
+\pgfplots@zmin@reg=\dimen330
+\pgfplots@zmax@reg=\dimen331
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count383
+\float@exts=\toks59
+\float@box=\box73
+\@float@everytoks=\toks60
+\@floatcapt=\box74
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count384
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
+ty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen332
+\Hy@linkcounter=\count385
+\Hy@pagecounter=\count386
+ (C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count387
+ (C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `colorlinks' set `false' on input line 4072.
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4468.
+\c@Hy@tempcnt=\count388
+LaTeX Info: Redefining \url on input line 4807.
+\XeTeXLinkMargin=\dimen333
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count389
+\Field@Width=\dimen334
+\Fld@charsize=\dimen335
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring OFF on input line 6104.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Hy@abspage=\count390
+\c@Item=\count391
+\c@Hfootnote=\count392
+)
+Package hyperref Info: Driver: hpdftex.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
+\Fld@listcount=\count393
+\c@bookmark@seq@number=\count394
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip96
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/braket\braket.sty)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/physics\physics.sty
+Package: physics 
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup8
+\symboldletters=\mathgroup9
+\symboldsymbols=\mathgroup10
+Package bm Info: No bold for \OMX/lmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+\symboldwasy=\mathgroup11
+Package bm Info: No bold for \U/rsfs/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count395
+\l__siunitx_number_exponent_fixed_int=\count396
+\l__siunitx_number_min_decimal_int=\count397
+\l__siunitx_number_min_integer_int=\count398
+\l__siunitx_number_round_precision_int=\count399
+\l__siunitx_number_lower_threshold_int=\count400
+\l__siunitx_number_upper_threshold_int=\count401
+\l__siunitx_number_group_first_int=\count402
+\l__siunitx_number_group_size_int=\count403
+\l__siunitx_number_group_minimum_int=\count404
+\l__siunitx_angle_tmp_dim=\dimen336
+\l__siunitx_angle_marker_box=\box75
+\l__siunitx_angle_unit_box=\box76
+\l__siunitx_compound_count_int=\count405
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/translations\translatio
+ns.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+)
+\l__siunitx_table_tmp_box=\box77
+\l__siunitx_table_tmp_dim=\dimen337
+\l__siunitx_table_column_width_dim=\dimen338
+\l__siunitx_table_integer_box=\box78
+\l__siunitx_table_decimal_box=\box79
+\l__siunitx_table_uncert_box=\box80
+\l__siunitx_table_before_box=\box81
+\l__siunitx_table_after_box=\box82
+\l__siunitx_table_before_dim=\dimen339
+\l__siunitx_table_carry_dim=\dimen340
+\l__siunitx_unit_tmp_int=\count406
+\l__siunitx_unit_position_int=\count407
+\l__siunitx_unit_total_int=\count408
+ (C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen341
+\ar@mcellbox=\box83
+\extrarowheight=\dimen342
+\NC@list=\toks61
+\extratabsurround=\skip97
+\backup@length=\skip98
+\ar@cellbox=\box84
+))
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/chemmacros\chemmacros.s
+ty
+Package: chemmacros 2022/03/11 v6.2a comprehensive support for typesetting chem
+istry documents (CN & SK)
+\l__chemmacros_tmpa_dim=\dimen343
+\l__chemmacros_tmpb_dim=\dimen344
+\l__chemmacros_tmpc_dim=\dimen345
+\l__chemmacros_tmpa_int=\count409
+\l__chemmacros_tmpb_int=\count410
+\l__chemmacros_tmpc_int=\count411
+\l__chemmacros_tmpa_box=\box85
+\l__chemmacros_tmpb_box=\box86
+\l__chemmacros_tmpc_box=\box87
+Loading the chemmacros module `base' ...
+
+Loading the chemmacros module `base' ...
+Loading the chemmacros module `errorcheck' ...
+Loading the chemmacros module `errorcheck' ...
+Loading the chemmacros module `lang' ...
+Loading the chemmacros module `lang' ...
+Loading the chemmacros module `greek' ...
+Loading the chemmacros module `greek' ...
+Loading the chemmacros module `formula' ...
+Loading the chemmacros module `formula' ...
+Loading the chemmacros module `charges' ...
+Loading the chemmacros module `charges' ...
+Loading the chemmacros module `acid-base' ...
+Loading the chemmacros module `acid-base' ...
+Loading the chemmacros module `symbols' ...
+Loading the chemmacros module `symbols' ...
+Loading the chemmacros module `particles' ...
+Loading the chemmacros module `particles' ...
+\l__chemmacros_nucleophile_dim=\dimen346
+Loading the chemmacros module `phases' ...
+Loading the chemmacros module `phases' ...
+\l__chemmacros_phases_space_dim=\dimen347
+Loading the chemmacros module `nomenclature' ...
+Loading the chemmacros module `nomenclature' ...
+\l__chemmacros_cip_kern_dim=\dimen348
+\l__chemmacros_iupac_hyphen_pre_dim=\dimen349
+\l__chemmacros_iupac_hyphen_post_dim=\dimen350
+\l__chemmacros_iupac_break_dim=\dimen351
+\l__chemmacros_iupac_break_skip=\skip99
+Loading the chemmacros module `tikz' ...
+Loading the chemmacros module `tikz' ...
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+\l__chemmacros_el_length_dim=\dimen352
+Loading the chemmacros module `isotopes' ...
+
+Loading the chemmacros module `isotopes' ...
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/elements\elements.sty
+Package: elements 2022/01/29 v0.4 properties of chemical elements
+\c@@elements@orbital@type=\count412
+\c@@elements@shell@number=\count413
+)
+Loading the chemmacros module `mechanisms' ...
+
+Loading the chemmacros module `mechanisms' ...
+Loading the chemmacros module `newman' ...
+Loading the chemmacros module `newman' ...
+Loading the chemmacros module `orbital' ...
+Loading the chemmacros module `orbital' ...
+Loading the chemmacros module `polymers' ...
+Loading the chemmacros module `polymers' ...
+\l__chemmacros_polymer_delimiter_height_dim=\dimen353
+\l__chemmacros_polymer_delimiter_depth_dim=\dimen354
+Loading the chemmacros module `reactions' ...
+Loading the chemmacros module `reactions' ...
+\c@reaction=\count414
+Loading the chemmacros module `redox' ...
+Loading the chemmacros module `redox' ...
+\l__chemmacros_ox_number_int=\count415
+\l__chemmacros_redox_sep_dim=\dimen355
+\l__chemmacros_redox_sep_default_dim=\dimen356
+\l__chemmacros_redox_dist_dim=\dimen357
+Loading the chemmacros module `xfrac' ...
+Loading the chemmacros module `xfrac' ...
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/xfrac\xfrac.sty
+Package: xfrac 2024-06-04 Split-level fractions
+\l__xfrac_slash_box=\box88
+\l__xfrac_tmp_box=\box89
+\l__xfrac_denominator_bot_sep_dim=\dimen358
+\l__xfrac_numerator_bot_sep_dim=\dimen359
+\l__xfrac_numerator_top_sep_dim=\dimen360
+\l__xfrac_slash_left_sep_dim=\dimen361
+\l__xfrac_slash_right_sep_dim=\dimen362
+\l__xfrac_slash_left_muskip=\muskip19
+\l__xfrac_slash_right_muskip=\muskip20
+
+LaTeX template Info: Declaring template type 'xfrac' taking 3 argument(s) on
+(template)           line 100.
+
+
+LaTeX template Info: Declaring instance 'cmr' of type xfrac on line 392.
+
+
+LaTeX template Info: Declaring instance 'cmss' of type xfrac on line 392.
+
+
+LaTeX template Info: Declaring instance 'cmtt' of type xfrac on line 392.
+
+)
+
+LaTeX template Info: Declaring instance 'chemmacros-frac-cmr-superscript' of
+(template)           type xfrac on line 4683.
+
+
+LaTeX template Info: Declaring instance 'chemmacros-frac-cmr-text' of type
+(template)           xfrac on line 4691.
+
+Loading the chemmacros module `scheme' ...
+
+Loading the chemmacros module `scheme' ...
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/chemnum\chemnum.sty
+Package: chemnum 2021/01/21 v1.3a a comprehensive approach for the numbering of
+ chemical compounds (CN)
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/psfrag\psfrag.sty
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+\pfg@pcount=\count416
+\pfg@scount=\count417
+\pfg@temp=\write4
+)
+\l__chemnum_tmpa_int=\count418
+\l__chemnum_tmpb_int=\count419
+\l__chemnum_tmpc_int=\count420
+\c@cmpdmain=\count421
+\g__chemnum_main_int=\count422
+\l__chemnum_compound_replace_int=\count423
+)
+==> First Aid for chemnum.sty applied!
+Loading the chemmacros module `spectroscopy' ...
+Loading the chemmacros module `spectroscopy' ...
+\l__chemmacros_nmr_space_skip=\skip100
+Loading the chemmacros module `thermodynamics' ...
+Loading the chemmacros module `thermodynamics' ...
+Loading the chemmacros module `units' ...
+Loading the chemmacros module `units' ...
+Loading the chemmacros module `reactants' ...
+Loading the chemmacros module `reactants' ...
+Loading the chemmacros module `translations' ...
+Loading the chemmacros module `translations' ...
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.st
+y
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\@float@every@algorithm=\toks62
+\c@algorithm=\count424
+) (C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
+\c@tracingmulticols=\count425
+\mult@box=\box90
+\multicol@leftmargin=\dimen363
+\c@unbalance=\count426
+\c@collectmore=\count427
+\doublecol@number=\count428
+\multicoltolerance=\count429
+\multicolpretolerance=\count430
+\full@width=\dimen364
+\page@free=\dimen365
+\premulticols=\dimen366
+\postmulticols=\dimen367
+\multicolsep=\skip101
+\multicolbaselineskip=\skip102
+\partial@page=\box91
+\last@line=\box92
+\mc@boxedresult=\box93
+\maxbalancingoverflow=\dimen368
+\mult@rightbox=\box94
+\mult@grightbox=\box95
+\mult@firstbox=\box96
+\mult@gfirstbox=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\@tempa=\box130
+\@tempa=\box131
+\@tempa=\box132
+\@tempa=\box133
+\c@minrows=\count431
+\c@columnbadness=\count432
+\c@finalcolumnbadness=\count433
+\last@try=\dimen369
+\multicolovershoot=\dimen370
+\multicolundershoot=\dimen371
+\mult@nat@firstbox=\box134
+\colbreak@box=\box135
+\mc@col@check@num=\count434
+\g__mc_curr_col_int=\count435
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/capt-of\capt-of.sty
+Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box136
+\UL@hyphenbox=\box137
+\UL@skip=\skip103
+\UL@hook=\toks63
+\UL@height=\dimen372
+\UL@pe=\count436
+\UL@pixel=\dimen373
+\ULC@box=\box138
+Package: ulem 2019/11/18
+\ULdepth=\dimen374
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/was\upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup12
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/isomath\isomath.sty
+Package: isomath 2012/09/04 v0.6.1 ISO math style
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/fixmath\fixmath.sty
+Package: fixmath 2022/10/06 v0.9.1 (WaS)
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 32.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 35.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 37.
+LaTeX Font Info:    Redeclaring math symbol \alpha on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \beta on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \gamma on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \delta on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \epsilon on input line 42.
+LaTeX Font Info:    Redeclaring math symbol \zeta on input line 43.
+LaTeX Font Info:    Redeclaring math symbol \eta on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \theta on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \iota on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \kappa on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \lambda on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \mu on input line 49.
+LaTeX Font Info:    Redeclaring math symbol \nu on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \xi on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \pi on input line 52.
+LaTeX Font Info:    Redeclaring math symbol \rho on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \sigma on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \tau on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \upsilon on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \phi on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \chi on input line 58.
+LaTeX Font Info:    Redeclaring math symbol \psi on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \omega on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \varepsilon on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \vartheta on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \varpi on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \varphi on input line 64.
+LaTeX Font Info:    Redeclaring math symbol \varrho on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \varsigma on input line 66.
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 62.
+\@indexfile=\write5
+\openout5 = `Interazioni_Elettrodeboli_Appunti.idx'.
+
+
+Writing index file Interazioni_Elettrodeboli_Appunti.idx
+
+Package chemmacros Info: Using float defining method `float'.
+
+\@float@every@scheme=\toks64
+\c@scheme=\count437
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 96
+.
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+(Interazioni_Elettrodeboli_Appunti.aux)
+\openout1 = `Interazioni_Elettrodeboli_Appunti.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Info: Redefining \it@ocap on input line 96.
+LaTeX Info: Redefining \it@ccap on input line 96.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count438
+\scratchdimen=\dimen375
+\scratchbox=\box139
+\nofMPsegments=\count439
+\nofMParguments=\count440
+\everyMPshowfont=\toks65
+\MPscratchCnt=\count441
+\MPscratchDim=\dimen376
+\MPnumerator=\count442
+\makeMPintoPDFobject=\count443
+\everyMPtoPDFconversion=\toks66
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: threeparttable package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+Package chemgreek Info: Activating mapping `upgreek' on line 96.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=427.43153pt
+* \textheight=646.73119pt
+* \oddsidemargin=85.35826pt
+* \evensidemargin=85.35826pt
+* \topmargin=56.9055pt
+* \headheight=28.95274pt
+* \headsep=28.45274pt
+* \topskip=11.0pt
+* \footskip=28.45274pt
+* \marginparwidth=106.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=-72.26999pt
+* \voffset=-72.26999pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \microtypecontext on input line 96.
+Package microtype Info: Applying patch `item' on input line 96.
+Package microtype Info: Applying patch `toc' on input line 96.
+Package microtype Info: Applying patch `eqnum' on input line 96.
+
+Package microtype Warning: Unable to apply patch `footnote' on input line 96.
+
+Package microtype Info: Applying patch `verbatim' on input line 96.
+LaTeX Info: Redefining \microtypesetup on input line 96.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+Package pgfplots notification 'compat/show suggested version=true': you might b
+enefit from \pgfplotsset{compat=1.18} (current compat level: 1.3).
+
+Package hyperref Info: Link coloring ON on input line 96.
+(Interazioni_Elettrodeboli_Appunti.out) (Interazioni_Elettrodeboli_Appunti.out)
+\@outlinefile=\write6
+\openout6 = `Interazioni_Elettrodeboli_Appunti.out'.
+
+
+Package siunitx Warning: Detected the "physics" package:
+(siunitx)                omitting definition of \qty.
+(siunitx)                
+(siunitx)                If you want to use \qty with the siunitx definition,
+(siunitx)                add 
+(siunitx)                
+(siunitx)                    \AtBeginDocument{\RenewCommandCopy\qty\SI}
+(siunitx)                
+(siunitx)                to your preamble.
+
+Package translations Info: no dictionary file `translations-basic-dictionary-it
+alian.trsl' found. on input line 96.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/elements\elements_names
+_english.def) (Lezioni/copertina.tex
+<figures/00_logo.jpg, id=918, 315.1775pt x 321.2pt>
+File: figures/00_logo.jpg Graphic file (type jpg)
+<use figures/00_logo.jpg>
+Package pdftex.def Info: figures/00_logo.jpg  used on input line 3.
+(pdftex.def)             Requested size: 94.55397pt x 96.36073pt.
+<figures/00_scritta.jpg, id=919, 1787.67876pt x 103.38625pt>
+File: figures/00_scritta.jpg Graphic file (type jpg)
+<use figures/00_scritta.jpg>
+Package pdftex.def Info: figures/00_scritta.jpg  used on input line 4.
+(pdftex.def)             Requested size: 321.7683pt x 18.60872pt.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+8.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+8.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+18.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+18.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 18.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 18.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 18
+.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 18
+.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 18.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 18.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-eur.cfg
+File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+))
+[1
+Non-PDF special ignored!
+<special> header=psfrag.pro
+
+
+{C:/Users/nik20/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/nik2
+0/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./figures/00_log
+o.jpg> <./figures/00_scritta.jpg>] [2
+
+
+] (Interazioni_Elettrodeboli_Appunti.toc
+Underfull \vbox (badness 1742) has occurred while \output is active []
+
+ [1
+
+]
+[2]
+Underfull \vbox (badness 2662) has occurred while \output is active []
+
+ [3]
+[4] [5{C:/Users/nik20/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathi
+t.enc}{C:/Users/nik20/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.en
+c}{C:/Users/nik20/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
+c}] [6] [7])
+\tf@toc=\write7
+\openout7 = `Interazioni_Elettrodeboli_Appunti.toc'.
+
+ [8]
+Capitolo 1.
+(Lezioni/Lezione 1/Lezione1.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.32 \end{equation*}
+                     [1
+
+
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.64 $$
+        [2{C:/Users/nik20/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-m
+athex.enc}] [3]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+24.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [4{C:/Users/nik20/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc
+}]
+<Lezioni/Lezione 1/KK.png, id=1236, 766.66425pt x 132.495pt>
+File: Lezioni/Lezione 1/KK.png Graphic file (type png)
+<use Lezioni/Lezione 1/KK.png>
+Package pdftex.def Info: Lezioni/Lezione 1/KK.png  used on input line 139.
+(pdftex.def)             Requested size: 470.17729pt x 81.25648pt.
+
+Overfull \hbox (42.74576pt too wide) in paragraph at lines 139--141
+ [][] 
+ []
+
+<Lezioni/Lezione 1/Ss.png, id=1238, 737.75626pt x 147.55125pt>
+File: Lezioni/Lezione 1/Ss.png Graphic file (type png)
+<use Lezioni/Lezione 1/Ss.png>
+Package pdftex.def Info: Lezioni/Lezione 1/Ss.png  used on input line 153.
+(pdftex.def)             Requested size: 470.17729pt x 94.03395pt.
+
+Overfull \hbox (42.74576pt too wide) in paragraph at lines 153--155
+ [][] 
+ []
+
+[5 <./Lezioni/Lezione 1/KK.png> <./Lezioni/Lezione 1/Ss.png>]
+<Lezioni/Lezione 1/dd.png, id=1247, 802.79926pt x 216.81pt>
+File: Lezioni/Lezione 1/dd.png Graphic file (type png)
+<use Lezioni/Lezione 1/dd.png>
+Package pdftex.def Info: Lezioni/Lezione 1/dd.png  used on input line 177.
+(pdftex.def)             Requested size: 427.43153pt x 115.43475pt.
+ [6 <./Lezioni/Lezione 1/dd.png>] [7]
+<Lezioni/Lezione 1/tt.png, id=1265, 292.6935pt x 109.6095pt>
+File: Lezioni/Lezione 1/tt.png Graphic file (type png)
+<use Lezioni/Lezione 1/tt.png>
+Package pdftex.def Info: Lezioni/Lezione 1/tt.png  used on input line 253.
+(pdftex.def)             Requested size: 341.94652pt x 128.05524pt.
+ [8 <./Lezioni/Lezione 1/tt.png>] [9]) [10]
+Capitolo 2.
+(Lezioni/Lezione 2/Lezione2.tex [11
+
+
+
+]
+Overfull \hbox (7.86517pt too wide) detected at line 40
+\OMS/lmsy/m/n/10.95 ^^@[]\OML/lmm/m/it/10.95   \OT1/lmr/m/n/10.95 = [] \OML/lmm
+/m/it/10.95  
+ []
+
+[12] [13] [14]
+Overfull \hbox (4.40593pt too wide) detected at line 185
+\OML/lmm/m/it/10.95 w\OT1/lmr/m/n/10.95 (\OT1/lmr/bx/n/10.95 0\OML/lmm/m/it/10.
+95 ; \OT1/lmr/m/n/10.95 1) = []  \OML/lmm/m/it/10.95 w\OT1/lmr/m/n/10.95 (\OT1/
+lmr/bx/n/10.95 0\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 2) = []  [] \OML/lmm/m
+/it/10.95  []\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 ) = []
+ \OML/lmm/m/it/10.95 e[]  []\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m
+/n/10.95 ) = [] \OML/lmm/m/it/10.95 e[]
+ []
+
+[15] [16] [17]
+Overfull \hbox (44.56355pt too wide) detected at line 275
+| \OML/lmm/m/it/10.95 i [] [] \OT1/lmr/m/n/10.95 + \OML/lmm/m/it/10.95 i [] [] 
+\OT1/lmr/m/n/10.95 + \OML/lmm/m/it/10.95 i [] [] \OT1/lmr/m/n/10.95 + \OML/lmm/
+m/it/10.95 i [] []
+ []
+
+[18] [19]
+<Lezioni/Lezione 2/ll.png, id=1329, 251.13824pt x 52.998pt>
+File: Lezioni/Lezione 2/ll.png Graphic file (type png)
+<use Lezioni/Lezione 2/ll.png>
+Package pdftex.def Info: Lezioni/Lezione 2/ll.png  used on input line 334.
+(pdftex.def)             Requested size: 341.94652pt x 72.16446pt.
+ [20 <./Lezioni/Lezione 2/ll.png>] [21] [22]
+<Lezioni/Lezione 2/oo.png, id=1345, 174.6525pt x 160.80075pt>
+File: Lezioni/Lezione 2/oo.png Graphic file (type png)
+<use Lezioni/Lezione 2/oo.png>
+Package pdftex.def Info: Lezioni/Lezione 2/oo.png  used on input line 456.
+(pdftex.def)             Requested size: 170.97pt x 157.41925pt.
+ [23 <./Lezioni/Lezione 2/oo.png>]) [24]
+Capitolo 3.
+(Lezioni/Lezione 3/Lezione3.tex [25
+
+
+
+] [26] [27] [28] [29] [30] [31] [32]
+[33] [34] [35] [36] [37]) [38]
+Capitolo 4.
+(Lezioni/Lezione 4/Lezione4.tex [39
+
+
+
+]
+<Lezioni/Lezione 4/mm.png, id=1419, 212.59425pt x 133.6995pt>
+File: Lezioni/Lezione 4/mm.png Graphic file (type png)
+<use Lezioni/Lezione 4/mm.png>
+Package pdftex.def Info: Lezioni/Lezione 4/mm.png  used on input line 58.
+(pdftex.def)             Requested size: 170.97pt x 107.52892pt.
+ [40 <./Lezioni/Lezione 4/mm.png>] [41]
+[42] [43] [44] [45] [46]
+<Lezioni/Lezione 4/jj.png, id=1454, 142.131pt x 113.223pt>
+File: Lezioni/Lezione 4/jj.png Graphic file (type png)
+<use Lezioni/Lezione 4/jj.png>
+Package pdftex.def Info: Lezioni/Lezione 4/jj.png  used on input line 342.
+(pdftex.def)             Requested size: 170.97pt x 136.20035pt.
+ [47 <./Lezioni/Lezione 4/jj.png>]
+<Lezioni/Lezione 4/pp.png, id=1461, 539.01375pt x 69.861pt>
+File: Lezioni/Lezione 4/pp.png Graphic file (type png)
+<use Lezioni/Lezione 4/pp.png>
+Package pdftex.def Info: Lezioni/Lezione 4/pp.png  used on input line 365.
+(pdftex.def)             Requested size: 299.20076pt x 38.7797pt.
+ [48 <./Lezioni/Lezione 4/pp.png>] [49]) [50] [51] [52
+
+
+]
+Capitolo 5.
+(Lezioni/Lezione 5/Lezione5.tex [53
+
+] [54] [55] [56]
+<Lezioni/Lezione 5/ff.png, id=1501, 316.7835pt x 175.857pt>
+File: Lezioni/Lezione 5/ff.png Graphic file (type png)
+<use Lezioni/Lezione 5/ff.png>
+Package pdftex.def Info: Lezioni/Lezione 5/ff.png  used on input line 175.
+(pdftex.def)             Requested size: 299.20076pt x 166.0945pt.
+ [57 <./Lezioni/Lezione 5/ff.png>] [58] [59]
+<Lezioni/Lezione 5/sa.png, id=1517, 705.837pt x 150.5625pt>
+File: Lezioni/Lezione 5/sa.png Graphic file (type png)
+<use Lezioni/Lezione 5/sa.png>
+Package pdftex.def Info: Lezioni/Lezione 5/sa.png  used on input line 279.
+(pdftex.def)             Requested size: 341.94652pt x 72.9423pt.
+<Lezioni/Lezione 5/fa.png, id=1518, 355.92975pt x 153.57375pt>
+File: Lezioni/Lezione 5/fa.png Graphic file (type png)
+<use Lezioni/Lezione 5/fa.png>
+Package pdftex.def Info: Lezioni/Lezione 5/fa.png  used on input line 293.
+(pdftex.def)             Requested size: 341.94652pt x 147.54861pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Lezioni/Lezione 5/la.png, id=1519, 597.432pt x 115.02975pt>
+File: Lezioni/Lezione 5/la.png Graphic file (type png)
+<use Lezioni/Lezione 5/la.png>
+Package pdftex.def Info: Lezioni/Lezione 5/la.png  used on input line 303.
+(pdftex.def)             Requested size: 341.94652pt x 65.83969pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[60 <./Lezioni/Lezione 5/sa.png>] [61 <./Lezioni/Lezione 5/fa.png> <./Lezioni/L
+ezione 5/la.png>] [62]
+<Lezioni/Lezione 5/yy.png, id=1538, 404.712pt x 180.675pt>
+File: Lezioni/Lezione 5/yy.png Graphic file (type png)
+<use Lezioni/Lezione 5/yy.png>
+Package pdftex.def Info: Lezioni/Lezione 5/yy.png  used on input line 392.
+(pdftex.def)             Requested size: 341.94652pt x 152.66193pt.
+<Lezioni/Lezione 5/ly.png, id=1539, 557.6835pt x 119.84775pt>
+File: Lezioni/Lezione 5/ly.png Graphic file (type png)
+<use Lezioni/Lezione 5/ly.png>
+Package pdftex.def Info: Lezioni/Lezione 5/ly.png  used on input line 402.
+(pdftex.def)             Requested size: 384.68576pt x 82.67308pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[63 <./Lezioni/Lezione 5/yy.png>]
+Overfull \hbox (10.7945pt too wide) detected at line 434
+\OML/lmm/m/it/10.95 N[] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 N[] \OMS/lm
+sy/m/n/10.95 / []\OML/lmm/m/it/10.95 Tr []
+ []
+
+[64 <./Lezioni/Lezione 5/ly.png>]
+<Lezioni/Lezione 5/po.png, id=1557, 658.25925pt x 127.677pt>
+File: Lezioni/Lezione 5/po.png Graphic file (type png)
+<use Lezioni/Lezione 5/po.png>
+Package pdftex.def Info: Lezioni/Lezione 5/po.png  used on input line 476.
+(pdftex.def)             Requested size: 341.94652pt x 66.32422pt.
+<Lezioni/Lezione 5/pi.png, id=1558, 629.9535pt x 115.632pt>
+File: Lezioni/Lezione 5/pi.png Graphic file (type png)
+<use Lezioni/Lezione 5/pi.png>
+Package pdftex.def Info: Lezioni/Lezione 5/pi.png  used on input line 482.
+(pdftex.def)             Requested size: 341.94652pt x 62.76675pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[65 <./Lezioni/Lezione 5/po.png>] [66 <./Lezioni/Lezione 5/pi.png>]) [67]
+[68
+
+
+]
+Capitolo 6.
+(Lezioni/Lezione 6/Lezione6.tex [69
+
+] [70] [71] [72]
+Overfull \hbox (18.00017pt too wide) detected at line 188
+[]
+ []
+
+[73] [74] [75] [76] [77] [78] [79]) [80]
+Capitolo 7.
+(Lezioni/Lezione 7/Lezione7.tex [81
+
+
+
+] [82] [83] [84]
+<Lezioni/Lezione 7/gia.png, id=1650, 278.2395pt x 90.3375pt>
+File: Lezioni/Lezione 7/gia.png Graphic file (type png)
+<use Lezioni/Lezione 7/gia.png>
+Package pdftex.def Info: Lezioni/Lezione 7/gia.png  used on input line 156.
+(pdftex.def)             Requested size: 341.94652pt x 111.02898pt.
+ [85 <./Lezioni/Lezione 7/gia.png>] [86] [87] [88] [89]
+<Lezioni/Lezione 7/ku.png, id=1674, 170.43675pt x 100.57574pt>
+File: Lezioni/Lezione 7/ku.png Graphic file (type png)
+<use Lezioni/Lezione 7/ku.png>
+Package pdftex.def Info: Lezioni/Lezione 7/ku.png  used on input line 376.
+(pdftex.def)             Requested size: 299.20076pt x 176.59026pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[90] [91 <./Lezioni/Lezione 7/ku.png>]) [92]
+Capitolo 8.
+(Lezioni/Lezione 8/Lezione8.tex [93
+
+
+
+] [94] [95] [96] [97] [98] [99] [100]
+[101]
+Overfull \hbox (13.4796pt too wide) detected at line 348
+\OML/lmm/m/it/10.95 i@[][]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n
+/10.95 ) = [] [] \OML/lmm/m/it/10.95 d[]\OT1/lmr/bx/n/10.95 k[]\OML/lmm/m/it/10
+.95 E[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 f[][] \OMS/lmsy/m/n/10.95 ^^@ \O
+ML/lmm/m/it/10.95 g[][]\OT1/lmr/m/n/10.95 ) [](\OML/lmm/m/it/10.95 x\OT1/lmr/m/
+n/10.95 ) = [] [] \OML/lmm/m/it/10.95 d[]\OT1/lmr/bx/n/10.95 k\OT1/lmr/m/n/10.9
+5 (\OML/lmm/m/it/10.95 f[][] \OT1/lmr/m/n/10.95 + \OML/lmm/m/it/10.95 g[][]\OT1
+/lmr/m/n/10.95 )
+ []
+
+
+Overfull \hbox (23.16736pt too wide) detected at line 359
+\OT1/lmr/m/n/10.95 = [] [] \OML/lmm/m/it/10.95 d[]\OT1/lmr/bx/n/10.95 k\OML/lmm
+/m/it/10.95 d[]\OT1/lmr/bx/n/10.95 k[]\OML/lmm/m/it/10.95 E[]\OT1/lmr/m/n/10.95
+ ([][]\OML/lmm/m/it/10.95 ^^N[]^^N[] \OMS/lmsy/m/n/10.95 ^^@ [][]\OML/lmm/m/it/
+10.95 ^^N[]^^N[]\OT1/lmr/m/n/10.95 ) = [] [] \OML/lmm/m/it/10.95 d[]\OT1/lmr/bx
+/n/10.95 k\OML/lmm/m/it/10.95 E[]\OT1/lmr/m/n/10.95 ([][] \OMS/lmsy/m/n/10.95 ^
+^@ [][]\OT1/lmr/m/n/10.95 )
+ []
+
+[102] [103] [104]
+Overfull \hbox (9.90443pt too wide) detected at line 479
+\OMS/lmsy/m/n/10.95 L[] \OT1/lmr/m/n/10.95 = [](\OML/lmm/m/it/10.95 x\OT1/lmr/m
+/n/10.95 )\OML/lmm/m/it/10.95 e[]e[]^^M[]@[] \OT1/lmr/m/n/10.95 (\OML/lmm/m/it/
+10.95 x\OT1/lmr/m/n/10.95 )[][] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 m[]
+\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )\OML/lmm/m/it/10.9
+5 e[]e[] \OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )
+ []
+
+[105]) [106]
+Capitolo 9.
+(Lezioni/Lezione 9/Lezione9.tex [107
+
+
+
+] [108] [109] [110] [111] [112] [113]
+<Lezioni/Lezione 9/sca.png, id=1777, 236.082pt x 93.34875pt>
+File: Lezioni/Lezione 9/sca.png Graphic file (type png)
+<use Lezioni/Lezione 9/sca.png>
+Package pdftex.def Info: Lezioni/Lezione 9/sca.png  used on input line 289.
+(pdftex.def)             Requested size: 299.20076pt x 118.31512pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[114] [115 <./Lezioni/Lezione 9/sca.png>] [116] [117] [118]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 418
+.
+
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+(C:\Users\nik20\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-euf.cfg
+File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
+
+)
+<Lezioni/Lezione 9/lo.png, id=1801, 582.978pt x 199.34476pt>
+File: Lezioni/Lezione 9/lo.png Graphic file (type png)
+<use Lezioni/Lezione 9/lo.png>
+Package pdftex.def Info: Lezioni/Lezione 9/lo.png  used on input line 424.
+(pdftex.def)             Requested size: 341.94652pt x 116.92494pt.
+<Lezioni/Lezione 9/li.png, id=1802, 725.71124pt x 160.1985pt>
+File: Lezioni/Lezione 9/li.png Graphic file (type png)
+<use Lezioni/Lezione 9/li.png>
+Package pdftex.def Info: Lezioni/Lezione 9/li.png  used on input line 430.
+(pdftex.def)             Requested size: 341.94652pt x 75.48396pt.
+)
+[119 <./Lezioni/Lezione 9/lo.png> <./Lezioni/Lezione 9/li.png>] [120
+
+
+]
+Capitolo 10.
+(Lezioni/Lezione 10/Lezione10.tex [121
+
+] [122] [123]
+<Lezioni/Lezione 10/ik.png, id=1829, 190.91325pt x 84.315pt>
+File: Lezioni/Lezione 10/ik.png Graphic file (type png)
+<use Lezioni/Lezione 10/ik.png>
+Package pdftex.def Info: Lezioni/Lezione 10/ik.png  used on input line 110.
+(pdftex.def)             Requested size: 256.46152pt x 113.26709pt.
+<Lezioni/Lezione 10/fe.png, id=1830, 211.38976pt x 163.20975pt>
+File: Lezioni/Lezione 10/fe.png Graphic file (type png)
+<use Lezioni/Lezione 10/fe.png>
+Package pdftex.def Info: Lezioni/Lezione 10/fe.png  used on input line 147.
+(pdftex.def)             Requested size: 170.97pt x 132.00989pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[124 <./Lezioni/Lezione 10/ik.png>] [125 <./Lezioni/Lezione 10/fe.png>]
+<Lezioni/Lezione 10/fer.png, id=1843, 763.05075pt x 249.93375pt>
+File: Lezioni/Lezione 10/fer.png Graphic file (type png)
+<use Lezioni/Lezione 10/fer.png>
+Package pdftex.def Info: Lezioni/Lezione 10/fer.png  used on input line 233.
+(pdftex.def)             Requested size: 384.68576pt x 126.00388pt.
+
+[126]
+<Lezioni/Lezione 10/red.png, id=1848, 323.40825pt x 152.36925pt>
+File: Lezioni/Lezione 10/red.png Graphic file (type png)
+<use Lezioni/Lezione 10/red.png>
+Package pdftex.def Info: Lezioni/Lezione 10/red.png  used on input line 247.
+(pdftex.def)             Requested size: 256.46152pt x 120.82838pt.
+ [127 <./Lezioni/Lezione 10/fer.png> <./Lezioni/Lezione 10/red.png>]
+[128] [129] [130]) [131] [132
+
+
+]
+Capitolo 11.
+(Lezioni/Lezione 11/Lezione11.tex [133
+
+] [134] [135]
+<Lezioni/Lezione 11/beta.png, id=1891, 732.93825pt x 196.93575pt>
+File: Lezioni/Lezione 11/beta.png Graphic file (type png)
+<use Lezioni/Lezione 11/beta.png>
+Package pdftex.def Info: Lezioni/Lezione 11/beta.png  used on input line 131.
+(pdftex.def)             Requested size: 384.68576pt x 103.36575pt.
+<Lezioni/Lezione 11/betaz.png, id=1892, 410.7345pt x 210.7875pt>
+File: Lezioni/Lezione 11/betaz.png Graphic file (type png)
+<use Lezioni/Lezione 11/betaz.png>
+Package pdftex.def Info: Lezioni/Lezione 11/betaz.png  used on input line 144.
+(pdftex.def)             Requested size: 213.71576pt x 109.6809pt.
+ [136 <./Lezioni/Lezione 11/beta.png> <./Lezioni/Lezione 11/betaz.png>]
+<Lezioni/Lezione 11/w.png, id=1901, 258.9675pt x 160.1985pt>
+File: Lezioni/Lezione 11/w.png Graphic file (type png)
+<use Lezioni/Lezione 11/w.png>
+Package pdftex.def Info: Lezioni/Lezione 11/w.png  used on input line 160.
+(pdftex.def)             Requested size: 170.97pt x 105.76799pt.
+ [137 <./Lezioni/Lezione 11/w.png>]
+[138] [139]
+Overfull \hbox (48.77316pt too wide) detected at line 273
+\OT1/lmr/m/n/10.95 = [] [][]\OMS/lmsy/m/n/10.95 h\OT1/lmr/m/n/10.95 0\OMS/lmsy/
+m/n/10.95 j[][]\OT1/lmr/m/n/10.95 ([][][]\OML/lmm/m/it/10.95 e[] \OT1/lmr/m/n/1
+0.95 + [][][]\OML/lmm/m/it/10.95 e[]\OT1/lmr/m/n/10.95 )\OML/lmm/m/it/10.95 ^^M
+[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 u[][]e[] \OT1/lmr/m/n/10.95 + \OML/lm
+m/m/it/10.95 v[][]e[]\OT1/lmr/m/n/10.95 )\OMS/lmsy/m/n/10.95 j\OT1/lmr/m/n/10.9
+5 0\OMS/lmsy/m/n/10.95 i
+ []
+
+[140]
+<Lezioni/Lezione 11/ui.png, id=1920, 669.702pt x 221.02576pt>
+File: Lezioni/Lezione 11/ui.png Graphic file (type png)
+<use Lezioni/Lezione 11/ui.png>
+Package pdftex.def Info: Lezioni/Lezione 11/ui.png  used on input line 310.
+(pdftex.def)             Requested size: 341.94652pt x 112.85654pt.
+<Lezioni/Lezione 11/io.png, id=1921, 362.5545pt x 133.09724pt>
+File: Lezioni/Lezione 11/io.png Graphic file (type png)
+<use Lezioni/Lezione 11/io.png>
+Package pdftex.def Info: Lezioni/Lezione 11/io.png  used on input line 317.
+(pdftex.def)             Requested size: 341.94652pt x 125.5379pt.
+ [141 <./Lezioni/Lezione 11/ui.png> <./Lezioni/Lezione 11/io.png>]
+[142]
+<Lezioni/Lezione 11/s.png, id=1935, 428.19975pt x 205.36725pt>
+File: Lezioni/Lezione 11/s.png Graphic file (type png)
+<use Lezioni/Lezione 11/s.png>
+Package pdftex.def Info: Lezioni/Lezione 11/s.png  used on input line 390.
+(pdftex.def)             Requested size: 341.94652pt x 164.00258pt.
+<Lezioni/Lezione 11/yyy.png, id=1936, 308.95425pt x 136.71075pt>
+File: Lezioni/Lezione 11/yyy.png Graphic file (type png)
+<use Lezioni/Lezione 11/yyy.png>
+Package pdftex.def Info: Lezioni/Lezione 11/yyy.png  used on input line 406.
+(pdftex.def)             Requested size: 341.94652pt x 151.31682pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[143 <./Lezioni/Lezione 11/s.png>] [144 <./Lezioni/Lezione 11/yyy.png>])
+[145] [146
+
+
+]
+Capitolo 12.
+(Lezioni/Lezione 12/Lezione12.tex [147
+
+]
+<Lezioni/Lezione 12/tg.png, id=1962, 361.35pt x 187.902pt>
+File: Lezioni/Lezione 12/tg.png Graphic file (type png)
+<use Lezioni/Lezione 12/tg.png>
+Package pdftex.def Info: Lezioni/Lezione 12/tg.png  used on input line 60.
+(pdftex.def)             Requested size: 341.94652pt x 177.81203pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[148] [149 <./Lezioni/Lezione 12/tg.png>] [150] [151] [152]
+Overfull \hbox (15.05617pt too wide) in paragraph at lines 190--216
+[] 
+ []
+
+[153] [154] [155] [156]
+<Lezioni/Lezione 12/poo.png, id=2002, 678.73575pt x 205.9695pt>
+File: Lezioni/Lezione 12/poo.png Graphic file (type png)
+<use Lezioni/Lezione 12/poo.png>
+Package pdftex.def Info: Lezioni/Lezione 12/poo.png  used on input line 373.
+(pdftex.def)             Requested size: 384.68576pt x 116.73753pt.
+ [157 <./Lezioni/Lezione 12/poo.png>]) [158]
+Capitolo 13.
+(Lezioni/Lezione 13/Lezione13.tex
+Overfull \hbox (17.72102pt too wide) detected at line 17
+\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.9
+5 ) \OMS/lmsy/m/n/10.95 ^^Y \OML/lmm/m/it/10.95 m[] \OMS/lmsy/m/n/10.95 ^^@ \OM
+L/lmm/m/it/10.95 m[] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 E[] \OMS/lmsy/
+m/n/10.95 ^^@ \OML/lmm/m/it/10.95 x \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 x[
+] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 x x[] \OMS/lmsy/m/n/10.95 ^^Y \OM
+L/lmm/m/it/10.95 m[] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 m[] \OMS/lmsy/
+m/n/10.95 ^^@ \OML/lmm/m/it/10.95 E[] \OMS/lmsy/m/n/10.95 j\OML/lmm/m/it/10.95 
+f[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x[]\OT1/lmr/m/n/10.95 )\OMS/lmsy/m/n
+/10.95 j \OT1/lmr/m/n/10.95 = 1 \OML/lmm/m/it/10.95 ^^N\OT1/lmr/m/n/10.95 (\OML
+/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 ))
+ = \OML/lmm/m/it/10.95 ^^N\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x[] \OMS/lmsy
+/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )
+ []
+
+
+Overfull \hbox (2.3757pt too wide) detected at line 21
+\OML/lmm/m/it/10.95 d^^H \OT1/lmr/m/n/10.95 = [][][][]\OML/lmm/m/it/10.95 ^^N\O
+T1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 E[] \OMS/lmsy/m/n/10.95 ^^@ [][]\OT1/lmr/
+m/n/10.95 ) [][] = \OML/lmm/m/it/10.95 m[] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/i
+t/10.95 m[] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 E[] m[] \OMS/lmsy/m/n/1
+0.95 ^^@ \OML/lmm/m/it/10.95 m[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 ^^Am
+ []
+
+[159
+
+
+
+]
+Overfull \hbox (49.55708pt too wide) detected at line 42
+\OML/lmm/m/it/10.95 d^^@[] \OT1/lmr/m/n/10.95 = []16\OML/lmm/m/it/10.95 m[]E[]E
+[]G[] [] [][]dE[]d
+[]d
+[]
+ []
+
+[160]
+<Lezioni/Lezione 13/op.png, id=2022, 424.58624pt x 400.49625pt>
+File: Lezioni/Lezione 13/op.png Graphic file (type png)
+<use Lezioni/Lezione 13/op.png>
+Package pdftex.def Info: Lezioni/Lezione 13/op.png  used on input line 80.
+(pdftex.def)             Requested size: 341.94652pt x 322.56075pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[161] [162 <./Lezioni/Lezione 13/op.png>] [163] [164]
+<Lezioni/Lezione 13/tr.png, id=2050, 505.28775pt x 431.81325pt>
+File: Lezioni/Lezione 13/tr.png Graphic file (type png)
+<use Lezioni/Lezione 13/tr.png>
+Package pdftex.def Info: Lezioni/Lezione 13/tr.png  used on input line 168.
+(pdftex.def)             Requested size: 299.20076pt x 255.69005pt.
+ [165 <./Lezioni/Lezione 13/tr.png>] [166] [167] [168] [169]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 346.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 346.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Gamma' on input line 346.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 346.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 346.
+
+[170]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 359.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Gamma' on input line 359.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 359.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 359.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 359.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 359.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 359.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Gamma' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Gamma' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\not' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 395.
+
+[171]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 420.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Gamma' on input line 420.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 420.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 420.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 420.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 420.
+
+[172]) [173] [174
+
+
+]
+Capitolo 14.
+(Lezioni/Lezione 14/Lezione14.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 1.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 1.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 1.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\theta' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tau' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[175
+
+]
+<Lezioni/Lezione 14/spec.png, id=2102, 293.29575pt x 369.17924pt>
+File: Lezioni/Lezione 14/spec.png Graphic file (type png)
+<use Lezioni/Lezione 14/spec.png>
+Package pdftex.def Info: Lezioni/Lezione 14/spec.png  used on input line 54.
+(pdftex.def)             Requested size: 170.97pt x 215.21132pt.
+<Lezioni/Lezione 14/spec2.png, id=2103, 287.27325pt x 404.712pt>
+File: Lezioni/Lezione 14/spec2.png Graphic file (type png)
+<use Lezioni/Lezione 14/spec2.png>
+Package pdftex.def Info: Lezioni/Lezione 14/spec2.png  used on input line 55.
+(pdftex.def)             Requested size: 170.97pt x 240.8653pt.
+ [176]
+<Lezioni/Lezione 14/wu1.png, id=2108, 350.5095pt x 443.85825pt>
+File: Lezioni/Lezione 14/wu1.png Graphic file (type png)
+<use Lezioni/Lezione 14/wu1.png>
+Package pdftex.def Info: Lezioni/Lezione 14/wu1.png  used on input line 62.
+(pdftex.def)             Requested size: 170.97pt x 216.50362pt.
+<Lezioni/Lezione 14/wu2.png, id=2109, 814.242pt x 439.6425pt>
+File: Lezioni/Lezione 14/wu2.png Graphic file (type png)
+<use Lezioni/Lezione 14/wu2.png>
+Package pdftex.def Info: Lezioni/Lezione 14/wu2.png  used on input line 68.
+(pdftex.def)             Requested size: 384.68576pt x 207.71205pt.
+ [177 <./Lezioni/Lezione 14/spec.png> <./Lezioni/Lezione 14/spec2.png>] [178 <.
+/Lezioni/Lezione 14/wu1.png> <./Lezioni/Lezione 14/wu2.png>]
+<Lezioni/Lezione 14/anti.png, id=2126, 346.896pt x 422.7795pt>
+File: Lezioni/Lezione 14/anti.png Graphic file (type png)
+<use Lezioni/Lezione 14/anti.png>
+Package pdftex.def Info: Lezioni/Lezione 14/anti.png  used on input line 82.
+(pdftex.def)             Requested size: 299.20076pt x 364.66705pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Lezioni/Lezione 14/antiz.png, id=2127, 419.76825pt x 452.892pt>
+File: Lezioni/Lezione 14/antiz.png Graphic file (type png)
+<use Lezioni/Lezione 14/antiz.png>
+Package pdftex.def Info: Lezioni/Lezione 14/antiz.png  used on input line 89.
+(pdftex.def)             Requested size: 299.20076pt x 322.82019pt.
+
+Underfull \vbox (badness 1028) has occurred while \output is active []
+
+ [179]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[180 <./Lezioni/Lezione 14/anti.png>] [181 <./Lezioni/Lezione 14/antiz.png>]
+[182]
+Overfull \hbox (46.13219pt too wide) detected at line 207
+[] \OT1/lmr/m/n/10.95 = 16\OML/lmm/m/it/10.95 m[]E[]E[] []
+ []
+
+
+Overfull \hbox (43.2059pt too wide) detected at line 213
+[][]
+ []
+
+[183]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 225.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beta' on input line 225.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 225.
+
+[184] [185] [186]) [187] [188
+
+
+]
+Capitolo 15.
+(Lezioni/Lezione 15/Lezione15.tex [189
+
+] [190] [191]
+<Lezioni/Lezione 15/dra.png, id=2186, 660.66824pt x 266.1945pt>
+File: Lezioni/Lezione 15/dra.png Graphic file (type png)
+<use Lezioni/Lezione 15/dra.png>
+Package pdftex.def Info: Lezioni/Lezione 15/dra.png  used on input line 106.
+(pdftex.def)             Requested size: 341.94652pt x 137.77611pt.
+<Lezioni/Lezione 15/pro.png, id=2187, 714.87074pt x 207.77625pt>
+File: Lezioni/Lezione 15/pro.png Graphic file (type png)
+<use Lezioni/Lezione 15/pro.png>
+Package pdftex.def Info: Lezioni/Lezione 15/pro.png  used on input line 116.
+(pdftex.def)             Requested size: 256.46152pt x 74.54257pt.
+ [192 <./Lezioni/Lezione 15/dra.png> <./Lezioni/Lezione 15/pro.png>]
+<Lezioni/Lezione 15/tab.png, id=2196, 281.853pt x 272.217pt>
+File: Lezioni/Lezione 15/tab.png Graphic file (type png)
+<use Lezioni/Lezione 15/tab.png>
+Package pdftex.def Info: Lezioni/Lezione 15/tab.png  used on input line 146.
+(pdftex.def)             Requested size: 256.46152pt x 247.69707pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 149.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 149.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 149.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 149.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 149.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 149.
+
+[193]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 178.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beta' on input line 178.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 178.
+
+[194 <./Lezioni/Lezione 15/tab.png>] [195] [196] [197]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 305.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 305.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 305.
+
+[198] [199] [200] [201]) [202]
+Capitolo 16.
+(Lezioni/Lezione 16/Lezione16.tex [203
+
+
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 26.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 26.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 26.
+
+<Lezioni/Lezione 16/corr.png, id=2245, 858.8085pt x 71.66776pt>
+File: Lezioni/Lezione 16/corr.png Graphic file (type png)
+<use Lezioni/Lezione 16/corr.png>
+Package pdftex.def Info: Lezioni/Lezione 16/corr.png  used on input line 34.
+(pdftex.def)             Requested size: 256.46152pt x 21.40207pt.
+[204 <./Lezioni/Lezione 16/corr.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 86.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\pi' on input line 86.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 86.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\to' on input line 86.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 86.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@overline' on input line 86.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 86.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 86.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 86.
+
+[205]
+<Lezioni/Lezione 16/ty.png, id=2256, 693.18974pt x 87.9285pt>
+File: Lezioni/Lezione 16/ty.png Graphic file (type png)
+<use Lezioni/Lezione 16/ty.png>
+Package pdftex.def Info: Lezioni/Lezione 16/ty.png  used on input line 94.
+(pdftex.def)             Requested size: 341.94652pt x 43.3738pt.
+ [206 <./Lezioni/Lezione 16/ty.png>] [207] [208]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 242.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tau' on input line 242.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 242.
+
+[209] [210]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 324.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tau' on input line 324.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 324.
+
+[211] [212] [213]
+! Double superscript.
+l.410 ... le proprietà della corrente $J^\dagger^
+                                                  \alpha$, la parte $\Delta ...
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+[214]) [215] [216
+
+
+]
+Capitolo 17.
+(Lezioni/Lezione 17/Lezione17.tex [217
+
+] [218]
+! Double superscript.
+l.124 ...e la corrente adronica carica $J^\dagger^
+                                                  \alpha$ ha evidenti somigl...
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+l.126 	\item La corrente $J^\dagger^
+                                    \alpha\equiv J_+^\alpha$ che induce, ad ...
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+[219] [220]
+<Lezioni/Lezione 17/test.png, id=2322, 843.75224pt x 380.01974pt>
+File: Lezioni/Lezione 17/test.png Graphic file (type png)
+<use Lezioni/Lezione 17/test.png>
+Package pdftex.def Info: Lezioni/Lezione 17/test.png  used on input line 183.
+(pdftex.def)             Requested size: 384.68576pt x 173.25717pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Lezioni/Lezione 17/coa.png, id=2323, 175.25475pt x 151.767pt>
+File: Lezioni/Lezione 17/coa.png Graphic file (type png)
+<use Lezioni/Lezione 17/coa.png>
+Package pdftex.def Info: Lezioni/Lezione 17/coa.png  used on input line 190.
+(pdftex.def)             Requested size: 170.97pt x 148.05905pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[221] [222 <./Lezioni/Lezione 17/test.png> <./Lezioni/Lezione 17/coa.png>]
+<Lezioni/Lezione 17/datt.png, id=2336, 704.6325pt x 379.4175pt>
+File: Lezioni/Lezione 17/datt.png Graphic file (type png)
+<use Lezioni/Lezione 17/datt.png>
+Package pdftex.def Info: Lezioni/Lezione 17/datt.png  used on input line 237.
+(pdftex.def)             Requested size: 341.94652pt x 184.12148pt.
+<Lezioni/Lezione 17/ti.png, id=2337, 723.30225pt x 236.082pt>
+File: Lezioni/Lezione 17/ti.png Graphic file (type png)
+<use Lezioni/Lezione 17/ti.png>
+Package pdftex.def Info: Lezioni/Lezione 17/ti.png  used on input line 248.
+(pdftex.def)             Requested size: 341.94652pt x 111.61057pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[223 <./Lezioni/Lezione 17/datt.png>] [224 <./Lezioni/Lezione 17/ti.png>]
+[225]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 344.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\pi' on input line 344.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 344.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 344.
+
+[226]
+<Lezioni/Lezione 17/ioz1.png, id=2359, 155.3805pt x 212.59425pt>
+File: Lezioni/Lezione 17/ioz1.png Graphic file (type png)
+<use Lezioni/Lezione 17/ioz1.png>
+Package pdftex.def Info: Lezioni/Lezione 17/ioz1.png  used on input line 400.
+(pdftex.def)             Requested size: 85.485pt x 116.96288pt.
+<Lezioni/Lezione 17/ioz2.png, id=2360, 380.01974pt x 239.09325pt>
+File: Lezioni/Lezione 17/ioz2.png Graphic file (type png)
+<use Lezioni/Lezione 17/ioz2.png>
+Package pdftex.def Info: Lezioni/Lezione 17/ioz2.png  used on input line 401.
+(pdftex.def)             Requested size: 256.46152pt x 161.36272pt.
+ [227 <./Lezioni/Lezione 17/ioz1.png> <./Lezioni/Lezione 17/ioz2.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 414.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beta' on input line 414.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 414.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 414.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\pi' on input line 414.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 414.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 414.
+
+[228] [229]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 529.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beta' on input line 529.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 529.
+
+[230]) [231] [232
+
+
+]
+Capitolo 18.
+(Lezioni/Lezione 18/Lezione18.tex
+<Lezioni/Lezione 18/lez.png, id=2389, 805.50937pt x 380.92313pt>
+File: Lezioni/Lezione 18/lez.png Graphic file (type png)
+<use Lezioni/Lezione 18/lez.png>
+Package pdftex.def Info: Lezioni/Lezione 18/lez.png  used on input line 5.
+(pdftex.def)             Requested size: 384.68576pt x 181.91684pt.
+
+Underfull \vbox (badness 1577) has occurred while \output is active []
+
+ [233
+
+ <./Lezioni/Lezione 18/lez.png>]
+<Lezioni/Lezione 18/reaz.png, id=2396, 723.45282pt x 112.92188pt>
+File: Lezioni/Lezione 18/reaz.png Graphic file (type png)
+<use Lezioni/Lezione 18/reaz.png>
+Package pdftex.def Info: Lezioni/Lezione 18/reaz.png  used on input line 16.
+(pdftex.def)             Requested size: 384.68576pt x 60.04472pt.
+<Lezioni/Lezione 18/reaz1.png, id=2397, 321.45094pt x 108.405pt>
+File: Lezioni/Lezione 18/reaz1.png Graphic file (type png)
+<use Lezioni/Lezione 18/reaz1.png>
+Package pdftex.def Info: Lezioni/Lezione 18/reaz1.png  used on input line 22.
+(pdftex.def)             Requested size: 213.71576pt x 72.07518pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 25.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 25.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 25.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 25.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\to' on input line 25.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 25.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 25.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 25.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 25.
+
+<Lezioni/Lezione 18/reaz2.png, id=2398, 221.32687pt x 97.86563pt>
+File: Lezioni/Lezione 18/reaz2.png Graphic file (type png)
+<use Lezioni/Lezione 18/reaz2.png>
+Package pdftex.def Info: Lezioni/Lezione 18/reaz2.png  used on input line 33.
+(pdftex.def)             Requested size: 128.23076pt x 56.70384pt.
+[234 <./Lezioni/Lezione 18/reaz.png> <./Lezioni/Lezione 18/reaz1.png> <./Lezion
+i/Lezione 18/reaz2.png>] [235]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\to' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 112.
+
+<Lezioni/Lezione 18/reaz3.png, id=2413, 907.89188pt x 158.09062pt>
+File: Lezioni/Lezione 18/reaz3.png Graphic file (type png)
+<use Lezioni/Lezione 18/reaz3.png>
+Package pdftex.def Info: Lezioni/Lezione 18/reaz3.png  used on input line 120.
+(pdftex.def)             Requested size: 299.20076pt x 52.1001pt.
+[236 <./Lezioni/Lezione 18/reaz3.png>]
+<Lezioni/Lezione 18/reaz4.png, id=2420, 766.36313pt x 164.86594pt>
+File: Lezioni/Lezione 18/reaz4.png Graphic file (type png)
+<use Lezioni/Lezione 18/reaz4.png>
+Package pdftex.def Info: Lezioni/Lezione 18/reaz4.png  used on input line 177.
+(pdftex.def)             Requested size: 341.94652pt x 73.56258pt.
+<Lezioni/Lezione 18/reaz5.png, id=2421, 819.8128pt x 491.58656pt>
+File: Lezioni/Lezione 18/reaz5.png Graphic file (type png)
+<use Lezioni/Lezione 18/reaz5.png>
+Package pdftex.def Info: Lezioni/Lezione 18/reaz5.png  used on input line 183.
+(pdftex.def)             Requested size: 341.94652pt x 205.04726pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[237 <./Lezioni/Lezione 18/reaz4.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\to' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 187.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 187.
+
+[238 <./Lezioni/Lezione 18/reaz5.png>] [239]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 242.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 242.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 242.
+
+<Lezioni/Lezione 18/reaz6.png, id=2439, 700.11563pt x 153.57375pt>
+File: Lezioni/Lezione 18/reaz6.png Graphic file (type png)
+<use Lezioni/Lezione 18/reaz6.png>
+Package pdftex.def Info: Lezioni/Lezione 18/reaz6.png  used on input line 259.
+(pdftex.def)             Requested size: 384.68576pt x 84.38379pt.
+[240 <./Lezioni/Lezione 18/reaz6.png>]) [241] [242
+
+
+]
+Capitolo 19.
+(Lezioni/Lezione 19/Lezione19.tex
+<Lezioni/Lezione 19/ala1.png, id=2454, 338.76563pt x 189.70876pt>
+File: Lezioni/Lezione 19/ala1.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala1.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala1.png  used on input line 5.
+(pdftex.def)             Requested size: 256.46152pt x 143.62436pt.
+ [243
+
+ <./Lezioni/Lezione 19/ala1.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 44.
+
+[244]
+<Lezioni/Lezione 19/ala2.png, id=2466, 310.91156pt x 455.45157pt>
+File: Lezioni/Lezione 19/ala2.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala2.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala2.png  used on input line 77.
+(pdftex.def)             Requested size: 128.23076pt x 187.84134pt.
+<Lezioni/Lezione 19/ala3.png, id=2467, 277.035pt x 170.88844pt>
+File: Lezioni/Lezione 19/ala3.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala3.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala3.png  used on input line 87.
+(pdftex.def)             Requested size: 128.23076pt x 79.09724pt.
+<Lezioni/Lezione 19/ala4.png, id=2468, 664.73344pt x 143.78719pt>
+File: Lezioni/Lezione 19/ala4.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala4.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala4.png  used on input line 93.
+(pdftex.def)             Requested size: 256.46152pt x 55.47562pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[245 <./Lezioni/Lezione 19/ala2.png>]
+<Lezioni/Lezione 19/ala6.png, id=2475, 1009.52156pt x 595.47469pt>
+File: Lezioni/Lezione 19/ala6.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala6.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala6.png  used on input line 103.
+(pdftex.def)             Requested size: 256.46152pt x 151.27614pt.
+<Lezioni/Lezione 19/ala5.png, id=2476, 723.45282pt x 234.8775pt>
+File: Lezioni/Lezione 19/ala5.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala5.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala5.png  used on input line 110.
+(pdftex.def)             Requested size: 256.46152pt x 83.26202pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[246 <./Lezioni/Lezione 19/ala3.png> <./Lezioni/Lezione 19/ala4.png> <./Lezioni
+/Lezione 19/ala6.png>]
+<Lezioni/Lezione 19/ala7.png, id=2487, 968.86969pt x 532.99126pt>
+File: Lezioni/Lezione 19/ala7.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala7.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala7.png  used on input line 142.
+(pdftex.def)             Requested size: 341.94652pt x 188.11122pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[247 <./Lezioni/Lezione 19/ala5.png>]
+<Lezioni/Lezione 19/ala8.png, id=2494, 757.32938pt x 454.69875pt>
+File: Lezioni/Lezione 19/ala8.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala8.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala8.png  used on input line 183.
+(pdftex.def)             Requested size: 341.94652pt x 205.30635pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[248 <./Lezioni/Lezione 19/ala7.png>]
+<Lezioni/Lezione 19/ala9.png, id=2501, 755.07094pt x 453.19313pt>
+File: Lezioni/Lezione 19/ala9.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala9.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala9.png  used on input line 190.
+(pdftex.def)             Requested size: 341.94652pt x 205.23506pt.
+ [249 <./Lezioni/Lezione 19/ala8.png> <./Lezioni/Lezione 19/ala9.png>]
+<Lezioni/Lezione 19/ala10.png, id=2511, 749.04843pt x 398.23781pt>
+File: Lezioni/Lezione 19/ala10.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala10.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala10.png  used on input line 214.
+(pdftex.def)             Requested size: 256.46152pt x 136.34702pt.
+<Lezioni/Lezione 19/ala11.png, id=2512, 664.73344pt x 432.86719pt>
+File: Lezioni/Lezione 19/ala11.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala11.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala11.png  used on input line 215.
+(pdftex.def)             Requested size: 256.46152pt x 167.00774pt.
+<Lezioni/Lezione 19/ala12.png, id=2513, 749.04843pt x 458.46281pt>
+File: Lezioni/Lezione 19/ala12.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala12.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala12.png  used on input line 221.
+(pdftex.def)             Requested size: 341.94652pt x 209.29346pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[250 <./Lezioni/Lezione 19/ala10.png> <./Lezioni/Lezione 19/ala11.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 227.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 227.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 227.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 227.
+
+<Lezioni/Lezione 19/ala13.png, id=2521, 736.25063pt x 450.9347pt>
+File: Lezioni/Lezione 19/ala13.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala13.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala13.png  used on input line 230.
+(pdftex.def)             Requested size: 341.94652pt x 209.44164pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Lezioni/Lezione 19/ala14.png, id=2522, 724.95844pt x 409.53pt>
+File: Lezioni/Lezione 19/ala14.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala14.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala14.png  used on input line 235.
+(pdftex.def)             Requested size: 213.71576pt x 120.72281pt.
+<Lezioni/Lezione 19/ala15.png, id=2523, 740.0147pt x 450.18187pt>
+File: Lezioni/Lezione 19/ala15.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala15.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala15.png  used on input line 236.
+(pdftex.def)             Requested size: 213.71576pt x 130.0136pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [251 <./Lezioni/Lezione 19/ala12.png>]
+<Lezioni/Lezione 19/ala16.png, id=2530, 166.37157pt x 73.77562pt>
+File: Lezioni/Lezione 19/ala16.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala16.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala16.png  used on input line 248.
+(pdftex.def)             Requested size: 128.23076pt x 56.86592pt.
+
+Underfull \vbox (badness 1990) has occurred while \output is active []
+
+ [252 <./Lezioni/Lezione 19/ala13.png> <./Lezioni/Lezione 19/ala14.png> <./Lezi
+oni/Lezione 19/ala15.png>]
+<Lezioni/Lezione 19/ala17.png, id=2540, 368.87813pt x 106.89937pt>
+File: Lezioni/Lezione 19/ala17.png Graphic file (type png)
+<use Lezioni/Lezione 19/ala17.png>
+Package pdftex.def Info: Lezioni/Lezione 19/ala17.png  used on input line 277.
+(pdftex.def)             Requested size: 128.23076pt x 37.16087pt.
+) [253 <./Lezioni/Lezione 19/ala16.png>] [254 <./Lezioni/Lezione 19/ala17.png>]
+
+Capitolo 20.
+(Lezioni/Lezione 20/Lezione20.tex
+<Lezioni/Lezione 20/salaa1.png, id=2553, 173.89969pt x 118.94438pt>
+File: Lezioni/Lezione 20/salaa1.png Graphic file (type png)
+<use Lezioni/Lezione 20/salaa1.png>
+Package pdftex.def Info: Lezioni/Lezione 20/salaa1.png  used on input line 10.
+(pdftex.def)             Requested size: 128.23076pt x 87.71072pt.
+ [255
+
+
+
+ <./Lezioni/Lezione 20/salaa1.png>]
+<Lezioni/Lezione 20/salaa2.png, id=2561, 914.66719pt x 502.12593pt>
+File: Lezioni/Lezione 20/salaa2.png Graphic file (type png)
+<use Lezioni/Lezione 20/salaa2.png>
+Package pdftex.def Info: Lezioni/Lezione 20/salaa2.png  used on input line 38.
+(pdftex.def)             Requested size: 384.68576pt x 211.1826pt.
+<Lezioni/Lezione 20/salaa3.png, id=2562, 890.5772pt x 517.935pt>
+File: Lezioni/Lezione 20/salaa3.png Graphic file (type png)
+<use Lezioni/Lezione 20/salaa3.png>
+Package pdftex.def Info: Lezioni/Lezione 20/salaa3.png  used on input line 44.
+(pdftex.def)             Requested size: 170.97pt x 99.42816pt.
+<Lezioni/Lezione 20/salaa4.png, id=2563, 712.16063pt x 517.18219pt>
+File: Lezioni/Lezione 20/salaa4.png Graphic file (type png)
+<use Lezioni/Lezione 20/salaa4.png>
+Package pdftex.def Info: Lezioni/Lezione 20/salaa4.png  used on input line 45.
+(pdftex.def)             Requested size: 170.97pt x 124.15782pt.
+<Lezioni/Lezione 20/salaa5.png, id=2564, 867.99281pt x 502.87875pt>
+File: Lezioni/Lezione 20/salaa5.png Graphic file (type png)
+<use Lezioni/Lezione 20/salaa5.png>
+Package pdftex.def Info: Lezioni/Lezione 20/salaa5.png  used on input line 50.
+(pdftex.def)             Requested size: 170.97pt x 99.04697pt.
+<Lezioni/Lezione 20/salaa6.png, id=2565, 847.66687pt x 507.39563pt>
+File: Lezioni/Lezione 20/salaa6.png Graphic file (type png)
+<use Lezioni/Lezione 20/salaa6.png>
+Package pdftex.def Info: Lezioni/Lezione 20/salaa6.png  used on input line 51.
+(pdftex.def)             Requested size: 170.97pt x 102.33672pt.
+<Lezioni/Lezione 20/salaa7.png, id=2566, 861.9703pt x 515.67656pt>
+File: Lezioni/Lezione 20/salaa7.png Graphic file (type png)
+<use Lezioni/Lezione 20/salaa7.png>
+Package pdftex.def Info: Lezioni/Lezione 20/salaa7.png  used on input line 52.
+(pdftex.def)             Requested size: 170.97pt x 102.28368pt.
+<Lezioni/Lezione 20/salaa8.png, id=2567, 952.30782pt x 491.58656pt>
+File: Lezioni/Lezione 20/salaa8.png Graphic file (type png)
+<use Lezioni/Lezione 20/salaa8.png>
+Package pdftex.def Info: Lezioni/Lezione 20/salaa8.png  used on input line 53.
+(pdftex.def)             Requested size: 170.97pt x 88.24922pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[256] [257 <./Lezioni/Lezione 20/salaa2.png> <./Lezioni/Lezione 20/salaa3.png> 
+<./Lezioni/Lezione 20/salaa4.png> <./Lezioni/Lezione 20/salaa5.png> <./Lezioni/
+Lezione 20/salaa6.png> <./Lezioni/Lezione 20/salaa7.png> <./Lezioni/Lezione 20/
+salaa8.png>]
+<Lezioni/Lezione 20/sala9.png, id=2586, 817.55438pt x 508.14844pt>
+File: Lezioni/Lezione 20/sala9.png Graphic file (type png)
+<use Lezioni/Lezione 20/sala9.png>
+Package pdftex.def Info: Lezioni/Lezione 20/sala9.png  used on input line 85.
+(pdftex.def)             Requested size: 170.97pt x 106.2646pt.
+<Lezioni/Lezione 20/sala10.png, id=2587, 824.32968pt x 460.72125pt>
+File: Lezioni/Lezione 20/sala10.png Graphic file (type png)
+<use Lezioni/Lezione 20/sala10.png>
+Package pdftex.def Info: Lezioni/Lezione 20/sala10.png  used on input line 86.
+(pdftex.def)             Requested size: 170.97pt x 95.55217pt.
+<Lezioni/Lezione 20/sala11.png, id=2588, 908.64468pt x 466.74374pt>
+File: Lezioni/Lezione 20/sala11.png Graphic file (type png)
+<use Lezioni/Lezione 20/sala11.png>
+Package pdftex.def Info: Lezioni/Lezione 20/sala11.png  used on input line 91.
+(pdftex.def)             Requested size: 384.68576pt x 197.60498pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[258 <./Lezioni/Lezione 20/sala9.png> <./Lezioni/Lezione 20/sala10.png>]
+<Lezioni/Lezione 20/sala12.png, id=2596, 781.41937pt x 97.11281pt>
+File: Lezioni/Lezione 20/sala12.png Graphic file (type png)
+<use Lezioni/Lezione 20/sala12.png>
+Package pdftex.def Info: Lezioni/Lezione 20/sala12.png  used on input line 100.
+
+(pdftex.def)             Requested size: 384.68576pt x 47.80795pt.
+<Lezioni/Lezione 20/sala13.png, id=2597, 494.59781pt x 102.3825pt>
+File: Lezioni/Lezione 20/sala13.png Graphic file (type png)
+<use Lezioni/Lezione 20/sala13.png>
+Package pdftex.def Info: Lezioni/Lezione 20/sala13.png  used on input line 110.
+
+(pdftex.def)             Requested size: 256.46152pt x 53.08766pt.
+
+[259 <./Lezioni/Lezione 20/sala11.png> <./Lezioni/Lezione 20/sala12.png> <./Lez
+ioni/Lezione 20/sala13.png>] [260] [261]
+<Lezioni/Lezione 20/sala14.png, id=2617, 860.46469pt x 523.9575pt>
+File: Lezioni/Lezione 20/sala14.png Graphic file (type png)
+<use Lezioni/Lezione 20/sala14.png>
+Package pdftex.def Info: Lezioni/Lezione 20/sala14.png  used on input line 167.
+
+(pdftex.def)             Requested size: 384.68576pt x 234.24367pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 170.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 170.
+
+[262 <./Lezioni/Lezione 20/sala14.png>] [263]
+Overfull \hbox (0.32599pt too wide) detected at line 225
+[]\OML/lmm/m/it/10.95 g[] [] A[] [] ^^R[] \OT1/lmr/m/n/10.95 + []\OML/lmm/m/it/
+10.95 g[] [] A[] [] ^^R[]
+ []
+
+
+Overfull \hbox (54.62067pt too wide) detected at line 227
+[] [] \OML/lmm/m/it/10.95 A[]
+ []
+
+[264]
+<Lezioni/Lezione 20/sala15.png, id=2632, 942.52126pt x 584.93532pt>
+File: Lezioni/Lezione 20/sala15.png Graphic file (type png)
+<use Lezioni/Lezione 20/sala15.png>
+Package pdftex.def Info: Lezioni/Lezione 20/sala15.png  used on input line 241.
+
+(pdftex.def)             Requested size: 170.97pt x 106.10495pt.
+<Lezioni/Lezione 20/sala17.png, id=2633, 874.01532pt x 520.19344pt>
+File: Lezioni/Lezione 20/sala17.png Graphic file (type png)
+<use Lezioni/Lezione 20/sala17.png>
+Package pdftex.def Info: Lezioni/Lezione 20/sala17.png  used on input line 242.
+
+(pdftex.def)             Requested size: 170.97pt x 101.75877pt.
+<Lezioni/Lezione 20/sala18.png, id=2634, 794.97pt x 503.63156pt>
+File: Lezioni/Lezione 20/sala18.png Graphic file (type png)
+<use Lezioni/Lezione 20/sala18.png>
+Package pdftex.def Info: Lezioni/Lezione 20/sala18.png  used on input line 243.
+
+(pdftex.def)             Requested size: 170.97pt x 108.3094pt.
+<Lezioni/Lezione 20/sala19.png, id=2635, 849.1725pt x 503.63156pt>
+File: Lezioni/Lezione 20/sala19.png Graphic file (type png)
+<use Lezioni/Lezione 20/sala19.png>
+Package pdftex.def Info: Lezioni/Lezione 20/sala19.png  used on input line 244.
+
+(pdftex.def)             Requested size: 170.97pt x 101.40079pt.
+) [265 <./Lezioni/Lezione 20/sala15.png> <./Lezioni/Lezione 20/sala17.png> <./L
+ezioni/Lezione 20/sala18.png> <./Lezioni/Lezione 20/sala19.png>] [266
+
+
+]
+(Interazioni_Elettrodeboli_Appunti.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+Package rerunfilecheck Info: File `Interazioni_Elettrodeboli_Appunti.out' has n
+ot changed.
+(rerunfilecheck)             Checksum: ECAA8FFE011CECC39B4626612B27143A;48876.
+ ) 
+Here is how much of TeX's memory you used:
+ 49727 strings out of 467866
+ 1161583 string characters out of 5418325
+ 1648430 words of memory out of 5000000
+ 76792 multiletter control sequences out of 15000+600000
+ 743931 words of font info for 303 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 84i,17n,104p,1734b,1371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\nik20\AppData\Local\MiKTeX\fonts/pk/ljfour/public/wasy/dpi657\wasy
+10.pk><C:/Users/nik20/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/euler/eufm10.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/latxfont/line10.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/lm/lmbsy10.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/lm/lmbx10.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/lm/lmbx12.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/lm/lmbx6.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/lm/lmbx8.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmex10.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmmi10.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmmi12.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmmi6.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/lm/lmmi8.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/lm/lmmib10.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/lm/lmr10.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/lm/lmr12.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/font
+s/type1/public/lm/lmr6.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/lm/lmr8.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/lm/lmri10.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/lm/lmsy10.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/lm/lmsy6.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/lm/lmsy8.pfb><C:/Users/nik20/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Interazioni_Elettrodeboli_Appunti.pdf (276 pages, 8217332 byt
+es).
+PDF statistics:
+ 2902 PDF objects out of 2984 (max. 8388607)
+ 631 named destinations out of 1000 (max. 500000)
+ 59676 words of extra memory for PDF output out of 61914 (max. 10000000)
+

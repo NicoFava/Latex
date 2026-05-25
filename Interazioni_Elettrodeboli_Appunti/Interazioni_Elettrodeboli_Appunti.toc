@@ -1,0 +1,230 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Lezione 1 - Eq. di Klein-Gordon}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Equazione di Klein-Gordon}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Soluzioni dell'equazione di Klein-Gordon}{1}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Corrente di Probabilità}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Schr\"odinger}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Klein-Gordon}{3}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Invarianza relativistica dell'equazione di Klein-Gordon}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Trasformazioni di Lorentz}{5}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Operatore di derivazione}{6}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Operatore di D'Alambert}{7}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}L'invarianza relativistica dell'equazione di KG}{7}{subsection.1.3.4}%
+\contentsline {section}{\numberline {1.4}Eq. di Klein-Gordon: Interpretazione}{7}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Il Paradosso di Klein}{8}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Meccanica Quantistica e Relatività}{10}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Lezione 2 - Eq. di Dirac}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Equazione di Dirac}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Proprietà delle matrici alfa e beta}{12}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Rappresentazione di Pauli-Dirac}{13}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Soluzione dell'equazione di Dirac: Onde Piane}{14}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Energia positiva}{15}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Energia negativa}{16}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Onde piane}{17}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Forma covariante dell'Equazione di Dirac}{17}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Proprietà delle matrici gamma}{19}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Corrente conservata}{20}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Normalizzazione degli spinori}{22}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Normalizzazione usando gli aggiunti spinoriali}{22}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Interpretazione delle soluzione con energia negativa}{23}{section.2.10}%
+\contentsline {chapter}{\numberline {3}Lezione 3 - Eq. di Dirac 2 e Invarianza relativistica}{25}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Invarianza relativistica dell'equazione di Dirac}{25}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Trasformazioni di Lorentz}{27}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Trasformazioni di Lorentz per gli spinori}{27}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Momento angolare}{29}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Operatore di spin}{31}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Proprietà dei commutatori}{32}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Tornando al momento angolare}{32}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Descrizione relativistica dello spin: Elicità}{34}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Descrizione relativistica dello spin: Rest frame}{35}{subsection.3.6.1}%
+\contentsline {section}{\numberline {3.7}Relazioni di completezza}{36}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Lezione 4 - Interazione elettromagnetica}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Interazione elettromagnetica}{39}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Limite a bassa energia}{42}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Scattering Coulombiano: spin 0}{44}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Scattering Coulombiano: spin 1/2}{48}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Lezione 5 - Tracce di matrici gamma e proiettori di spin}{53}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Tecniche utilizzate per le tracce delle matrici gamma}{53}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Scattering Coulombiano: spin 1/2}{56}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Effetti di polarizzazione}{58}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Proiettori di Spin}{59}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Proiezione nella diffusione di Coulomb}{62}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Tracce con la matrice gamma 5}{62}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Polarizzazione nella diffusione di Coulomb}{63}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Conservazione dell'elicità}{66}{section.5.8}%
+\contentsline {chapter}{\numberline {6}Lezione 6 - Analisi di Fourier dei campi di KG ed EM}{69}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Analisi di Fourier del campo di Klein-Gordon}{69}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Il campo elettromagnetico classico}{71}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Onde elettromagnetiche}{72}{subsection.6.2.1}%
+\contentsline {section}{\numberline {6.3}Energia media dell'oscillatore}{74}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Radiazione del corpo nero}{74}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Ipotesi di Planck}{75}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}Quantum Field Theory: Introduzione}{76}{section.6.4}%
+\contentsline {section}{\numberline {6.5}L'oscillatore quantistico}{76}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Lezione 7 - Teoria quantistica dei Campi e Teorema di Noether}{81}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Quantizzazione di un campo scalare (reale)}{81}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Normalizzazione degli stati}{82}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Simmetria degli stati}{82}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Operatori di campo}{83}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Operatore numero e Hamiltoniana}{84}{subsection.7.1.4}%
+\contentsline {section}{\numberline {7.2}Lagnangiana di un campo classico}{85}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Quantizzazione canonica}{87}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Calcolo dell'Hamiltoniano}{89}{subsection.7.3.1}%
+\contentsline {section}{\numberline {7.4}Teorema di Noether}{90}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Lezione 8 - Quantizzazione del campo di Dirac}{93}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Tensore energia impulso}{93}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Il campo scalare complesso}{95}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Quantizzazione del Campo di Dirac}{98}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Lagrangiana del campo di Dirac}{98}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Hamiltoniana del campo di Dirac}{99}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Espansione del campo di Dirac}{99}{section.8.6}%
+\contentsline {section}{\numberline {8.7}Quantizzazione del campo di Dirac II}{100}{section.8.7}%
+\contentsline {section}{\numberline {8.8}Hamiltoniana e regole di commutazioni}{102}{section.8.8}%
+\contentsline {section}{\numberline {8.9}Invarianza gauge di globale}{102}{section.8.9}%
+\contentsline {section}{\numberline {8.10}Invarianza locale di gauge e QED}{105}{section.8.10}%
+\contentsline {chapter}{\numberline {9}Lezione 9 - Quantizzazione del campo EM e Teoria dello scattering}{107}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Quantizzazione del campo elettromagnetico}{107}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Campi interagenti}{112}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Teoria dello Scattering}{115}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}La matrice S}{115}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Teoria dello Scattering}{116}{subsection.9.3.2}%
+\contentsline {section}{\numberline {9.4}Rappresentazione d'Interazione}{117}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Calcolo della Matrice S}{117}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}Sviluppo perturbativo}{119}{subsection.9.5.1}%
+\contentsline {section}{\numberline {9.6}Sezione d'urto e vita media}{119}{section.9.6}%
+\contentsline {chapter}{\numberline {10}Lezione 10 - Scattering di Coulomb}{121}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Scattering di Coulomb per particella di spin 0}{121}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}L'elemento di Matrice S}{121}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}L'elemento di matrice della corrente j}{122}{subsection.10.1.2}%
+\contentsline {section}{\numberline {10.2}Interazione elettromagnetica: spin 1/2}{123}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Regole di Feynman}{126}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Sezione d'urto elettrone-muone}{127}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Variabili di Mandelstam}{128}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Cinematica della reazione}{129}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}Lo spazio delle fasi della reazione}{129}{subsection.10.4.3}%
+\contentsline {subsection}{\numberline {10.4.4}Il fattore flusso}{130}{subsection.10.4.4}%
+\contentsline {subsection}{\numberline {10.4.5}Sezione d'urto}{130}{subsection.10.4.5}%
+\contentsline {chapter}{\numberline {11}Lezione 11 - Teoria di Fermi del decadimento beta}{133}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Propagatore e invarianza di gauge}{133}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Teoria di Fermi del decadimento beta}{135}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Decadimento beta del neutrone}{136}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}La costante G}{139}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}L'elemento di matrice}{139}{subsection.11.3.2}%
+\contentsline {section}{\numberline {11.4}Cinematica decadimento in tre corpi}{141}{section.11.4}%
+\contentsline {section}{\numberline {11.5}Regione fisica del decadimento}{143}{section.11.5}%
+\contentsline {section}{\numberline {11.6}Cinematica decadimento beta del neutrone}{143}{section.11.6}%
+\contentsline {chapter}{\numberline {12}Lezione 12 - Generalizzazione della teoria di Fermi}{147}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Lo spazio delle fasi}{147}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}Dalitz Plot}{149}{subsection.12.1.1}%
+\contentsline {section}{\numberline {12.2}Approssimazione non relativistica}{149}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Generalizzazione della Teoria di Fermi}{150}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Elemento di matrice nucleare}{153}{subsection.12.3.1}%
+\contentsline {section}{\numberline {12.4}Generalizzazione dell Teoria di Fermi II}{154}{section.12.4}%
+\contentsline {section}{\numberline {12.5}La Larghezza di Decadimento}{155}{section.12.5}%
+\contentsline {section}{\numberline {12.6}Termini di Interferenza}{155}{section.12.6}%
+\contentsline {section}{\numberline {12.7}Somme sugli stati di polarizzazione nucleari}{156}{section.12.7}%
+\contentsline {section}{\numberline {12.8}Il tensore leptonico}{157}{section.12.8}%
+\contentsline {section}{\numberline {12.9}L'elemento di Matrice}{158}{section.12.9}%
+\contentsline {chapter}{\numberline {13}Lezione 13 - Distribuzione dell'energia}{159}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Lo spazio delle fasi}{159}{section.13.1}%
+\contentsline {section}{\numberline {13.2}La larghezza di decadimento}{160}{section.13.2}%
+\contentsline {section}{\numberline {13.3}La distribuzione dell'energia}{160}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Correlazione angolare e - nu}{164}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}Esperimento di Allen et al}{165}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {13.4.2}Riepilogo}{165}{subsection.13.4.2}%
+\contentsline {section}{\numberline {13.5}La vita media}{166}{section.13.5}%
+\contentsline {section}{\numberline {13.6}Il gruppo di Lorentz}{168}{section.13.6}%
+\contentsline {subsection}{\numberline {13.6.1}Classificazione del gruppo di Lorentz}{168}{subsection.13.6.1}%
+\contentsline {section}{\numberline {13.7}Inversione degli spinori}{169}{section.13.7}%
+\contentsline {subsection}{\numberline {13.7.1}Trasformazione dei covarianti bilineari}{170}{subsection.13.7.1}%
+\contentsline {subsection}{\numberline {13.7.2}Matrice scalare $\Gamma _S = I$}{171}{subsection.13.7.2}%
+\contentsline {subsection}{\numberline {13.7.3}Matrice vettoriale $\Gamma _V = \gamma ^\mu $}{171}{subsection.13.7.3}%
+\contentsline {subsection}{\numberline {13.7.4}Matrice vettoriale assiale $\Gamma _A = \gamma ^5 \gamma ^\mu $}{171}{subsection.13.7.4}%
+\contentsline {subsection}{\numberline {13.7.5}Matrice tensoriale $\Gamma _T = \gamma ^\mu \gamma ^\nu $, $\mu \neq \nu $}{172}{subsection.13.7.5}%
+\contentsline {subsection}{\numberline {13.7.6}Matrice pseudo-scalare $\Gamma _P = \gamma ^5$}{172}{subsection.13.7.6}%
+\contentsline {section}{\numberline {13.8}Inversione spaziale}{172}{section.13.8}%
+\contentsline {section}{\numberline {13.9}Inversione spaziale}{173}{section.13.9}%
+\contentsline {chapter}{\numberline {14}Lezione 14 - Violazione di C - Invarianza di CP}{175}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Il "$\theta -\tau $ puzzle"}{175}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Il Dalitz Plot}{176}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Esperimenti allo specchio}{177}{section.14.3}%
+\contentsline {section}{\numberline {14.4}L'esperimento di Wu et al.}{177}{section.14.4}%
+\contentsline {section}{\numberline {14.5}La violazione di C}{179}{section.14.5}%
+\contentsline {section}{\numberline {14.6}Invarianza per trasformazioni CP}{179}{section.14.6}%
+\contentsline {section}{\numberline {14.7}La violazione della parità}{180}{section.14.7}%
+\contentsline {section}{\numberline {14.8}Conseguenze Fenomenologiche}{182}{section.14.8}%
+\contentsline {subsection}{\numberline {14.8.1}Gli elementi di matrice}{183}{subsection.14.8.1}%
+\contentsline {section}{\numberline {14.9}Elettroni polarizzati}{183}{section.14.9}%
+\contentsline {subsection}{\numberline {14.9.1}Polarizzazione nel decadimento $\beta $}{184}{subsection.14.9.1}%
+\contentsline {chapter}{\numberline {15}Lezione 15 - Hamiltoniana del decadimento beta}{189}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Misura della polarizzazione}{189}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Rotazione del Vettore di Polarizzazione}{189}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Sezione d'urto Mott}{192}{section.15.3}%
+\contentsline {section}{\numberline {15.4}Esperimento di Frauenfelder}{192}{section.15.4}%
+\contentsline {section}{\numberline {15.5}Determinazione di $C_A$ e $C_V$}{193}{section.15.5}%
+\contentsline {section}{\numberline {15.6}L'Hamiltoniana del Decadimento $\beta $}{195}{section.15.6}%
+\contentsline {section}{\numberline {15.7}Proiezioni chirali}{196}{section.15.7}%
+\contentsline {section}{\numberline {15.8}Rappresentazione Chirale delle matrici $\gamma $}{198}{section.15.8}%
+\contentsline {subsection}{\numberline {15.8.1}Proiezioni chirali e antiparticelle}{200}{subsection.15.8.1}%
+\contentsline {section}{\numberline {15.9}Violazione della parità e momento angolare}{201}{section.15.9}%
+\contentsline {subsection}{\numberline {15.9.1}Le correnti chirali left-handed}{202}{subsection.15.9.1}%
+\contentsline {chapter}{\numberline {16}Lezione 16 - Universalità e diverse interazioni deboli}{203}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Universalità I}{203}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Il decadimento del leptone $\mu $}{204}{section.16.2}%
+\contentsline {section}{\numberline {16.3}Universalità II}{204}{section.16.3}%
+\contentsline {section}{\numberline {16.4}La corrente adronica}{205}{section.16.4}%
+\contentsline {section}{\numberline {16.5}Il decadimento $\pi ^-\to l^- \overline {\nu }_l$}{206}{section.16.5}%
+\contentsline {section}{\numberline {16.6}Polarizzazione del leptone}{208}{section.16.6}%
+\contentsline {section}{\numberline {16.7}Il decadimento del leptone $\tau $}{210}{section.16.7}%
+\contentsline {section}{\numberline {16.8}Polarizzazione del leptone $\tau $}{212}{section.16.8}%
+\contentsline {section}{\numberline {16.9}Decadimento deboli}{213}{section.16.9}%
+\contentsline {section}{\numberline {16.10}La corrente adronica}{213}{section.16.10}%
+\contentsline {section}{\numberline {16.11}Proprietà isotopiche della corrente adronica}{214}{section.16.11}%
+\contentsline {chapter}{\numberline {17}Lezione 17 - Fattori di forma}{217}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Proprietà Isotopiche della corrente adronica}{217}{section.17.1}%
+\contentsline {section}{\numberline {17.2}La corrente adronica}{220}{section.17.2}%
+\contentsline {subsection}{\numberline {17.2.1}Fattori di forma}{220}{subsection.17.2.1}%
+\contentsline {section}{\numberline {17.3}La corrente adronica vettoriale}{221}{section.17.3}%
+\contentsline {section}{\numberline {17.4}Digressione: la corrente elettromagnetica I}{221}{section.17.4}%
+\contentsline {subsection}{\numberline {17.4.1}I fattori di forma del protone}{223}{subsection.17.4.1}%
+\contentsline {subsection}{\numberline {17.4.2}I fattori di forma del neutrone}{223}{subsection.17.4.2}%
+\contentsline {section}{\numberline {17.5}Digressione: la corrente elettromagnetica II}{224}{section.17.5}%
+\contentsline {section}{\numberline {17.6}Scomposizione di Gordon}{224}{section.17.6}%
+\contentsline {section}{\numberline {17.7}Corrente elettromagnetica e isospin}{225}{section.17.7}%
+\contentsline {section}{\numberline {17.8}Il Fattore di Forma del mesone $\pi ^\pm $}{226}{section.17.8}%
+\contentsline {section}{\numberline {17.9}La corrente debole adronica}{228}{section.17.9}%
+\contentsline {section}{\numberline {17.10}Il decadimento "$\beta $" del pione carico $\pi ^-$}{228}{section.17.10}%
+\contentsline {section}{\numberline {17.11}Il decadimento $\beta $ del neutrone}{231}{section.17.11}%
+\contentsline {chapter}{\numberline {18}Lezione 18 - Neutrini}{233}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Interazioni neutrino-fermione}{233}{section.18.1}%
+\contentsline {section}{\numberline {18.2}Lo scattering $\nu _e e^-\to \nu _e e^-$}{234}{section.18.2}%
+\contentsline {section}{\numberline {18.3}Lo scattering $\bar {\nu }_e e^-\to \bar {\nu }_e e^-$}{236}{section.18.3}%
+\contentsline {section}{\numberline {18.4}Interazione neutrino quark (CC)}{238}{section.18.4}%
+\contentsline {section}{\numberline {18.5}La reazione $\nu _\mu e^-\to \mu ^-\nu _e$}{238}{section.18.5}%
+\contentsline {section}{\numberline {18.6}Difficoltà dell'Interazione di Fermi}{240}{section.18.6}%
+\contentsline {section}{\numberline {18.7}Il propagatore del bosone $W^{\pm }$}{240}{section.18.7}%
+\contentsline {section}{\numberline {18.8}Il modello Bosone Vettoriale Intermedio (IVB)}{241}{section.18.8}%
+\contentsline {chapter}{\numberline {19}Lezione 19 - Quark e correnti neutre}{243}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Neutrino deep inelastic scattering (DIS)}{243}{section.19.1}%
+\contentsline {section}{\numberline {19.2}Le variabili $x$ e $y$}{244}{section.19.2}%
+\contentsline {section}{\numberline {19.3}Scaling di Bjorken}{245}{section.19.3}%
+\contentsline {section}{\numberline {19.4}Il modello a partoni}{245}{section.19.4}%
+\contentsline {section}{\numberline {19.5}La misura delle funzioni di distribuzione}{247}{section.19.5}%
+\contentsline {section}{\numberline {19.6}Sezione d'urto differenziale}{249}{section.19.6}%
+\contentsline {section}{\numberline {19.7}Sezione d'urto totale}{249}{section.19.7}%
+\contentsline {section}{\numberline {19.8}Le distribuzioni dei quark}{251}{section.19.8}%
+\contentsline {section}{\numberline {19.9}Le distribuzioni $u(x)$ e $d(x)$}{251}{section.19.9}%
+\contentsline {section}{\numberline {19.10}La scoperta delle correnti neutre}{252}{section.19.10}%
+\contentsline {chapter}{\numberline {20}Lezione 20 - Interazioni di corrente neutra}{255}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Interazioni di corrente neutra}{255}{section.20.1}%
+\contentsline {section}{\numberline {20.2}Interazione neutrino quark (NC)}{256}{section.20.2}%
+\contentsline {section}{\numberline {20.3}Correnti neutre}{257}{section.20.3}%
+\contentsline {section}{\numberline {20.4}Interazione neutrino elettrone}{258}{section.20.4}%
+\contentsline {section}{\numberline {20.5}Le simmetrie del Modello Standard}{258}{section.20.5}%
+\contentsline {section}{\numberline {20.6}Isospin debole}{259}{section.20.6}%
+\contentsline {section}{\numberline {20.7}Il modello standard}{261}{section.20.7}%
+\contentsline {section}{\numberline {20.8}Scomposizione chirale della $\mathcal {L}$ di Dirac}{262}{section.20.8}%
+\contentsline {section}{\numberline {20.9}Il modello standard}{263}{section.20.9}%
+\contentsline {section}{\numberline {20.10}Correnti cariche}{264}{section.20.10}%
+\contentsline {section}{\numberline {20.11}Corrente elettromagnetica: Isospin + Ipercarica}{264}{section.20.11}%

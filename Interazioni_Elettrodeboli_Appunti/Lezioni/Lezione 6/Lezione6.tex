@@ -1,0 +1,456 @@
+\section{Analisi di Fourier del campo di Klein-Gordon}
+Consideriamo un campo (reale) $\phi(x)$ che soddisfi l'equazione di Klein-Gordon
+$$
+(\partial^\mu \partial_\mu + m^2)\phi = 0
+$$
+La trasformata di Fourier di una equazione che dipende da una variabile dipenderà sempre da una variabile. Ho corrispondenza 1:1. Lo stesso se ho 4 variabili (tempo e spazio) avrò in corrispondenza 4 variabili.
+Possiamo rappresentare il campo con un integrale di Fourier
+$$
+\phi(x) = \frac{1}{(2\pi)^4} \int d^4k \tilde{\Phi}(k) e^{ik \cdot x}
+$$
+Se il campo è reale si ha anche 
+$$
+\tilde{\Phi}(-k) = \tilde{\Phi}^*(k)
+$$
+L'applicazione di $\left(\partial^\mu\partial_\mu+m^2\right)$ a $\phi(x)$ dà
+$$
+(\partial^\mu \partial_\mu + m^2)\phi(x) = \frac{1}{(2\pi)^4} \int d^4k (-k^\mu k_\mu + m^2) \tilde{\Phi}(k) e^{ik \cdot x} = 0
+$$
+Quindi l'integrando deve essere nullo e quindi la funzione $\tilde{\Phi}(k)$ (k quadri-dimensionale) deve essere singolare. Infatti deve essere
+$$
+(-k^2 + m^2) \tilde{\Phi}(k) = 0 \quad \Rightarrow \quad \tilde{\Phi}(k)=0\,\,\,\,\, \text{ per } \,\,\,\,\,-k^2+m^2\not=0
+$$
+E allo stesso tempo l'integrale che dà $\phi(x)$ deve essere non nullo. Avremo pertanto
+$$
+\tilde{\Phi}(k) = \Phi(k) \delta(k^2 - m^2)
+$$
+Possiamo eliminare la funzione $\delta(k^2 - m^2)$ integrando su $k^0$
+$$
+\phi(x) = \frac{1}{(2\pi)^4} \int dk^0 d^3\mathbf{k} \Phi(k) \delta(k^2 - m^2) e^{ik \cdot x}
+$$
+Ricordiamo che
+$$
+\delta(f(x)) = \sum_i \frac{\delta(x - x_i)}{|f'(x_i)|} \qquad f(x_i) = 0
+$$
+Nel nostro caso ($x=k_0$)
+$$
+f(k_0) = k_0^2 - \mathbf{k}^2 - m^2
+$$
+Ci sono 2 zeri ($k_0=\pm E_k$)
+$$
+k_0 = \pm E_{\mathbf{k}} \qquad E_{\mathbf{k}} = \sqrt{\mathbf{k}^2 + m^2}
+$$
+Pertanto
+$$
+\delta(k^2 - m^2) = \frac{1}{2E_k} [\delta(k^0 - E_k) + \delta(k^0 + E_k)]
+$$
+Introducendo nell'integrale di Fourier
+$$
+\phi(x) = \frac{1}{(2\pi)^4} \int d^3\mathbf{k} \int \frac{dk^0}{2E_k} \Phi(k) [\delta(k^0 + E_k) + \delta(k^0 - E_k)] e^{ik^0t} e^{-i\mathbf{k}\cdot\mathbf{r}}
+$$
+$$
+\phi(\mathbf{r}, t) = \frac{1}{(2\pi)^3} \int \frac{d^3\mathbf{k}}{(2\pi)2E_k} [\Phi(-E_k, \mathbf{k}) e^{-iE_k t} + \Phi(E_k, \mathbf{k}) e^{iE_k t}] e^{-i\mathbf{k}\cdot\mathbf{r}}
+$$
+Inoltre, nel primo termine, possiamo utilizzare il fatto che gli integrali sono estesi da $-\infty$ a $+\infty$ per sostituire $k\to-k$
+$$
+\phi(\mathbf{r}, t) = \frac{1}{(2\pi)^3} \int \frac{d^3\mathbf{k}}{(2\pi)2E_k} [\Phi(-E_k, -\mathbf{k}) e^{iE_k t} e^{+i\mathbf{k}\cdot\mathbf{r}} + \Phi(E_k, \mathbf{k}) e^{+iE_k t} e^{-i\mathbf{k}\cdot\mathbf{r}}]
+$$
+Infine definiamo le due funzioni
+$$
+a(\mathbf{k}) = \frac{1}{2\pi\sqrt{2E_k}} \Phi(-E_k, -\mathbf{k}) \qquad b(\mathbf{k}) = \frac{1}{2\pi\sqrt{2E_k}} \Phi(E_k, \mathbf{k})
+$$
+Sostituiamo nell'integrale
+$$
+\phi(\mathbf{r}, t) = \frac{1}{(2\pi)^3} \int \frac{d^3\mathbf{k}}{\sqrt{2E_k}} [a(\mathbf{k})e^{-ik\cdot x} + b(\mathbf{k})e^{+ik\cdot x}]
+$$
+Per un campo reale ricordiamo che
+$$
+\tilde{\Phi}(-k) = \tilde{\Phi}^*(k)
+$$
+La condizione implica
+$$
+b(\mathbf{k}) = a^*(\mathbf{k})
+$$
+Per un campo reale l'espansione diventa
+$$
+\phi(\mathbf{r}, t) = \frac{1}{(2\pi)^3} \int \frac{d^3\mathbf{k}}{\sqrt{2E_k}} [a(\mathbf{k})e^{-ik\cdot x} + a^*(\mathbf{k})e^{+ik\cdot x}]
+$$
+Per finire notiamo che se scriviamo
+$$
+a(t) = a(\mathbf{k}) e^{-i\omega_k t} \qquad \omega_k \equiv E_k
+$$
+L'equazione di Klein-Gordon impone che $a(t)$ soddisfi l'equazione dell'oscillatore
+$$
+\frac{\partial^2 a(t)}{\partial t^2} + (\mathbf{k}^2 + m^2)a(t) = 0 \qquad\frac{\partial^2 a(t)}{\partial t^2} + \omega_k^2 a(t) = 0
+$$
+\section{Il campo elettromagnetico classico}
+Applichiamo il formalismo appena esposto al campo elettromagnetico. Reintroduciamo le equazioni di Maxwell.
+$$
+\boldsymbol{\nabla} \times \mathbf{E} + \frac{\partial \mathbf{B}}{\partial t} = 0 \qquad \boldsymbol{\nabla} \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0}
+$$
+$$
+\boldsymbol{\nabla} \times \mathbf{B} - \frac{1}{c^2} \frac{\partial \mathbf{E}}{\partial t} = \mu_0 \mathbf{J} \qquad \boldsymbol{\nabla} \cdot \mathbf{B} = 0
+$$
+Introduciamo i potenziali $\mathbf{A}$ e $\Phi$. I campi $\mathbf{E}$ e $\mathbf{B}$ si ottengono dai potenziali come
+$$
+\mathbf{E} = -\frac{\partial \mathbf{A}}{\partial t} - \boldsymbol{\nabla} \Phi \qquad \mathbf{B} = \boldsymbol{\nabla} \times \mathbf{A}
+$$
+è noto che potenziali sono definiti a meno di una trasformazione di Gauge
+$$
+\Phi \to \Phi - \frac{\partial \chi}{\partial t} \qquad \mathbf{A} \to \mathbf{A} + \boldsymbol{\nabla} \chi
+$$
+Si può verificare che si ottengono gli stessi campi $\mathbf{E}$ e $\mathbf{B}$. Sostituendo le espressioni di $\mathbf{E}$ e $\mathbf{B}$ nella seconda e terza equazione di Maxwell otteniamo le equazioni per i potenziali. 
+$$
+\boldsymbol{\nabla}^2 \Phi + \frac{\partial}{\partial t} \boldsymbol{\nabla} \cdot \mathbf{A} = -\frac{\rho}{\varepsilon_0} \qquad \frac{1}{c^2} \frac{\partial^2 \mathbf{A}}{\partial t^2} - \boldsymbol{\nabla}^2 \mathbf{A} = \mu_0 \mathbf{J} - \boldsymbol{\nabla} \left( \frac{1}{c^2} \frac{\partial \Phi}{\partial t} + \boldsymbol{\nabla} \cdot \mathbf{A} \right)
+$$
+Si può utilizzare l'indeterminazione dei potenziali per semplificare le equazioni. Si fissa il gauge. I gauge più utilizzati sono il gauge di Lorentz 
+$$
+\frac{1}{c^2} \frac{\partial}{\partial t} \Phi + \boldsymbol{\nabla} \cdot \mathbf{A} = 0
+$$
+Le equazioni dei potenziali diventano quindi
+$$
+\frac{1}{c^2} \frac{\partial^2 \Phi}{\partial t^2} - \boldsymbol{\nabla}^2 \Phi = \frac{\rho}{\varepsilon_0} \qquad \frac{1}{c^2} \frac{\partial^2 \mathbf{A}}{\partial t^2} - \boldsymbol{\nabla}^2 \mathbf{A} = \mu_0 \mathbf{J}
+$$
+E il gauge di Coulomb o gauge di radiazione
+$$
+\boldsymbol{\nabla} \cdot \mathbf{A} = 0
+$$
+e le equazioni dei potenziali diventano
+$$
+\boldsymbol{\nabla}^2 \Phi = -\frac{\rho}{\varepsilon_0} \qquad \frac{1}{c^2} \frac{\partial^2 \mathbf{A}}{\partial t^2} - \boldsymbol{\nabla}^2 \mathbf{A} = \mu_0 \mathbf{J} - \frac{1}{c^2} \frac{\partial}{\partial t} \boldsymbol{\nabla} \Phi
+$$
+Il gauge di Lorentz ha il vantaggio di essere covariante. Non dipende dal sistema di riferimento. Il gauge di Coulomb non è covariante e mette in evidenza il carattere trasversale dell'onda elettromagnetica.
+\subsection{Onde elettromagnetiche}
+Consideriamo adesso un campo elettromagnetico utilizzando il gauge di Coulomb $\nabla\cdot \mathbf{A}=0$. Come abbiamo visto l'equazione del potenziale scalare diventa
+$$
+\boldsymbol{\nabla}^2 \Phi + \frac{\partial}{\partial t} \cancel{\boldsymbol{\nabla} \cdot \mathbf{A}} = -\frac{\rho}{\varepsilon_0} \qquad \boldsymbol{\nabla}^2 \Phi = -\frac{\rho}{\varepsilon_0}
+$$
+$$
+\Phi(\mathbf{r}, t) = \frac{1}{4\pi\varepsilon_0} \int \frac{\rho(\mathbf{r}', t)}{|\mathbf{r} - \mathbf{r}'|} d^3 r'
+$$
+Qui non sono presenti potenziali ritardati (in questo gauge non sembra esserci il ritardo) ma devo ricordare che la fisica proviene dal campo elettrico e dal campo magnetico che comprende anche una parte di potenziale vettore. Il ritardo arriva proprio da lì.
+Nel vuoto, quindi in assenza di sorgenti: $\rho=0$, $\mathbf{J}=0$. Pertanto il potenziale elettrico è nullo $\Phi=0$. L'equazione per il potenziale vettore diventa
+$$
+\frac{1}{c^2} \frac{\partial^2 \mathbf{A}}{\partial t^2} - \boldsymbol{\nabla}^2 \mathbf{A} = \cancel{\mu_0 \mathbf{J}} - \boldsymbol{\nabla} \left(\cancel{\frac{1}{c^2} \frac{\partial}{\partial t}} \boldsymbol{\nabla}\Phi + \cancel{\boldsymbol{\nabla} \cdot \mathbf{A}} \right)
+$$
+$$
+\frac{1}{c^2} \frac{\partial^2 \mathbf{A}}{\partial t^2} - \boldsymbol{\nabla}^2 \mathbf{A} = 0
+$$
+Pertanto ciascuna delle componenti del potenziale soddisfa l'equazione dell'onda. L'analisi di Fourier del potenziale conduce alla rappresentazione integrale
+$$
+\mathbf{A}(\mathbf{r}, t) = \frac{1}{(2\pi)^3} \int d^3\mathbf{k} [\mathbf{a}(\mathbf{k})e^{-ik\cdot x} + \mathbf{a}^*(\mathbf{k})e^{+ik\cdot x}] \qquad \omega_k = c|\mathbf{k}|
+$$
+Come nel caso di Klein-Gordon, posto $a(t)=a(\mathbf{k})e^{-iw_kt}$, l'equazione dell'onda impone che $a(t)$ soddisfi
+$$
+\frac{\partial^2 a(t)}{\partial t^2} + \omega_k^2 a(t) = 0
+$$
+La condizione del gauge di Coulomb permette di evidenziare la natura trasversale dell'onda:
+$$
+\boldsymbol{\nabla} \cdot \mathbf{A}(\mathbf{r}, t) = \frac{i}{(2\pi)^3} \int d^3\mathbf{k} [\mathbf{k} \cdot \mathbf{a}(\mathbf{k}) e^{-ik\cdot x} - \mathbf{k} \cdot \mathbf{a}^*(\mathbf{k}) e^{+ik\cdot x}] = 0
+$$
+Pertanto le ampiezze $a(\mathbf{k})$ devono essere perpendicolari al vettore d'onda $\mathbf{k}$
+$$
+\mathbf{k}\cdot\mathbf{a}(\mathbf{k})=0
+$$
+Il vettore $\mathbf{a}(\mathbf{k})$ ha pertanto solo due gradi di libertà (stati di polarizzazione). Si introducono pertanto due vettori mutuamente perpendicolari e perpendicolari a $\mathbf{k}$
+$$
+\mathbf{a}(\mathbf{k}) = \sum_{\lambda=1,2} \Vec{\boldsymbol{\varepsilon}}_\lambda(\mathbf{k}) a_\lambda(\mathbf{k})
+$$
+Possiamo infine calcolare i campi elettrico e magnetico
+$$
+\mathbf{E} = -\frac{\partial \mathbf{A}}{\partial t} = \frac{i}{(2\pi)^3} \int d^3\mathbf{k} c|\mathbf{k}| [\mathbf{a}(\mathbf{k}) e^{-ik\cdot x} - \mathbf{a}^*(\mathbf{k}) e^{+ik\cdot x}]
+$$
+$$
+\mathbf{B} = \boldsymbol{\nabla} \times \mathbf{A} = \frac{i}{(2\pi)^3} \int d^3\mathbf{k} [\mathbf{k} \times \mathbf{a}(\mathbf{k}) e^{-ik\cdot x} - \mathbf{k} \times \mathbf{a}^*(\mathbf{k}) e^{+ik\cdot x}]
+$$
+Perchè $\mathbf{E}$ e $\mathbf{B}$ siano reali deve essere
+$$
+a(-\mathbf{k}) = -a^*(\mathbf{k})
+$$
+$$
+a(-\mathbf{k}) = -a^*(\mathbf{k})
+$$
+L'energia associata al campo elettromagnetico è data da
+$$
+U = \frac{1}{2} \int \left( \varepsilon_0 \mathbf{E}^2 + \frac{1}{\mu_0} \mathbf{B}^2 \right) d^3\mathbf{r}
+$$
+Calcoliamo esplicitamente il primo integrale
+$$
+\frac{U_E}{c^2} = \frac{1}{2c^2} \int \varepsilon_0 \mathbf{E}^2 d^3\mathbf{r} \qquad k = |\mathbf{k}|
+$$
+\begin{align*}
+&= \frac{\varepsilon_0}{2} \int d^3\mathbf{r} \frac{i}{(2\pi)^3} \int d^3k_1 c k_1 (\mathbf{a}_{\mathbf{k}_1} e^{i\mathbf{k}_1\cdot\mathbf{r}} - \mathbf{a}_{\mathbf{k}_1}^* e^{-i\mathbf{k}_1\cdot\mathbf{r}}) \cdot \frac{i}{(2\pi)^3} \int d^3k_2 c k_2 (\mathbf{a}_{\mathbf{k}_2} e^{i\mathbf{k}_2\cdot\mathbf{r}} - \mathbf{a}_{\mathbf{k}_2}^* e^{-i\mathbf{k}_2\cdot\mathbf{r}}) +\\
+&= \frac{-\varepsilon_0}{2} \int_{k_1, k_2} \Biggl[ \mathbf{a}_{\mathbf{k}_1} \cdot \mathbf{a}_{\mathbf{k}_2} \delta(\mathbf{k}_1 + \mathbf{k}_2) - \mathbf{a}_{\mathbf{k}_1} \cdot \mathbf{a}_{\mathbf{k}_2}^* \delta(\mathbf{k}_1 - \mathbf{k}_2) +\\ 
+& \qquad - \mathbf{a}_{\mathbf{k}_1}^* \cdot \mathbf{a}_{\mathbf{k}_2} \delta(-\mathbf{k}_1 + \mathbf{k}_2) + \mathbf{a}_{\mathbf{k}_1}^* \cdot \mathbf{a}_{\mathbf{k}_2}^* \delta(-\mathbf{k}_1 - \mathbf{k}_2) \Biggr] \frac{d^3k_1 d^3k_2}{(2\pi)^3} \\
+&= \frac{\varepsilon_0}{2} \int \left[ - \mathbf{a}_{\mathbf{k}_1} \cdot \mathbf{a}_{-\mathbf{k}_1} + \mathbf{a}_{\mathbf{k}_1} \cdot \mathbf{a}_{\mathbf{k}_1}^* + \mathbf{a}_{\mathbf{k}_1}^* \cdot \mathbf{a}_{\mathbf{k}_1} - \mathbf{a}_{\mathbf{k}_1}^* \cdot \mathbf{a}_{-\mathbf{k}_1}^* \right] \frac{d^3\mathbf{k}_1}{(2\pi)^3} \\
+&= \frac{\varepsilon_0}{2} \int \left[ 2 \mathbf{a}_{\mathbf{k}_1} \cdot \mathbf{a}_{\mathbf{k}_1}^* - \mathbf{a}_{\mathbf{k}_1} \cdot \mathbf{a}_{\mathbf{k}_1} - \mathbf{a}_{\mathbf{k}_1}^* \cdot \mathbf{a}_{\mathbf{k}_1}^* \right] \frac{d^3\mathbf{k}_1}{(2\pi)^3} \\
+&= \frac{\varepsilon_0}{2} \int k_1^2 \left[ 2 \mathbf{a}_{\mathbf{k}_1} \cdot \mathbf{a}_{\mathbf{k}_1}^* + \mathbf{a}_{\mathbf{k}_1} \cdot \mathbf{a}_{\mathbf{k}_1}^* + \mathbf{a}_{\mathbf{k}_1}^* \cdot \mathbf{a}_{\mathbf{k}_1} \right] \frac{d^3\mathbf{k}_1}{(2\pi)^3}
+\end{align*}
+$$
+\mathbf{a}(-\mathbf{k}) = -\mathbf{a}^*(\mathbf{k})
+$$
+$$
+U_E = \frac{2\varepsilon_0}{(2\pi)^3} \int \omega_k^2 a_k a_k^* d^3k \qquad \omega_k = c|\mathbf{k}|
+$$
+Analogamente si calcola l'energia associata a $\mathbf{B}$ 
+$$
+U_B = \frac{2}{\mu_0} \int |\mathbf{k}|^2 a_k a_k^* d^3k
+$$
+e l'energia totale è
+$$
+U = \frac{4\varepsilon_0}{(2\pi)^3} \int \omega_k^2 a_k a_k^* d^3k
+$$
+Vediamo che l'energia del campo è la somma delle energie degli oscillatori in cui è stato scomposto il campo. Notiamo che classicamente l'energia è proporzionale al modulo quadrato dell'ampiezza dell'oscillazione e notiamo inoltre che tutti gli oscillatori con quantità di moto tridimensionale $|k|c=\omega_k$ hanno una energia proporzionale a $\omega^2_k$. Partendo da queste considerazioni si può calcolare, classicamente, lo spettro della radiazione in una cavità: lo spettro della radiazione del corpo nero. Calcoliamo innanzitutto il numero degli oscillatori per unità di energia (o frequenza) corrispondenti da una energia $dw=cdk$
+$$
+dN = \frac{d^3\mathbf{k}}{(2\pi)^3} = \frac{4\pi |\mathbf{k}|^2 dk}{(2\pi)^3} = \frac{4\pi \omega^2 d\omega}{c^3 (2\pi)^3} = \frac{4\pi \nu^2 d\nu}{c^3}
+$$
+Tenendo conto che ogni oscillatore ha $2$ gradi di libertà 
+$$
+dN = \frac{8\pi \nu^2 d\nu}{c^3}
+$$
+\section{Energia media dell'oscillatore}
+L'energia del campo è espressa come somma delle energie $E_n$ di tanti oscillatori. Quando la radiazione è in equilibrio all'interno della cavità il materiale delle pareti contiene oscillatori elettromagnetici che interagiscono con il campo. Le pareti assorbono radiazione dagli oscillatori del campo e le pareti emettono radiazione che è assorbita dagli oscillatori del campo. Quando si è all'equilibrio termico l'energia assorbita è uguale a quella emessa. Gli oscillatori sono in equilibrio termico. La loro energia media può essere calcolata con la meccanica statistica e l'energia del campo è l'energia media degli oscillatori per il loro numero
+$$
+U = \sum_n E_n = N \frac{1}{N} \sum_n E_n = N \overline{E}
+$$
+La probabilità che un oscillatore abbia una energia $E$ è data da
+$$
+P(E) = \frac{\exp[-E/kT]}{\int_0^\infty \exp[-E/kT] dE} dE = \exp[-E/kT] \frac{dE}{kT}
+$$
+Pertanto, all'equilibrio termodinamico, l'energia media di ogni oscillatore è
+$$
+\overline{E} = \int_0^\infty E \exp[-E/kT] \frac{dE}{kT} = kT \int_0^\infty x \exp[-x] dx = kT
+$$
+\subsection{Radiazione del corpo nero}
+$$
+\overline{E}=kT
+$$
+Questo è il risultato classico dell'equipartizione dell'energia. Un ingrediente essenziale è stato aver assunto che l'oscillatore può assumere un valore arbitrario di energia $E$ (distribuzione continua dell'energia). Utilizzando il risultato per calcolare la distribuzione di energia della radiazione del corpo nero associamo ad ogni gruppo di oscillatori di frequenza $\nu-\nu+d\nu$ una energia $kT$. La densità di energia è pertanto.
+$$
+dU=dN\overline{E}=dNkT \qquad \Rightarrow \qquad dU=kT\frac{8\pi\nu^2d\nu}{c^3}
+$$
+Questa è la famosa legge di Rayleigh-Jeans ed è la previsione classica dello spettro della radiazione del corpo nero. Purtroppo o per fortuna è in accordo solo con i dati a bassissime frequenze: catastrofe ultravioletta.
+\subsection{Ipotesi di Planck}
+Per risolvere il problema precedente Plank ipotizzò che:
+\begin{itemize}
+    \item L'oscillatore non può assumere tutte le energie possibili classicamente;
+    \item L'energia non dipende dall'ampiezza ma solo dalla frequenza $\nu=\omega/2\pi$;
+    \item L'energia può assumere solo valori che sono un multiplo intero di $h\nu$.
+\end{itemize}
+$$
+E_n=nh\nu
+$$
+Calcoliamo l'energia media. Preliminarmente la distribuzione di probabilità
+$$
+P(E) = \frac{\exp[-E/kT]}{\int_0^\infty \exp[-E/kT] dE} dE \quad \Rightarrow\quad P(E_n) = \frac{\exp[-E_n / kT]}{\sum_{n=0}^\infty \exp[-E_n / kT]}
+$$
+Calcolimo innanzitutto il denominatore
+$$
+A = \sum_{n=0}^\infty \exp[-nh\nu / kT] \qquad \text{posto} \quad x = \exp[-h\nu / kT] < 1 \qquad A = \sum_{n=0}^\infty x^n = \frac{1}{1-x}
+$$
+Otteniamo infine
+$$
+A = \frac{1}{1 - \exp[-h\nu / kT]}
+$$
+Veniamo adesso al calcolo del valore medio
+$$
+A \overline{E} = \sum_{n=0}^\infty h\nu n \exp[-nh\nu / kT] \qquad \text{posto} \quad \alpha = h\nu / kT \qquad A = \frac{1}{1 - \exp[-h\nu / kT]}
+$$
+$$
+A \overline{E} = h\nu \sum_{n=0}^\infty n e^{-n\alpha} = -h\nu \frac{\partial}{\partial \alpha} \sum_{n=0}^\infty e^{-n\alpha} = -h\nu \frac{\partial}{\partial \alpha} \frac{1}{1 - e^{-\alpha}} = \frac{h\nu e^{-\alpha}}{(1 - e^{-\alpha})^2}
+$$
+Concludendo
+$$
+\overline{E} = \frac{h\nu \exp[-h\nu / kT]}{1 - \exp[-h\nu / kT]} \qquad \overline{E} = \frac{h\nu}{\exp[h\nu / kT] - 1}
+$$
+Notiamo che se $h\nu\to0$ (limite classico)
+$$
+h\nu \to 0 \qquad \overline{E} \to \frac{h\nu}{1 - (1 - h\nu / kT)} = kT
+$$
+La distribuzione dell'energia nella cavità diventa
+$$
+dU = \overline{E} dN = \frac{8\pi\nu^2}{c^3} \frac{h\nu}{\exp[h\nu / kT] - 1} d\nu
+$$
+L'accordo con i dati sperimentali è perfetto e l'ipotesi critica è stata la natura discreta dell'energia dell'oscillatore.
+\section{Quantum Field Theory: Introduzione}
+Un campo elettromagnetico all'interno di una cavità presenta degli aspetti interpretabili con una visione "particellare" (come l'effetto Compton + effetto fotoelettrico etc) del campo. Il campo quindi può essere rappresentato come integrale di Fourier. All'equazione dell'onda corrisponde un'equazione di oscillatore armonico per ogni componente. L'energia del campo è espressa come somma delle energie dei singoli oscillatori. Per un campo all'interno di una cavità in equilibrio termico con le pareti si può utilizzare la meccanica statistica per descrivere la distribuzione di energia degli oscillatori e l'energia media degli oscillatori. Abbiamo visto che l'utilizzo del principio di equipartizione dell'energia (classico) porta alla distribuzione di Rayleigh-Jeans. In disaccordo con le osservazioni sperimentali. L'ipotesi di Plank che l'energia di ogni oscillatore sia multiplo intero di $h\nu$ conduce alla distribuzione di Plank in ottimo accordo con le osservazioni sperimentali. Ai nostri fini, l'aspetto più importante del calcolo della radiazione del corpo nero è che il campo può essere visto come un insieme di particelle (quanti). Alla descrizione ondulatorio (campo) si affianca una descrizione particellare (dualità onda-particella). L'aspetto particellare è associato ai modi descritti da oscillatori (fotoni) mentre l'energia degli oscillatori è quantizzata ($E_n=nh\nu$). Il formalismo dell'oscillatore quantistico è perfetto per questo scopo. Proveremo ad estendere questa formulazione alle equazioni d'onda relativistiche (Klein-Gordon e Dirac). Le differenze con il campo elettromagnetico sono:
+\begin{itemize}
+    \item Il campo elettromagnetico ha una interpretazione classica
+    \item Le equazioni di Dirac e di Klein Gordon non hanno corrispettivo classico.
+\end{itemize}
+L'analogia è pertanto
+\begin{itemize}
+    \item Il campo elettromagnetico e le equazioni di Dirac e di Klein-Gordon mettono in evidenza gli aspetti ondulatori
+    \item La descrizione in termini di oscillatori quantizzati metterà in evidenza gli aspetti particellari (quanti del campo).
+\end{itemize}
+\section{L'oscillatore quantistico}
+Rivediamo la teoria dell'oscillatore armonico quantistico. In seguito, per i campi, utilizzeremo il formalismo Lagrangiano e Hamiltoniano. Infatti è conveniente trattare anche l'oscillatore armonico in questo modo. La lagrangiana di un oscillatore armonico con un grado di libertà $q$ è 
+$$
+L(q, \dot{q}) = T - U = \frac{1}{2}m\dot{q}^2 - \frac{1}{2}m\omega^2 q^2
+$$
+L'equazione di Eulero-Lagrange
+$$
+\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}} \right) = \frac{\partial L}{\partial q} \qquad \Longrightarrow \qquad m\ddot{q} = -m\omega^2 q
+$$
+Le due soluzioni di questa equazione sono: $q(t)=e^{\pm i\omega t}$ pertanto la soluzione generale (reale) è
+$$
+q(t) = A e^{+i\omega t} + A^* e^{-i\omega t}
+$$
+Passiamo al formalismo Hamiltoniano. Il momento canonico è definito da
+$$
+p = \frac{\partial L}{\partial \dot{q}} = m\dot{q}
+$$
+L'Hamiltoniana è
+$$
+H(p,q) = p\dot{q} - L = m\dot{q}^2 - \left( \frac{1}{2}m\dot{q}^2 - \frac{1}{2}m\omega^2 q^2 \right) = \frac{1}{2}m\dot{q}^2 + \frac{1}{2}m\omega^2 q^2
+$$
+$$
+H(p,q) = \frac{p^2}{2m} + \frac{1}{2}m\omega^2 q^2 = T + U
+$$
+Le Equazioni di Hamilton datto
+$$
+\left\{
+\begin{aligned}
+\dot{q} &= \frac{\partial H}{\partial p} \quad \Rightarrow\quad \dot{q} = \frac{p}{m} \quad \text{ ritroviamo la definizione di }p
+ \\
+\dot{p} &= -\frac{\partial H}{\partial q}\quad \Rightarrow\quad \dot{p} = -m\omega^2 q \quad \Rightarrow\quad \ddot{q} = -\omega^2 q
+\end{aligned}
+\right.
+$$
+La quantizzazione dell'oscillatore si ottiene trasformando $p$ e $q$ in operatori imponendo la regola di commutazione ($\hbar=1$)
+$$
+\hat{H} = \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2\hat{q}^2 \qquad [\hat{q}, \hat{p}] = i
+$$
+Utilizzando la rappresentazione di Heisenberg (in cui le funzioni d'onda sono indipendenti dal tempo ma la dipendenza temporale se la carica gli operatori). L'evoluzione di $q(t)$ e di $p(t)$ è pertanto
+$$
+\frac{\partial\hat{O}}{\partial t} = i[\hat{H}, \hat{O}]
+$$
+$$
+\frac{\partial\hat{q}}{\partial t} = i[\hat{H}, \hat{q}] = i\left[ \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2\hat{q}^2, \hat{q} \right] = \frac{i}{2m} [\hat{p}^2, \hat{q}] = \frac{i}{2m} ([\hat{p}, \hat{q}]\hat{p} + \hat{p}[\hat{p}, \hat{q}])
+$$
+$$
+\frac{\partial\hat{q}}{\partial t} = \frac{\hat{p}}{m}
+$$
+$$
+\frac{\partial\hat{p}}{\partial t} = i[\hat{H}, \hat{p}] = i\left[ \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2\hat{q}^2, \hat{p} \right] = \frac{i}{2}m\omega^2 [\hat{q}^2, \hat{p}] = \frac{i}{2}m\omega^2 ([\hat{q}, \hat{p}]\hat{q} + \hat{q}[\hat{q}, \hat{p}])
+$$
+$$
+\frac{\partial\hat{p}}{\partial t} = -m\omega^2\hat{q}
+$$
+$$
+\frac{\partial^2\hat{q}}{\partial t^2} = -\omega^2\hat{q}
+$$
+Uguali alle equazioni classiche. Però è noto che la quantizzazione dell'oscillatore rende discrete le energie che la particella può assumere. Occorre risolvere l'equazione agli autovalori
+$$
+\hat{H} |u_E\rangle = E |u_E\rangle
+$$
+Si può risolvere questo problema prescindendo dalla forma esplicita di $\hat{p}$ e $\hat{q}$. Si introducono gli operatori (dipendenti dal tempo)
+$$
+\hat{a}(t) = \frac{1}{\sqrt{2}} \left( \sqrt{m\omega} \, \hat{q}(t) + \frac{i}{\sqrt{m\omega}} \hat{p}(t) \right) \qquad \hat{a}^\dagger(t) = \frac{1}{\sqrt{2}} \left( \sqrt{m\omega} \, \hat{q}(t) - \frac{i}{\sqrt{m\omega}} \hat{p}(t) \right)
+$$
+Si verifica facilmente che gli operatori $\hat{a}$ e $\hat{a}^\dagger$ hanno la seguente regola di commutazione
+$$
+[\hat{a}(t), \hat{a}^\dagger(t)] = 1
+$$
+Utilizzando gli operatori $\hat{a}(t)$ e $\hat{a}^\dagger(t)$ l'Hamiltoniana diventa
+$$
+\hat{H} = \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2 \hat{q}^2 \qquad \hat{H} = \frac{1}{2} (\hat{a}^\dagger(t)\hat{a}(t) + \hat{a}(t)\hat{a}^\dagger(t)) \omega = \left( \hat{a}^\dagger(t)\hat{a}(t) + \frac{1}{2} \right) \omega
+$$
+L'evoluzione temporale di $\hat{a}(t)$ è data da
+\begin{align*}
+\frac{\partial \hat{a}(t)}{\partial t} &= i[\hat{H}, \hat{a}(t)] = i\left[ \left( \hat{a}^\dagger(t)\hat{a}(t) + \frac{1}{2} \right)\omega, \hat{a}(t) \right] = i\omega [\hat{a}^\dagger(t)\hat{a}(t), \hat{a}(t)] \\
+&= i\omega [\hat{a}^\dagger(t), \hat{a}(t)] \hat{a}(t)
+\end{align*}
+$$
+\frac{\partial \hat{a}(t)}{\partial t} = -i\omega \hat{a}(t) \qquad \hat{a}(t) = \hat{a}(0) e^{-i\omega t}
+$$
+Analogamente si trova
+$$
+\hat{a}^\dagger(t) = \hat{a}^\dagger(0) e^{+i\omega t}
+$$
+Per semplificare la notazione da ora in poi
+$$
+\hat{a}(0) \equiv \hat{a} \qquad \hat{a}^\dagger(0) \equiv \hat{a}^\dagger
+$$
+Evidentemente
+$$
+\hat{a}^\dagger(t)\hat{a}(t) = \hat{a}^\dagger\hat{a}
+$$
+E pertanto l'Hamiltoniana è indipendente dal tempo
+$$
+\hat{H} = \left( \hat{a}^\dagger \hat{a} + \frac{1}{2} \right) \omega
+$$
+Nella teoria gioca un ruolo molto importante l'operatore Numero
+$$
+\hat{N} = \hat{a}^\dagger \hat{a}
+$$
+L'operatore $N$ è hermitiano e pertanto i suoi autovalori sono reali. Sono inoltre positivi (non negativi). Infatti consideriamo unautostato $|n\rangle$
+$$
+\hat{N} |n\rangle = n |n\rangle \qquad \langle n | \hat{N} | n \rangle = n \langle n | n \rangle = \langle n | \hat{a}^\dagger \hat{a} | n \rangle
+$$
+Osserviamo che
+$$
+\langle n | n \rangle = | |n\rangle |^2 > 0 \qquad \langle n | \hat{a}^\dagger \hat{a} | n \rangle = |\hat{a}|n\rangle|^2 \ge 0 \qquad n \ge 0
+$$
+Si verifica facilmente che
+$$
+[\hat{N}, \hat{a}^\dagger] = \hat{a}^\dagger \qquad [\hat{N}, \hat{a}] = -\hat{a} \quad \text{ovviamente} \quad \hat{H} = \left( \hat{N} + \frac{1}{2} \right) \omega
+$$
+Dalle regole precedenti discende che se $|n\rangle$ è un autostato dell'operatore Numero $N$ sono suoi autostati anche $\hat{a}^\dagger|n\rangle$ e $\hat{a}|n\rangle$. Infatti 
+$$
+\hat{N}\hat{a}^\dagger |n\rangle = (\hat{a}^\dagger + \hat{a}^\dagger \hat{N}) |n\rangle = \textcolor{red}{(n+1)} \hat{a}^\dagger |n\rangle \qquad [\hat{N}, \hat{a}^\dagger] = \hat{a}^\dagger
+$$
+E inoltre 
+$$
+\hat{N}\hat{a} |n\rangle = (-\hat{a} + \hat{a} \hat{N}) |n\rangle = \textcolor{red}{(n-1)} \hat{a} |n\rangle \qquad [\hat{N}, \hat{a}] = -\hat{a}
+$$
+Pertanto $\hat{a}^\dagger|n\rangle$ e $\hat{a}|n\rangle$ sono autostati di $N$. Consideriamo lo stato $\hat{a}^k|n\rangle$ con $(k<n)$. L'autovalore $N$ corrispondente è
+$$
+\hat{N}\hat{a}^k |n\rangle = (n-k) \hat{a}^k |n\rangle
+$$
+Se $k$ assumesse valori $k>N$ il risultato contraddirebbe la positività di $N$. Per evitare questa contraddizione concludiamo che gli autovalori di $N$ sono numeri interi. Esiste uno stato $|0\rangle$ (lo stato vuoto) con autovalore $0$ che ha le proprietà
+$$
+\hat{a} |0\rangle = 0 \qquad \langle 0 | 0 \rangle = 1 \qquad \hat{N} |0\rangle = 0 |0\rangle = 0 \quad \text{postulato}
+$$
+Gli stati con autovalore $n$ possono essere costruiti a partire dal vuoto tramite l'applicazione ripetuta dell'operatore $\hat{a}^\dagger$. Quindi l'operatore $\hat{a}^\dagger$ prende il nome di operatore di creazione e l'operatore $\hat{a}$ prende il nome di operatore di distruzione. A partire dal vuoto si possono costruire esplicitamente gli autovettori di $N$
+$$
+|1\rangle = \hat{a}^\dagger |0\rangle
+$$
+lo stato $|1\rangle$ è normalizzato
+$$
+\langle1|=\left(a^\dagger|0\rangle\right)^\dagger=\langle0|a\qquad\langle 1 | 1 \rangle = \langle 0 | \hat{a} \hat{a}^\dagger | 0 \rangle = \langle 0 | (1 + \hat{a}^\dagger \hat{a}) | 0 \rangle = \langle 0 | 0 \rangle = 1
+$$
+$$
+\langle 1 | 1 \rangle = \langle 0 | \hat{a} \hat{a}^\dagger | 0 \rangle = \langle 0 | (1 + \hat{a}^\dagger \hat{a}) | 0 \rangle = \langle 0 | 0 \rangle = 1
+$$
+Analogamente lo stato 
+$$
+|2\rangle = \frac{1}{\sqrt{2}} \hat{a}^\dagger \hat{a}^\dagger |0\rangle
+$$
+\begin{align*}
+\langle 2 | 2 \rangle &= \frac{1}{\sqrt{2}}\frac{1}{\sqrt{2}} \langle 0 | \hat{a}\hat{a} \hat{a}^\dagger \hat{a}^\dagger | 0 \rangle = \frac{1}{2} \langle 0 | \hat{a}(1 + \hat{a}^\dagger \hat{a}) \hat{a}^\dagger | 0 \rangle\\
+&= \frac{1}{2} ( \langle 0 | \hat{a}\hat{a}^\dagger | 0 \rangle + \langle 0 | \hat{a}\hat{a}^\dagger \hat{a} \hat{a}^\dagger | 0 \rangle ) = \frac{1}{2} ( 1 + \langle 0 | \hat{a}\hat{a}^\dagger (1 + \hat{a}^\dagger \hat{a}) | 0 \rangle ) \\
+&= \frac{1}{2} ( 1 + \langle 0 | \hat{a}\hat{a}^\dagger | 0 \rangle ) = \frac{1}{2} (1 + 1) = 1
+\end{align*}
+Per induzione si può dimostrare che lo stato con $n$ particelle è ottenuto dalla applicazione ripetuta $n$ volte dell'operatore $a^\dagger$
+$$
+|n\rangle = \frac{1}{\sqrt{n!}} (\hat{a}^\dagger)^n |0\rangle
+$$
+Per finire osserviamo che gli autostati dell'operatore numero N sono anche autostati dell'Hamiltoniana
+$$
+\hat{H} = \left( \hat{N} + \frac{1}{2} \right) \omega
+$$
+Pertanto
+$$
+\hat{H} |n\rangle = E_n |n\rangle \qquad E_n = \left( n + \frac{1}{2} \right) \omega
+$$
+Osserviamo che l'energia del vuoto non è nulla:
+$$
+E_0 = \frac{1}{2} \omega
+$$
+Commenti:
+\begin{itemize}
+    \item Abbiamo diagonalizzato l'Hamiltoniana e trovato gli autovalori dell'energia utilizzando solo proprietà algebriche.
+    \item La soluzione è la stessa per tutti i problemi che hanno le stesse regole di commutazione per gli operatori $a$
+    \item se gli $a$ hanno anche una espressione esplicita in termini di operatori differenziali si può trovare una espressione esplicita per gli stati (ad esempio di Polinomi di Hermite). L'Hamiltoniana è definita positiva perché $N$ è definito positivo. Dato che $N$ e $H$ commutano il numero delle particelle è costante. Questo accade in tutte le teorie SENZA interazione.
+\end{itemize}

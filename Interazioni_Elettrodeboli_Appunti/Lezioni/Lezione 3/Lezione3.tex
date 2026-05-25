@@ -1,0 +1,535 @@
+Una delle cose importanti che vedremo fin dall'inizio nella lezione di oggi è un aspetto legato al fatto dia aver legato la relatività con la meccanica quantistica. In meccanica quantistica relativistica lo spin della particella non è una quantità conservata (non commuta con l'Hamiltoniana) e neanche il momento angolare orbitale! Questo si capisce per il fatto che nell'Hamiltoniana è presente il termine $\boldsymbol{\sigma}\cdot\boldsymbol{\nabla}$. Questo $\sigma$ è un operatore legato allo spin. Quindi c'è un prodotto scalare tra un operatore che ha che fare con il momento angolare e uno con la quantità di moto: accoppiamento spin-orbita che porta alla non conservazione del momento angolare. Quindi per una particella libera vuol dire che in meccanica quantistica relativistica una particella libera che propaga ha la caratteristica che il suo momento angolare orbitale e intrinseco variano nel tempo ma variano nel modo in cui il momento angolare totale rimane costante.
+\section{Invarianza relativistica dell'equazione di Dirac}
+Nel caso dell'equazione di Kelin-Gordon avevamo visto che l'invarianza per trasformazioni di Lorentz si esprimeva nel seguente modo. Se $\phi$ soddisfa l'equazione:
+$$
+(\partial^\mu \partial_\mu + m^2)\phi(x) = 0
+$$
+Allora la funzione definita da 
+$$
+\phi'(x') = \phi(x) \qquad x'^\mu = \Lambda^\mu_{\,\,\nu} x^\nu
+$$
+Soddisfa l'equazione
+$$
+(\partial'^\mu \partial'_\mu + m^2)\phi'(x') = 0
+$$
+Nel caso dell'equazione di Dirac si ha una situazione simile con una complicazione. La funzione d'onda $\psi(x)$ ha 4 componenti e una trasformazione di Lorentz modifica le ocmponenti di $\psi(x)$. Facciamo il parallelo con una rotazione nel caso di un campo vettoriale $\mathbf{F}(\mathbf{r})$. La rotazione modifica le componenti del punto $\mathbf{r}'=\hat{R}\mathbf{r}$. La rotazione modifica anche le componenti del campo vettoriale $\mathbf{F}(\mathbf{r}')=\hat{R}\mathbf{F}(\mathbf{r})$. Nel caso del campo spinoriale è fondamentale ricordare che lo spinore è una grandezza matematica differente da un $4-$vettore. Occorre trovre la legge di trasformazione degli spinori (che non è $\Lambda$)
+$$
+\psi'(x') = S\psi(x)
+$$
+Come nel caso delle rotazioni o delle trasformazioni di Lorentz assumiamo che la legge di trasformazione degli spinori sia lineare. Ad ogni trasformazione di Lorentz $\Lambda$ corrisponde una trasformazione spinoriale $S(\Lambda)$ che permette di calcolare lo spinore in $\mathbf{K}'$.
+$$
+x'^\mu = \Lambda^\mu_{\,\,\nu} x^\nu \qquad \psi'(x') = S(\Lambda)\psi(x)
+$$
+Vediamo adesso le proprietà fondamentali di $S(\Lambda)$. Lo spinore trasformato deve soddisfare l'equazione di Dirac nel sistema $\mathbf{K}'$. Le matrici $\gamma^\mu$ invece devono rimanere le stesse del sistema $\mathbf{K}$.
+$$
+(i\gamma^\mu \partial'_\mu - m)\psi'(x') = 0 \qquad \partial'_\mu \equiv \frac{\partial}{\partial x'^\mu}
+$$
+Sostituendo $\psi'(x')=S\psi(x)$ e $\partial_\mu'=\Lambda_\mu^{\,\,\alpha}\partial_\alpha$ otteniamo
+$$
+(i\gamma^\mu \textcolor{red}{\Lambda_\mu^{\,\,\alpha} \partial_\alpha} - m) \textcolor{red}{S}\psi(x) = 0
+$$
+Moltiplichiamo da sinistra per $S^{-1}$
+$$
+(i\textcolor{red}{S^{-1}}\gamma^\mu \Lambda_\mu^{\,\,\alpha} S \partial_\alpha - m\textcolor{red}{S^{-1}}S)\psi(x) = 0 \qquad [i\textcolor{red}{(S^{-1}\gamma^\mu S \Lambda_\mu^{\,\,\alpha})} \partial_\alpha - m]\psi(x) = 0
+$$
+L'equazione è identica all'equazione di Dirac se
+$$
+S^{-1}\gamma^\mu S \Lambda_\mu^{\,\,\alpha} = \gamma^\alpha
+$$
+Possiamo ulteriormente trasformare la relazione $S^{-1}\gamma^\mu S \Lambda_\mu^{\,\,\alpha} = \gamma^\alpha$ moltiplicando per $\Lambda^\nu_{\,\,\alpha}$ e sommando su $\alpha$
+$$
+S^{-1}\gamma^\mu S \Lambda_\mu^{\,\,\alpha} \Lambda^\nu_{\,\,\alpha} = \Lambda^\nu_{\,\,\alpha} \gamma^\alpha
+$$
+$$
+S^{-1}\gamma^\mu S \textcolor{red}{\delta^\nu_{\,\,\mu}} = \Lambda^\nu_{\,\,\alpha} \gamma^\alpha
+$$
+$$
+S^{-1}\gamma^\nu S = \Lambda^\nu_{\,\,\alpha} \gamma^\alpha
+$$
+A prima vista l'equazione trovata sembrerebbe indicare che le matrici $\gamma^\mu$ si trasformano come un $4-$vettore ma No è FALSO! Infatti sollonineiamo che la condizione scritta deriva dalla richiesta che le matrici $\gamma$ nelle equazioni nei sistemi $\mathbf{K}$ e $\mathbf{K}'$ siano le stesse. Tuttavia la legge di trasformazione trovata ci permette di dimostrare che quantità costruite con le matrici $\gamma^\mu$ (ad esempio la corrente $j^\mu=i\overline{\psi}\gamma^\mu\psi$) si trasformano come $4-$vettori (vedremo che $\overline{S}=S^{-1}$)
+\begin{align*}
+j'^\mu &= \overline{\psi}'\gamma^\mu \psi' = \overline{\psi}\overline{S}\gamma^\mu S\psi= \overline{\psi} S^{-1}\gamma^\mu S \psi = \overline{\psi} \Lambda^\mu_{\,\,\nu} \gamma^\nu \psi = \Lambda^\mu_{\,\,\nu} \overline{\psi} \gamma^\nu \psi = \Lambda^\mu_{\,\,\nu} j^\nu
+\end{align*}
+A questo punto la dimostrazione dell'invarianza relativistica dell'equazione di Dirac procede dimostrando, per costruzione, l'esistenza di $S(\Lambda)$. Non esporremo la procedura dettagliata ma ricorderemo solo che l'espressione di una trasformazione di Lorentz (per i $4-$vettori) a partire dai generatori e l'espressione di una trasformazione di Lorentz (per gli spinori) a partire dai generatori.
+\subsection{Trasformazioni di Lorentz}
+Una trasformazione di Lorentz dipende da $6$ parametri:
+\begin{itemize}
+    \item 3 parametri descrivono boost in una data direzione;
+    \item 3 parametri descrivono una possibile rotazione.
+\end{itemize}
+I 6 parametri possoo essere espressi tramite la quantità antisimmetrica $a_{\alpha\beta}$. esplicitamente, l'antisimmetria implica che
+\begin{equation*}
+    a_{\alpha\beta} = - a_{\beta\alpha} \quad : \quad a_{\alpha\alpha} = 0
+\end{equation*}
+La trasformazione si esprime in funzione dei generati $M^{\alpha\beta}$
+$$
+\Lambda = \exp \left[ -\frac{1}{2} a_{\alpha\beta} M^{\alpha\beta} \right]
+$$
+I generatori hanno la forma
+$$
+(M^{\alpha\beta})_{\mu\nu} = g^{\alpha}_{\,\,\mu} g^{\beta}_{\,\,\nu} - g^{\beta}_{\,\,\mu}g^{\alpha}_{\,\,\nu}
+$$
+per trasformazioni di Lorentz che sono dei boost puri i 3 generatori sono
+$$
+\mathbf{K} = (K_1, K_2, K_3) \qquad K_1 = M^{01} \quad K_2 = M^{02} \quad K_3 = M^{03}
+$$
+I 3 parametri rilevanti $a_{\mu\nu}$ possono essere descritti come
+$$
+\boldsymbol{\xi} = \hat{\beta} \tanh^{-1} \beta
+$$
+La trasformazione di Lorentz è
+$$
+\Lambda = \exp[-\boldsymbol{\xi} \cdot \mathbf{K}]
+$$
+Slide 59-60 per visualizzarle!
+\subsection{Trasformazioni di Lorentz per gli spinori}
+Si può mostrare che un operatore $S(\Lambda)$ che soddisfa alle richieste che abbiamo fatto per garantire l'invarianza relativistica dell'equazione di Dirac è dato da una formula analoga
+$$
+S(\Lambda) = \exp \left[ -\frac{i}{4} a_{\mu\nu} \sigma^{\mu\nu} \right]
+$$
+I generatori sono espressi in funzione delle matrici $\gamma$
+$$
+\sigma^{\mu\nu} = \frac{i}{2}(\gamma^\mu \gamma^\nu - \gamma^\nu \gamma^\mu) = \frac{i}{2}[\gamma^\mu, \gamma^\nu]
+$$
+I coefficienti $a_{\mu\nu}$ che compaiono nella formula sono gli stessi che compaiono nella formula trasformazione di Lorentz $\Lambda$. Per trasformazioni che sono dei boost puri i 3 generatori sono
+$$
+B_1 = \sigma^{01} \qquad B_2 = \sigma^{02} \qquad B_3 = \sigma^{03}
+$$
+in particolare
+$$
+\sigma^{01} = \frac{i}{2}(\gamma^0 \gamma^1 - \gamma^1 \gamma^0) = \frac{i}{2}(\gamma^0 \gamma^1 + \gamma^0 \gamma^1) = i\gamma^0 \gamma^1 = i\alpha_1
+$$
+e analoghe per $j=2,3$
+Inserendo nella formula per $S(\Lambda)$
+$$
+S(\Lambda) = \exp \left[ \frac{1}{2} \boldsymbol{\xi} \cdot \boldsymbol{\alpha} \right] = \exp \left[ \frac{1}{2} \gamma^0 \boldsymbol{\xi} \cdot \boldsymbol{\gamma} \right]
+$$
+Con
+$$
+\boldsymbol{\xi} = \hat{\beta} \tanh^{-1} \beta
+$$
+Osserviamo che, in generale, la matrice $S(\Lambda)$ non è unitaria
+$$
+S(\Lambda) = \exp \left[ \frac{1}{2} \boldsymbol{\xi} \cdot \boldsymbol{\alpha} \right] \qquad S(\Lambda) = \exp \left[ -\frac{i}{4} a_{\mu\nu} \sigma^{\mu\nu} \right]
+$$
+Infatti anche se le matrici $\alpha$ sono hermitiane manca la costante $i$ nell'esponente. Nella seconda forma notiamo che gli operatori $\sigma^{\mu\nu}$ non sono hermitiani pertanto
+$$
+S^{-1}(\Lambda) = \exp \left[ -\frac{1}{2} \boldsymbol{\xi} \cdot \boldsymbol{\alpha} \right] \ne S^\dagger(\Lambda) = \left( \exp \left[ \frac{1}{2} \boldsymbol{\xi} \cdot \boldsymbol{\alpha} \right] \right)^\dagger = \exp \left[ \frac{1}{2} \boldsymbol{\xi} \cdot \boldsymbol{\alpha} \right]
+$$
+ricordiamo che
+$$
+\overline{\gamma^\mu} = \gamma^0 \gamma^{\mu\dagger} \gamma^0 = \gamma^\mu
+$$
+Si verifica facilmente che
+$$
+\overline{\sigma^{\mu\nu}} = \gamma^0 (\sigma^{\mu\nu})^\dagger \gamma^0 = \sigma^{\mu\nu}
+$$
+Per le componenti con un indice temporale ($\mu=0, k=1,3$) abbiamo pertanto
+$$
+\overline{i\sigma^{0k}} = -i\gamma^0 (\sigma^{0k})^\dagger \gamma^0 = -i\sigma^{0k}
+$$
+Poiché questa relazione vale per ogni potenza di $\sigma^{\mu\nu}$ nello sviluppo dell'esponenziale avremo anche
+$$
+S^{-1}(\Lambda) = \gamma^0 S^\dagger(\Lambda) \gamma^0 = \overline{S(\Lambda)}
+$$
+Per $j,k=1,3$
+$$
+\overline{\sigma^{jk}} = (\sigma^{jk})^\dagger \to S \text{ è unitaria (aggiunto = aggiunto spinoriale)}
+$$
+Slide 63 per tutte le trasformazioni.
+
+Le informazioni e il formalismo delle precedenti diapositive sono sufficienti per costruire esplicitamente una trasformazioni di Lorentz $\Lambda$ e la trasformazione spinoriale ad essa associata $S(\Lambda)$
+$$
+S(\Lambda) = \exp \left[ \frac{1}{2} \boldsymbol{\xi} \cdot \boldsymbol{\alpha} \right] = \sqrt{\frac{E+m}{2m}} \left( I + \frac{\boldsymbol{\alpha} \cdot \mathbf{p}}{E+m} \right)
+$$
+L'espressione riportata è indipendente dalla rappresentazione. Nella rappresentazione di Pauli-Dirac si ottiene
+$$
+S(\Lambda) = \sqrt{\frac{E+m}{2m}} \left[ I + \frac{1}{E+m} \begin{pmatrix} 0 & \boldsymbol{\sigma} \cdot \mathbf{p} \\ \boldsymbol{\sigma} \cdot \mathbf{p} & 0 \end{pmatrix} \right]
+$$
+$$
+S(\Lambda) = \sqrt{\frac{E+m}{2m}} \begin{pmatrix} I & \frac{\boldsymbol{\sigma} \cdot \mathbf{p}}{E+m} \\ \frac{\boldsymbol{\sigma} \cdot \mathbf{p}}{E+m} & I \end{pmatrix}
+$$
+Notiamo incidentalmente che l'applicazione dell'operatore $S(\Lambda)$ agli spinori $w(0,r), r=1,4$ produce gli spinori $u(\mathbf{p},r)$ e $v(\mathbf{p,r})$.
+
+Per le rotazioni i 3 generatori sono
+$$
+\Sigma_1 = i\gamma^2\gamma^3 \qquad \Sigma_2 = i\gamma^3\gamma^1 \qquad \Sigma_3 = i\gamma^1\gamma^2
+$$
+$$
+\Sigma^j = \frac{i}{2} \sum_{kl} \varepsilon_{jkl} \gamma^k \gamma^l
+$$
+Si può dimostrare che, indipendentemente dalla rappresentazione, queste matrici sono hermitiane e hanno le stesse regole di commutazione e anticommutazione delle matrici di Pauli
+$$
+\{\Sigma_k, \Sigma_l\} = 2i\delta_{kl} \qquad [\Sigma_k, \Sigma_l] = 2i\varepsilon_{klm}\Sigma_m \qquad \Sigma_k^2 = I
+$$
+L'operatore di rotazione è
+$$
+S(R) = \exp \left[ -\frac{i}{2} \boldsymbol{\theta} \cdot \boldsymbol{\Sigma} \right]
+$$
+Dato che gli operatori $\Sigma_k$ sono hermitiani la matrice $S(R)$ è unitaria
+$$
+S^\dagger(R) = \left( \exp \left[ -\frac{i}{2} \boldsymbol{\theta} \cdot \boldsymbol{\Sigma} \right] \right)^\dagger = \exp \left[ +\frac{i}{2} \boldsymbol{\theta} \cdot \boldsymbol{\Sigma}^\dagger \right] = S^{-1}(\Lambda)
+$$
+d'altro canto per ogni potenza di $\Sigma$ vale
+$$
+\gamma^0 \Sigma^{k\dagger} \gamma^0 = \Sigma^k
+$$
+Come avevamo visto, anche per una rotazione si ha
+$$
+S^{-1}(\Lambda) = \gamma^0 S^\dagger(\Lambda) \gamma^0 = \overline{S(\Lambda)}
+$$
+\section{Momento angolare}
+Abbiamo visto che l'equazione di Dirac ha 4 soluzioni: due soluzione con energia positiva e due soluzioni con energia negativa. Per interpretare le soluzioni ad energia negativa bisogna utilizzare la teoria delle buche (holes) di Dirac oppure (preferibile) la seconda quantizzazione. All'interno di ciascuna tipologia di soluzione occorre interpretare la molteplicità 2 delle soluzioni. Possiamo intuire che ciò ha a che fare con lo spin della particella. Una discussione (intuitiva) molto semplice si può fare nel sistema di riposo della particella
+$$
+\psi(x) = \begin{cases} u(\mathbf{0}, r) e^{-imt} \\ v(\mathbf{0}, r) e^{+imt} \end{cases}
+$$
+In questo sistema le equazioni di Dirac per gli spinori sono
+$$
+(\slashed{p} - m)u = 0 \qquad m\gamma^0 u = mu
+$$
+$$
+(\slashed{p} + m)v = 0 \qquad m\gamma^0 v = -mv
+$$
+Nella rappresentazione di Pauli-Dirac sappiamo che le soluzioni sono
+$$
+u(\mathbf{0}, 1) = \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix} \qquad u(\mathbf{0}, 2) = \begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix} \qquad v(\mathbf{0}, 1) = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix} \qquad v(\mathbf{0}, 2) = \begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix}
+$$
+Le soluzioni sono autovettori di $\gamma^0$. Due con autovalore $+1$ e due con autovalore $-1$. Per differenziare ulteriormente occorre introdurre un operatore che commuti con $\gamma^0$. Una possibilità è l'operatore $\Sigma_z$
+$$
+\Sigma_z = \begin{pmatrix} \sigma_z & 0 \\ 0 & \sigma_z \end{pmatrix} = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix}
+$$
+Ovviamente $\left[\gamma^0,\Sigma_z\right]=0$. Abbiamo quindi
+$$
+\Sigma_z u(0,1) = u(0,1) \qquad \Sigma_z u(0,2) = -u(0,2)
+$$
+$$
+\Sigma_z v(0,1) = v(0,1) \qquad \Sigma_z v(0,2) = -v(0,2)
+$$
+Inoltre le componenti dell'operatore vettoriale $\boldsymbol{\Sigma}$
+$$
+\boldsymbol{\Sigma} = \begin{pmatrix} \boldsymbol{\sigma} & 0 \\ 0 & \boldsymbol{\sigma} \end{pmatrix}
+$$
+Hanno le regole di commutazione del momento angolare. Posiamo identificare $\frac{1}{2}\boldsymbol{\Sigma}$ con lo spin della particella.
+\begin{itemize}
+    \item Gli spinori $u(0,1)$ e $v(0,2)$ corrispondono a spin up ($1/2$ lungo l'asse $z$)
+    \item Gli spinori $u(0,2)$ e $v(0,1)$ corrispondono a spin down ($-1/2$ lungo l'asse $z$)
+\end{itemize}
+Purtroppo ciò funziona solo nel sistema di riposo della particella ($\mathbf{p}=0$). Infatti, in un sistema inerziale arbitrario l'operatore di spin che abbiamo definito non commuta con l'Hamiltoniana, neppure il momento angolare commuta con l'Hamiltoniana. Infatti ricordando l'equazione di Dirac in forma Hamiltoniana
+$$
+i \frac{\partial}{\partial t} \psi = [-i\boldsymbol{\alpha} \cdot \boldsymbol{\nabla} + \beta m]\psi = [\boldsymbol{\alpha} \cdot \mathbf{p} + \beta m]\psi = H\psi
+$$
+Calcoliamo il commutatore dell'Hamiltoniana con il momento angolare orbitale
+$$
+\mathbf{L} = \mathbf{r} \times \mathbf{p} \qquad L_j = \sum_{kl} \varepsilon_{jkl} r^k p^l
+$$
+Abbiamo
+$$
+[H, L_j] = \left[ \sum_n \alpha^n p^n + \beta m, \sum_{kl} \varepsilon_{jkl} r^k p^l \right] = \left[ \sum_{kln} \alpha^n p^n, \varepsilon_{jkl} r^k p^l \right] = \sum_{kln} \alpha^n \varepsilon_{jkl} [p^n, r^k] p^l
+$$
+$$
+= \sum_{kln} \varepsilon_{jkl} \alpha^n (-i\delta^{nk}) p^l = -i \sum_{kl} \varepsilon_{jkl} \alpha^k p^l = -i(\boldsymbol{\alpha} \times \mathbf{p})_j
+$$
+$$
+[H, \mathbf{L}] = -i(\boldsymbol{\alpha} \times \mathbf{p})
+$$
+La conclusione è che il momento angolare orbitale non si conserva, neppure durante il moto di una particella libera.
+\section{Operatore di spin}
+L'operatore di spin che abbiamo introdotto precedentemente è valido solo nella rappresentazione di Pauli-Dirac. In una rappresentazione arbitraria l'operatore di spin si trova a partire dai generatori delle rotazioni per gli spinori ($j,k=1,2,3$)
+$$
+\sigma^{kl} = \frac{i}{2}(\gamma^k \gamma^l - \gamma^l \gamma^k) = \frac{i}{2}[\gamma^k, \gamma^l]
+$$
+In particolare si ha $S=1/2\Sigma$ con $\Sigma^j$ ($j,k,l$ una permutazione pari di 123).
+$$
+\Sigma^j = \sigma^{kl} = i\gamma^k \gamma^l
+$$
+Un modo equivalente per scrivere l'operatore di spin è
+$$
+\Sigma^j = \frac{i}{2} \sum_{kl} \varepsilon_{jkl} \gamma^k \gamma^l
+$$
+Naturalmente, non bisogna confondere il simbolo di somma con l'operatore $\Sigma$. Un'altra espressione per $\Sigma$, che sarà molto utile in seguito, parte dall'espressione
+$$
+\Sigma^j = -i\gamma^1\gamma^2\gamma^3\gamma^j
+$$
+Infatti, utilizzando le regole di commutazione delle matrici $\gamma$ e ricordando che $(\gamma^j)^2=-1$ per $j=1,2,3$ si trova la definizione precedente. Elaborando ulteriormente
+$$
+\Sigma^j = -i\gamma^1\gamma^2\gamma^3\gamma^j\gamma^0\gamma^0 = -i\gamma^0\gamma^1\gamma^2\gamma^3\gamma^j\gamma^0
+$$
+Introduciamo la matrice $\gamma^5$
+$$
+\gamma^5 = \gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3
+$$
+Arriviamo alla definizione
+$$
+\boldsymbol{\Sigma} = \gamma^5 \gamma^0 \boldsymbol{\gamma}
+$$
+La matrice $\gamma^5$ è molto importante nella teoria degli spinori. Nella rappresentazione di Pauli-Dirac
+$$
+\gamma^5 = \begin{pmatrix} 0 & I \\ I & 0 \end{pmatrix} \qquad \boldsymbol{\Sigma} = \gamma^5 \gamma^0 \boldsymbol{\gamma} = \gamma^5 \boldsymbol{\alpha} \qquad \boldsymbol{\Sigma} = \begin{pmatrix} 0 & I \\ I & 0 \end{pmatrix} \begin{pmatrix} 0 & \boldsymbol{\sigma} \\ \boldsymbol{\sigma} & 0 \end{pmatrix} = \begin{pmatrix} \boldsymbol{\sigma} & 0 \\ 0 & \boldsymbol{\sigma} \end{pmatrix}
+$$
+\section{Proprietà dei commutatori}
+Prima proprietà
+$$
+[AB,C] = ABC - CAB = ABC - ACB + ACB - CAB
+$$
+$$
+[AB,C] = A[B,C] + [A,C]B
+$$
+Analogamente
+$$
+[C,AB] = CAB - ABC = CAB - ACB + ACB - ABC
+$$
+$$
+[C,AB] = [C,A]B + A[C,B]
+$$
+Pertanto
+\begin{align*}
+[A,C] = 0 &\to [AB,C] = A[B,C] \\
+[C,B] = 0 &\to [C,AB] = [C,A]B
+\end{align*}
+Seconda proprietà
+$$
+[A,BC] = ABC - BCA = ABC + BAC - BAC - BCA
+$$
+$$
+[A,BC] = \{A,B\}C - B\{A,C\}
+$$
+Analogamente
+$$
+[AB,C] = A\{B,C\} - \{A,C\}B
+$$
+\section{Tornando al momento angolare}
+Abbiamo adesso tutti gli ingredienti per calcolare il commutatore $\left[H,\Sigma\right]$ indipendentemente dalla rappresentazione. Riscriviamo l'Hamiltoniana utilizzando le matrici $\gamma$
+$$
+H = \boldsymbol{\alpha} \cdot \mathbf{p} + \beta m = \gamma^0 \boldsymbol{\gamma} \cdot \mathbf{p} + \gamma^0 m = \gamma^0 \left( \sum_n \gamma^n p^n + m \right)
+$$
+Calcoliamo
+$$
+[H, \Sigma_j] = \left[ \gamma^0 \left( \sum_n \gamma^n p^n + m \right), \frac{1}{2} i \sum_{kl} \varepsilon_{jkl} \gamma^k \gamma^l \right]
+$$
+Usando
+$$
+[AB,C] = A[B,C] + [A,C]B
+$$
+e
+$$
+[(\gamma^k\gamma^l), \gamma^0] = \gamma^k\gamma^l\gamma^0 - \gamma^0\gamma^k\gamma^l = 0
+$$
+e anche
+$$
+[A,C] = 0 \qquad [X,mI] = 0
+$$
+arriviamo a 
+$$
+= \frac{1}{2} i \gamma^0 \left[ \left( \sum_n \gamma^n p^n + m \right), \sum_{kl} \varepsilon_{jkl} \gamma^k \gamma^l \right]
+$$
+$$
+= \frac{1}{2} i \gamma^0 \sum_{nkl} [\gamma^n p^n, \varepsilon_{jkl} \gamma^k \gamma^l] = \frac{1}{2} i \gamma^0 \sum_{nkl} \varepsilon_{jkl} [\gamma^n, \gamma^k \gamma^l] p^n
+$$
+Infine con
+$$
+[A,BC] = \{A,B\}C - B\{A,C\}
+$$
+Trovo
+$$
+[\gamma^n, \gamma^k \gamma^l] = \{\gamma^n, \gamma^k\}\gamma^l - \gamma^k\{\gamma^n, \gamma^l\} = 2g^{nk}\gamma^l - 2g^{nl}\gamma^k
+$$
+Riepiloghiamo i risultati fino a questo punto
+$$
+[H, \Sigma_j] = \frac{1}{2} i \gamma^0 \sum_{nkl} \varepsilon_{jkl} [\gamma^n, \gamma^k \gamma^l] p^n \qquad [\gamma^n, \gamma^k \gamma^l] = 2g^{nk}\gamma^l - 2g^{nl}\gamma^k
+$$
+Sostituendo otteniamo (per $n,k=1,2,3$ $g^{nk}=-\delta^{nk}$)
+$$
+[H, \Sigma_j] = \frac{1}{2} i \gamma^0 \sum_{nkl} \varepsilon_{jkl} (2g^{nk}\gamma^l - 2g^{nl}\gamma^k) p^n = i\gamma^0 \sum_{nkl} \varepsilon_{jkl} (g^{nk}\gamma^l - g^{nl}\gamma^k) p^n
+$$
+$$
+= i\gamma^0 \sum_{kl} \varepsilon_{jkl} (-\gamma^k p^l + \gamma^l p^k) = 2i\gamma^0 \sum_{kl} \varepsilon_{jkl} \gamma^l p^k = 2i \sum_{kl} \varepsilon_{jkl} \alpha^k p^l = 2i(\boldsymbol{\alpha} \times \mathbf{p})_j
+$$
+Concludendo
+$$
+[H, \boldsymbol{\Sigma}] = 2i\boldsymbol{\alpha} \times \mathbf{p}
+$$
+Pertanto neppure lo spin $(S=1/2\Sigma)$ su conserva. Tuttavia l'operatore momento angolare totale
+$$
+J = L + \frac{1}{2}\Sigma
+$$
+commuta con l'Hamiltoniana (come deve essere)
+$$
+[H, \mathbf{J}] =[H, \mathbf{L}+\frac{1}{2}\boldsymbol{\Sigma}]= -i\boldsymbol{\alpha} \times \mathbf{p} + i\boldsymbol{\alpha} \times \mathbf{p}
+$$
+$$
+[H, \mathbf{J}] = 0
+$$
+Dal momento che l'operatore di spin $1/2\Sigma$ non commuta con $H$ non è possibile utilizzare i suoi autovalori per classificare gli stati. Si utilizzano quindi due alternative: proiezione dello spin lungo la direzione di moto: \textbf{Elicità} oppure per particelle con massa non nulla: Direzione dello spin nel sistema di riposo. Nel sistema di riposo vale la trattazione non relativistica. Questa cosa sembra macchinosa ma c'è un formalismo che rende tutto abbastanza semplice e automatico. Quindi dato uno spinore per sapere se rappresenta una particella polarizzata o comunque che polarizzazione ha,lo trasformo con una trasformazione di Lorentz nel suo sistema di riposo vedo come è fatto lo spin e la classifico così. Questa è un "trucchetto" un po' sporco perché mischio sistemi di riposo diversi. Rimane comunque molto utile.
+\section{Descrizione relativistica dello spin: Elicità}
+Ricordiamo che
+$$
+\mathbf{J} = \mathbf{L} + \frac{1}{2}\boldsymbol{\Sigma} = \mathbf{r} \times \mathbf{p} + \frac{1}{2}\boldsymbol{\Sigma} \qquad [H, \mathbf{J}] = 0
+$$
+Evidentemente, dato che $\left[H,\mathbf{p}\right]=0$
+$$
+[H, \mathbf{J} \cdot \mathbf{p}] = 0
+$$
+Abbiamo inoltre
+$$
+\mathbf{J} \cdot \mathbf{p} = \mathbf{r} \times \mathbf{p} \cdot \mathbf{p} + \frac{1}{2}\boldsymbol{\Sigma} \cdot \mathbf{p} = \frac{1}{2}\boldsymbol{\Sigma} \cdot \mathbf{p}
+$$
+Pertanto commuta con l'Hamiltoniana anche l'operatore elicità
+$$
+h(\mathbf{p}) = \frac{\boldsymbol{\Sigma} \cdot \mathbf{p}}{|\mathbf{p}|} = \boldsymbol{\Sigma} \cdot \hat{n} \qquad \hat{n} = \frac{\mathbf{p}}{|\mathbf{p}|}
+$$
+Quindi questa grandezza che commuta con l'Hamiltoniano è la proiezione dello spin lungo la direzione di moto. Questa grandezza è conservata e si chiama elicità.
+Quindi normalmente si sceglie la direzione di moto della particella come asse di quantizzazione una particella di spin $1/2$ può avere valori di elicità positiva o negativa e in quella direzione lo spin si conserva e può essere utilizzato per classificare le soluzioni del nostro sistema.
+Ricordiamo alcuni risultati ottenuti utilizzando la rappresentazione di Dirac
+$$
+u(\mathbf{p}, r) = \sqrt{E_p + m} \begin{pmatrix} \phi_r \\ \frac{\boldsymbol{\sigma} \cdot \mathbf{p}}{E_p + m} \phi_r \end{pmatrix} \qquad \boldsymbol{\Sigma} = \begin{pmatrix} \boldsymbol{\sigma} & 0 \\ 0 & \boldsymbol{\sigma} \end{pmatrix} \qquad h(\mathbf{p}) = \boldsymbol{\Sigma} \cdot \hat{n} = \begin{pmatrix} \boldsymbol{\sigma} \cdot \hat{n} & 0 \\ 0 & \boldsymbol{\sigma} \cdot \hat{n} \end{pmatrix}
+$$
+Ricordiamo che le funzioni $\phi_r$ sono due arbitrari spinori bidimensionali. L'operatore $\boldsymbol{\sigma}\cdot\hat{\mathbf{n}}$ ha due autovettori $\phi_\pm$
+$$
+\boldsymbol{\sigma} \cdot \hat{\mathbf{n}} \phi_\pm = \pm \phi_\pm
+$$
+Questi sono spin bidimensionali proiettati nella direzione del modo della particella. Utilizzando questi spinori
+$$
+u(\mathbf{p}, \pm) = \sqrt{E_p + m} \begin{pmatrix} \phi_\pm \\ \frac{\pm |\mathbf{p}|}{E_p + m} \phi_\pm \end{pmatrix}
+$$
+Applicando l'operatore $h(\mathbf{p})$ agli spinori $u(\mathbf{p}, \pm)$
+$$
+\begin{pmatrix} \boldsymbol{\sigma} \cdot \hat{n} & 0 \\ 0 & \boldsymbol{\sigma} \cdot \hat{n} \end{pmatrix} \begin{pmatrix} \phi_+ \\ \frac{|\mathbf{p}|}{E_p + m} \phi_+ \end{pmatrix} = \begin{pmatrix} \phi_+ \\ \frac{|\mathbf{p}|}{E_p + m} \phi_+ \end{pmatrix} \qquad h(\mathbf{p})u(\mathbf{p}, +) = u(\mathbf{p}, +)
+$$
+$$
+\begin{pmatrix} \boldsymbol{\sigma} \cdot \hat{n} & 0 \\ 0 & \boldsymbol{\sigma} \cdot \hat{n} \end{pmatrix} \begin{pmatrix} \phi_- \\ -\frac{|\mathbf{p}|}{E_p + m} \phi_- \end{pmatrix} = - \begin{pmatrix} \phi_- \\ -\frac{|\mathbf{p}|}{E_p + m} \phi_- \end{pmatrix} \qquad h(\mathbf{p})u(\mathbf{p}, -) = -u(\mathbf{p}, -)
+$$
+Il vantaggio di questa classificazione risiede nel fatto che $\left[H,h(\mathbf{p})\right]=0$. L'autovalore dell'elicità $\lambda=\pm 1$ si conserva, infatti può essere utilizzata anche per particelle di massa nulla. Ovviamente l'espressione esplicita di $h(p)$ che abbiamo trovato vale solamente per la rappresentazione di Dirac. In altre rappresentazioni l'espressione di $h(\mathbf{p})$ e di $u(\mathbf{p})$ sarà differente. Occorre quindi trovare la soluzione dell'equazione agli autovalori
+$$
+\boldsymbol{\Sigma} \cdot \hat{\mathbf{n}} u = \pm u
+$$
+Quanto fatto fin qui vale anche per gli spinori $v$. Nel caso della rappresentazione di Dirac osserviamo che gli spinori $\phi_\pm$ sono spinori bidimensionali non relativistici e rappresentano gli autostati dell'operatore di spin non relativistico quantizzato lungo l'asse $\hat{\mathbf{n}}$. La loro espressione esplicita può essere trovata: ruotando gli autostati $\phi_r$ ($r=1,2$) che sono autostati di $\sigma_z$ e risolvendo esplicitamente l'equazione matriciale
+$$
+\boldsymbol{\sigma} \cdot \hat{\mathbf{n}} \phi_\pm = \pm \phi_\pm
+$$
+Troviamo
+$$
+\boldsymbol{\sigma} \cdot \hat{n} = \begin{pmatrix} n_z & n_x - in_y \\ n_x + in_y & -n_z \end{pmatrix} \qquad \begin{pmatrix} n_z & n_x - in_y \\ n_x + in_y & -n_z \end{pmatrix} \begin{pmatrix} a \\ b \end{pmatrix} = \pm \begin{pmatrix} a \\ b \end{pmatrix}
+$$
+\subsection{Descrizione relativistica dello spin: Rest frame}
+Un altro metodo per descrivere lo spin fa riferimento al sistema inerziale in cui la particella è a riposo. Rest frame: possibile solo per particelle con massa $\not=0$. Nel sistema di riposo della particella $(\mathbf{p}=0)$ l'Hamiltoniana
+$$
+H=\alpha p+\beta m=\gamma^0m
+$$
+commuta con l'operatore di spin $\Sigma$. Gli spinori quindi possono essere anche autostati di $\Sigma$. La trattazione coincide con quella non relativistica. Infatti è possibile preparare uno stato $\phi_\xi$ polarizzato in una direzione arbitraria $\hat{\boldsymbol{\xi}}$
+$$
+\boldsymbol{\xi} = \langle \phi_\xi | \boldsymbol{\sigma} | \phi_\xi \rangle
+$$
+Ad esempio nella rappresentazione di Pauli-Dirac
+$$
+w(0, \boldsymbol{\xi}) = \sqrt{2m} \begin{pmatrix} \phi_\xi \\ 0 \end{pmatrix} \qquad \boldsymbol{\sigma} \cdot \hat{\boldsymbol{\xi}} w = \lambda w
+$$
+A questo punto si può applicare una trasformazione di Lorentz che trasforma lo spinore $w(\mathbf{0},\boldsymbol{\xi})$. Dal sistema in cui la particella è a riposo al sistema in cui la particella ha un $4-$momento:
+$$
+p'^\nu = (m, 0) \to p^\nu = (E, \mathbf{p})
+$$
+$$
+p^\nu = \Lambda^\nu_{\,\,\mu} p'^\mu
+$$
+Ovviamente, in questo modo, abbiamo una complicazione. Il $4-$momento $p$ della particella è definito nel sistema di laboratorio $\mathbf{K}$ invece lo spin è definito nel sistema di riposo della particella $\mathbf{K}'$. Si introduce pertanto un $4-$vettore $s$ (in $\mathbf{K}$) per la descrizione dello spin. Nel sistema della particella si ha
+$$
+s' = (0, \boldsymbol{\xi}) \qquad s' \cdot s' = -\boldsymbol{\xi} \cdot \boldsymbol{\xi} = -1
+$$
+Notiamo che si tratta di un $4-$vettore a modulo negativo (space-like). Inoltre nel sistema di riposo abbiamo
+$$
+p' = (m, \mathbf{0}) \qquad p' \cdot s' = m \cdot 0 - \mathbf{0} \cdot \boldsymbol{\xi} = 0
+$$
+La relazione $s'\cdot p'=0$ è invariante e vale in tutti i sistemi di riferimento. Si passa al sistema $\mathbf{K}$ mediante una trasformazione di Lorentz
+$$
+(m, \mathbf{0}) \to (E, \mathbf{p}) \quad p^\nu = \Lambda^\nu_{\,\,\mu} p'^\mu \qquad (0, \boldsymbol{\xi}) \to (s^0, \mathbf{s}) \quad s^\nu = \Lambda^\nu_{\,\,\mu} s'^\mu
+$$
+Attenzione: nel sistema di laboratorio $\mathbf{K}$ la parte spaziale di s NON è il valore di aspettazione dello spin!
+
+In forma esplicita, le componenti di $s$ nel sistema $\mathbf{K}$ in cui la particella di massa $m$ ha energia $E$ e momento $p$ sono:
+$$
+s^0 = \frac{|\mathbf{p}|}{m} \xi_\| \qquad \mathbf{s}_\perp = \boldsymbol{\xi}_\perp \qquad s_\| = \frac{E}{m} \xi_\|
+$$
+Evidentemente $\boldsymbol{\xi}_\|$ e $\boldsymbol{\xi}_\perp$ sono rispettivamente la componente parallela e perpendicolare alla direzione della quantità di moto. In forma vettoriale le relazioni precedenti si possono esprimere come
+$$
+s^0 = \frac{\mathbf{p} \cdot \boldsymbol{\xi}}{m} \qquad \mathbf{s} = \boldsymbol{\xi} + \frac{(\mathbf{p} \cdot \boldsymbol{\xi})}{m(E+m)} \mathbf{p} \qquad \mathbf{s}^2 = \boldsymbol{\xi}_\perp^2 + \frac{( \mathbf{p} \cdot \boldsymbol{\xi})^2}{m^2}
+$$
+Notiamo che se la polarizzazione della particella nel suo sistema di riposo è $-\boldsymbol{\xi}$ nel sistema di laboratorio le $4$ componenti di $s^\mu$ cambiano tutte di segno rispetto a quelle corrispondenti a $+\boldsymbol{\xi}$. Quando si utilizza il $4-$vettore $s^\mu$ gli spinori $u$ e $v$ si scrivono
+$$
+u(\mathbf{p}, s) \qquad v(\mathbf{p}, s)
+$$
+In queste formule $s$ non è un indice ma un $4-$vettore. I due stati di polarizzazione sono $\pm s=\pm s^\mu$.
+\section{Relazioni di completezza}
+Allora le sezioni d'urto e le ampiezze di decadimento contengono sempre il modulo quadro dell'elemento di matrice della transizione (sviluppo perturbativo stato finale stato iniziale, operatore di interazione si calcola l'elemento di matrice e si fa il modulo quadro) lo stato iniziale e lo stato finale contengono gli spinori quindi quando calcolo l'elemento di matrice avrò una matrice moltiplicata per uno spinore a destra e sinistra e poi faccio modulo quadro, quindi ho: spinore matrice spinore matrice e spinore con questa continuazione con gli aggiunti. Ma ho sempre questa sequenza. Questa sequenza viene trasformata andando a prendere i pezzi di mezzo. Si semplificano sfruttando la proprietà degli spinori che se li moltiplico in un certo modo vengono fuori delle relazioni facili da ricordare. Questa cosa passano dalle relazioni di completezza: osservare come sono fatti un sistema completo di autovettori di un operatore (o insieme di operatori) come si fa a dire matematicamente con una relazione che è un sistema completo? Ora questo lo applichiamo a questo sistema.
+Abbiamo visto che nel sistema di riposo l'equazione di Dirac si riduce a
+$$
+i\gamma^0 \partial_0 \psi = m\psi \qquad \psi = w e^{-p_0 t} \qquad \gamma^0 p_0 w = mw
+$$
+Abbiamo anche determinato $4$ soluzioni $w(\mathbf{0},r)$ con $r=1,4$. Ricordiamo che la normalizzazione scelta per garantire il corretto comportamento della corrente nelle trasformazioni di Lorentz.
+$$
+w(\mathbf{p}, r) = \sqrt{E_p + m} \begin{pmatrix} \phi_r \\ \frac{\boldsymbol{\sigma} \cdot \mathbf{p}}{E_p + m} \phi_r \end{pmatrix} \quad \Longrightarrow \quad w(\mathbf{0}, r) = \sqrt{2m} \begin{pmatrix} \phi_r \\ 0 \end{pmatrix} \qquad r = 1,2
+$$
+analogamente per $r=3,4$
+$$
+w(\mathbf{0}, r) = \sqrt{2m} \begin{pmatrix} 0 \\ \phi_{r-2} \end{pmatrix} \qquad r = 3,4
+$$
+Gli spinori $w(\mathbf{0},r)$ sono i quattro autovettori di $\gamma^0$:
+$$
+\gamma^0 w=\pm w
+$$
+Sono ortogonali e costituiscono un sistema completo. La completezza si esprime tramite la relazione (attenzione ho vettore colonna per vettore riga non il contrario come il classico prodotto scalare)
+$$
+\sum_{r=1,4} w(\mathbf{0}, r) w^\dagger(\mathbf{0}, r) = 2mI \qquad \begin{pmatrix} \textcolor{red}{1} \\ 0 \\ 0 \\ 0 \end{pmatrix} ( \textcolor{red}{1} \,\, 0 \,\, 0 \,\, 0 ) + \dots = \begin{pmatrix} \textcolor{red}{1} & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix} + \dots
+$$
+Questo è utile perché quando avrò spinore matrice spinore e spinore aggiunto potrò ricondurla a matrice identità o alla trasformazione di questa quando cambio sistema di riferimento.
+Gli aggiunti spinoriali giocano un ruolo fondamentale nella teoria. Siamo pertanto interessati ad una relazione ci completezza che usi questi ultimi e non gli aggiunti hermitiani. Osserviamo che nella base dei $w$ la matrice $\gamma^0$ è diagonale
+$$
+(\gamma^0)_{rs} = \frac{w_r^\dagger \gamma^0 w_s}{2m} = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix}
+$$
+$$
+= \varepsilon_r \delta_{rs} \qquad \varepsilon_r = \begin{cases} +1 & r=1,2 \\ -1 & r=3,4 \end{cases}
+$$
+A questo punto è immediato verificare che
+$$
+\sum_{r=1,4} \textcolor{red}{\varepsilon_r} w(\mathbf{0}, r) \overline{w}(\mathbf{0}, r) = 2m\overline{I}
+$$
+Infatti
+$$
+\sum_{r=1,4} \varepsilon_r w(\mathbf{0}, r) \overline{w}(\mathbf{0}, r) = \sum_{r=1,4} \varepsilon_r w(\mathbf{0}, r) w^\dagger(\mathbf{0}, r) \gamma^0 \equiv A
+$$
+Usando
+$$
+w_\alpha(\mathbf{0}, r) = \sqrt{2m} \delta_{\alpha r}
+$$
+$$
+A_{\alpha\beta} = \sum_{\sigma=1,4} \sum_{r=1,4} \varepsilon_r w_\alpha(\mathbf{0}, r) w_\sigma^\dagger(\mathbf{0}, r) \gamma^0_{\sigma\beta} = 2m \sum_{\sigma=1,4} \sum_{r=1,4} \varepsilon_r \delta_{\alpha r} \delta_{\sigma r} \varepsilon_\sigma \delta_{\sigma\beta}
+$$
+$$
+= 2m \sum_{\sigma} \varepsilon_\alpha \delta_{\sigma\alpha} \varepsilon_\sigma \delta_{\sigma\beta} = 2m \varepsilon_\alpha \varepsilon_\alpha \delta_{\alpha\beta} = 2m \delta_{\alpha\beta} = 2m\hat{I}_{\alpha\beta}
+$$
+Possiamo a questo punto introdurre la relazione di completezza per gli spinori $u$ e $v$ in un sistema di riferimento in cui la particella ha quantità di moto $p$. Ricordiamo che $u$ e $v$ sono ottenuti dagli spinori a riposo $w(\mathbf{0},r)$ come
+$$
+u(\mathbf{p}, r) = S(\Lambda)w(\mathbf{0}, r) \quad r=1,2 \qquad v(\mathbf{p}, r) = S(\Lambda)w(\mathbf{0}, r+2) \quad r=1,2
+$$
+Verifichiamo che
+$$
+\sum_{r=1,2} [ u(\mathbf{p}, r) \overline{u}(\mathbf{p}, r) - v(\mathbf{p}, r) \overline{v}(\mathbf{p}, r) ] = 2m\hat{I}
+$$
+Poniamo
+$$
+u_r = u(\mathbf{p}, r) \; , \quad v_r = v(\mathbf{p}, r) \quad \text{e infine} \quad w_r = w(\mathbf{0}, r)
+$$
+\begin{align*}
+\sum_{r=1,2} [u_r \overline{u}_r - v_r \overline{v}_r] &= \sum_{r=1,2} [Sw_r \overline{Sw_r} - Sw_{r+2} \overline{Sw_{r+2}}] \\
+&= \sum_{r=1,2} [Sw_r \overline{w_r} \overline{S} - Sw_{r+2} \overline{w_{r+2}} \overline{S}] \\
+&= S \left[ \sum_{r=1,2} (w_r \overline{w_r} - w_{r+2} \overline{w_{r+2}}) \right] \overline{S} = S \left( \sum_{r=1,4} \varepsilon_r w_r \overline{w_r} \right) \overline{S}
+\end{align*}
+Ricordando che
+$$
+\overline{S} = \gamma^0 S^\dagger \gamma^0 = S^{-1}
+$$
+$$
+S \left( \sum_{r=1,4} \varepsilon_r w_r \overline{w_r} \right) \overline{S} = S(2m\hat{I})S^{-1} = 2m\hat{I}
+$$
+Concludiamo
+$$
+\sum_{r=1,2} [u_r \overline{u}_r - v_r \overline{v}_r] = 2m\hat{I}
+$$
