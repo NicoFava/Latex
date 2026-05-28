@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithm}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{capt-of}
+\usepackage{url}
+\usepackage{chemmacros}
+\usepackage{upgreek}
+\usepackage{isomath}
+\usepackage{cancel}
+\usepackage{bm}
+\usepackage[italian]{babel}
+\geometry{a4paper, top=2.5cm, bottom=2.5cm, left=3cm, right=3cm, bindingoffset=5mm}
+\usepackage[suftesi]{frontespizio}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{verbatim}
+
+\title{Tutta la statistica da sapere per Fenomenologia del Modello Standard delle Particelle Elementari\\ }
+\author{Nicolò Favagrossa\\nicolo.favagrossa@studenti.unimi.it}
+\date{\today}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section{Introduzione}
+Il più semplice esempio di intervalli di confidenza sono le "barre di errore". Al primo anno del laboratorio di fisica abbiamo imparato a mettere le misure in questa maniera
+\begin{equation}
+    \text{misura} = \text{valore} \pm \text{errore}
+\end{equation}
+che significa che è la miglior stima della $X$ cin la sua incertezza $\sigma_X$ per una certa quantità. Il messaggio è: "sei confidente che il valore vero $X^\text{true}$ giaccia nell'intervallo $[X-\sigma_X, X+\sigma_X]$ con una probabilità ragionevole".
+Più precisamente stiamo assumento una fluttuazione Gaussiana dei nostri dati e crediamo che:
+\begin{equation}
+    X^\text{true} \in [X-\sigma_X, X+\sigma_X] \quad \text{con una probabilità del } 68\%
+\end{equation}
+questa è chiamata livello di confidenza e $\left[ X-\sigma_X\;X+\sigma_X \right]$ è chiamato intervallo di confidenza al $68\%$.
+Attenzione però! $X^\text{True}$ non è conosciuto! La probabilità quindi si riferisce a $X$ e $\sigma_X$ che fluttuano da misura a misura.
+
+Ora però dobbiamo generalizzare queso concetto in questi seguenti casi:\
+\begin{itemize}
+    \item le fluttuazioni non sono necessariamente Gaussiane
+    \item il livello di confidenza voluto potrebbe essere diverso dal $68\%$ (ad esempio $95\%$)
+    \item potremmo essere interessati a più di una quantità (ad esempio $X$ e $Y$) che potrebbero essere anche correlate
+    \item la stessa quantità potrebbe essere misurata da più di un esperimento con diversi metodi, data sets, etc...
+\end{itemize}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{immagini/Confidence_Intervals.png}
+    \label{fig:ff}
+\end{figure}
+Cosa significano questi plot? Questi sono intervalli di confidenza costruiti dai dati $\Rightarrow$ stocastici. Hanno una probabilita uguale al Confidence Level (CL) di contenere ("ricoprire") il valore vero (sconosciuto). Come li costruisco? lo vedremo in seguito!
+
+Un primo esempio è sicuramente l'accoppiamento del bosone di Higgs ai fermioni e ai bosoni di Gauge:
+\begin{equation}
+    g_f^{SM}=\frac{m_f}{v} \quad \text{e} \quad g_V^{SM}=2\frac{m_V^2}{v}
+\end{equation}
+E noi misuriamo $g_f$ e $g_V$ e vogliamo sapere se sono compatibili con il modello standard. Quindi vogliamo costruire un intervallo di confidenza per $g_f$ e $g_V$ e vedere se il punto $g_f^{SM}$, $g_V^{SM}$ è incluso in questo intervallo.
+
+
+\end{document}
+
