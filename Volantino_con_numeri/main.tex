@@ -1,0 +1,115 @@
+\documentclass[a4paper,11pt]{article}
+
+% Pacchetti fondamentali
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+% Margini ottimizzati per far stare tutto in una pagina
+\usepackage[top=1cm, bottom=1cm, left=1.2cm, right=1.2cm]{geometry} 
+\usepackage{graphicx} 
+\usepackage{nopageno} 
+\usepackage{xcolor}
+\usepackage{amsmath, amssymb} % Per le formule matematiche avanzate
+\usepackage{fontawesome5} % Per le icone (telefono, email, ecc.)
+\usepackage{tcolorbox} % Per creare riquadri colorati e accattivanti
+
+% Definizione dei colori personalizzati
+\definecolor{mainblue}{RGB}{45, 90, 150} 
+\definecolor{accent}{RGB}{220, 80, 40}
+\definecolor{lightgray}{RGB}{245, 245, 245}
+
+\begin{document}
+
+% --- INTESTAZIONE COLORATA ---
+\begin{center}
+    {\Huge \textbf{\faRocket\ FISICA E MATEMATICA}}\\[0.2cm]
+    % Frase resa più sobria. Se preferisci toglierla, elimina la riga qui sotto.
+    {\Large \textit{Lezioni private, recupero debiti e preparazione test}}
+\end{center}
+\vspace{0.2cm} 
+
+% --- CORPO CENTRALE DIVISO IN DUE ---
+\noindent
+\begin{minipage}[t]{0.62\textwidth}
+    \vspace{0pt} % <-- TRUCCO: Forza l'allineamento in alto con l'altra minipage
+    
+    \textcolor{mainblue}{\Large \textbf{\faUserGraduate\ Chi sono}}\\[0.15cm]
+    Mi chiamo \textbf{Nicolò Favagrossa}. Sono uno studente \textbf{Magistrale in Fisica} (specializzato in Particelle e Astroparticelle) con oltre due anni di esperienza professionale come \textbf{Tecnico di laboratorio R\&D Junior} nel settore energetico. \\
+    Durante la mia triennale in \textbf{Fisica} all'\textbf{Università Statale di Milano} ho collaborato a esperimenti internazionali come JUNO (Jiangmen Underground Neutrino Observatory). \\
+    \textbf{Il mio obiettivo} non è solo farti superare la verifica, ma trasmetterti la passione per la scienza. Voglio aiutarti a scoprire la logica che si nasconde dietro ogni problema, trasformando la fatica dello studio in pura curiosità!\\[0.3cm]
+    
+    \textcolor{mainblue}{\Large \textbf{\faChalkboardTeacher\ Cosa offro}}\\[0.11cm]
+    \begin{itemize}
+        % ENFASI SUI DEBITI CON ICONA DEL SOLE
+        \item[\textcolor{accent}{\faCheckCircle}] \textbf{Recupero Debiti:} Hai il debito in Matematica o Fisica? Creiamo insieme un piano di studio estivo mirato per superare l'esame di riparazione a settembre con sicurezza e senza stress.
+        \item[\textcolor{accent}{\faCheckCircle}] \textbf{Ripasso e Potenziamento:} Consolidamento delle basi, recupero delle lacune e preparazione per chi vuole iniziare il prossimo anno scolastico con una marcia in più.
+        \item[\textcolor{accent}{\faCheckCircle}] \textbf{Test d'Ingresso:} Allenamento logico e preparazione specifica per superare i TOLC e i test di ammissione universitari.
+        \item[\textcolor{accent}{\faCheckCircle}] \textbf{Zero Perdite di Tempo:} Ti chiedo di inviarmi gli argomenti prima di vederci. In questo modo preparo una lezione su misura, con schemi ed esercizi già pronti per sfruttare al 100\% il tempo.
+        \item[\textcolor{accent}{\faCheckCircle}] \textbf{Online o in Presenza:} Massima flessibilità. Lezioni a distanza super interattive grazie all'uso di videocamera e tablet condiviso in tempo reale.
+        \item[\textcolor{accent}{\faCheckCircle}] 
+        \textbf{Supporto SOS:} Ti blocchi su un esercizio a casa? I miei studenti possono scrivermi in qualsiasi momento per un aiuto veloce o un consiglio metodologico!
+    \end{itemize}\vspace{0.3cm}
+    
+    \textcolor{mainblue}{\Large \textbf{\faAddressCard\ Contatti}}\\[0.15cm]
+    \faPhoneSquare\ Telefono / WhatsApp: \textbf{389 0155686}\\
+    \faEnvelope\ Email: \textbf{nicolo.favagrossa@gmail.com}
+    
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.35\textwidth}
+    \vspace{0pt} % <-- TRUCCO: Si allinea esattamente alla prima riga di "Chi sono"
+
+    % --- IMMAGINE MODELLO STANDARD ---
+    \begin{center}
+        \includegraphics[width=0.85\textwidth, keepaspectratio]{Modello Standard.png}
+        \vspace{0.2cm} 
+    \end{center}
+
+    % --- RIQUADRO ESTETICO DELLE FORMULE ---
+    \begin{tcolorbox}[colback=lightgray, colframe=mainblue, arc=2mm, title=\faAtom\ \textit{L'Evoluzione della Fisica}, left=2pt, right=2pt, top=3pt, bottom=3pt, boxsep=1pt]
+        \centering
+        {\footnotesize \textbf{Meccanica Classica}}\\
+        $F = ma$\\[0.15cm]
+        {\footnotesize \textbf{Meccanica Analitica}}\\
+        $\displaystyle \frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{q}_i} \right) - \frac{\partial \mathcal{L}}{\partial q_i} = 0$\\[0.15cm]
+        {\footnotesize \textbf{Meccanica Quantistica}}\\
+        $\displaystyle i\hbar \frac{\partial \Psi}{\partial t} = \hat{H}\Psi$\\[0.15cm]
+        {\footnotesize \textbf{Meccanica Quantistica relativistica}}\\
+        $(i\gamma^\mu\partial_\mu - m)\psi = 0$\\[0.15cm]
+        \rule{0.85\linewidth}{0.4pt}\\[0.1cm] % Linea separatrice sottile
+        \textit{\scriptsize Dalla semplicità alla complessità di una formulazione sempre più generale.}
+    \end{tcolorbox}
+    
+    \vspace{0.2cm}
+    
+    \begin{center}
+        % Spazio per QR Code (leggermente ridotto per sicurezza)
+        \includegraphics[width=3cm]{qr.jpeg}\\[0.1cm]
+        \small \faLinkedin\ \textit{Inquadra per il mio profilo!}
+    \end{center}
+\end{minipage}
+
+\vfill % <-- SPINGE I BIGLIETTINI SUL FONDO DELLA PAGINA 
+
+% --- LINGUETTE STACCABILI AGGIORNATE ---
+\newcommand{\tearoff}{%
+    \begin{minipage}[c][4cm]{1.95cm} % [c] centra verticalmente il contenuto. Larghezza 1.95cm sicura.
+        \centering
+        \rotatebox[origin=c]{90}{% origin=c ruota il testo esattamente dal suo centro, impedendo tagli
+            \parbox{3.8cm}{
+                \centering
+                \small
+                \textcolor{mainblue}{\textbf{\faGraduationCap\ Nicolò}} - Fis/Mat\\[0.15cm]
+                \large\textbf{389 0155686}
+            }
+        }
+    \end{minipage}%
+}
+
+% Linea tratteggiata per il taglio
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}} 
+\vspace{0.1cm}
+\begin{center}
+\tearoff \vrule \tearoff \vrule \tearoff \vrule \tearoff \vrule \tearoff \vrule \tearoff \vrule \tearoff \vrule \tearoff \vrule \tearoff
+\end{center}
+
+\end{document}
