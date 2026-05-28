@@ -1,0 +1,57 @@
+\begin{figure}[htp!]
+  \centering
+  \includegraphics[scale=0.22]{Esercizio9.2/Esercizio.jpg} 
+\end{figure}
+\textbf{A)} Prima di tutto possiamo calcolare la sezione d'urto attraverso la formula data dal problema:
+\begin{equation}
+    \sigma = \frac{5.6}{\pi}(1.1\cdot10^{-5}\,\mathrm{GeV}^{-2})^21\,\mathrm{MeV}^2(200\,\mathrm{MeV}\,\mathrm{fm})^2\simeq9\cdot10^{-44}\,\mathrm{cm}^2\simeq9\cdot10^{-18}\,\mathrm{fm}^2
+\end{equation}
+Per calcolare il libero cammino medio invece è necessario calcolare prima la densità di protoni per centimetro cubo:
+\begin{equation}
+    n=\rho\frac{N_A}{A}Z=2.2\cdot10^{24}\,P/\mathrm{cm}^3
+\end{equation}
+Ora il libero cammino medio:
+\begin{equation}
+    \lambda=\frac{1}{n\sigma}=5\cdot10^{18}\,\mathrm{cm}=5\cdot10^{16}\,\mathrm{m}
+\end{equation}
+Questa distanza è davvero molto grande infatti:
+\begin{equation}
+    1\,\text{anno luce}=\pi\cdot10^{7}\,\mathrm{s}(3\cdot10^{8}\,\mathrm{m}/\mathrm{s})\simeq9\cdot10^{15}\,\mathrm{m}
+\end{equation}
+Quindi il libero cammino medio corrisponde a circa $5$ anni luce.
+
+\textbf{B)} Considerando la potenza di un reattore nucleare e considerando l'energia sprigionata in una sola fissione: circa $E_{\mathrm{fiss}}\approx 200\,\mathrm{MeV}/\mathrm{fiss}$ (questo perchè c'è un guadagno di circa $0.9\,\mathrm{MeV}$ per nucleone per i nuclei con $A\ge200$). Se voglio esprimere l'energia nel S.I.
+\begin{equation}
+    E_{\mathrm{fiss}}\simeq200\,\mathrm{MeV}/\mathrm{fiss}=200\cdot1.6\cdot10^{-13}\,\mathrm{J}/\mathrm{fiss}=3.2\cdot10^{-11}\,\mathrm{J}/\mathrm{fiss}
+\end{equation}
+Se ora voglio stimare il numero di fissioni al secondo:
+\begin{equation}
+    \frac{dN_{\mathrm{fiss}}}{dt}=\frac{7\cdot10^{8}\,\mathrm{W}}{3.2\cdot10^{-11}\,\mathrm{J}/\mathrm{fiss}}=2\cdot10^{19}\,\mathrm{fiss}/\mathrm{s}
+\end{equation}
+Trattandosi di decadimenti $\beta$, l'ordine di grandezza di energia è del $\mathrm{MeV}$.
+
+Il numero di anti-neutrini prodotti per fissione è:
+\begin{equation}
+    \frac{dN_{\Bar{\nu}}}{dt}=\frac{dN_{\mathrm{fiss}}}{dt}n_{\nu/\mathrm{fiss}}\sim2\cdot10^{19}\,\mathrm{fiss}/\mathrm{s}\cdot 5\nu/\mathrm{fiss}\approx10^{20}\nu/\mathrm{s}
+\end{equation}
+Dove $n_{\nu/\mathrm{fiss}}$ rappresenta il numero medio di neutrini per fissione. Invece il flusso di neutrini è dato da:
+\begin{equation}
+    \Phi=\frac{dN_\nu/dt}{4\pi R^2}=\frac{10^{20}\nu/\mathrm{s}}{4\pi 10^6\,\mathrm{cm}^2}=8\cdot10^{12}\,\nu/\mathrm{cm}^2\mathrm{s}
+\end{equation}
+
+\textbf{C)} Il numero di interazioni è dato da:
+\begin{equation}\label{D}
+    \frac{dN_{\text{int}}}{dt}=\Phi N_T\sigma
+\end{equation}
+Per calcolare la densità di bersagli:
+\begin{equation}
+    N_T=m\frac{N_A}{A}2=\frac{4}{3}\cdot10^{28}\,\mathrm{protoni}
+\end{equation}
+E quindi usando l'espressione (\ref{D}) si ricava:
+\begin{equation}
+    \frac{dN_{\text{int}}}{dt}=\Phi N_T\sigma=8\cdot10^{12}\,\nu/\mathrm{cm}^2\mathrm{s}\cdot\frac{4}{3}\cdot10^{28}\,\mathrm{protoni}\cdot9\cdot10^{-44}\,\mathrm{cm}^2=10^{-2}\,\mathrm{interazioni}/\mathrm{s}
+\end{equation}
+Anche se la sezione d'urto è estremamente piccola abbiamo la combinazione di un gran numero di neutrini e un gran numero di bersagli mi porta ad avere un tasso di interazione ragionevole. Infatti:
+\begin{equation}
+    3600\,\mathrm{s}/\mathrm{h}\cdot10^{-2}\,\mathrm{interazioni}/\mathrm{s}=36\,\,\mathrm{interazioni}/\mathrm{h}
+\end{equation}

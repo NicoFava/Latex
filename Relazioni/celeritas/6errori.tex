@@ -1,0 +1,18 @@
+Analizzando l'incertezza sulle misure della velocità della luce $c$, si ritrovano due diverse categorie di errori che la generano:
+\begin{itemize}
+    \item errore sistematico, dovuto all'incertezza sulle misure $D$, $a$ ed $f_2$. Mediante il metodo della propagazione degli errori, si può calcolare $\sigma_{sis}$.
+    Tale quantità corrisponde ad una incertezza presente in tutte le misure, che non può essere ridotta utilizzando metodi statistici.
+    
+    \item errore casuale, dovuto all'incertezza presente sulle misure $\Delta\delta$ e $\Delta\omega$, che variano di misura in misura. In particolare, l'incertezza che caratterizza la misura di $\Delta\delta$ è molto significativa, poiché con uno strumento dotato di precisione $0.01mm$ si misurano distanza comprese tra $0. 05mm $ e $1mm$ (ovviamente tale criticità risulta meno importante nel caso del turbo).
+    L'incertezza sulla misura della velocità dovuta all'errore casuale può essere ridotta usando strumenti statistici, in particolare la deviazione standard della media, data dalla formula:
+    \begin{equation}
+         \sigma_{\bar{c}}=\sqrt{\frac{\sum_{i=1}^{n} (c_i-\bar{c})^2}{N(N-1)}}
+    \end{equation}
+\end{itemize}
+
+L'incertezza totale sulla misura finale di $c$ è dunque dato da
+\begin{equation}
+    \sigma_c=\sqrt{\sigma_{\bar{c}}^2+\sigma_{sis}^2}
+\end{equation}
+
+In particolare si ricaveranno le misure di c per i tre differenti metodi di sperimentazione (rotazione dello specchio in senso orario, in senso antiorario e usando il turbo nei due sensi), in modo da assicurarsi che le misure in ogni set di dati siano ottenute con procedure e strumentazioni uguali.

@@ -1,0 +1,56 @@
+I decadimenti $\gamma$ consistono nel passaggio di un nucleo da uno stato eccitato ad uno stato di energia più bassa, accompagnato dall'emissione di un \textbf{fotone}. Nel modello a shell le transizioni di un nucleone da un licello all'altro o dai moti collettici in nulcei con grande $A$. Questo è un processo elettromagnetico:
+\begin{itemize}
+    \item decadimenti $\alpha$: interazioni forti;
+    \item decadimenti $\beta$: interazioni deboli.
+\end{itemize}
+L'approccio sarà un'estensione del fenomeno classico del l'irraggiamento elettromagnetico dovuto a cariche in moto acceerato. Questo ci farà introdurre la probabilità di transizione della regola d'oro di Fermi. Questo ci permetterà di illustrare un concetto generale: \textbf{Regole di selezione}. Ovviamente è anche possibile il processo inverso e cioè l'assorbimento di un fotone (il decadimento gamma sarà comunque trattato con piccoli cenni. Per più dettagli guardare le slide).
+\subsection{Ripasso}
+Supponiamo di aver risolto un problema di Schr\"odinger:
+\begin{equation*}
+    i\hbar\frac{\partial \psi}{\partial t}=H\psi
+\end{equation*}
+Le autofunzioni possono essere nello spettro continuo:
+\begin{equation*}
+    |\mathbf{k}\rangle\quad k=\frac{p}{\hbar}
+\end{equation*}
+Oppure spettro discreto: $|E_n\rangle$. In caso di simmetrie, classificabili anche con altri numeri quantici:
+\begin{equation*}
+    |n,l,m,P,\ldots\rangle
+\end{equation*}
+Costituiscono un insieme ortonormale e completo:
+\begin{equation*}
+    \langle\mathbf{k}|\mathbf{k}'\rangle=\delta(\mathbf{k}-\mathbf{k}'), \quad \langle\mathbf{k}|n',l',m'\rangle=0,\quad \langle n,l,m|n',l',m'\rangle=\delta_{n,n'}\delta_{l,l'}\delta_{m,m'}
+\end{equation*}
+Qualunque funzione può venire espressa come combinazione lineare di autostati:
+\begin{equation*}
+    \psi(\mathbf{x})=\int d^3\mathbf{k}c_k|\mathbf{k}\rangle +\sum_{n,l,m,\ldots}c_{n,l,m}|n,l,m,\ldots\rangle
+\end{equation*}
+Il prodotto scalare con un autostato è il coefficiente di tale sviluppo:
+\begin{equation*}
+    \langle\mathbf{k}|\psi(\mathbf{z})\rangle=c_k \qquad \langle n,l,m|\psi(\mathbf{x})\rangle=c_{n,l,m,\ldots}
+\end{equation*}
+\subsection{Regola d'oro}
+Se aggiungiamo una perturbazione $V$, gli autostati di $H$ evolvono nel tempo:
+\begin{equation*}
+    i\hbar\frac{\partial \psi}{\partial t}=(H+V)\psi\,\Rightarrow\,i\hbar\frac{\partial}{\partial t}|n,l,m\rangle=E_{n,l,m}|n,l,m\rangle+V|n,l,m\rangle
+\end{equation*}
+Il termine $V$ mescola diverse autofunzioni di $H$:
+%IMMAGINE ty
+\begin{figure}[htp!]
+  \centering
+  \includegraphics[scale=0.5]{Lezione8/ty.png} 
+\end{figure}
+Da un trattamento rigoroso, la probabilità per unità di tempo che uno stato iniziale $|n,l,m\rangle$ evolva in uno stato finale $|n_f,l_f,m_f\rangle$ è data dalla \textbf{regola d'oro di Fermi:}
+\begin{equation*}
+    P_{i\to f}={\frac {2\pi }{\hbar }}\left|\langle n_f,l_f,m_f|V|n,l,m\rangle \right|^{2}\rho (E_{f})
+\end{equation*}
+Nello spettro dischero ho il numero di stati finali accessibili che ho a disposizione. Mentre nello spettro continuo $dN_f/dE_f$ densità di stati finali accessibili.
+\subsection{Regole di selezione}
+Lo studio della probabilità di transizione in generale permette di determinare delle proprietà dell'interazione $V$ o viceversa, se si fa un'ipotesi sull'interazione $V$, si possono determinare le probabilità di transizione da confrontare con osservazioni sperimentali. In particolare l'osservazione empirica dei possibili stati finali in cui uno stato iniziale può evolversi risulta in \textbf{regole di selezione}:
+\begin{equation*}
+    \text{osservazione di }P_{i\to f} \quad \Leftrightarrow \quad \langle n_f,l_f,m_f|V|n,l,m\rangle \ne 0
+\end{equation*}
+\begin{equation*}
+    \text{non osservazione di }P_{i\to f} \quad \Leftrightarrow \quad \langle n_f,l_f,m_f|V|n,l,m\rangle = 0
+\end{equation*}
+o viceversa, data un'interazione $V$, spesso alcune sue proprietà di simmetria, ci permettono di prevedere quali transizioni sono possibili e quali proibite. [esempio del dipolo elettrico nelle slide]

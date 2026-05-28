@@ -1,0 +1,29 @@
+\begin{figure}[htp!]
+  \centering
+  \includegraphics[scale=0.22]{Esercizio13.1/Esercizio.jpg} 
+\end{figure}
+Utilizzando la distribuzione di corpo nero e ricordando la legge di Wien è possibile calcolare l'energia tipica dei fotoni a questa temperatura:
+\begin{equation}
+    \lambda_{\mathrm{max}}=\frac{b}{T}\quad \Rightarrow\quad E=h\nu=h\frac{c}{\lambda}=\frac{h c T}{b}=1.15\cdot10^{-3}\,\mathrm{eV}
+\end{equation}
+Successivamente l'energia disponibile nel centro di massa si calcola:
+\begin{equation}
+    S=\left(\mathbf{P}_p+\mathbf{P}_\gamma\right)^2=m_p^2+0+2E_pE_\gamma-2|\mathbf{p}_p|E_\gamma\cos{\theta}
+\end{equation}
+Per calcolare l'energia di soglia si calcola il caso in cui $S$ è massimo e quindi:
+\begin{equation}
+    S_\mathrm{max}: \quad \cos{\theta}=-1
+\end{equation}
+Di conseguenza l'espressione diventa:
+\begin{equation}
+    S_\mathrm{max}=m_p^2+2E_pE_\gamma+2|\mathbf{p}_p|E_\gamma
+\end{equation}
+Ora è possibile porre il protone come ultrarelativistico per semplificare i conti. Successivamente dopo aver controllato il risultato è possibile verificare se questo è vero oppure no. Quindi $|\mathbf{p}_p|\sim E_p$ ($E_p>>m_p$):
+\begin{equation}
+    S_\mathrm{max}=m_p^2+2E_pE_\gamma+2\sqrt{E_p^2-m_p^2}E_\gamma=m_p^2+4E_pE_\gamma=m^2_\Delta
+\end{equation}
+Sapendo che la massa della $\Delta$ è: $m_\Delta=1232\,\mathrm{MeV}$ posso calcolare l'energia di soglia del protone per indurre la reazione richiesta:
+\begin{equation}
+    E_p^{th}=\frac{m_\Delta^2-m_p^2}{4E_\gamma}=1.3\cdot10^{20}\,\mathrm{eV}
+\end{equation}
+Quindi supporre il protone come una particella ultrarelativistica è corretto.

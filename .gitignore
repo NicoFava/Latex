@@ -1,2 +1,53 @@
-/.tmp.drivedownload
-/.tmp.driveupload
+# --- Editor e backup ---
+.vscode/
+*.tex.bak
+*.sav
+*.bak
+*.swp
+
+# --- Pacchetto Minted (codice sorgente) ---
+_minted-*/
+*.pyg
+
+# --- Glossari e Acronimi ---
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+
+# --- Presentazioni Beamer ---
+*.nav
+*.snm
+*.vrb
+
+# File temporanei di sincronizzazione (es. Google Drive)
+/.tmp.drivedownload/
+/.tmp.driveupload/
+
+# --- File di compilazione LaTeX da ignorare ---
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
+*.lof
+*.lot
+main-frn.tex
+# File di bibliografia ausiliari (se usi BibTeX o Biber)
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.idx
+*.ilg
+*.ind
+*.synctex(busy)
+
+# Evita di ignorare cartelle importanti o file nascosti del sistema
+.DS_Store
+Thumbs.db

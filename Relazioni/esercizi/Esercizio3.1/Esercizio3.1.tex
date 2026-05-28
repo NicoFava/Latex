@@ -1,0 +1,44 @@
+\begin{figure}[htp!]
+  \centering
+  \includegraphics[scale=0.3]{Esercizio3.1/Esercizio.jpg} 
+\end{figure}
+\textbf{A)} Per calcolare la prima quantità che viene chiesta bisogna ricordare che l'attività è definita come:
+\begin{equation} \label{N}
+    A=\lambda N \quad \Rightarrow N=\frac{A}{\lambda}
+\end{equation}
+Dove $\lambda$ è la costante di decadimento. L'attività è presente come un dato del problema mentre la costante di decadimento va ricavata come:
+\begin{equation}
+    \lambda=\frac{1}{\tau}\quad \Rightarrow\quad \lambda=\frac{\ln{2}}{\tau_{1/2}}=\frac{\ln{2}}{1.81\cdot10^{11}\,s}=0.39\cdot10^{-11}\,s^{-1}
+\end{equation}
+Ritornando all'equazione (\ref{N}) si ricava il numero di atomi contenuti nel campione:
+\begin{equation}
+    N_{\ch{^{14}C}}=\frac{A}{\lambda}=\frac{0.25\,\mathrm{Bq}}{0.39\cdot10^{-11}\,s^{-1}}=6.4\cdot10^{10}\,\mathrm{atomi}
+\end{equation}
+Di conseguenza in $1\,\mathrm{g}$ di carbonio naturale ci sono $6.4\cdot10^{10}\,\mathrm{atomi}$ di $\ch{^{14}C}$. Per fare un veloce confronto all'interno di $1\,\mathrm{g}$ di carbonio naturale sono presenti:
+\begin{equation}
+    N_{\mathrm{C}}=\frac{N_A}{A}\approx\frac{6\cdot10^{23}}{12}=5\cdot10^{22}\,\mathrm{atomi}
+\end{equation}
+Di conseguenza vediamo che $N_{\ch{^{14}C}}<< N_{\mathrm{C}}$. 
+
+\textbf{B)} Il primo passo è convertire l'attività da $\mathrm{Ci}$ a $\mathrm{Bq}$:
+\begin{equation}
+    1\,\mathrm{Ci}=3.7\cdot10^{10}\,\mathrm{Bq}\quad \Rightarrow\quad A=0.15\,\mathrm{Bq}
+\end{equation}
+L'attività al tempo $t$ è:
+\begin{equation}
+    A(t)=A_0e^{-\lambda t}=A_0e^{-\frac{\ln{2}}{\tau_{1/2}}}
+\end{equation}
+Invertendo questa relazione è possibile ottenere il tempo $t$:
+\begin{equation*}
+    t=-\frac{\tau_{1/2}}{\ln{2}}\ln\left({\frac{A(t)}{A_0}}\right)=-\frac{5730\,\mathrm{yr}}{\ln{2}}\left(\frac{0.15}{0.25}\right)=4175\,\mathrm{yr}
+\end{equation*}
+
+
+\textbf{C)} L'incertezza è:
+\begin{equation}
+    \sigma_t=\frac{\tau_{1/2}}{\ln(2)}\frac{\sigma_A}{A}=\frac{\tau_{1/2}}{\ln(2)}\frac{1}{\sqrt{N}}=\frac{\tau_{1/2}}{\ln(2)}\frac{1}{\sqrt{AT}}=8187\,\mathrm{yr}\frac{1}{0.15\,\mathrm{Bq}3.6\cdot10^{3}\,s}=385\,\mathrm{yr}
+\end{equation}
+Avendo visto che $\sigma_A/A=1/\sqrt{N}$ e $T$ il tempo di misura. Quindi il risultato finale è:
+\begin{equation}
+    t=4200\pm400\,\mathrm{yr}
+\end{equation}

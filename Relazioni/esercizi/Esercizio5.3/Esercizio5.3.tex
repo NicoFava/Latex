@@ -1,0 +1,36 @@
+\begin{figure}[htp!]
+  \centering
+  \includegraphics[scale=0.22]{Esercizio5.3/Esercizio.jpg} 
+\end{figure}
+La richiesta di reattore critico si traduce in:
+\begin{equation}
+    \nu q = 1
+\end{equation}
+Dove $\nu$ rappresenta il numero di neutroni prodotti per fissione che è circa: $\nu\approx 2.4\,\mathrm{n}/\mathrm{fiss}$. Il $q$ invece è dato da due fattori:
+\begin{equation}
+    q=(1-p_{\mathrm{catt}})_{\mathrm{mod}}\frac{\Bar{\sigma}_{\mathrm{fiss}}}{\Bar{\sigma}_{\mathrm{fiss}}+\Bar{\sigma}_{\mathrm{n},\gamma}}
+\end{equation}
+Noi sabbiamo che $P_{\mathrm{catt}}=0.47$, quindi:
+\begin{equation*}
+    \frac{\Bar{\sigma}_{\mathrm{fiss}}}{\Bar{\sigma}_{\mathrm{fiss}}+\Bar{\sigma}_{\mathrm{n},\gamma}}=0.79
+\end{equation*}
+Di conseguenza:
+\begin{equation}
+    0.21\Bar{\sigma}_{\mathrm{fiss}}=0.79\Bar{\sigma}_{\mathrm{n},\gamma}
+\end{equation}
+Indichiamo con $\alpha$ la frazione di $\ch{^{235}U}$. Quindi:
+\begin{equation}
+    0.21\alpha\sigma_{\mathrm{fiss},235}=0.79\left(\alpha\sigma_{\mathrm{n},\gamma,235}+(1-\alpha)\sigma_{\mathrm{n},\gamma,238}\right)
+\end{equation}
+Raccogliendo $\alpha$:
+\begin{equation}
+    \alpha=4.5\%
+\end{equation}
+Ora vogliamo sapere a quale tempo $\alpha(t)=0.045$:
+\begin{equation}
+   \alpha(t)=0.045=\alpha(0)\frac{e^{-\frac{\ln{2}}{\tau_{1/2,235}}t}}{e^{-\frac{\ln{2}}{\tau_{1/2,238}}t}}
+\end{equation}
+Invertendo la relazione si ottiene:
+\begin{equation}
+    t=2.25\cdot10^{9}\,\mathrm{yr}
+\end{equation}

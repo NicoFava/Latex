@@ -1,0 +1,121 @@
+\begin{figure}[htp!]
+  \centering
+  \includegraphics[scale=0.2]{Esercizio4.1/Esercizio.jpg} 
+\end{figure}
+\textbf{A)} Il primo passo è calcolare il $Q$ valore del decadimento:
+\begin{equation}
+\begin{array}{c}
+      Q=m(\ch{^{224}Ra})-m(\ch{^{220}Rm})-m(\ch{^4He})=\\
+     =224\,\mathrm{u}+18.825\,\mathrm{MeV}-220\,\mathrm{u}-10.612\,\mathrm{MeV}-4\mathrm{u}-2.425\,\mathrm{MeV}=5.788\,\mathrm{MeV}
+\end{array}
+\end{equation}
+Ora ricavo il fattore di Gamow dalla relazione della vita media e non dalla formula di $G$ visto che come si è visto si porta un errore di anche due ordini di grandezza:
+\begin{equation}
+    \ln(\tau)=\ln\left({\sqrt{\frac{m}{2(Q+V_0)}}\frac{a}{2}}\right)+2G
+\end{equation}
+Per essere consistente con le unità di misura dovrei scrivere:
+\begin{equation}
+    2G=\ln(\tau)-\ln\left({\sqrt{\frac{m}{2(Q+V_0)}}\frac{a}{2}}\right)=\ln\left({\sqrt{\frac{2(Q+V_0)}{m}}\frac{2\tau}{a}}\right)
+\end{equation}
+In unità naturali dovrei convertire $\tau$ in una lunghezza:
+\begin{equation}
+    2G=\ln\left({\sqrt{\frac{2(Q+V_0)}{m}}\frac{2\tau c}{a}}\right)=\ln\left({\sqrt{\frac{2\cdot35.8\,\mathrm{MeV}}{3730\,\mathrm{MeV}}}\frac{2\cdot 1.4\cdot10^{14}\,\mathrm{m}}{7.2\cdot10^{-15}\,\mathrm{m}}}\right)\approx64
+\end{equation}
+Dove:
+\begin{equation}
+    \tau c=\frac{\tau_{1/2}}{\ln{2}}=1.4\cdot10^{14}\,\mathrm{m}, \qquad a=1.2\,\mathrm{fm}A^\frac{1}{3}=7.2\cdot10^{-15}\,\mathrm{m}, \qquad V_0\approx30\,\mathrm{MeV}
+\end{equation}
+E quindi:
+\begin{equation}
+    G\approx32
+\end{equation}
+Se avessimo usato la relazione di Gamow per calcolare $G$:
+\begin{equation}\label{G}
+    G(\text{Gamow})=\alpha\sqrt{\frac{2m}{Q}}Z_\alpha(Z_{Rn}-Z_\alpha)f\left(\frac{a}{b}\right)
+\end{equation}
+L'unica quantità che manca è la $b$. Per ricavare $b$ basta prendere il potenziale e porlo uguale a $Q$:
+\begin{equation}
+    V(r)=\alpha Z_\alpha(Z_{Rn}-Z_\alpha)\frac{\hbar c}{r}
+\end{equation}
+\begin{equation}
+    V(b)=Q \quad \Rightarrow \quad b=\frac{\alpha Z_\alpha(Z_{Rn}-Z_\alpha)\hbar c}{Q}=43.3\cdot 10^{-15}\,\mathrm{m} \quad \Rightarrow \quad \frac{a}{b}=0.17
+\end{equation}
+E il fattore $f$ che dipende da $\frac{a}{b}$:
+\begin{equation}
+    f\left(\frac{a}{b}\right)=\left[\arccos{\sqrt{\frac{a}{b}}}-\sqrt{\frac{a}{b}-\frac{a^2}{b^2}}\right]=0.78
+\end{equation}
+Ora che abbiamo tutti gli ingredienti possiamo riprendendere l'equazione (\ref{G}):
+\begin{equation}
+    G=\alpha\sqrt{\frac{2m}{Q}}Z_\alpha(Z_{Rn}-Z_\alpha)f\left(\frac{a}{b}\right)=34.9
+\end{equation}
+Quindi ricapitolando:
+\begin{equation}
+    G_{\text{spe}}=32 \qquad G_{\text{teo}}=35
+\end{equation}
+Ricordiamo che la vita media è proporzionale a: $\tau\sim e^{2G}$. Sostanzialmente ho che il rapporto tra le due vite medie:
+\begin{equation}
+    \frac{\tau_{\text{spe}}}{\tau_{\text{Gamow}}}\sim e^{2(G_{\text{spe}}-G_{\text{teo}})}=2.5\cdot10^{-3}
+\end{equation}
+Quindi quello che avrei calcolato con la teoria di Gamow e qualcosa di circa $3$ ordini di grandezza minore rispetto a quello misurato sperimentalmente.
+
+\textbf{B)} Il primo decadimento è:
+\begin{equation}
+    \ch{^{224}Ra}\,\to\,\ch{^{212}Pb}+\ch{^{12}C}
+\end{equation}
+Prima di tutto bisogna calcolare il $Q$ valore del decadimento:
+\begin{equation}
+\begin{array}{c}
+       Q_C=m(\ch{^{224}Ra})-m(\ch{^{212}Pb})-m(\ch{^{14}C})=\\
+     =224\,\mathrm{u}+18.825\,\mathrm{MeV}-212\,\mathrm{u}+7.549\,\mathrm{MeV}-12\mathrm{u}=26.37\,\mathrm{MeV}
+\end{array}
+\end{equation}
+Ora se vado a calcolare il rapporto:
+\begin{equation}
+    \frac{\tau_C}{\tau_\alpha}=\frac{\sqrt{\frac{m_C}{2(Q_C+V_0)}}}{\sqrt{\frac{m_\alpha}{2(Q_\alpha+V_0)}}}\frac{a_C}{a_\alpha}e^{2(G_C-G_\alpha)}=\sqrt{\frac{m_c}{m_\alpha}\frac{Q_\alpha+V_0}{Q_C+V_0}}\frac{a_C}{a_\alpha}e^{2G_\alpha\left(\frac{G_C}{G_\alpha}-1\right)}
+\end{equation}
+Il primo fattore moltiplicativo:
+\begin{equation}\label{t}
+    \sqrt{\frac{m_c}{m_\alpha}\frac{Q_\alpha+V_0}{Q_C+V_0}}\frac{a_C}{a_\alpha}=1.38
+\end{equation}
+Vedo quindi che il fattore puramente cinematico, il rapportorto delle vite medie si porta circa il $40\%$. Significa che il decadimento del carbonio ci "mette" il $40\%$ del tempo in più a decadere (questo solo per il contributo cinematico).
+Invece:
+\begin{equation}
+    \frac{G_C}{G_\alpha}=\frac{\sqrt{\frac{m_C}{Q_C}}}{\sqrt{\frac{m_\alpha}{Q_\alpha}}}\cdot\frac{Z_C(Z_{Rn}-Z_C)}{Z_\alpha(Z_{Rn}-Z_\alpha)}\cdot\frac{f\left(\frac{a}{b}\right)_C}{f\left(\frac{a}{b}\right)_\alpha} = 0.81\cdot2.86\cdot 0.76=1.76
+\end{equation}
+Il primo e il terzo termine tendono a ridurre il fattore di Gamow. Il secondo termine invece tende ad aumentarlo (il termine che rappresenta l'altezza della barriera di potenziale). Ritornando all'equazione (\ref{t}):
+\begin{equation}
+     \frac{\tau_C}{\tau_\alpha}=1.8\cdot10^{21}
+\end{equation}
+Quindi la vita media del decadimento in $\ch{^{12}C}$ è di $21$ ordini di grandezza maggiore rispetto al decadimento in $\alpha$.
+\begin{equation}
+    \tau_C=1.8\cdot10^{21}\tau_\alpha=7.2\cdot10^{19}\,\mathrm{yr}
+\end{equation}
+Una cosa importante da capire è che questo decadimento pur essendo poco probabile rispetto al decadimento in $\alpha$ è comunque possibile. Calcolando il $BR$ è possibile quantificare quanti atomi di $\ch{^{224}Ra}$ ho bisogno per vedere un solo decadimento in $\ch{^{12}C}$:
+\begin{equation}
+    \mathrm{B.R.}=\frac{\lambda_C}{\lambda}=\frac{\lambda_C}{\lambda_\alpha}=\frac{1/\tau_C}{1/\tau_\alpha}=\frac{\tau_\alpha}{\tau_C}=5.6\cdot10^{-22}
+\end{equation}
+Quindi dati $10^{22}$ atomi, quando saranno tutti decaduti avrò in media 5 atomi decaduti attraverso $\ch{^{12}C}$.
+
+Il secondo decadimento è:
+\begin{equation}
+    \ch{^{224}Ra}\,\to\,\ch{^{210}Pb}+\ch{^{14}C}
+\end{equation}
+Con passaggi analoghi si ricava il $Q$ valore:
+\begin{equation}
+\begin{array}{c}
+       Q_C=m(\ch{^{224}Ra})-m(\ch{^{210}Pb})-m(\ch{^{14}C})=\\
+     =224\,\mathrm{u}+18.825\,\mathrm{MeV}-210\,\mathrm{u}+14.728\,\mathrm{MeV}-14\mathrm{u}-3.019\,\mathrm{MeV}=30.53\,\mathrm{MeV}
+\end{array}
+\end{equation}
+Calcolando il rapporto tra le vite medie:
+\begin{equation}
+    \frac{\tau_C}{\tau_\alpha}=\sqrt{\frac{m_c}{m_\alpha}\frac{Q_\alpha+V_0}{Q_C+V_0}}\frac{a_C}{a_\alpha}e^{2G_\alpha\left(\frac{G_C}{G_\alpha}-1\right)}=3.8\cdot10^{33}
+\end{equation}
+Con:
+\begin{equation}
+    \frac{G_C}{G_\alpha}=2.10
+\end{equation}
+Si nota quindi che questo decadimento ha una vita media di $33$ ordini di grandezza in più rispetto alla vita media del decadimento $\alpha$.
+\begin{equation}
+    \sin{\theta}d\theta=d(\cos{\theta})
+\end{equation}

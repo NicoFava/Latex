@@ -1,0 +1,40 @@
+Prima di preparare la strumentazione come spiegato nel paragrafo precedente, si è misurata la lunghezza $D$ come somma tra le le lunghezze $ \overline{M_rS_1}+\overline{S_1S_2}+\overline{S_1M_f}$. In particolare, per effettuare tale misura si è utilizzato un metro a nastro dotato di scala graduata con precisione $\sigma_{metro}=1\,cm$. Avendo a che fare con grandezze dell'ordine di metri, ed essendo il nastro morbido, è stato necessario assicurarsi che il nastro rimanesse diritto teso e non si inconcasse al centro. Per fare ciò, uno sperimentatore si è assicurato di tenere sollevata la parte centrale del nastro , evitando allo stesso tempo di modificarne la direzione e cercando di allineare il centro con le estremità.
+In questo modo, la misura di $D$ e il suo errore sono state ricavate da
+\begin{equation}
+    D=\overline{M_rS_1}+\overline{S_1S_2}+\overline{S_1M_f} \, \, \, \, \, \, \, \, \, \, \, 
+    \sigma_D=\sqrt{3\sigma_{metro}}=2cm
+\end{equation}
+
+Dopo aver sistemato le lenti come spiegato al paragrafo precedente, è stato possibile misurare la grandezza $a$, la distanza tra la seconda lente $L_2$ e lo specchio rotante, grazie al metro presente sul banco ottico, con la precisione di $\sigma_a=1mm$. 
+
+Per le misure di $\Delta\delta$, si è utilizzato il microscopio, dotato di una una croce sulla lente e una rotella sul supporto indispensabili per centrare il punto luminoso corrispondente al raggio di ritorno. 
+
+Una volta scelto il senso di rotazione dello specchio, è stato messo in moto con una frequenza bassa $\nu_0$ (intorno ai 50-100 Hz) e, ruotando appositamente la rotella, si è centrata con la croce del microscopio la posizione in cui appariva il punto luminoso del fascio di ritorno.  
+Fatto ciò, si è trovata la misura $\delta_0$ leggendo la scala graduata posta sulla rotella (dotata anche di nonio, in grado di fornire misure con una precisione di 0.01mm)
+Dopodiché, si è aumentata la frequenza a un valore $\nu$, si è riposizionato il mirino nel microscopio e si è trovata la misura $\delta_f$. 
+
+Dalla formula (\ref{delta}) si ricava:
+\begin{equation}
+    c=\frac{4D^2b\omega}{\delta(D+a)}.
+    \label{c}
+\end{equation},
+Sperimentalmente,ci si rende conto che la misura d $b$ risulta estremamente complessa in questo apparato: si sfrutta pertanto la legge dei punti coniugati, per cui si ha
+\begin{equation}
+    \frac{1}{b}+\frac{1}{D+a}=\frac{1}{f_2}
+\end{equation}
+dove tutti i valori tranne $b$ sono noti. Se ne ricava
+\begin{equation}
+    b=\frac{f_2(D+a)}{D+a-f_2}
+\end{equation}
+che può essere inserito all'interno della formula (\ref{c}) a ottenere:
+\begin{equation}
+    c=\frac{4f_2D^2(\omega)}{(D+a-f_2)\delta}.
+    \label{c'}
+\end{equation}
+In particolare, risulta significativo partire ogni set di misure con una velocità angolare iniziale non nulla (per ridurre incertezze legate al meccanismo): si sfrutta dunque una simile formulazione delle formula (\ref{c'}) che tiene conto della rotazione iniziale:
+\begin{equation}
+    c=\frac{4f_2D^2(\omega_f-\omega_0)}{(D+a-f_2)\Delta\delta}
+\end{equation}
+dove $\omega_f$ e $\omega_0$ rappresentano le velocità angolari relative a $\nu_f$ e $\nu_0$ (si ricorda la legge $\omega=2\pi\nu$).
+
+Una volta effettuate misure per rotazioni dello specchio sia in senso orario che in senso antiorario, è stata utilizzata la funzione di rotazione a massima frequenza e si sono effettuati molteplici misure considerando con $\nu_0$ la massima frequenza in un senso e con $\nu_f$ la massima frequenza nell'altro. In questo modo si è cercato di ottenere un $\Delta\delta$ molto grande.

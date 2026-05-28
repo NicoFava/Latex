@@ -1,0 +1,21 @@
+\begin{figure}[htp!]
+  \centering
+  \includegraphics[scale=0.2]{Esercizio3.2/Esercizio.jpg} 
+\end{figure}
+Il numero di $\ch{^{238}U}$ e $\ch{^{235}U}$ al tempo $t$:
+\begin{equation}
+    N_{238}(t)=N_{0,238}e^{-\frac{\ln{2}}{\tau_{1/2}}t} \qquad N_{235}(t)=N_{0,235}e^{-\frac{\ln{2}}{\tau_{1/2}}t}
+\end{equation}
+Facendo il rapporto tra queste due quantità:
+\begin{equation}
+    \frac{N_{235}(t)}{N_{238}(t)}=\frac{N_{0,235}}{N_{0,238}}e^{-\ln{2}\left(\frac{1}{\tau_{1/2,235}}-\frac{1}{\tau_{1/2,238}}\right)t}
+\end{equation}
+Dalle ipotesi dell'esercizio abbiamo che il rapporto di $\ch{^{238}U}$ e $\ch{^{235}U}$ al tempo iniziale sia uguale a $\sim1$. Invece il rapporto al tempo $t$ è $\sim0.007$. Invertendo la relazione si può trovare il valore di $t$.
+\begin{equation}
+    t=-\frac{\ln\left({\frac{N_{235}(t)}{N_{238}(t)}}\right)}{\ln{2}\left(\frac{1}{\tau_{1/2,235}}-\frac{1}{\tau_{1/2,238}}\right)}=6.1\cdot10^{9}\,\mathrm{yr}
+\end{equation}
+Possiamo anche stimare "l'incertezza" dell'assunzione fatta: $\frac{N_{0,235}}{N_{0,238}}=2$:
+\begin{equation}
+    t=-\frac{\ln\left({\frac{N_{235}(t)}{N_{238}(t)}}\right)\pm\ln\left({\frac{N_{0,235}}{N_{0,238}}}\right)}{\ln{2}\left(\frac{1}{\tau_{1/2,235}}-\frac{1}{\tau_{1/2,238}}\right)}=(6.1\pm0.8)\cdot10^{9}\,\mathrm{yr}
+\end{equation}
+Quindi anche se lasciamo una certa variazione sulle condizioni iniziali troviamo lo stesso ordine di grandezza.

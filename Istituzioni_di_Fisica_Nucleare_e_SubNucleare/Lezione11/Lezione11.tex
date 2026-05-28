@@ -1,0 +1,221 @@
+Per preparare lo studio delle proprietà delle interazionim diamo una breve occhiata ad una generalizzazione relativistica dell'equazione di Schr\"odinger, detta \textbf{equazione di Klein-Gordon}. Dalla trattazione relativistica compare un'equazione di continuità analoga a quella classica. La probabilità che esce fuori dall'equazione di Schr\"odinger è una quantità conservata. Quando si introduce anche la relatività si scopre che è necessaria l'introduzione delle anti-particelle. L'esistenza dell'anti materia ci da la conservazione dei numeri quantici barionico ed elettronico. Cercando soluzioni statiche mostreremo come un potenziale a breve range può essere interpretato con lo scambio di una particella massiva. Infatti ricordiamo che l'equazione di Fermi dava un range uguale a zero. C'è potenziale solo se le due particelle sono esattamente nello stesso punto: \textbf{mediatori delle interazioni forti e deboli}. Dal calcolo delle sezioni d'urto si ottengono relazioni per l'intensità relativa delle forze.
+\subsection{Equazione di Klein-Gordon}
+L'equazione di Schr\"odinger per una particella libera è palesemente non relativisticamente invariante:
+\begin{equation*}
+    -\frac{\hbar^2}{2m}\nabla^2\psi=i\hbar\frac{\partial}{\partial t}\psi
+\end{equation*}
+è stata ricavata dalla relazione 
+\begin{equation*}
+    E=\frac{\mathbf{p}^2}{2m}
+\end{equation*}
+Effettuando la sostituzione operatoriale:
+\begin{equation*}
+    E=i\hbar\frac{\partial}{\partial t},\qquad \mathbf{p}=-i\hbar \nabla
+\end{equation*}
+Per trovare una generalizzazione relativistica, possiamo utilizzare delle relazioni relativistiche:
+\begin{equation*}
+    \text{Tetra-vettore energia impulso: } (E,\,\mathbf{p})
+\end{equation*}
+Con l'identità operatoriale:
+\begin{equation*}
+    p_\nu\Rightarrow i\hbar\partial_\nu=i\hbar\frac{\partial}{\partial x^{\nu}}
+\end{equation*}
+e la relazione energia momento:
+\begin{equation*}
+    \mathbf{p}^2=p^\nu p_\nu=E^2-\mathbf{p}^2=m^2
+\end{equation*}
+Sostituendo gli operatori nelle relazione energia-impulso, otteniamo l'equazione di \textbf{Klein-Gordon}:
+\begin{equation*}
+    \frac{\partial^2}{\partial t^2}\phi-\nabla^2\phi+m^2\phi=0
+\end{equation*}
+Ricorda un'equazione delle onde a meno del termine con $m^2$ che in un certo senso ricorda il fatto che la particella ha una massa. Cerchiamo soluzioni nella forma di onde piane: $\phi=Ne^{-i\mathbf{p}\cdot\mathbf{x}}$. Dove $\mathbf{p}$ è il tetra-vettore momento e $\mathbf{x}$ è il tetramomento spazio e $N$ un coefficiente di normalizzazione. La condizione che deve soddisfare il tetravettore $\mathbf{p}$ è:
+\begin{equation*}
+    (-E^2+\mathbf{p}^2+m^2)\phi=0
+\end{equation*}
+Per un dato valore del momento, esistono due soluzioni:
+\begin{equation*}
+    E=\pm\sqrt{\mathbf{p}^2+m^2}=\pm E_p
+\end{equation*}
+Dove $E_p$ è definita come sempre positiva. Quindi abbiamo due set di soluzioni, una con energia positiva e una con energia negativa:
+\begin{align*}
+    \phi_\pm=Ne^{\mp iE_pt+i\mathbf{p}\cdot\mathbf{x}}
+\end{align*}
+La soluzione negativa sembra avere una soluzione che va indietro nel tempo.
+Andando a studiare la corrente di probabilità con l'eqauzione di Klein-Gordon in modo analogo a quanto fatto per l'equazione di Schr\"odinger. Ricordo l'equazione di continuità:
+\begin{equation*}
+    \frac{\partial \rho}{\partial t} +\nabla\cdot\mathbf{J}=0
+\end{equation*}
+Nel caso dell'equazione di Klein-Gordon la densità $\rho$ risulta essere
+\begin{equation*}
+    \rho=2|N|^2E
+\end{equation*}
+Le soluzione con \textbf{energia positiva} hanno densità: $\rho=2|N|^2E_p>0$ e soluzioni con \textbf{energia negativa} hanno densità: $\rho=-2|N|^2E_p<0$. nella densità compare anche un termine proporzionale a $\gamma$ effetto relativistico dovuto alla contrazione del termine di volume. La corrente:
+\begin{equation*}
+    \mathbf{J}=2\mathbf{p}|N|^2
+\end{equation*}
+Le soluzioni con energia positiva: $\mathbf{J}=2\mathbf{p}\rho/2E_p=\beta\rho$ mentre con energia negativa: $\mathbf{J}=-2\mathbf{p}\rho/2E_p=-\beta\rho$ dove $\beta=\mathbf{p}/E_p$. Da qui si nota come le correnti possano non seguire la densità e quindi possano andare concordi o discordi.
+\subsection{Particelle ed anti-particelle}
+Nell'equazione di Klein-Gordon le soluzioni ad energia negativa sorgono perchè l'equazione è al secondo ordine nelle derivate temporali. Dirac scrisse un'equazione relativisticamente invariante al primo ordine: descrive i fermioni, particelle con spin $1/2$. Anche in questo caso si trovano soluzioni con energie negative. Questa cosa viene spontaneamente quando ho a che fare con la meccanica relativistica. In una formulazione relativistica della meccanica quantistica, queste soluzioni sono identificabili con le anti-particelle, se esiste una particella deve anche esistere la sua anti-particella che ha certe proprietà che sono uguali mentre altre che hanno caratteristiche esattamente opposte. 
+
+La carica conservata $Q=\int dV\rho$. Questa quantità che si conserva è la differenza tra numero di particelle e antiparticelle. Questo avviene attraverso la relatività visto che posso convertire energia in massa e viceversa. Cosa che non posso fare in meccanica classica. Quando convertiamo energia in massa abbiamo questo vincolo. Il numero di particelle e antiparticelle si deve conservare. L'esistenza di anti-particelle entra a forza nella meccanica quantistica relativistica. Esempio: processo di scambio carica: non è possibile distinguere i due processi. Infatti un $p$ può emettere un $\pi^+$ che viene assorbito da $n$. Quindi quello che può avvenire in un processo di scattering tra protone e neutrone è che il protone butta fuori una particella positiva trasformandosi in un neutrone mentre il neutrone riceve la particella positiva trasformandosi in protone e poi vanno avanti per la loro strada. Giustificava il fatto che per la sezione d'urto vedevo un picco per il protone respinto all'indietro. Che posso spiegare solo attraverso questo processo di scambio di particella. Questo però è anche possibile vederlo come il neutrone che emette una particella negativa provocando le trasformazioni. In questa maniera sono indistinguibili.
+
+Nel 1932 prima osservazione del positrone nei raggi cosmici. Mentre nel 1955 la produzione di anti-protoni in collisioni $p-n$.
+
+Allora particelle e le rispettive anti-particelle hanno la \textbf{stessa massa}, perchè entrambe soddisfano l'equazione $E^2-p^2=m^2$. Hanno lo \textbf{stesso spin}. Questo è collegato al fatto che hanno la stessa equazione, infatti avevamo detto che lo spin è in qualche modo collegato come la funzione d'onda si trasforma quando facciamo una rotazione. Invece, tutte le altre \textbf{cariche} hanno \textbf{segno opposto}:
+\begin{itemize}
+    \item elettrone $q=-1$, positrone $q=+1$
+    \item protone $q=+1$ $\mu=+2.79\mu_N$ $I_3=+1/2$, antiprotone $q=-1$ $\mu=-2.79\mu_N$ $I_3=-1/2$
+    \item neutrone $q=0$ $\mu=-1.91\mu_N$ $I_3=-1/2$, antineutrone $q=0$ $\mu=+1.91\mu_N$ $I_3=+1/2$
+\end{itemize}
+In alcuni casi particolari, particelle neutre sono particelle di sè stesse, tipicamente accade per bosoni (particelle con spin intero) ad esempio il fotone. Questo perchè tutte le cariche sono praticamente nulle. Per questo \textbf{non} vale una legge di conservazione del numero di particelle. 
+
+La conservazione del numero totale di particelle e antiparticelle vale individualmente per le singole specie. Il neutrone e il protone le posso vedere come una singola particella (il nucleone) che si trova in due diversi stati di carica. Per cui sostanzialmente la mia funzione d'onda con due componenti globale. Nel caso di simmetrie interne, come lo spin isotopico, la funzione d'onda ha diverse componenti:
+\begin{equation*}
+    \phi(x)=a(x)|p\rangle+b(x)|n\rangle=\binom{a(x)}{b(x)} \text{ con } |p\rangle=\binom{1}{0}, \text{ } |n\rangle=\binom{0}{1}
+\end{equation*}
+Le interazioni deboli possono causare spostamenti da una componente all'altra (vedi decadimento $\beta$). La legge di conservazione si applica quindi solo alla funzione d'onda globale, non alle singole componenti. Quindi posso scambiare neutroni e protoni liberamente però conservo il \textbf{numero barionico}: numero di nucleoni- numero di anti-nucleoni. Infatti abbiamo visto come in determinate situazioni si conserva il numero di protoni e neutroni in maniera singola (decadimento $\alpha$) in altri invece il numero cambia ma la somma totale deve rimanere costante. Vedremo più avanti che il nome serve ad indicare una classe più ampia di particelle, i barioni, di cui il nucleone è la particella più leggera. Invece le interazioni forti ed elettromagnetiche conservano separatamente i numeri di $n$ e $p$ ma solo per energie $<100\,MeV$ (interazioni deboli ho mescolamento tra protoni e neutroni mentre interazioni forti non ho questo mescolamento) quindi le leggi di conservazioni possono essere diverse in funzione delle interazioni in gioco. Un corollario della conservazione del numero barionico è la stabilità del protone. Infatti quest'ultimo è il barione più leggero, quindi stabile. Quindi un possibile decadimento del protone dovrebbe portare a qualcosa che non è un barione e quindi verrebbe a meno la conservazione del numero barionico. Il limite inferiore alla vita media del protone è $\tau_p>10^{31}$ anni. Infatti il decadimento del protone non è mai stato osservato ma è stato possibile misurare un limite (da confrontarsi con l'età dell'universo che è $12\times 10^9$ anni).
+\subsection{Neutrini e anti-neutrini}
+Abbiamo evidenza che neutrini ed anti-neutrini sono paricelle differenti (anche se potremmo pensare che siano uguali). In un reattore nucleare, (anti)neutrini vengono prodotti assieme con $e^-$ attraverso secadimenti $\beta^-$: $(Z,A)\to(Z+1,A)+e^-+\Bar{\nu}_e$. Questi possono venire osservati tramite la reazione:
+\begin{equation*}
+    \Bar{\nu}_e+p\to e^+ +n \text{ esperimento di Reines e Cowan }
+\end{equation*} 
+non si osserva invece che: $\Bar{\nu}_e+n\to e^-+p$ questo processo conserva la carica ma non è osservato. Quindi questa è un po' l'evidenza che l'antineutrino abbia numeri elettronici diversi. 
+
+Nei processi di fusione nucleare, neturini vengono prodotti insieme con $e^+$
+\begin{equation*}
+    p+p\to d+e^++\nu_e
+\end{equation*}
+questi sono stati osservati tramite reazioni del tipo:
+\begin{equation*}
+    \nu_e+\ch{^{37}Cl}\to\ch{^{37}Ar}+e^-\text{ esperimento di Davis }
+\end{equation*}
+non si osserva invece che: $\nu_e+\ch{^{37}Cl}\to\ch{^{37}S}+e^+$ questo processo conserva la carica ma non è osservato. Quindi neutrini e antineutrini pur avendo carica nulla entrano in interazioni completamente diverse. L'interpretazione è molto simile a quanto fatto per i nucleoni: dal punto di vista delle interazioni deboli, $|e^-\rangle$ e $|\nu_e\rangle$ sono due stati corrispondenti ad una simmetria interna. Infatti elettrone e neutrino se guardo solo l'interazione debole sono la stessa particella che può trovarsi in due stati di carica diversa. Questa simmetria interna viene chiamata \textbf{isospin debole}: $I=1/2$, $|\nu_e\rangle I_3=+1/2$, $|e^-\rangle I_3=-1/2$. Elettrone e neutrino sono la stessa particella in uno stato di isospin debole diverso. Quindi la conservazione del \textbf{numero elettronico} è parente della conservazione del numero barionico. Quindi posso trasformare un neutrino in un elettrone, un antineutrino in un positrone e viceversa oppure produrre coppie elettrone antineutrino o positrone neutrino perchè il numero eletronico totale non deve cambiare.
+
+Quindi ho che la principale differenza con la legge di conservazione quantistica ordinaria dove mi dice di conservare il numero totale di particelle ad una conservazione più generale in cui si conserva la differenza tra particelle e antiparticelle. Cioè posso partire con un certo numero di elettroni però posso produrre le varie coppie per cui il numero totale di elettroni sia cambiato ma la differenza tra particelle e antiparticelle sia costante.
+\subsection{Potenziale di Yukawa}
+Possiamo anche cercare le soluzione stazionarie dell'equazioni di Klein-Gordon
+\begin{equation*}
+    \frac{\partial }{\partial t}\phi=0
+\end{equation*}
+Queste possono essere non nulle solo in presenza di una carica sorgente:
+\begin{equation*}
+    -\nabla^2\phi+m^2\phi=\eta\delta(\mathbf{r})
+\end{equation*}
+Esattamente quello che facciamo per il campo elettromagnetico: infatti in caso di assenza di cariche il campo libero:
+\begin{equation*}
+    \partial^\nu\partial_\nu\phi=0
+\end{equation*}
+E il campo elettrostatico:
+\begin{equation*}
+    -\nabla^2\phi=\rho/\varepsilon_0
+\end{equation*}
+Se andiamo nello spazio delle trasformate di Fourier,
+\begin{equation*}
+    \Tilde{\phi}(\mathbf{k})=\int dVe^{i\mathbf{k}\cdot\mathbf{r}}\phi(\mathbf{r})
+\end{equation*}
+l'equazione diventa un'equazione algebrica:
+\begin{equation*}
+    \mathbf{k}^2\Tilde{\phi}+m^2\Tilde{\phi}=\eta \quad \Rightarrow\quad \Tilde{\phi}=\frac{\eta}{\mathbf{k}^2+m^2}
+\end{equation*}
+Dovremmo ora calcolare l'antitrasformata e vedere che cosa vale $\phi$. In realtà è più semplice notare che la funzione ottenuta è la trasformata di
+\begin{equation*}
+    \phi=\eta\frac{e^{-mr}}{4\pi r}
+\end{equation*}
+Questo potenziale è un potenziale che viene generato dalla stessa equazione di Klein-Gordon solo che è applicata ad una situazione particolare. Il caso in cui ho soluzioni stazionarie con una carica sorgente. Quello che si fa esattamente nel caso di elettrodinamica. Quindi l'equazione di Klein-gordon descrive una particella libera di massa $m$ con un formalismo covariante. Il potenziale di Yukawa corrisponde alla soluzione dell'equazione di Klein-Gordon in corrispondenza di sorgenti. Questo porta ad identificare concettualmente le \textbf{interazioni} dovute ad un certo potenziale, con la \textbf{propagazione di particelle} tra le sorgenti di quel potenziale. Particelle mediatrice la cui massa è data da quel $m$ e range di interazione: $1/m$. Nel limite di $m=0$ si ha la forma del potenziale elettromagnetico: \textbf{interazioni a lungo range} che vanno come $1/r$. Questa analogia porta all'esistenza di una particella mediatrice tra nucleoni che viene chiamata \textbf{pione} che ha una massa corrispondente al range delle interazioni nucleari. Ovviamente fin qui abbiamo solo esposto l'idea.
+\subsection{Intensità delle interazioni}
+Fino ad ora abbiamo detto che esiste una gerarchia nell'intensità delle interazioni:
+\begin{enumerate}
+    \item interazioni forti;
+    \item interazioni elettromagnetiche;
+    \item interazioni deboli;
+    \item interazioni gravitazionali.
+\end{enumerate}
+Vogliamo ora quantificare meglio questa relazione. Prendiamo il potenziale di Yukawa e vediamo come sono fatte le sezioni d'urto per una particella che interagisce con questo potenziale. Chiaramente possiamo immaginare che più alta è la sezione d'urto più alta è l'interazione. La cosa non è esattamente banale perchè la sezione d'urto per le interazioni coulombiane è essenzialmente infinita. La sezione d'urto dipende dalla costante $\eta$ quella che ci misura l'intensità dell'interazione e dalla massa $m$ della particella mediatrice che definisce il range ($1/m$) della forza ($m=0$ per interazione elettromagnetiche e gravitazionali). Dal momento trasferito $\mathbf{q}=\mathbf{p}_i-\mathbf{p}_f$ nell'interazione.
+I valori di $\eta$ stabiliscono una gerarchia: interazioni forti $>>$ interazioni elettromagnetiche e deboli $>>$ gravitazione. La differenza tra interazioni elettromagnetiche e deboli dipende dal range delle interazioni e diminuisce all'aumentare di $\mathbf{q}^2$. Fenomeno che suggerisce \textbf{l'unificazione elettro-debole}.
+\subsection{Sezione d'urto su potenziale di Yukawa}
+Nella lezione sullo scattering elettrone-nucleone avevamo ottenuto:
+\begin{equation*}
+    \frac{d\sigma}{d\Omega}=\frac{|\Tilde{V}(\mathbf{q})|^2}{4\pi^2}\frac{1}{v}\frac{p^2dp}{dE}
+\end{equation*}
+con:
+\begin{equation*}
+    \Tilde{V}(\mathbf{q})=\int d\mathbf{r}V(\mathbf{r})e^{i\mathbf{q}\cdot\mathbf{r}}
+\end{equation*}
+e:
+\begin{equation*}
+    \mathbf{q}=|\mathbf{p}|\left(\,-\sin\theta\cos\phi,\,-\sin\theta\sin\phi,\,1-\cos\theta\,\right)
+\end{equation*}
+e $\mathbf{q}^2=4\mathbf{p}^2\sin^2{\theta/2}$. Nel caso di scattering non relativistico di una particella di massa $M$:
+\begin{equation*}
+    p=Mv \qquad E=\frac{1}{2M}p^2 \quad \Rightarrow \quad dE=pdp/M 
+\end{equation*}
+E quindi:
+\begin{equation*}
+     \frac{d\sigma}{d\Omega}=\frac{|\Tilde{V}(\mathbf{q})|^2}{4\pi^2}M^2
+\end{equation*}
+Ricordo il potenziale di Yukawa e la sua trasformata:
+\begin{equation*}
+    V(\mathbf{r})=\eta\frac{e^{-mr}}{4\pi r} \quad \Tilde{V}(\mathbf{q})=\frac{\eta}{q^2+m^2} \quad  \frac{d\sigma}{d\Omega}=\frac{\eta^2}{4\pi^2}\frac{M^2}{(q^2+m^2)^2}
+\end{equation*}
+Questo risultato è in unità naturali, se si vogliono scrivere in unità del S.I.:
+\begin{equation*}
+    V(\mathbf{r})=\eta\frac{e^{-mc^2r/\hbar c}}{4\pi r}\hbar c \quad \Tilde{V}(\mathbf{q})=\frac{\eta(\hbar c)^3}{q^2c^2+m^2c^4} \quad  \frac{d\sigma}{d\Omega}=\frac{\eta^2}{4\pi^2}\frac{M^2c^4(\hbar c)^2}{(q^2c^2+m^2c^4)^2}
+\end{equation*}
+\subsubsection{Sezione d'urto Coulombiana}
+Possiamo confrontare questo risultato con la sezione d'urto classica di Rutherford:
+\begin{itemize}
+    \item $M=m_\alpha$
+    \item $\eta=ZZ_\alpha e^2/\varepsilon_0$
+    \item $m=0$
+    \item $q^2=(m_\alpha v_\alpha)^24\sin^2{\theta/2}=m_\alpha E_\alpha8\sin^2{\theta/2}$
+\end{itemize}
+\begin{equation*}
+    \frac{d\sigma}{d\Omega}=\left(\frac{\hbar c}{2\pi}\right)^2\frac{\eta^2M^2}{(q^2c^2+m^2c^4)^2}=\left(\frac{\eta M\hbar c}{2\pi q^2}\right)^2=\left(\frac{ZZ_\alpha \alpha \hbar c}{4E_\alpha}\right)^2\frac{1}{\sin^4{\theta/2}}
+\end{equation*}
+che è esattamente lo stesso risultato ottenuto attraverso i conti classici. Capita solo per la regola d'oro di fermi per i potenziali che vanno come $1/r$ che la sezione d'urto classico e quantistico coincidono. Per interazioni tra cariche unitarie:
+\begin{equation*}
+    \eta=\frac{e^2}{\varepsilon_0}=4\pi\alpha\approx0.09
+\end{equation*}
+Quindi la $\eta$ dipende dallo $Z$ ma l'intensità elementare è dato da questo termine.
+\subsubsection{Sezione d'urto forte}
+Nel caso limite in cui $q<<mc$ corrisponde ai casi in cui il momento della particella incidente è molto minore di $mc$. Praticamente il caso opposto di prima.
+\begin{equation*}
+    \frac{d\sigma}{d\Omega}=\frac{\eta^2}{4\pi^2}\left(\frac{M\hbar c}{m^2c^2}\right)^2=\frac{\eta^2}{4\pi^2}\left(\frac{M}{m^2}\right)^2 \qquad \sigma =\frac{\eta^2}{\pi}\left(\frac{M}{m^2}\right)^2
+\end{equation*}
+Si nota che questa sezione d'urto differenziale, non dipendendo più da $q^2$ non dipende più dall'angolo solido e viene detta sezione d'urto isotropa. Nel limite di moento trasferito piccolo mi da una sezione d'urto isotropa. Quindi sezione d'urto totale non è altro che $4\pi$ per la sezione d'urto differnziale che è costante. Studiamo le interazioni nucleone-nucleone, avevamo visto che a basso momento: $\sigma=4\pi a^2$ dove $a$ è la lunghezza di scattering. $a_{pp}=-17.1\pm0.2\,fm$, $a_{nn}=-16.6\pm0.5\,fm$ e questo ci dava che l'interazione nucleone nucleone è indipendente dalla carica. Confrontando le due relazioni abbiamo: 
+\begin{equation*}
+    \eta=2\pi|a|\frac{m^2}{M}
+\end{equation*}
+Sapendo la massa $m$ della particella mediatrice possiamo determinare $\eta$. Vedremo che questa particella esiste davvero che era stata predetta da Yukawa. Questa particella è il \textbf{pione} ed ha una massa: $m_\pi\sim140\,MeV$.
+\begin{equation*}
+    \eta\approx10
+\end{equation*}
+questa è praticamente $100$ volte più grande dell'interazione elettromagnetica.
+\subsubsection{Sezione d'urto debole}
+L'ipotesi di fermi consisteva in pratica ad assumere un mediatore con range $1/m<<1\,fm$. Infatti è presente una $\delta$ di Dirac. Con le convenzioni utilizzate, l'elemento di matrice:
+\begin{equation*}
+    \langle f|U|i\rangle=\frac{\eta}{V}\frac{(\hbar c)^2}{m^2c^4+q^2c^2}\approx\frac{1}{V}G_F(\hbar c)^3
+\end{equation*}
+Ovvero, nel limite di momenti $q<<m$
+\begin{equation*}
+    G_F=\frac{\eta}{m^2}
+\end{equation*}
+Sapendo che la massa $m$ della particella mediatrice possiamo determinare $\eta$, questa particella effettivamente è stata scoperta nel $1982$. Questa è chiamata \textbf{bosone vettore W}, $m_W=80.385\,GeV$.
+\begin{equation*}
+    \eta_W\approx0.07
+\end{equation*}
+Molto simile all'interazione debole. L'intensità relativa delle interazione debole ed elettromagnetica:
+\begin{equation*}
+    \frac{\langle f|V_W|i\rangle}{\langle f|V_{e.m.}|i\rangle}=\frac{\eta_W}{4\pi\alpha}\frac{q^2}{m^2+q^2}=\begin{cases} \frac{\eta_W}{4\pi\alpha}\frac{q^2}{m^2}<<1, & \mbox{per }q^2<<m \\ \frac{\eta_W}{4\pi\alpha}\sim1, & \mbox{per }q^2>>m
+\end{cases}
+\end{equation*}
+\subsubsection{Interazioni gravitazionali}
+Per le interazioni gravitazionali il risultato è immediato:
+\begin{equation*}
+    V(r)=\frac{G_NM^2}{r}=\left(\frac{4\pi G_NM^2}{\hbar c}\right)\frac{\hbar c}{4\pi r}
+\end{equation*}
+con $m=0$ e $\eta=4\pi G_NM^2/\hbar c$. $\eta$ dipende dal valore della massa in gioco. Usando la massa del protone: $M=1.7\times10^{-27}\,kg$:
+\begin{equation*}
+    \eta=7\times10^{-38}
+\end{equation*}
+Che è estremamente debole rispetto alle altre.

@@ -1,0 +1,112 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithm}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{capt-of}
+\usepackage{url}
+\usepackage{chemmacros}
+\usepackage{upgreek}
+\usepackage{isomath}
+\usepackage{cancel}
+\usepackage{bm}
+\usepackage[italian]{babel}
+\geometry{a4paper, top=2.5cm, bottom=2.5cm, left=3cm, right=3cm, bindingoffset=5mm}
+\usepackage[suftesi]{frontespizio}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=,
+    filecolor=,      
+    urlcolor=red,
+    pdftitle={Scelta Bersaglio Compton},
+    pdfpagemode=FullScreen,
+    }
+\usepackage{siunitx}
+\renewcommand{\arraystretch}{1.3} % Default value: 1
+\setlength{\tabcolsep}{8pt} % Default value: 6pt
+
+\title{Scelta bersaglio}
+\author{Gruppo Compton}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{equation}\label{si}
+    N_s = N_i \rho \frac{N_A}{M} Z dx \sigma(E)
+\end{equation}
+dove $\sigma$ viene valutata a $511\, \unit{KeV}$. I tre materiali presi in considerazione sono:
+\begin{itemize}
+    \item Alluminio;
+    \item Carbonio;
+    \item Rame.
+\end{itemize}
+A partire dai dati ottenuti attraverso il sito \href{https://physics.nist.gov/PhysRefData/Xcom/html/xcom1.html}{\underline{NIST}} abbiamo fatto le seguenti considerazioni.
+Per prima cosa abbiamo escluso il rame perchè l'effetto fotoelettrico risulta di un ordine di grandezza più importante rispetto a $\mathrm{Al}$ e $\mathrm{C}$. Oltre a questo abbiamo anche calcolato la probabilità di avere effetto Compton per i tre materiali.
+
+Utilizzando la formula (\ref{si}) abbiamo calcolato il rapporto tra il numero di fotoni deviati e il numero di fotoni incidenti. Dai risultati visibili nelle tabelle abbiamo deciso di utilizzare come scatteratore l'alluminio.
+
+Per quanto riguarda le dimensioni del bersaglio abbiamo deciso di adottare come scatteratore un cilindro di alluminio di spessore pari a $2\, \unit{cm}$, che è circa la metà del valore di libero cammino medio dell'effetto Compton. La scelta di questa dimensione è dettata anche da due richieste: avere un rapporto $N_s/N_i$ il più alto possibile e allo stesso tempo un valore di $n_t \sigma dz << 1$ per essere in situazione di bersaglio sottile evitando così interazioni mulptiple e riducendo gli effetti di assorbimento all'interno del materiale stesso. I valori sono ripostati qui sotto:
+
+%%tabella
+%%\num{0.9e-30} \unit{\kilogram}
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{||c c c c||} 
+
+ \hline
+ Elemento & Z & $\rho$ [\unit{\g\,\cm^{-3}}] & dx [\unit{\cm}] \\ [0.5ex] 
+ \hline\hline
+ Al & 13 & 2.700 & 1.914 \\ 
+ \hline
+ C & 6 & 2.267 & 2.005 \\
+ \hline
+ Cu & 29 & 8.933 & 0.60 \\
+ \hline 
+\end{tabular}
+\caption{Bersagli disponibili in laboratorio.}
+\label{table:1}
+
+\vspace{1cm}
+
+\begin{tabular}{||c c c c||} 
+
+ \hline
+ Elemento & $\sigma_{C}$ [\unit{\cm^{2}}] & $\sigma_{PH}$ [\unit{\cm^2}] & $\frac{\sigma_{C}}{\sigma_{TOT}}$ \\ [0.5ex] 
+ \hline\hline
+ Al & \num{2.860e-25} & \num{4.37e-28} & 99.19\% \\ 
+ \hline
+ C & \num{2.865e-25} & \num{2.15e-29} & 99.81\% \\ 
+ \hline
+ Cu & \num{2.848e-25} & \num{8.83e-27} & 94.67\% \\
+ \hline 
+\end{tabular}
+\caption{Sezioni d'urto Compton (C) e Fotoelettrica (PH).}
+\label{table:2}
+
+\vspace{1cm}
+
+\begin{tabular}{||c c c c||} 
+
+ \hline
+ Elemento & $\frac{N_s}{N_i}$ & $n_t dx \sigma$ & $\lambda_{COMP} [\unit{\cm}]$ \\ [0.5ex] 
+ \hline\hline
+ Al & 42.89\% & 0.4323 & 4.463 \\ 
+ \hline
+ C & 39.18\% & 0.392 & 5.117 \\ 
+ \hline 
+\end{tabular}
+\caption{Considerazioni finali.}
+\label{table:3}
+\end{center}
+\end{table}
+
+
+\end{document}
