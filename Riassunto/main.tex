@@ -251,6 +251,93 @@ Jet misidentificati & $Z+$jet, $Z\gamma$, single top, $t\bar{t}$ & Un jet adroni
 \label{tab:background_classification}
 \end{table}
 \section{Selezione degli eventi}
+Sono stati registrati solo i dati con fasci stabili e con tutti i sottosistemi del rivelatore operativi. Gli eventi sono stati selezionati utilizzando un sistema di \textit{trigger} a più livelli con diverse soglie di momento trasverso e criteri di isolamento che dipende da periodo di run e dalla luminosità istantanea. L'efficienza combinata di questi trigger è del $99\%$ per \wzjj che soddisfano i criteri di selezione. Gli eventi devono avere un vertice primario compatibile con la luminosità nominale di LHC all'interno del detector di ATLAS. Il vertice primario è definito come il vertice con una traccia di almeno due particelle cariche che hanno come somma scalare dei momenti trasversi maggiore.
+%ELETTRONI E MUONI
+I candidati muoni sono identificati dalla traccia ricostruita nel Muon Spectrometer (MS) che è matchata a una traccia nel Tracciatore Interno (ID). La selezione di questi muoni è del tipo "medium". L'efficienza di questa selezione in $p_T$ e $\eta$ è del $98\%$. Il momento dei muoni è misurato combinando le misure del MS corrette con l'energia depositata nel calorimetro e insieme alle misure del ID. Il $p_T$ dei muoni deve essere $p_T>15\,\unit{GeV}$ e la sua pseudorapidità deve soddisfare $|\eta|<2.5$.
 
+I candidati elettroni sono ricostruiti dai cluster di energia nel calorimetro elettromagnetico matchando con le tracce dell'ID. Gli elettroni sono identificati usando come discriminante una funzione di likelihood costruita con le informazioni per quanto riguarda la forma della shower elettromagnetica nel calorimetro, dalle proprietà delle traccie e dalla qualità del matching tra cluster e traccia. Gli elettroni devono soddisfare requisiti della funzione di likelihood di tipo "medium" che produce un'efficienza di identificazione totale del $90\%$. Il momento trasverso degli elettroni deve essere $p_T>15\,\unit{GeV}$ e la pseudorapidità deve soddisfare $|\eta|<1.37$ o $1.52<|\eta|<2.47$. Questa differenza con i muoni è presto spiegata. Per misurare l'energia di un elettrone, dobbiamo arrestarlo completamente. L'elettrone, essendo molto leggere e altamente relativistico, quando attraversa un materiale denso perde energia prevelantemente per radiazione di frenamento (bremsstrahlung), innescando a sua volta produzione di coppie $e^+e^-$, generando uno sciame elettromagnetico. ATLAS misura l'energia degli elettroni raccogliendo tutto questo sciame nel calorimetro elettromagnetico a Piombo/Argon Liquido. Il muone, al contrario, ha una massa circa 200 volte superiore. Alle energie di LHC il muone è una MIP. La sua perdita di energia per brem è soppressa quindi attraversa i calorimetri perdendo solo pochissima energia per eccitazione e ionizzazione. Il calorimetro elettromagnetico di ATLAS non è un blocco unico. Per ovvie ragioni cotruttive, è diviso in un Barrel (il barile centrale) e in due Endcaps (tappi laterali). La regione di transizione spaziale tra il barrel e l'endcap si trova esattamente nell'intervallo di pseudorapidità $1.37<|\eta|<1.52$ (definita in gergo crack region) in cui c'è una quantità massiccia di materia morta. 
+
+Si richiede che i candidati elettroni e muoni provengano dal vertice primario. Pertanto, la significanza del parametro di impatto trasverso della traccia, calcolato rispetto alla linea del fascio, $|d_0/\sigma_{d_0}|$, deve essere minore di $3.0$ per i muoni e minore di $5.0$ per gli elettroni. Inoltre, si richiede che il parametro di impatto longitudinale, $z_0$ (definito come la differenza tra il valore di $z$ del punto sulla traccia in cui viene valutato $d_0$ e la posizione longitudinale del vertice primario), soddisfi la condizione $|z_0 \sin\theta| < 0.5\,\unit{mm}$. Ricordo che la $d_0$ è la distanza di minimo approccio e cioè la distanza della traccia estrapolata rispetto alla linde del fascio nel piano trasverso. Mentre la $z_0$ è la distanza calcolata sull'asse longitudinale z. Ma allora perchè è moltiplicata per $\sin\theta$? Perchè se un leptone viaggia molto in avanti (piccolo angolo polare $\theta$), un piccolo errore trasversale si traduce in un errore longitudinale $z_0$ gigantesco per pura proiezione geometrica. Moltiplicando per quel seno proiettiamo la distanza longitudinale in modo perpendicolare alla traccia, ottenendo la vera e propria distanza fisica tridimensionale minima dal vertice. 
+
+Inoltre gli elettroni e i muoni hanno la necessità di essere isolati da altre particelle usando contemporaneamente informazione del cluster calorimetrico e informazioni di traccia dell'ID. Le richieste di isolamento per gli elettroni sono tunate per avere una efficienza di almeno $89\%$ per il $p_T>15\,\unit{GeV}$ e almento al $99\%$ per gli elettroni di $p_T>60\,\unit{GeV}$ mentre per i muoni per avere una efficienza di almeno $90\%$ per il $p_T>15\,\unit{GeV}$ e almento al $99\%$ per i muoni con $p_T>60\,\unit{GeV}$.
+%JET
+I jet adronici sono ricostruiti usando un algoritmo di \textit{particle-flow} basato su cluster topologici a energia positiva con soppressione del rumore nei calorimetri. L'energia depositata nei calorimetri dalle particelle cariche viene sottratta e sostituita dai momenti delle tracce associate a tali cluster topologici. Le tracce che non corrispondono al vertice primario non vengono utilizzate nella ricostruzione dei jet, eliminando in modo efficace il contributo del \textit{pile-up} da particelle cariche. 
+
+I jet sono raggruppati tramite l'algoritmo anti-$k_t$ con un parametro di raggio $R = 0.4$. Essi sono calibrati in base alle misurazioni \textit{in situ} della scala di energia dei jet. Tutti i jet devono avere $p_T > 25\,\unit{GeV}$ ed essere ricostruiti nell'intervallo di pseudorapidità $|\eta| < 4.5$. 
+
+Per ridurre l'impatto dei jet originati dalle interazioni di \textit{pile-up}, ai jet con $|\eta| < 2.4$ e $p_T < 60\,\unit{GeV}$, o con $2.5 < |\eta| < 4.5$ e $p_T < 120\,\unit{GeV}$, è richiesto di soddisfare rispettivamente i \textit{working point} tight e loose degli algoritmi di \textit{tagging} associati al vertice del jet e al vertice del jet in avanti (\textit{forward jet vertex}). 
+
+I jet con $|\eta| < 2.5$ contenenti un adrone $b$ sono identificati tramite una rete neurale (NN) basata su \textit{deep-learning}, la quale sfrutta le caratteristiche distintive dei decadimenti degli adroni $b$ in termini di parametri di impatto delle tracce e vertici spostati (\textit{displaced vertices}) ricostruiti nel tracciatore interno. I jet originati da quark $b$ vengono selezionati impostando la soglia di output dell'algoritmo in modo da ottenere un'efficienza di selezione dei $b$-jet del $70\%$ in eventi $t\bar{t}$ simulati, con un fattore di reiezione di $40$ contro i jet da sapore leggero (\textit{light-flavour}). Le correzioni alle efficienze di \textit{flavour-tagging} si basano su analisi di calibrazione \textit{data-driven}.
+
+%NEUTRINI
+Il momento trasverso dei neutrini è stimato attraverso il missing trasverse momentum nell'eventi e quindi $E_T^\text{miss}$ che è calcolato come il vettore negativo somma dei momenti trasversi di tutte gli oggetti fisici hard aggiungendo anche un termine addizionale soft. IL termine soft è calcolato matchando il track dell'ID con il vertice primare e non assegnato ad altri oggetti hard.
+
+%eventi generali
+Gli eventi devono contenere esattamente $3$ leptoni candidati che soddisfano le richieste fatte sopra. Per assicurarci che l'efficienza di trigger è ben determinata almeno uno di questi candidati leptoni deve avere un $p_T>25\,\unit{GeV}$ per i dati del $2015$ e un $p_T>27\,\unit{GeV}$ per i dati dal $2016-2018$. Questa richiesta a livello del detector non è presente nella definizione dello spazio delle fasi fiduciale in quanto ridurrebbe questo spazio fiduciale di solo $0.02\,\unit{GeV}$.
+
+%Background
+Per sopprimere i processi di fondo con almeno quattro leptoni \textit{prompt}, gli eventi con un quarto candidato leptone che soddisfa criteri di selezione più loose vengono scartati. Per questa selezione più loose, il requisito sul $p_T$ del leptone è abbassato a $p_T > 5\,\unit{GeV}$, agli elettroni è permesso di essere ricostruiti nella regione $1.37 < |\eta| < 1.52$ e vengono utilizzati requisiti di identificazione \textit{loose} sia per gli elettroni che per i muoni. Un requisito meno stringente viene applicato per l'isolamento degli elettroni ed è basato esclusivamente sulle informazioni delle tracce del rivelatore interno (ID). Nessun algoritmo di identificazione dedicato viene utilizzato per sopprimere gli eventi con elettroni e muoni originati dal decadimento di leptoni $\tau$.
+
+%si ritorna sui leptoni
+Si richiede che gli eventi candidati presentino almeno una coppia di leptoni con lo stesso sapore e carica opposta, aventi una massa invariante compatibile con $m_Z^{\mathrm{PDG}}$ entro $10\,\unit{GeV}$. Questa coppia è considerata il candidato bosone $Z$. Se è possibile formare più di una coppia, viene scelta come candidato bosone $Z$ quella la cui massa invariante è più vicina a $m_Z^{\mathrm{PDG}}$. Il restante terzo leptone viene assegnato al decadimento del bosone $W$. Si richiede che la massa trasversa del candidato $W$, calcolata utilizzando l'energia trasversa mancante $E_{\mathrm{T}}^{\mathrm{miss}}$ e il $p_T$ del leptone associato, sia maggiore di $30\,\unit{GeV}$.
+
+%fondo riducibile
+I fondi originati da leptoni misidentificati vengono soppressi richiedendo che il leptone associato al bosone $W$ soddisfi criteri di selezione più stringenti. Il momento trasverso di questo leptone deve quindi essere maggiore di $20\,\unit{GeV}$. Questo leptone deve inoltre soddisfare i requisiti di identificazione e isolamento \textit{tight}, il che si traduce in un'efficienza compresa tra il $90\%$ e il $98\%$ a seconda del $p_T$ per i muoni, e in un'efficienza complessiva dell'85\% per gli elettroni.
+
+Per selezionare i candidati $W^\pm Zjj$, si richiede ulteriormente che agli eventi siano associati almeno due jet di \textit{tagging}. Il jet di \textit{tagging} principale (\textit{leading}) viene scelto come il jet con il $p_T$ più alto nell'evento, con $p_T > 40\,\unit{GeV}$. Il secondo jet di \textit{tagging} è selezionato come quello con il $p_T$ più alto tra i restanti jet che hanno una pseudorapidità di segno opposto rispetto al primo jet di \textit{tagging} e un $p_T > 40\,\unit{GeV}$. Si richiede infine che questi due jet soddisfino $m_{jj} > 150\,\unit{GeV}$, al fine di minimizzare la contaminazione da processi con tribosoni.
+
+La regione di segnale finale (SR) per il VBS è definita richiedendo che la massa invariante dei due tagging jets \mjj sia maggiore di $500\,\unit{GeV}$ e che non ci siano $b-$jet nell'evento.
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{p{4.5cm} p{10cm}}
+\hline
+\textbf{Categoria} & \textbf{Criteri di Selezione} \\
+\hline
+\multicolumn{2}{c}{\textbf{Selezione degli Oggetti Fisici}} \\
+\hline
+\textbf{Muoni} & Identificazione \textit{Medium} (MS + ID) \newline
+$p_T > 15\,\unit{GeV}$, $|\eta| < 2.5$ \newline
+Parametri d'impatto: $|d_0/\sigma_{d_0}| < 3.0$, $|z_0 \sin\theta| < 0.5\,\unit{mm}$ \newline
+Isolamento: Efficienza $90-99\%$ a seconda del $p_T$ \\
+\hline
+\textbf{Elettroni} & Identificazione \textit{Medium} (Likelihood) \newline
+$p_T > 15\,\unit{GeV}$, $|\eta| < 1.37$ oppure $1.52 < |\eta| < 2.47$ (esclusione \textit{crack region}) \newline
+Parametri d'impatto: $|d_0/\sigma_{d_0}| < 5.0$, $|z_0 \sin\theta| < 0.5\,\unit{mm}$ \newline
+Isolamento: Efficienza $89-99\%$ a seconda del $p_T$ \\
+\hline
+\textbf{Jet (anti-$k_t$, $R=0.4$)} & $p_T > 25\,\unit{GeV}$, $|\eta| < 4.5$ \newline
+Veto \textit{pile-up}: JVT \textit{tight} ($p_T < 60\,\unit{GeV}, |\eta| < 2.4$) e fJVT \textit{loose} ($p_T < 120\,\unit{GeV}, 2.5 < |\eta| < 4.5$) \\
+\hline
+\textbf{Neutrini} & Stima basata su $E_{\mathrm{T}}^{\mathrm{miss}}$ (somma vettoriale degli oggetti fisici \textit{hard} + termine \textit{soft}) \\
+\hline
+\multicolumn{2}{c}{\textbf{Selezione dell'Evento (Topologia $W^\pm Z$)}} \\
+\hline
+\textbf{Selezione preliminare} & Esattamente 3 leptoni candidati ($\mu$ o $e$) \newline
+Veto su un possibile $4^\circ$ leptone \textit{loose} ($p_T > 5\,\unit{GeV}$) \newline
+Matching col trigger: almeno 1 leptone con $p_T > 25$ ($2015$) o $27\,\unit{GeV}$ ($2016-2018$) \\
+\hline
+\textbf{Candidato Bosone $Z$} & Coppia di leptoni stesso sapore e carica opposta (OSSF) \newline
+$|m_{\ell\ell} - m_Z^{\mathrm{PDG}}| < 10\,\unit{GeV}$ (se ambiguità, si sceglie la massa più vicina a $m_Z$) \\
+\hline
+\textbf{Candidato Bosone $W$} & Il $3^\circ$ leptone (associato a $E_{\mathrm{T}}^{\mathrm{miss}}$) \newline
+Requisiti più stringenti: ID e Iso \textit{tight}, $p_T > 20\,\unit{GeV}$ \newline
+Massa trasversa: $m_T^W > 30\,\unit{GeV}$ \\
+\hline
+\multicolumn{2}{c}{\textbf{Regione di Segnale VBS (\wzjj SR)}} \\
+\hline
+\textbf{Jet di Tagging} & I due jet a $p_T$ maggiore (almeno $40\,\unit{GeV}$) \newline
+Devono risiedere in emisferi opposti ($\eta_{j1} \cdot \eta_{j2} < 0$) \\
+\hline
+\textbf{Filtri Cinematici SR} & $m_{jj} > 150\,\unit{GeV}$ (taglio preliminare anti-tribosoni) \newline
+$m_{jj} > 500\,\unit{GeV}$ (definizione finale per isolare il processo EW) \newline
+Veto assoluto sui quark $b$ ($N_{b\text{-jet}} = 0$) \\
+\hline
+\end{tabular}
+\caption{Riassunto dei criteri di selezione per la ricostruzione degli oggetti fisici e la definizione della regione di segnale per l'analisi $W^\pm Zjj$.}
+\label{tab:event_selection}
+\end{table}
+\subsection{Capiamo l'anti-kt}
 \end{document}
 
