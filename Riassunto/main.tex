@@ -24,6 +24,14 @@
 \usepackage{float}
 \usepackage{verbatim}
 
+\newcommand{\LO}{LO}
+\newcommand{\wzjjew}{$W^\pm Z jj-$ EW}
+\newcommand{\wzjjqcd}{$W^\pm Z jj-$ QCD}
+\newcommand{\wzjj}{$W^\pm Z jj$}
+\newcommand{\wz}{$W^\pm Z$}
+\newcommand{\mjj}{\ensuremath{m_{jj}}}
+\newcommand{\mtwz}{\ensuremath{m_T^{WZ}}} 
+
 \title{Riassunto articolo: Measurements of electroweak $W^\pm Z$ boson pair production in association with two jets in $pp$ collisions at $\sqrt{s} =13\,\unit{TeV}$ with the ATLAS detector\\ }
 \author{Nicolò Favagrossa\\nicolo.favagrossa@studenti.unimi.it}
 \date{\today}
@@ -70,5 +78,179 @@ CL_s = \frac{p_s}{1 - p_0}
 \end{equation}
 
 Nel paper, i coefficienti EFT vengono rigettati solo quando il $CL_s < 0.05$ (ovvero $1 - 0.95$). Questo approccio garantisce che i limiti al $95\%$ CL citati nell'abstract siano robusti, leggermente più conservativi e riflettano la reale sensibilit\`a del rivelatore alle energie di collisione di $\sqrt{s} = 13\text{ TeV}$.
+
+\section{Introduzione}
+Il \textbf{Vector boson scattering} (VBS), $VV \to VV$ con $V= W/Z/\gamma$, è un processo chiave per sondare la simmetria di gauge elettrodebole $\text{SU}(2)_{\mathrm{L}} \times \text{U}(1)_{\mathrm{Y}}$ che determina l'auto accoppiamento dei bosoni vettoriali. Fenomeni oltre al Modello Standard possono alterare questi accoppiamenti generando contributi addizionale al quartic gauge couplings (QGC) rispetto alle previsioni del Modello Standard.
+
+Nella collisione protone-protone, i processi VBS sono originati dall'interazione di due bosoni vettoriali emessi da due quark nello stato iniziale producendo nello tato finale due bosoni vettoriali e due getti in modo puramente elettrodebole. Questi diagrammi non sono indipendentemente invarianti di gauge e non possono essere studiati in maniera separata dagli altri processi che producono lo stesso stato finale. Ci sono due categorie di processi che producono lo stato $VVjj$. La prima categoria che include contributi VBS include solo diagrammi elettrodeboli (EW) al tree level all'ordine $\alpha_{\mathrm{EW}}^6$ dove $\alpha_{\mathrm{EW}}$ è la costante di accoppiamento elettrodebole. La seconda categoria include entrambe le interazioni QCD e EW. Quindi i diagrammi che contengono almeno un vertice di accoppiamento forte (QCD) al tree level all'ordine $\alpha_{\mathrm{S}}^2 \alpha_{\mathrm{EW}}^4$ dove $\alpha_{\mathrm{S}}$ è la costante di accoppiamento forte. La prima categoria è chiamata produzione elettrodebole (EW) di $VVjj$ mentre la seconda categoria è chiamata produzione QCD di $VVjj$. Secondo il Modello Standard ci deve essere anche un piccolo contributo di interferenza tra i processi EW e QCD che include interazioni all'ordine $\alpha_{\mathrm{S}} \alpha_{\mathrm{EW}}^5$. La somma di produzione QCD e i contributi di interferenza è chiamata produzione QCD, in contrapposizione con la produzione puramente elettrodebole EW. I diagrammi rappresentativi possono essere visti in Figures~\ref{fig:diag_WZjjEW} and \ref{fig:diag_WZjjQCD}, respectively.
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.22\textwidth]{Immagini/fig_01a.pdf} 
+\hspace*{0.2cm}\includegraphics[width=0.22\textwidth]{Immagini/fig_01b.pdf} 
+\hspace*{0.2cm}\includegraphics[width=0.22\textwidth]{Immagini/fig_01c.pdf} 
+\hspace*{0.2cm}\hspace*{0.2cm}\includegraphics[width=0.22\textwidth]{Immagini/fig_01d.pdf} 
+\caption{Diagrammi rappresentativi al LO della produzione \wzjjew in collisione $pp$.}
+\label{fig:diag_WZjjEW}
+\end{center}
+\end{figure}
+ 
+ 
+ 
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.22\textwidth]{Immagini/fig_02a.pdf} 
+\hspace*{0.2cm}\includegraphics[width=0.22\textwidth]{Immagini/fig_02b.pdf} 
+\hspace*{0.2cm}\includegraphics[width=0.22\textwidth]{Immagini/fig_02c.pdf} 
+\caption{Diagrammi rappresentativi al LO della produzione \wzjjqcd in collisione $pp$.
+}
+\label{fig:diag_WZjjQCD}
+\end{center}
+\end{figure}
+Questo articolo presenta le misure delle sezioni d'urto integrate e differenziali per la produzione elettrodebole e inclusiva di \wzjj, sfruttando i decadimenti completamente leptonici dei bosoni $Z$ e $W$ in cui i leptoni carichi nello stato finale sono elettroni o muoni. I dati delle collisioni $pp$ sono stati raccolti con il rivelatore ATLAS dal $2015$ al $2018$ a un'energia nel centro di massa di $\sqrt{s} = 13\,\unit{TeV}$ e corrispondono a una luminosità integrata di $140\,\unit{fb}^{-1}$. Un discriminante multivariato costruito a partire da un boosted decision tree (BDT) viene utilizzato per separare i modi di produzione elettrodebole e forte di \wzjj. Le loro rispettive sezioni d'urto sono misurate integrate su uno spazio delle fasi fiduciale. Sono inoltre misurate in modo differenziale in tre bin della massa invariante dei due jet di tagging, \mjj, e separatamente per eventi con esattamente due jet o con più di due jet. La sezione d'urto della produzione inclusiva di \wzjj è misurata anche in modo differenziale in funzione di varie osservabili cinematiche sensibili alla modellizzazione dei generatori di eventi Monte Carlo (MC) o a effetti di nuova fisica. Le distribuzioni della massa trasversa del sistema \wz, \mtwz, e dello score del BDT sono utilizzate in un'interpretazione EFT per porre dei limiti agli operatori di dimensione-$8$.
+
+\section{Il rivelatore ATLAS}
+L'esperimento ATLAS al Large Hadron Collider (LHC) è un rivelatore generale progettato per studiare una vasta gamma di fenomeni fisici nelle collisioni protone-protone. 
+
+\begin{figure}[t]
+\centerline{\includegraphics[width=0.95\textwidth]{Immagini/fig_02.png}}
+\caption{Sezione trasversale del rivelatore ATLAS.}
+\label{fig:Overview:ATLAS}
+\end{figure}
+
+Il rivelatore ATLAS all'LHC copre quasi l'intero angolo solido attorno al punto di collisione\footnote{ATLAS utilizza un sistema di coordinate destrorso con l'origine nel punto di interazione (IP) nominale al centro del rivelatore e l'asse $z$ lungo il tubo a vuoto (\textit{beam pipe}). L'asse $x$ punta dall'IP verso il centro dell'anello di LHC e l'asse $y$ punta verso l'alto. Nel piano trasverso vengono utilizzate le coordinate cilindriche $(r, \phi)$, dove $\phi$ è l'angolo azimutale attorno all'asse $z$. La pseudorapidità è definita in termini dell'angolo polare $\theta$ come $\eta = -\ln\tan(\theta/2)$. La distanza angolare è misurata in unità di $\Delta R \equiv \sqrt{(\Delta\eta)^2 + (\Delta\phi)^2}$.}. 
+È costituito da un rivelatore di tracciamento interno circondato da un sottile solenoide superconduttore, calorimetri elettromagnetici e adronici, e uno spettrometro per muoni che incorpora tre grandi magneti toroidali superconduttori in aria. Le dimensioni del rivelatore sono $25\,\unit{m}$ di altezza e $44\,\unit{m}$ di lunghezza; il peso complessivo è di circa $7000\,\unit{t}$.
+
+Il sistema del Tracciatore Interno (Inner Detector, ID) è immerso in un campo magnetico assiale di $2\,\unit{T}$ e fornisce il tracciamento delle particelle cariche nell'intervallo $|\eta| < 2.5$. Il rivelatore a Pixel in silicio ad alta granularità copre la regione del vertice e fornisce tipicamente quattro misure per traccia, con il primo \textit{hit} che cade normalmente nell'Insertable $B$-Layer (IBL) installato prima del Run 2 . Questo è seguito dal Semiconductor Tracker (SCT), un tracciatore a microstrip di silicio che fornisce solitamente otto misure per traccia. Questi rivelatori al silicio sono completati dal Transition Radiation Tracker (TRT), che consente una ricostruzione delle tracce estesa radialmente fino a $|\eta| = 2.0$. Il TRT fornisce inoltre informazioni per l'identificazione degli elettroni basate sulla frazione di hit al di sopra di una soglia più elevata di deposito di energia, corrispondente alla radiazione di transizione.
+
+Il sistema calorimetrico copre l'intervallo di pseudorapidità $|\eta| < 4.9$. All'interno della regione $|\eta| < 3.2$, la calorimetria elettromagnetica è fornita da calorimetri a piombo/Argon Liquido (LAr) ad alta granularità suddivisi in \textit{barrel} (sezione centrale) ed \textit{endcap} (tappi), con un sottile \textit{presampler} aggiuntivo a LAr che copre la regione $|\eta| < 1.8$ per correggere la perdita di energia nel materiale a monte dei calorimetri. La calorimetria adronica è fornita dal calorimetro a tegole di acciaio/scintillatore (\textit{tile calorimeter}), segmentato in tre strutture \textit{barrel} entro l'intervallo $|\eta| < 1.7$, e da due calorimetri adronici \textit{endcap} in rame/LAr. La copertura dell'angolo solido è completata da moduli calorimetrici in avanti (\textit{forward}) in rame/LAr e tungsteno/LAr, ottimizzati rispettivamente per le misure di energia elettromagnetica e adronica.
+
+Lo Spettrometro per Muoni (Muon Spectrometer, MS) comprende camere separate per il \textit{trigger} e per il tracciamento ad alta precisione, le quali misurano la deflessione dei muoni in un campo magnetico generato dai magneti toroidali superconduttori in aria. L'integrale di campo dei toroidi varia tra $2.0$ e $6.0\,\unit{T\cdot m}$ in gran parte del rivelatore.
+
+Gli eventi interessanti vengono selezionati dal sistema di \textit{trigger} di primo livello (L1), implementato in hardware dedicato, seguito dalle selezioni effettuate tramite algoritmi implementati via software nell'\textit{high-level trigger} (HLT). Il \textit{trigger} di primo livello accetta eventi provenienti dagli incroci dei pacchetti (\textit{bunch crossings}) a $40\,\unit{MHz}$ con una frequenza inferiore a $100\,\unit{kHz}$, che il \textit{trigger} di alto livello riduce ulteriormente per registrare gli eventi su disco a circa $1\,\unit{kHz}$ (nella Run 3 si è alzato a $3\,\unit{kHz}$).
+
+Un'estesa suite di software è utilizzata per la ricostruzione e l'analisi dei dati reali e simulati, per le operazioni del rivelatore e per i sistemi di \textit{trigger} e acquisizione dati dell'esperimento.
+
+\section{Spazio delle fasi per la misura della sezione d'urto}
+Le sezioni d'urto del processo $W^\pm Zjj$ vengono misurate all'interno di uno \textit{Spazio delle Fasi Fiduciale}, definito rigorosamente a livello di particella generata (\textit{Particle Level} o \textit{Truth Level}). Questa scelta svincola la definizione teorica della misura dagli effetti strumentali (quali l'accettanza geometrica, l'efficienza di ricostruzione e la risoluzione del rivelatore ATLAS), permettendo la successiva estrazione della sezione d'urto fisica differenziale tramite la procedura di \textit{Unfolding}.
+
+La regione fiduciale è definita dalla cinematica dello stato finale dei leptoni carichi (elettroni e muoni) \textit{prompt}, ovvero associati direttamente al decadimento dei bosoni $W^\pm$ e $Z$. I leptoni prodotti dal decadimento di adroni o dal decadimento di leptoni $\tau$ (e dei loro discendenti) sono considerati fondo e scartati dalla definizione del segnale.
+
+Poiché i leptoni carichi subiscono un irraggiamento colineare nel vuoto subito dopo il decadimento (QED \textit{Final-State Radiation}, FSR), l'utilizzo del loro quadri-impulso esatto renderebbe la sezione d'urto teorica fortemente dipendente dai dettagli del generatore Monte Carlo utilizzato. Per evitare questo bias, a livello \textit{Truth} la cinematica dei leptoni carichi viene ridefinita tramite una procedura algoritmica di \textit{Dressing} (vestizione). Nello specifico, i quadri-impulsi di tutti i fotoni generati che si trovano entro un cono di distanza angolare $\Delta R = 0.1$ attorno alla direzione del leptone vengono sommati vettorialmente al quadri-impulso del leptone stesso. 
+
+Questa procedura restituisce i cosiddetti \textit{Dressed Leptons}, i quali mimano a livello teorico il raggruppamento energetico che l'algoritmo di ricostruzione opererà sui \textit{cluster} del calorimetro elettromagnetico a \textit{Detector Level}. Tutti i tagli cinematici che definiscono la regione fiduciale dell'analisi vengono imposti esclusivamente sulle variabili cinematiche di questi leptoni "vestiti".
+
+Come ho già detto prima i leptoni e i neutrini che non originano da leptoni $\tau$ o adroni sono matchati al decadimento da bosoni $W^\pm$ e $Z$ usando un generatore MC chiamato \textit{ algoritmo resonant shape}. Questo algoritmo si basa sul valore di un estimatore che si esprime come il prodotto delle due line-shape nominali di Breit-Wigner dei bosoni $W^\pm$ e $Z$:
+\begin{equation*}
+    P = \left| \frac{1}{ m^2_{(\ell^+,\ell^-)} - \left(m_Z^{\textrm{PDG}}\right)^2 + \textrm{i} \; \Gamma_Z^{\textrm{PDG}} \; m_Z^{\textrm{PDG}} } \right|^2  \times \; \left| \frac{1}{ m^2_{(\ell',\nu_{\ell'})} - \left(m_W^{\textrm{PDG}}\right)^2 + \textrm{i} \; \Gamma_W^{\textrm{PDG}} \; m_W^{\textrm{PDG}} } \right|^2 
+\end{equation*}
+dove $m_Z^{\textrm{PDG}}$ ($m_W^{\textrm{PDG}}$) e $\Gamma_Z^{\textrm{PDG}}$ ($\Gamma_W^{\textrm{PDG}}$)  sono i valori medi di massa e della larghezza di decadimento dei bosoni $Z$ ($W$) dal PDG. L'input di questo estimatore è costituito da tutte le possibili combinazioni di leptoni carichi e neutrini che soddisfano i criteri di selezione del segnale. La combinazione che massimizza il valore di $P$ viene considerata come quella corretta per il match tra leptoni e bosoni.
+
+Lo spazio delle fasi fiduciale è definito da una serie di requisiti cinematici sui leptoni carichi e sui jet a livello di particella generata. Questi requisiti sono progettati per massimizzare la sensibilità alla produzione elettrodebole di $W^\pm Zjj$ e per minimizzare le contaminazioni da processi di fondo, mantenendo al contempo un'ampia accettanza per il segnale. I criteri di selezione includono:
+\begin{itemize}
+    \item I leptoni carichi che derivano dal decadimento del bosone $Z$ devono avere un momento trasverso $p_T>15\,\unit{GeV}$.
+    \item Il leptone carico che deriva dal decadimento del bosone $W$ deve avere un momento trasverso $p_T>20\,\unit{GeV}$.
+    \item Tutti i leptoni carichi devono avere una pseudorapidità $|\eta| < 2.5$.
+    \item La massa invariante dei due leptoni carichi associati al bosone $Z$ deve essere compresa in un range di $10\,\unit{GeV}$ attorno alla massa nominale del $Z$, ovvero $|m_{\ell^+ \ell^-} - m_Z^{\textrm{PDG}}| < 10\,\unit{GeV}$ dove $m_Z^{\textrm{PDG}}=91.1876\,\unit{GeV}$.
+    \item La massa trasversa di $W$ definita come $m_T^W = \sqrt{2\cdot p_T^\ell \cdot p_T^{\nu} [1 - \cos\Delta\phi(l,\nu)]}$ dove $\Delta\phi$ deve essere maggiore di $30\,\unit{GeV}$, dove $p_T^\ell$ e $p_T^{\nu}$ sono i momenti trasversi del leptone carico e del neutrino associati al bosone $W$, e $\Delta\phi(l,\nu)$ è l'angolo tra il leptone e il neutrino nel piano trasverso.
+    \item La distanza angolare tra il leptone carico dal decadimento di $W^\pm$ e ognuno dei leptoni carichi dal decadimento di $Z$ deve essere maggiore di $\Delta R > 0.3$.
+    \item La distanza angolare tra i leptoni carichi del dacadimento di $Z$ deve essere maggiore di $\Delta R > 0.2$.
+\end{itemize}
+Ovviamente a queste richieste deve aggiungersi anche la richiesta di avere almeno due jet ricostruiti attraverso l'algoritmo anti-$k_t$ con il parametro $R=0.4$ con le seguenti caratteristiche:
+\begin{itemize}
+    \item I jet devono avere un momento trasverso $p_T > 40\,\unit{GeV}$.
+    \item I jet devono avere una pseudorapidità $|\eta| < 4.5$.
+    \item La distanza angolare tra ogni jet e ogni leptone carico deve essere maggiore di $\Delta R(j,l) > 0.3$.
+    \item I due jet di tagging devono essere in regioni opposte del rivelatore, ovvero devono soddisfare la condizione $\eta_{j1} \cdot \eta_{j2} < 0$.
+    \item La massa invariante dei due jet con il più alto momento trasverso (jet di tagging) deve essere maggiore di $\mjj > 500\,\unit{GeV}$ per aumentare la sensitività alla produzione elettrodebole di $W^\pm Zjj$.
+    \item Vengono esclusi gli eventi che contengono un jet identificato come contenente un quark $b$ (b-jet) per ridurre la contaminazione da processi di fondo che coinvolgono il quark $b$, come la produzione singola di top associata a una $Z$ ($tZj$).
+\end{itemize}
+Un aspetto cruciale della definizione teorica del segnale riguarda il trattamento del quark bottom. A livello di elemento di matrice (\textit{Matrix Element}), gli \textit{hard processes} che presentano un quark $b$ nello stato iniziale o finale vengono rigorosamente esclusi dalla definizione del segnale $WZjj$-EW. Un esempio emblematico è la produzione singola di top associata a una $Z$ ($tZj$), la quale avviene prevalentemente tramite lo scambio in canale-$t$ di un bosone $W$ tra un quark $b$ e un quark leggero. Tali diagrammi, essendo dominati dalla fisica del quark top, non contengono i vertici di auto-accoppiamento dei bosoni di gauge (TGC e QGC). 
+
+Poiché l'obiettivo cardine della misura del Vector Boson Scattering è sondare il settore di rottura della simmetria elettrodebole e cercare eventuali anomalie nei vertici quartici, i processi legati al quark $b$ non trasportano l'informazione fisica d'interesse. Essi costituiscono unicamente un fondo irriducibile, che viene soppresso a livello sperimentale (\textit{Detector Level}) imponendo un rigoroso $b$-veto nella \textit{Signal Region}
+
+Un riassunto completo di tutti i tagli cinematici che definiscono il volume fiduciale è riportato nella Tabella~\ref{tab:fiducial_phase_space}.
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.4} % Aumenta leggermente lo spazio verticale tra le righe per maggiore leggibilità
+\begin{tabular}{llc}
+\hline
+\textbf{Categoria} & \textbf{Variabile cinematica} & \textbf{Requisito} \\
+\hline
+\multicolumn{3}{c}{\textbf{Selezione dei Leptoni}} \\
+\hline
+Leptoni da $Z$ & Momento trasverso ($p_T^{\ell_Z}$) & $> 15\,\unit{GeV}$ \\
+Leptone da $W$ & Momento trasverso ($p_T^{\ell_W}$) & $> 20\,\unit{GeV}$ \\
+Tutti i leptoni & Pseudorapidità ($|\eta_\ell|$) & $< 2.5$ \\
+Bosone $Z$ & Finestra di massa invariante ($|m_{\ell^+ \ell^-} - m_Z^{\textrm{PDG}}|$) & $< 10\,\unit{GeV}$ \\
+Bosone $W$ & Massa trasversa ($m_T^W$) & $> 30\,\unit{GeV}$ \\
+Isolamento angolare & Distanza tra leptoni da $Z$ ($\Delta R(\ell_{Z1}, \ell_{Z2})$) & $> 0.2$ \\
+Isolamento angolare & Distanza tra leptone $W$ e leptoni $Z$ ($\Delta R(\ell_W, \ell_Z)$) & $> 0.3$ \\
+\hline
+\multicolumn{3}{c}{\textbf{Selezione dei Jet (algoritmo anti-$k_t$, $R=0.4$)}} \\
+\hline
+Tutti i jet & Momento trasverso ($p_T^j$) & $> 40\,\unit{GeV}$ \\
+Tutti i jet & Pseudorapidità ($|\eta_j|$) & $< 4.5$ \\
+Isolamento angolare & Distanza tra jet e leptoni ($\Delta R(j, \ell)$) & $> 0.3$ \\
+Jet di tagging & Emisferi opposti ($\eta_{j1} \cdot \eta_{j2}$) & $< 0$ \\
+Jet di tagging & Massa invariante ($m_{jj}$) & $> 500\,\unit{GeV}$ \\
+\hline
+\multicolumn{3}{c}{\textbf{Veto sui jet}} \\
+\hline
+Jet da quark $b$ & Assenza di $b$-jet nello stato iniziale/finale & $N_{b\text{-jet}} = 0$ \\
+\hline
+\end{tabular}
+\caption{Riassunto dei requisiti cinematici che definiscono lo spazio delle fasi fiduciale per l'analisi della produzione di $W^\pm Zjj$.}
+\label{tab:fiducial_phase_space}
+\end{table}
+
+\section{Simulazione Monte Carlo e Modellizzazione}
+
+Per interpretare correttamente i dati raccolti dal rivelatore, è essenziale avere una simulazione accurata sia del processo di segnale che dei vari processi di fondo. Nell'analisi della produzione di \wzjj, la strategia di simulazione si articola in tre fasi principali: la generazione del segnale, la valutazione dei fondi e la simulazione del rivelatore.
+%magari per i fondi potrei capire meglio come avviene la produzione e mettere in backup i diagrammi se dovesse chiedermeli
+\subsection{Generazione del Segnale e Interferenza}
+La simulazione degli eventi \wzjj\ è stata affidata principalmente al generatore \textsc{MadGraph5\_aMC@NLO}, interfacciato con \textsc{Pythia} per ricreare la cascata partonica (\textit{parton shower}) e l'adronizzazione. Le funzioni di distribuzione dei partoni (PDF) necessarie per descrivere la cinematica interna dei protoni collidenti sono state modellate utilizzando i set della collaborazione \textsc{NNPDF}. 
+
+Poiché lo stato finale $VVjj$ può essere prodotto attraverso diverse interazioni, la simulazione è stata suddivisa in componenti distinte:
+\begin{itemize}
+    \item \textbf{Produzione elettrodebole (\wzjjew):} Rappresenta il vero e proprio segnale dell'analisi (che include il \textit{Vector Boson Scattering}). Viene calcolata a livello albero (LO) considerando processi puramente elettrodeboli (ordine $\alpha_{\mathrm{EW}}^6$). In questa fase, vengono generati due jet aggiuntivi da vertici elettrodeboli e si applica un veto categorico sui quark $b$.
+    \item \textbf{Produzione forte (\wzjjqcd):} Considerata un fondo per l'analisi VBS, include i diagrammi dominati dall'interazione forte (ordine $\alpha_{\mathrm{EW}}^4$). Per avere una maggiore precisione, questa componente è calcolata al NLO in QCD e ammette la presenza di quark $b$.
+    \item \textbf{Interferenza (\wzjj-INT):} Quantifica l'interferenza quantistica tra la produzione EW e quella QCD (ordine $\alpha_{\mathrm{s}}$). Calcolata al LO, si è scoperto che fornisce un contributo positivo: aumenta la sezione d'urto del segnale elettrodebole di circa il $6\%$ nella regione fiduciale, raggiungendo picchi del $12\%$ per eventi con tre o più jet ad alto momento trasverso ($p_T > 25\,\unit{GeV}$).
+\end{itemize}
+Per assicurarsi che i risultati non dipendano artificialmente dal software scelto, i fisici di ATLAS hanno generato campioni alternativi utilizzando i generatori \textsc{Sherpa} e \textsc{Herwig}. Il confronto tra questi generatori permette di stimare in modo rigoroso l'incertezza sistematica legata alla modellizzazione teorica.
+
+\subsection{Modellizzazione dei Fondi}
+Oltre alla produzione \wzjjqcd, esistono numerosi altri processi del Modello Standard che possono imitare il segnale nel rivelatore. Questi fondi si dividono in due categorie basate su come vengono stimati:
+\begin{itemize}
+    \item \textbf{Fondi con leptoni \textit{prompt} (veri):} Processi come la produzione di coppie $ZZ$, $WW$, tribosoni ($VVV$) o quark top associati a bosoni vettoriali ($t\bar{t}V$, $tZj$). Poiché producono leptoni reali ben definiti, il loro contributo è valutato interamente tramite simulazioni Monte Carlo (utilizzando generatori come \textsc{Sherpa} e \textsc{MadGraph}). In particolare, per il dominante fondo $ZZ$, è stata inclusa sia la produzione originata da coppie quark-antiquark ($q\bar{q}$) sia quella dominata dalla fusione di gluoni ($gg$).
+    \item \textbf{Fondi con leptoni \textit{fake} (falsi):} Eventi in cui un jet adronico viene erroneamente identificato come un leptone dal rivelatore. Essendo un artefatto strumentale complesso da simulare, questo fondo viene valutato direttamente utilizzando tecniche guidate dai dati reali (\textit{data-driven}).
+\end{itemize}
+
+\subsection{Simulazione del Rivelatore e Correzioni}
+Una volta generata la cinematica delle particelle, gli eventi Monte Carlo vengono passati attraverso \textsc{Geant4}, un software che simula fedelmente l'interazione delle particelle con la materia e l'elettronica del rivelatore ATLAS. 
+Per replicare l'ambiente caotico di LHC, alla simulazione vengono sovrapposti eventi di \textit{pile-up} (collisioni protone-protone secondarie nello stesso incrocio di pacchetti). Infine, per garantire un accordo perfetto tra dati simulati e dati reali, vengono applicati dei fattori di correzione (\textit{scale factors}) al Monte Carlo, aggiustando la scala degli impulsi e le efficienze di tracciamento e isolamento per rispecchiare esattamente le prestazioni osservate del rivelatore durante la presa dati.
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{p{3.2cm} p{3.2cm} p{5.2cm} p{2.5cm}}
+\hline
+\textbf{Categoria} & \textbf{Processi Principali} & \textbf{Origine / Descrizione} & \textbf{Metodo di stima} \\
+\hline
+\multicolumn{4}{c}{\textbf{Fondi Irriducibili (Leptoni reali / \textit{Prompt})}} \\
+\hline
+Produzione Forte & \wzjjqcd & Produce l'esatto stato finale del segnale, ma tramite l'interazione forte (QCD). & Monte Carlo \\
+Bosoni Multipli & $ZZ$, $WW$, $VVV$ & Decadono in leptoni reali. Ad esempio $ZZ \to 4\ell$, dove un leptone non viene ricostruito o esce dall'accettanza. & Monte Carlo \\
+Quark Top & $t\bar{t}V$, $tZj$ & Decadono producendo leptoni reali. Contaminano il segnale se il veto sui jet $b$ fallisce. & Monte Carlo \\
+\hline
+\multicolumn{4}{c}{\textbf{Fondi Riducibili (Leptoni falsi / \textit{Fake})}} \\
+\hline
+Jet misidentificati & $Z+$jet, $Z\gamma$, single top, $t\bar{t}$ & Un jet adronico, un fotone o un leptone non isolato viene erroneamente ricostruito dal rivelatore come un leptone \textit{prompt}. & \textit{Data-driven} \\
+\hline
+\end{tabular}
+\caption{Classificazione dei processi di fondo in irriducibili (fisici) e riducibili (strumentali) per l'analisi della produzione di $W^\pm Zjj$.}
+\label{tab:background_classification}
+\end{table}
+\section{Selezione degli eventi}
+
 \end{document}
 
