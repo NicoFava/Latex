@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithm}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{capt-of}
+\usepackage{url}
+\usepackage{chemmacros}
+\usepackage{upgreek}
+\usepackage{isomath}
+\usepackage{cancel}
+\usepackage{bm}
+\usepackage[italian]{babel}
+\geometry{a4paper, top=2.5cm, bottom=2.5cm, left=3cm, right=3cm, bindingoffset=5mm}
+\usepackage[suftesi]{frontespizio}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{verbatim}
+
+\title{Riassunto articolo: Measurements of electroweak $W^\pm Z$ boson pair production in association with two jets in $pp$ collisions at $\sqrt{s} =13\,\unit{TeV}$ with the ATLAS detector\\ }
+\author{Nicolò Favagrossa\\nicolo.favagrossa@studenti.unimi.it}
+\date{\today}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section{Riassunto}
+Questo articolo presenta la misura della sezione d'urto integrata e differenziale per la \textbf{produzione elettrodebole} di $W^\pm Z$ in associazione a due getti $(W^\pm Z j j )$ in una collisione protone-protone. I dati sono stati raccolti da ATLAS detector al Large Hadron Collider dal 2015 al 2018 con un'energia del centro di massa di $\sqrt{s}=13\, \unit{TeV}$ che corrisponde ad una luminosità integrada di $L=140\,\unit{fb}^{-1}$. Gli eventi candidati $W^{\pm}Zjj$ sono stati ricostruiti usando il metodo di decadimento leptonico dei bosoni di gauge. Gli eventi quindi contengono tre leptoni identificati che possono essere sia muoni $\mu$ che elettroni $e$ e due getti ad alta energia. I processi che contengono $W^\pm Zjj$ puramente elettrodeboli sono stati isolati da quelli che contengono $W^\pm Zjj$ QCD. La misura integrata della sezione d'urto fiduciale per il processo puramente elettrodebole via canale leptonico è stato misurato ed è:
+\begin{equation}
+    \sigma_{{W^\pm Z jj}-{\mathrm{EW}}\to l'\nu l l j j } = 0.368 \pm 0.037 \, (\mathrm{stat.}) \pm 0.059 \, (\mathrm{syst.}) \, \pm 0.003 \, (\mathrm{lumi.}) \unit{fb}
+\end{equation}
+dove $l$ e $l'$ rappresentano elettroni o muoni. Rispetto alla sezione d'urto elettrodebole e forte sono stati misurati in maniera separata per eventi con due o più jet. La sezione d'urto totale senza separare la componente elettrodebole e forte è stata anche misurata e corrisponde a:
+\begin{equation}
+    \sigma_{{W^\pm Z jj}\to l'\nu l l j j } = 1.462 \pm 0.063 \, (\mathrm{stat.}) \pm 0.118 \, (\mathrm{syst.}) \, \pm 0.012 \, (\mathrm{lumi.}) \unit{fb}
+\end{equation}
+Le misure differenziali sono state effettuate in funzione di diverse variabili cinematiche osservabili. Finalmente le misure sono state usate per limitare i parametri di anomalous quartic gauge couplings (aQGC) che descrivono deviazioni dalle previsioni del Modello Standard per le interazioni tra i bosoni di gauge. Questo estraendo il $95\%$ dell'intervallo di confidenza in operatori di dimensione otto che descrivono le aQGC. 
+
+\section{Piccolo inciso}
+Per inciso: nel caso di questo paper di ATLAS sulla produzione $W^\pm Z jj$ (VBS), noi non stiamo "scoprendo" la nuova fisica, ma stiamo cerando deviazioni della previsione del Modello Standard nei vertici di gauge quartici (QGC). Non trovandole, dobbiamo quantificare fino a che punto possiamo dire che queste anomalie non esistono. Quindi è qui che entra in gioco il $95\%$ CL. Nel formalismo frequentista, i dati sono stocastici, mentre l'ipotesi è vera o falsa. Per una scoperta, l'ipotesi nulla $H_0$ da testare è che esista solo il fondo del Modello Standard. Calcoliamo il p-value ($p_0$): se $p_0<2.87\times10^{-7}$, rigettiamo $H_0$. Questa è una deviazione di $5\sigma$ e dichiariamo la scoperta. Per un'esclusione (come questo paper), l'ipotesi sotto test è $H_s$: segnale di nuova fisica + fondo. Vogliamo trovare il valore massimo del segnale compatibile con i nostri dati. Fissiamo un Livello di Confidenza (CL) del $95\%$ ($\alpha=0.05$ come test size) e rigettiamo tutte le intensità di segnale per cui il p-value ($p_s$) è minore di $\alpha$ ($p_s<\alpha$).
+
+Cosa significa fisicamente il $95\%$ CL nell'analisi di ATLAS? Significa che se le anomalie aQGC fossero davvero grandi come il limite che stiamo ponendo, se ripetessimo l'esperimento 100 volte, 95 volte osserveremmo un segnale evidente, Poichè nei dati di ATLAS non lo vediamo, escludiamo questi valori.
+
+Per estrarre i limiti al $95\%$ CL sui coefficienti EFT (operatori di dimensione-8 che alterano i vertici quartici), l'esperimento costruisce una statistica di test basata sulla \textit{Profiled Likelihood Ratio}, $\Lambda(s)$. 
+
+La statistica di test usata è:
+\begin{equation}
+q_s = -2 \ln \Lambda(s)
+\end{equation}
+
+Nel paper ATLAS, la verosimiglianza globale $\mathcal{L}$ viene fittata simultaneamente sulla \textit{Signal Region} (SR) e sulle \textit{Control Regions} (ZZ-CR e b-CR). I parametri di disturbo (\textit{Nuisance Parameters}, $\nu$), che modellano le incertezze sistematiche come l'energia dei jet o i leptoni \textit{fake} (calcolati col Matrix Method), vengono \textbf{profilati}. Questo significa che, per ogni valore del coefficiente EFT testato, i parametri $\nu$ vengono lasciati liberi di adattarsi ai dati per massimizzare la likelihood condizionata.
+
+Grazie al \textbf{Teorema di Wilks}, sappiamo che per un campione asintotico $q_s$ segue una distribuzione $\chi^2$. Poichè l'analisi cerca un limite superiore (assumendo che la presenza di nuova fisica EFT possa solo aumentare il rateo di eventi rispetto al fondo, $s > \hat{s}$), si esegue un \textbf{one-sided test}. 
+
+L'integrale della coda della distribuzione $\chi^2$ ci indica che il limite di esclusione al $95\%$ CL (per un parametro di interesse) si trova esattamente dove $q_s = 2.71$. Il fit scansiona i valori dei coefficienti EFT: non appena il valore di $q_s$ per un determinato operatore supera $2.71$, quel coefficiente EFT viene considerato escluso al $95\%$ CL.
+Nell'estrarre questi limiti, ATLAS non si limita a usare il $p$-value dell'ipotesi di segnale ($p_s$), ma applica il metodo modificato \textbf{$CL_s$}. 
+
+Perchè? Immaginiamo che nelle code ad alta energia della massa trasversa ($m_T^{WZ}$) o agli alti score del BDT --- ovvero le regioni più sensibili alle anomalie quartiche (aQGC) --- il fondo fluttui statisticamente verso il basso, risultando nettamente minore delle previsioni. Se usassimo solo il parametro $p_s$, otterremmo un valore estremamente piccolo. Questo ci porterebbe a rigettare l'ipotesi di segnale spingendoci a escludere coefficienti EFT a cui il rivelatore ATLAS, in realtà, \textit{non è fisicamente sensibile} (potenzialmente escludendo segnali piccolissimi o nulli).
+
+Questo è fisicamente inaccettabile: se l'esperimento non ha potere discriminante, non può escludere l'ipotesi. Per proteggere il limite da queste fluttuazioni negative del fondo, si introduce il fattore $CL_s$:
+\begin{equation}
+CL_s = \frac{p_s}{1 - p_0}
+\end{equation}
+
+Nel paper, i coefficienti EFT vengono rigettati solo quando il $CL_s < 0.05$ (ovvero $1 - 0.95$). Questo approccio garantisce che i limiti al $95\%$ CL citati nell'abstract siano robusti, leggermente più conservativi e riflettano la reale sensibilit\`a del rivelatore alle energie di collisione di $\sqrt{s} = 13\text{ TeV}$.
+\end{document}
+
