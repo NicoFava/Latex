@@ -338,6 +338,141 @@ Veto assoluto sui quark $b$ ($N_{b\text{-jet}} = 0$) \\
 \caption{Riassunto dei criteri di selezione per la ricostruzione degli oggetti fisici e la definizione della regione di segnale per l'analisi $W^\pm Zjj$.}
 \label{tab:event_selection}
 \end{table}
-\subsection{Capiamo l'anti-kt}
-\end{document}
+\subsection{Jet e JADE}
+Essendo LHC una macchina adronica la maggior parte degli oggett che vedremo saranno jet adronici! Ma prima ricostruiamo un attimo la nostra conoscenza dei Jet. I Jet in maniera naively sono un chunk di particelle collimate che derivano da una frammentazione dei partoni. Abbiamo bisogno di un modo per definire un processo per definire questi jet senza essere troppo sensibili per i sottoprocessi soft come ad esempio radiazione di gluone al NLO etc. Ovviamente non possiamo avere un perfetto match tra partone e jet qusto perchè i partoni sono colorati mentre i jet non lo sono. Partendo dall'algoritmo di JADE: idealmente raggruppiamo oggetti molto vicini nello spazio delle fasi che significa in soldoni che raggruppo oggetti con una piccola massa invariante. Ricordiamoci:
+\begin{equation}
+    m_{jk}^2=(E_j+E_k)^2-(\mathbf{p}_j+\mathbf{p}_k)^2\approx2E_jE_k(1-\cos\alpha_{jk})
+\end{equation}
+dove $\alpha_{jk}$ è l'angolo tra l'oggetto $j$ e $k$. Ora definiamo appunto la distanza in questo spazio delle fati come
+\begin{equation}
+    y_{jk}=\frac{m_{jk}^2}{Q^2}=\frac{2}{Q^2}E_jE_k(1-\cos\alpha_{jk}) \qquad \text{dove} \qquad Q=\left(\sum_jE_j\right)^2- \left(\sum_j\mathbf{p}_j\right)^2
+\end{equation}
+l'algoritmo è costituito nel seguente modo:
+\begin{enumerate}
+    \item inizio con una lista di oggetti ognuno con un quadrimomento $p_j\equiv(E_j;\mathbb{p}_j)$
+    \item calcolo la distanza $y_{jk}$ tra tutte le coppie di oggetti $(jk)$
+    \item scelgo la coppia con il valore di $y_{jk}$ più piccolo e se questo valore è minore di un $y_\text{cut}$ che scelgo io allora questi due oggetti si uniranno in un solo oggetto con quadrimomento $p_j+p_k$ e la lista diminuisce di un oggetto e ricomincio dal punto $1$
+    \item se il più piccolo $y_{jk}>y_\text{cut}$ allora fermo l'iterazione e nella lista dovrei avere solo jet. 
+\end{enumerate}
+Ovviamente dipende molto dalla scelta del cut.
 
+\subsection{Anti-kt}
+L'idea di base è molto simile a quella di JADE e quella fatta a LEP. Si parte da oggetti di cui conosciamo il quadriimpulso che può essere attraverso i cluster calorimetrici grazie al quale misuriamo l'energia e il centroide. Oppure posso usare delle tracks cariche. Ma quale dei due metodi è meglio? Ora ATLAS usa una sorta di particle-flow in cui si uniscono i due metodi ma è molto complicato per evitare il double counting. Anche in questo caso si cerca di rendere la massa invariante piccola.
+\begin{equation}
+    m_{ij}^2 = 2p_{\mathrm{T}}^{(i)} p_{\mathrm{T}}^{(j)} \left[ \cosh(\eta^{(i)} - \eta^{(j)}) - \cos(\phi^{(i)} - \phi^{(j)}) \right] \simeq p_{\mathrm{T}}^{(i)} p_{\mathrm{T}}^{(j)} \left[ (\Delta\eta)^2 + (\Delta\phi)^2 \right]
+\end{equation}
+Questo è il punto di partenza. Ci sono però due argomenti che ci portano a modificare questo criterio ad LHC. Una formula di questo genere ha lo stesso problema dell'algoritmo di JADE e cioè che due oggetti lontani (grande $\Delta \eta$ e $\Delta \phi$) potrebbero essere raggruppati ugualmente se entrambi hanno un $p_T$ molto piccolo. Inoltre questa metrica è sensibile ovviamente agli oggetti soft. Ad LHC abbiamo sia il pile-up che gli underlying event che sono oggetti soft e meno interessanti.
+
+C'è bisogno di una modifica della metrica da usare. L'idea è questa: abbiamo i nostri oggetti e chiamo $k_j$ l'impulso del j-esimo oggetto $k_j=(E_j;\mathbf{p}_j)$ e posso scomporlo in componenti: $k_T^{(j)}$, $Y^{(j)}$ e $\phi^{(j)}$. Da notare che usiamo la rapidità e non la pseudorapidità perchè i due oggetti coincidono quando la massa dell'oggetto è trascurabile. Quando parto con l'algoritmo la situazione è accettabile ma man mano che aumento gli oggetti uniti la massa dell'oggettone aumenta. Quello che facciamo quindi è definire la nostra distanza fra due oggetti. Quindi al posto di eta uso Y e normalizzo la quantità sommata per un parametro R fisso che mi dirà circa quanto largo verrà il nostro oggetto. Poi davanti al posto di fare il prodotto dei momenti traversi dei due oggetti vado a fare il minimo dei due momenti trasversi esponenziati per un certo p.
+\begin{equation*}
+    d_i = \left(k_T^{(i)}\right)^{2p} \quad ; \quad
+    d_{ij} = \min \left[ \left(k_T^{(i)}\right)^{2p} ; \left(k_T^{(j)}\right)^{2p} \right] \frac{\overbrace{(\Delta Y)^2 + (\Delta\phi)^2}^{\equiv (\Delta R)^2}}{R^2}
+\end{equation*}
+\begin{center}
+\begin{tabular}{l|r}
+    nome & $p$ \\
+    \hline
+    $k_T$ & $1$ \\
+    Cambridge-Aachen & $0$ \\
+    anti-$k_T$ & $-1$
+\end{tabular}
+\end{center}
+Se usiamo $p = 1$ stiamo praticamente facendo i quadrati dei momenti trasversi quando invece $p = 0$ non stiamo usando i momenti ma usiamo solo le distanze nel piano. Quando usiamo il $p = -1$ che è anche il metodo più usato qui stiamo facendo gli inversi dei quadrati. Quindi il minimo degli inversi sarà in realtà il massimo fra i due. Poi definisco la distanza di un solo oggetton $d_i$
+
+\noindent L'algoritmo per i jet è iterativo:
+\begin{enumerate}
+    \setcounter{enumi}{-1}
+    \item iniziare con una lista di ``oggetti'', definiti come gli oggetti elementari, ciascuno con quadrimpulso $k_j \equiv (E_j; \vec{p}_j)$
+    \item calcolare $d_i$ per ogni oggetto $i$, e $d_{ij}$ per ogni coppia $(i,j)$, e il loro minimo $d_{\min} = \min(\{d_i\} \cup \{d_{ij}\})$
+    \item se esiste un oggetto $i$ tale che $d_i \equiv d_{\min} \implies i$ è definito come un jet e rimosso dalla lista degli oggetti
+    \item altrimenti deve esserci una coppia $(i,j)$ tale che $d_{ij} \equiv d_{\min} \implies$ raggruppare insieme gli oggetti $i,j$, per formare un nuovo oggetto con quadrimpulso $k_i + k_j$; inserire il nuovo oggetto nella lista degli oggetti e rimuovere gli oggetti $i,j$ dalla lista
+    \item reiterare da (1) finché non ci sono più oggetti nella lista: rimaniamo con i jet!
+\end{enumerate}
+
+\noindent \textbf{Nota:} tutte le quantità sono invarianti di Lorentz per boost lungo l'asse del fascio $\implies$ il clustering dei jet è ben definito!\\
+\textbf{Nota:} si usa la rapidità $Y$ invece della pseudo-rapidità $\eta$ --- i jet sono larghi, hanno una massa invariante considerevole $\implies$ non si può approssimare $Y \to \eta$\\
+\textbf{Nota:} (specialmente per $p=1$) la sostituzione $k_T^{(i)} k_T^{(j)} \to \min \left[ \left(k_T^{(i)}\right)^2 ; \left(k_T^{(j)}\right)^2 \right]$ evita la ricombinazione di due oggetti soft molto distanti, preferendo soft+hard a $\Delta R$ minore
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=1\textwidth]{Immagini/jet.png} 
+\end{center}
+\end{figure}
+
+\section{Stima del Background}
+Le sorgenti di background sono classificate in due gruppi:
+\begin{itemize}
+    \item \textbf{Fondo irriducibile}: eventi dove tutti i candidati sono leptoni prompt o sono prodotti da decadimenti del leptone $\tau$.
+    \item \textbf{Fondo riducibile}: eventi dove almeno uno dei leptoni candidati non è di tipo prompt. Questi sono anche chiamati misidentified o fake lepton.
+\end{itemize}
+\subsection{Il background irriducibile}
+Questo fondo deriva da $ZZ$ e $t\bar{t}V$ e sono modellizzati usando simulazioni Monte Carlo. I dati sono presi in due diverse control regions (CR) la prima riferita come $ZZ-CR$ e la seconda come $b-CR$ rispettivamente e sono usate per limitare la normalizzazione il fondo di $ZZjj$-QCD e $t\bar{t}V$. La regione di controllo $ZZ-CR$ è arricchita di eventi $ZZ$ ed è identificata applicando la selezione degli eventi \wzjj definiti nella sezione sopra ma al posto di vetare sul quarto leptone gli eventi devono avere almeno quattro leptoni candidati con una identificazione più looser. Ovviamente per costruzione questa regione è arricchita di eventi $ZZjj-$QCD con un piccolo contributo di $ZZjj-$EW. La regione di controllo $b-CR$ è arricchita di eventi $t\bar{t}V$ e $tZj$ ed è identificata applicando la selezione degli eventi \wzjj ma invece di vetare sui jet $b$ si richiede che ci siano almeno un jet $b$. Le sorgenti rimanentti di fondo irriducibile sono $ZZjj$-EW e $VVV$ e i loro contributi nella CR e SR sono valutati interamente tramite simulazione Monte Carlo.
+\subsection{Il background riducibile}
+Il fondo riducibile origina dalla produzione di $Z+j$, $Z\gamma$, $t\bar{t}$, $Wt$ e $WW$. Questi fondi sono stimati usanto un metodo basato dul data-driven in cui avviene un'inversione della matrice globale che contiene i coefficienti di efficienza di identificazione e di fake lepton come candidato loose o tight. I letponi candidati tight sono quelli che soddisfano i criteri di selezione più stringenti citati precedentemente nella sezione dedicata. I loose lepton invece sono quelli che non riscontrano il criterio di isolamento e identificazione del segnale ma soddista comunque criteri più looser. La probabilità di misidentificazione di un un leptone sono determinate usando sample di controllo dedicati ognuno arricchino in leptoni misidentificati da una specifica sorgente di fondo come da jet di sapore leggero o pesante e da fotoni convertiti. Le efficienze e le probabilità di misidentificazione sono determinate in funzione del $p_T$ e $\eta$ del leptone candidato e sono combinate con gli event rate nei saple dei dati \wzjj dove almeno uno dei tre leptoni candidati è loose. Poi risolveco un sistema di equazioni lineari il numero di eventi con almeno un leptone misidentificato è ottenuto e questo rappresenta il numero di di eventi di fondo riducibile nel \wzjj sample. Oltre a questo è stato anche utilizzato un secondo metodo indipendente basato su simulazione MC scalate sui dati da un fattore  process-dependet determinato da data-to-MC con un comparison nella CR. L'articolo afferma che è presente un agreement tra i due metodi entro il 20\%. Questo tipo di accordo è compatibile con le incertezze sistematiche. Nella seguente sabella è possibile gli eventi attesi da simulazioni MC e dal fondo stimato dal data-driven per il fondo riducibile.
+\begin{table}[htbp] 
+\centering
+\renewcommand{\arraystretch}{1.4} % Aumenta lo spazio verticale per facilitare la lettura
+\begin{tabular}{l c c c c}
+\hline
+\textbf{Processo} & \textbf{SR ($N_{\text{jet}} = 2$)} & \textbf{SR ($N_{\text{jet}} \ge 3$)} & \textbf{$b$-CR} & \textbf{$ZZ$-CR} \\
+\hline
+\hline
+\textbf{Dati osservati} & 169 & 477 & 666 & 210 \\
+\textbf{Totale atteso} & 231 $\pm$ 12 & 550 $\pm$ 50 & 660 $\pm$ 40 & 205 $\pm$ 11 \\
+\hline
+\wzjjew & 65.0 $\pm$ 3.5 & 60 $\pm$ 6 & 4.82 $\pm$ 0.28 & 0.725 $\pm$ 0.014 \\
+\wzjjqcd & 125 $\pm$ 9 & 380 $\pm$ 50 & 77 $\pm$ 18 & 6.2 $\pm$ 0.7 \\
+\wzjj-INT & 1.3 $\pm$ 0.6 & 5.3 $\pm$ 2.6 & 0.58 $\pm$ 0.29 & 0.22 $\pm$ 0.11 \\
+$t\bar{t}+V$ & 0.66 $\pm$ 0.04 & 20.2 $\pm$ 0.7 & 289 $\pm$ 10 & 9.89 $\pm$ 0.28 \\
+$tZj$ & 8.78 $\pm$ 0.34 & 19.7 $\pm$ 1.2 & 134 $\pm$ 4 & 0.432 $\pm$ 0.005 \\
+$ZZ$-QCD & 9.6 $\pm$ 0.4 & 32.0 $\pm$ 2.5 & 10.1 $\pm$ 0.6 & 159 $\pm$ 9 \\
+$ZZ$-EW & 2.2 $\pm$ 0.6 & 4.4 $\pm$ 1.1 & 0.25 $\pm$ 0.06 & 23 $\pm$ 6 \\
+$VVV$ & 0.41 $\pm$ 0.10 & 2.0 $\pm$ 0.5 & 0.39 $\pm$ 0.10 & 4.1 $\pm$ 1.1 \\
+Leptoni \textit{fake} & 18 $\pm$ 4 & 28 $\pm$ 7 & 150 $\pm$ 40 & 1.7 $\pm$ 0.5 \\
+\hline
+\end{tabular}
+\caption{Numero di eventi attesi e osservati nella regione di segnale (SR) per la produzione di $W^\pm Zjj$ e nelle due regioni di controllo ($b$-CR e $ZZ$-CR), prima dell'esecuzione del fit globale. Sono mostrati i conteggi attesi per il segnale elettrodebole, la produzione forte e la loro interferenza, insieme alla stima degli eventi degli altri processi di fondo. La categoria ``Leptoni \textit{fake}'' raggruppa tutti i fondi riducibili. Le incertezze riportate rappresentano l'incertezza sistematica totale pre-fit.}
+\label{tab:VBSyield_prefit}
+\end{table}
+Le varie incertezze saranno presentate nella sezione dedicata. Quindi il contributo atteso di \wzjjew nella SR \wzjj è di circa il $16\%$ mentre il $64\%$ dei dati sono attesi essere prodotti da \wzjjqcd. IL contribuoto di \wzjj con leptoni $\tau$ ammonta al $5.3\%$ di tutti gli eventi \wzjj dove sono inclusi \wzjjew, \wzjjqcd e \wzjj-INT.
+
+\section{Metodologie di Misura}
+\subsection{WZjj-EW e WZjj-QCD misura integrata}
+Gli eventi associati alla produzione di \wzjjew sono reparati dagli altri eventi di \wzjj originati da \wzjjqcd e da \wzjj-INT basate dalle loro proprietà cineamtiche modellate da predizioni MC. La sezione d'urto di produzione dei due eventi $\sigma_{WZjj-EW}$ e $\sigma_{WZjj-QCD}$ sono misurate simultaneamente.
+
+Dato il piccolo contributo della SR del processo \wzjjew è stata usata una discriminante multivariata  per separare il segnale dal backgrounds. Quindi un BDT è stato implementato nel pacchetto TMVA ed è usato per scovare le differenze cinematiche tra il segnale \wzjjew e \wzjjqcd e altri fondi di altri processi. Il BDT è allenato e ottimizzato su eventi simulati dalla SR per separare il segnale \wzjjew da \wzjjqcd e altri processi di fondo.
+
+Sono state usate $15$ variabili cinematihe come input per il distriminate BDT. Le variabili possono essere classificate in tre categorie: variabili che descrivono i jet di tagging, variabili che descrivono il sistema $WZ$ e variabili che descrivono le relazioni cinematihe tra i jet di tagging e la cinematica dei leptoni. Le variabili per i due tagging jet sono la massa invariante $m_{jj}$, il momento traverso dei due jet $p_T^{j1}$ e $p_T^{j2}$, la differenza di pseudorapidità $\Delta \eta_{jj}$ e la differenza di azimuth $\Delta \phi_{jj}$. Le variabili che descrivono il sistema $WZ$ sono il momento trasverso dei due bosoni $p_T^W$ e $p_T^Z$, la pseudorapidità del bosone $W$ e la differenza assoluto tra le rapidità di $Z$ e dei leptoni che decadono dalla $W$ $|\Delta \eta_{Z,\ell_W}|$ e la massa trasversa del sistema $W^{\pm}Z$ $m_T^{WZ}$. La pseudorapidità del bosone $W$ è ricostruita stimando il momento longitudinale del neutrino ottenuto usando un metodo di neural-network. Le variabili che descrivono le relazioni cinematiche tra i jet di tagging e i leptoni sono la distanza nel piano pseudorapidità-azimutale tra il bosone Z e il jet leading $\Delta R_{Z,j1}$, il bilancio dell'evento $R_{pT}^{hard}$ definito come la componente trasversa del vettore somma dei $WZ$ e dei due jet di tagging normalizzato per la somma dei momenti trasversi dei $WZ$ e dei due jet di tagging e infine la centralità del sistema $WZ$ relativo ai due jet definita come: 
+\begin{equation}
+    \xi_\text{lep.}=\text{min}(\Delta\eta_-,\Delta\eta_+)
+\end{equation}
+con
+\begin{equation}
+    \Delta\eta_-=\text{min}(\eta_l^W, \eta_{l2}^Z,\eta_{l1}^Z)-\text{min}(\eta_{j1},\eta_{j2})\qquad \Delta\eta_+=\text{max}(\eta_{j1},\eta_{j2})-\text{max}(\eta_l^W, \eta_{l2}^Z,\eta_{l1}^Z)
+\end{equation}
+Per garantire che il BDT non impari artefatti introdotti dal Monte Carlo, l'analisi valida la cinematica degli eventi attraverso tre passaggi chiave: 
+primo, controllando le distribuzioni in una \textit{Validation Region} adiacente al segnale ($150 < \mjj < 500\,\unit{GeV}$). 
+Secondo, utilizzando una rete neurale "avversaria" (ANN) che permette di isolare un sotto-campione arricchito di fondo QCD direttamente nella \textit{Signal Region}, senza però alterare (scolpire) lo spettro della variabile \mjj. 
+Terzo, verificando a posteriori che le sezioni d'urto differenziali misurate e corrette per gli effetti del rivelatore tramite \textit{unfolding} combacino con le previsioni teoriche al NLO.
+
+Per separare il segnale $t\bar{t}V$ e $tZj$ nella $b-$CR e per limitare di entrambi i contributi usando i dati in questa CR un secondo BDT chiamato $b-$CR BDT è stato implementato usando $16$ variabili di input. Le variabili di input utilizzate nel BDT sono legate alla cinematica dei jet di \textit{tagging} ($p_T^{j1}, \eta_{j1}, \phi_{j1}, p_T^{j2}, \Delta\eta_{jj}$ e $\Delta\phi_{jj}$), alla cinematica dei bosoni vettoriali ($p_T^Z, \eta_Z, \phi_Z, p_T^W, m_{WZ}, \Delta\eta(W,Z)$ e $\Delta\phi(W,Z)$), alla molteplicità dei jet ($N_{\text{jet}}, N_{b\text{-jet}}$), e alla massa invariante delle particelle nello stato finale ($m_{3\ell,\text{jet}}$), definita come la massa invariante dei tre leptoni carichi e di tutti i jet con $p_T > 25\,\unit{GeV}$. 
+Il BDT per la $b$-CR viene addestrato e ottimizzato su eventi simulati per separare il fondo $tZj$ dagli eventi $t\bar{t}+V$. Il suo output discriminante viene denominato \textit{score} del BDT della $b$-CR.
+
+Nella regione di segnale (SR) $W^\pm Zjj$, la distribuzione dello \textit{score} del BDT viene utilizzata in un fit di massima verosimiglianza per separare gli eventi \wzjjew da quelli guidati dall'interazione forte (\wzjj-strong) e per misurare le rispettive sezioni d'urto fiduciali. Per minimizzare la dipendenza della misura da una possibile modellizzazione inaccurata degli eventi da parte dei generatori MC, la SR viene divisa in due categorie: eventi con esattamente due jet con $p_T > 25\,\unit{GeV}$ ed eventi con tre o più jet.
+
+Viene quindi costruita una funzione di verosimiglianza estesa (\textit{extended likelihood}), data dal prodotto di quattro verosimiglianze distinte: le due distribuzioni dello \textit{score} del BDT nelle due categorie della SR, la distribuzione del BDT della $b$-CR, e la distribuzione della massa \mjj nella $ZZ$-CR. L'inclusione di queste due regioni di controllo nel fit permette di vincolare ai dati reali le rese (\textit{yields}) dei fondi $t\bar{t}+V$, $tZj$ e $ZZjj-$QCD. 
+Le forme (\textit{shapes}) di questi fondi sono prese dalle previsioni MC, mentre le loro normalizzazioni sono introdotte nella verosimiglianza come parametri liberi (indicati con $\mu_{t\bar{t}V}$, $\mu_{tZj}$ e $\mu_{ZZ}$). Questi ultimi agiscono come parametri di disturbo non vincolati (\textit{unconstrained nuisance parameters}) e sono determinati principalmente dai dati nella rispettiva regione di controllo. La normalizzazione e la forma degli altri fondi irriducibili sono prese dalle simulazioni MC e vengono lasciate variare entro le loro incertezze, mentre il fondo riducibile (leptoni \textit{fake}) è stimato dai dati tramite il Matrix Method. Ogni sorgente di incertezza sistematica entra nella verosimiglianza come parametro di disturbo sottoposto a un vincolo Gaussiano.
+
+Le sezioni d'urto fiduciali integrate $\sigma_{\text{WZjj-EW}}$ e $\sigma_{\text{WZjj-strong}}$ sono determinate come parametri di un fit a bin sui dati. I parametri del fit sono legati direttamente ai fattori di normalizzazione ($\mu_i$) dei template MC per i processi EW, QCD e di interferenza (INT) attraverso le seguenti relazioni:
+
+\begin{equation}
+\begin{aligned}
+\sigma_{\text{WZjj-EW}} &= \sum_{i=1}^{2} \mu_i^{\text{WZjj-EW}} \cdot \sigma_{i,\text{th.MC}}^{\text{WZjj-EW}} \\
+\sigma_{\text{WZjj-strong}} &= \sum_{i=1}^{2} \left( \mu_i^{\text{WZjj-QCD}} \cdot \sigma_{i,\text{th.MC}}^{\text{WZjj-QCD}} + \mu_i^{\text{WZjj-INT}} \cdot \sigma_{i,\text{th.MC}}^{\text{WZjj-INT}} \right) \\
+&= \sum_{i=1}^{2} \left( \mu_i^{\text{WZjj-QCD}} \cdot \sigma_{i,\text{th.MC}}^{\text{WZjj-QCD}} + \sqrt{\mu_i^{\text{WZjj-EW}} \cdot \mu_i^{\text{QCD}}} \cdot \sigma_{i,\text{th.MC}}^{\text{WZjj-INT}} \right)
+\end{aligned}
+\end{equation}
+
+dove l'indice $i$ scorre sulle due categorie della SR ($2$ jet o $\ge 3$ jet), i termini $\sigma_{i,\text{th.MC}}$ sono le sezioni d'urto teoriche predette dal MC in ciascuna categoria, e i termini $\mu_i$ rappresentano i fattori di normalizzazione estratti dal fit. Si assume che le sezioni d'urto siano indipendenti dal sapore dei leptoni.
+
+Il contributo dell'interferenza (INT) viene introdotto nel fit utilizzando un template MC dedicato. A livello del rivelatore, si stima che tale contributo sia molto basso (circa il $5.3\%$ della componente EW, secondo \textsc{MadGraph}+\textsc{Pythia8}). Poiché la cinematica e la forma del BDT per l'interferenza sono quasi identiche a quelle della componente QCD, l'interferenza non può essere estratta singolarmente dai dati. Per questo motivo, la sua normalizzazione $\mu_i^{\text{WZjj-INT}}$ non è fissata al valore teorico, ma è matematicamente vincolata ai fattori estratti dal fit per il segnale e il fondo tramite la relazione quantistica $\mu_i^{\text{WZjj-INT}} = \sqrt{\mu_i^{\text{WZjj-EW}} \cdot \mu_i^{\text{WZjj-QCD}}}$. Il contributo dell'interferenza viene infine inglobato all'interno della sezione d'urto misurata $\sigma_{\text{WZjj-strong}}$.
+\end{document}
