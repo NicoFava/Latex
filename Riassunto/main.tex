@@ -475,4 +475,365 @@ Le sezioni d'urto fiduciali integrate $\sigma_{\text{WZjj-EW}}$ e $\sigma_{\text
 dove l'indice $i$ scorre sulle due categorie della SR ($2$ jet o $\ge 3$ jet), i termini $\sigma_{i,\text{th.MC}}$ sono le sezioni d'urto teoriche predette dal MC in ciascuna categoria, e i termini $\mu_i$ rappresentano i fattori di normalizzazione estratti dal fit. Si assume che le sezioni d'urto siano indipendenti dal sapore dei leptoni.
 
 Il contributo dell'interferenza (INT) viene introdotto nel fit utilizzando un template MC dedicato. A livello del rivelatore, si stima che tale contributo sia molto basso (circa il $5.3\%$ della componente EW, secondo \textsc{MadGraph}+\textsc{Pythia8}). Poiché la cinematica e la forma del BDT per l'interferenza sono quasi identiche a quelle della componente QCD, l'interferenza non può essere estratta singolarmente dai dati. Per questo motivo, la sua normalizzazione $\mu_i^{\text{WZjj-INT}}$ non è fissata al valore teorico, ma è matematicamente vincolata ai fattori estratti dal fit per il segnale e il fondo tramite la relazione quantistica $\mu_i^{\text{WZjj-INT}} = \sqrt{\mu_i^{\text{WZjj-EW}} \cdot \mu_i^{\text{WZjj-QCD}}}$. Il contributo dell'interferenza viene infine inglobato all'interno della sezione d'urto misurata $\sigma_{\text{WZjj-strong}}$.
+
+\subsection{Misura differenziale}
+Gli eventi nella regione di segnale (SR) vengono separati in \textit{bin} in funzione di $N_{\text{jet}}$, la molteplicità esclusiva dei jet con $p_T > 25\,\unit{GeV}$, oppure in funzione di $\mjj$, la massa invariante dei due jet di \textit{tagging}. Vengono utilizzati due \textit{bin} per $N_{\text{jet}}$, separando gli eventi con $N_{\text{jet}} = 2$ e $N_{\text{jet}} \ge 3$, e tre \textit{bin} per $\mjj$. 
+
+In ciascuno di questi \textit{bin}, la distribuzione dello \textit{score} del BDT viene utilizzata per separare gli eventi \wzjjew da quelli \wzjj-strong e misurare così, in modo differenziale, le rispettive sezioni d'urto di produzione $\sigma_{\text{WZjj-EW}}$ e $\sigma_{\text{WZjj-strong}}$. Per misurare la sezione d'urto fiduciale in ogni \textit{bin}, viene eseguito un fit simultaneo sui dati delle distribuzioni dello \textit{score} del BDT per gli eventi in ciascun \textit{bin}. Ad esempio, per gli eventi \wzjjew, la sezione d'urto fiduciale in ogni \textit{bin} $i$ è definita come:
+
+\begin{equation}
+\sigma_i^{\text{WZjj-EW}} = \mu_i^{\text{WZjj-EW}} \cdot \sigma_{i,\text{th.MC}}^{\text{WZjj-EW}} = \frac{N_i^{\text{fit}}}{\mathcal{L} \cdot C_i} \quad \text{con} \quad C_i = \frac{N_i^{\text{MC,det.}}}{N_i^{\text{MC,part.}}}
+\label{eq:diff_cross_section}
+\end{equation}
+
+dove $\mu_i^{\text{EW}}$ è il fattore di normalizzazione del \textit{template} MC \wzjjew nel \textit{bin} $i$, $N_i^{\text{fit}}$ è il numero di eventi \wzjjew estratti dai dati, $\mathcal{L}$ è la luminosità integrata dei dati e $C_i$ è un fattore di correzione \textit{bin per bin} che tiene conto dell'inefficienza del rivelatore, della risoluzione e delle migrazioni tra i \textit{bin} (\textit{bin-to-bin migrations}). Il termine $N_i^{\text{MC,det.}}$ è il numero di eventi \wzjjew predetti dal MC a livello del rivelatore, mentre $N_i^{\text{MC,part.}}$ è il corrispondente numero di eventi MC predetti a livello di particella generata nello spazio delle fasi fiduciale. I fattori di correzione sono calcolati utilizzando le simulazioni MC di \textsc{MadGraph}+\textsc{Pythia8}. 
+
+Vengono utilizzate le stesse regioni di controllo (senza alcuna suddivisione in $N_{\text{jet}}$ o $\mjj$) e una parametrizzazione del fit simile a quella precedentemente descritta. Le correlazioni tra i \textit{bin} relative alle incertezze sistematiche sperimentali e di fondo sono debitamente prese in considerazione nel fit simultaneo.
+
+\subsection{Misure differenziali della produzione di WZjj}
+Gli eventi nella regione di segnale (SR) vengono utilizzati anche per misurare la sezione d'urto differenziale di produzione di \wzjj nello spazio delle fasi fiduciale del VBS. Le distribuzioni differenziali a livello di rivelatore vengono corrette per gli effetti di inefficienza e di risoluzione del rivelatore utilizzando un metodo di \textit{unfolding} Bayesiano iterativo, così come implementato nel toolkit \textsc{RooUnfold}. Il numero di iterazioni è stato ottimizzato al fine di ottenere il miglior compromesso per minimizzare sia il \textit{bias} dell'unfolding sia l'incertezza statistica ad esso associata. Sono state utilizzate tre iterazioni per l'unfolding di ciascuna variabile. La larghezza dei \textit{bin} in ogni distribuzione è scelta in base alla risoluzione sperimentale e alla significatività statistica del numero di eventi attesi in quel determinato \textit{bin}. La frazione di eventi di segnale Monte Carlo ricostruiti nello stesso \textit{bin} in cui sono stati generati è sempre superiore al $40\%$ e si attesta in media attorno al $70\%$.
+
+Per ogni distribuzione, gli eventi simulati di \wzjj vengono impiegati per ottenere una matrice di risposta che tiene conto degli effetti di migrazione tra i \textit{bin} (\textit{bin-to-bin migration}) tra la distribuzione a livello di ricostruzione e quella a livello di particella generata. I campioni MC di \textsc{MadGraph}+\textsc{Pythia8} per la produzione \wzjjew, \wzjj-INT e \wzjjqcd vengono sommati insieme per modellare la produzione globale di \wzjj. A causa delle differenze nella cinematica degli eventi, le matrici di risposta per i processi separati \wzjjew e \wzjjqcd sono vicine tra loro ma non identiche. Per modellare meglio i dati e per minimizzare le incertezze legate all'unfolding, le loro sezioni d'urto predette vengono riscalate per le intensità di segnale (\textit{signal strengths}) pari rispettivamente a $1$ e $0.71$ per i contributi \wzjjew e \wzjj-strong, così come misurate dal fit di massima verosimiglianza descritto nella Sezione 7.1 e applicato ai dati (nella Sezione 9.1). Infine, anche i contributi di fondo derivanti da $ZZjj-$QCD, $t\bar{t}+V$ e $tZj$ vengono riscalati in base al risultato del fit di massima verosimiglianza, seguendo i vincoli estratti dai dati nelle regioni di controllo (CR).
+
+\section{Incertezze sistematiche}
+\label{sec:systematics}
+
+Vengono prese in considerazione le incertezze sistematiche nelle regioni di segnale e di controllo che influenzano la forma e la normalizzazione delle distribuzioni dello \textit{score} del BDT, di \mjj\ e del BDT della $b$-CR per i singoli fondi, così come l'accettanza degli eventi \wzjjew, \wzjjqcd\ e \wzjj-INT\ e la forma dei loro \textit{template}. Vengono considerate anche le incertezze di forma e normalizzazione che influenzano i contributi \wzjjew, \wzjjqcd\ e \wzjj-INT\ nelle regioni di controllo. Viene utilizzata una procedura di \textit{bootstrapping} per garantire variazioni statisticamente significative in funzione delle distribuzioni considerate.
+
+\subsection{Modellizzazione teorica}
+Si considerano le incertezze sistematiche dovute alla modellizzazione teorica nel generatore di eventi utilizzato per valutare i \textit{template} di \wzjjqcd\ e \wzjjew. Le incertezze dovute alle correzioni QCD di ordine superiore vengono valutate variando le scale di rinormalizzazione, $\mu_R$, e di fattorizzazione, $\mu_F$, indipendentemente di fattori due e un mezzo, escludendo le combinazioni in cui le scale differiscono di un fattore quattro. Per il processo \wzjjew, simulato solo al LO in QCD, si considerano anche modifiche nella definizione di $\mu_F$: studi MC dedicati mostrano che, a seconda della definizione di $\mu_F$, la forma della distribuzione dello \textit{score} del BDT è soggetta a variazioni non coperte dal semplice riscaldamento di $\mu_F$ per fattori due o un mezzo. Nella SR, queste incertezze variano fino a $\pm 5\%$ sulla forma della distribuzione dello \textit{score} del BDT per gli eventi \wzjjqcd\ e fino a $\pm 20\%$ per gli eventi \wzjjew. 
+
+Le incertezze dovute alle PDF e al valore di $\alpha_{\mathrm{s}}$ utilizzato nella loro determinazione sono valutate seguendo la prescrizione \texttt{PDF4LHC} e sono dell'ordine dell'$1\%$ - $2\%$ sulla forma. Un'incertezza globale di modellizzazione nel \textit{template} del fondo \wzjjqcd, che include gli effetti del modello di \textit{parton shower} (PS), viene stimata confrontando le previsioni della distribuzione dello \textit{score} del BDT nella regione di segnale ottenute dai generatori MC \textsc{MadGraph5\_aMC@NLO}+\textsc{Pythia8} (\textsc{MGPy8}) e \textsc{Sherpa}. La differenza tra le forme predette dai due generatori è considerata come incertezza e influenza la forma della distribuzione dello \textit{score} del BDT degli eventi \wzjjqcd\ fino al $30\%$ per valori elevati dello \textit{score}. Un'incertezza sul \textit{parton shower} nel \textit{template} del segnale \wzjjew viene stimata confrontando le previsioni dello \textit{score} del BDT nella regione di segnale tra le simulazioni MC di \textsc{MadGraph} interfacciato con \textsc{Pythia} o \textsc{Herwig}. Questa incertezza sul \textit{parton shower} influenza la forma della distribuzione dello \textit{score} del BDT degli eventi \wzjjew al massimo del $10\%$ per valori bassi dello \textit{score}. Per il \textit{template} di \wzjj-INT, si considerano le incertezze dovute alle variazioni delle scale di rinormalizzazione e fattorizzazione, alle PDF e al valore di $\alpha_{\mathrm{s}}$; queste influenzano la forma del \textit{template} per circa il $3\%$.
+
+Per la misura delle sezioni d'urto integrate e differenziali $\sigma_{\text{EW}}$ e $\sigma_{\text{strong}}$ tramite il fit combinato di massima verosimiglianza, tutte le incertezze relative alle correzioni QCD di ordine superiore, al \textit{parton shower} e alla modellizzazione sono considerate scorrelate tra i vari \textit{bin} in $N_{\text{jet}}$ o \mjj\ nella SR, nonché tra la SR e le regioni di controllo. Questo rappresenta l'approccio di fit più conservativo per tali incertezze.
+
+\subsection{Incertezze sull'unfolding}
+Per le misure delle sezioni d'urto differenziali elettrodebole, forte e totale, le incertezze nell'unfolding dovute a una modellizzazione imperfetta dei dati da parte della simulazione MC sono valutate tramite un metodo \textit{data-driven}. In questo approccio, la distributione differenziale del MC viene corretta per riprodurre quella dei dati, e la distribuzione MC pesata risultante a livello di ricostruzione viene deconvoluta (\textit{unfolded}) utilizzando la matrice di risposta impiegata per i dati reali. La nuova distribuzione \textit{unfolded} viene quindi confrontata con la distribuzione MC pesata a livello di generatore, e la differenza viene presa come incertezza sistematica. Per le sezioni d'urto elettrodebole e forte, le incertezze ottenute variano tra il $4\%$ e il $9\%$. Per la sezione d'urto totale, le incertezze variano dallo $0.1\%$ al $16\%$ a seconda della risoluzione delle osservabili \textit{unfolded} e della qualità della loro descrizione da parte di \textsc{MGPy8}. Esse coprono le incertezze residue di modellizzazione nelle osservabili \textit{unfolded} che potrebbero rimanere anche dopo l'aggiustamento ai dati della normalizzazione dei contributi \wzjjqcd\ e \wzjjew. È stato inoltre verificato che, per costruzione, queste incertezze coprono possibili contributi EFT eventualmente presenti nei dati. 
+
+Un'ulteriore incertezza viene derivata per tenere conto di differenze più sottili tra i generatori \textsc{MGPy8} e \textsc{Sherpa} (ad esempio, i modelli di adronizzazione, oggetti \textit{soft} aggiuntivi, o difetti di modellizzazione in altre variabili cinematiche). Il generatore \textsc{Sherpa} viene utilizzato per effettuare l'unfolding dei dati e la deviazione dal risultato nominale viene presa come incertezza. Per rimuovere gli effetti già considerati nel metodo \textit{data-driven}, le distribuzioni di \textsc{Sherpa} sono state preventivamente ripesate per corrispondere alle distribuzioni di \textsc{MGPy8} a livello di particella generata.
+
+\subsection{Incertezze sperimentali e dei fondi}
+Le incertezze sistematiche che influenzano la ricostruzione e la calibrazione energetica di jet, elettroni e muoni vengono propagate lungo tutta l'analisi. Le sorgenti dominanti sono legate alla calibrazione della scala di energia dei jet (JES), incluso il modeling del \textit{pile-up}. Le incertezze sulla scala di energia dei jet sono ottenute da simulazioni a $\sqrt{s} = 13\,\unit{TeV}$ e da misure \textit{in situ}. Si considerano inoltre le incertezze sulla risoluzione in energia dei jet (JER), sulla soppressione dei jet originati da \textit{pile-up}, sull'efficienza di $b$-tagging e sulla frazione di \textit{mistag}. L'incertezza sulla misura del momento trasverso mancante ($E_{\mathrm{T}}^{\mathrm{miss}}$) è stimata propagando le incertezze sui momenti trasversi degli oggetti fisici \textit{hard} e applicando le incertezze di scala e risoluzione dell'impulso al termine \textit{soft} basato sulle tracce (\textit{track-based soft term}). Una variazione nel ripesamento del \textit{pile-up} degli eventi MC è inclusa per coprire l'incertezza nel rapporto tra la sezione d'urto inelastica $pp$ predetta e quella misurata.
+
+%Inserire paragrafino in cui studio tag adn probe anche se credo che sia abbastanza facile. Prendo un leptone con i requisiti di identificazione e isolamento più stringenti e lo uso come \textit{tag} per selezionare un campione arricchito di eventi $Z \to \ell\ell$ in cui l'altro leptone, il \textit{probe}, è usato per valutare le efficienze di ricostruzione, identificazione, isolamento e trigger.
+Le incertezze dovute alla ricostruzione, identificazione, ai requisiti di isolamento e alle efficienze di \textit{trigger} dei leptoni, così come alla scala e alla risoluzione dell'impulso dei leptoni, sono valutate utilizzando metodi \textit{tag-and-probe} su eventi $Z \to \ell\ell$.
+
+L'incertezza sulla quantità di fondo derivante da leptoni falsi/misidentificati (\textit{fake}) tiene conto sia della statistica limitata nelle regioni di controllo, sia della differenza nella composizione del fondo tra la regione di controllo usata per determinare la frazione di misidentificazione dei leptoni e le regioni di controllo usate per stimare la resa nella regione di segnale. Ciò si traduce in un'incertezza di circa il $25\%$ sulla resa totale del fondo da leptoni misidentificati e sulla forma delle distribuzioni differenziali degli eventi di fondo riducibile.
+
+L'incertezza dovuta alle sorgenti di fondo irriducibile che non sono vincolate dai dati nelle CR dedicate viene valutata propagando l'incertezza sulle loro sezioni d'urto MC. Queste sono pari al $20\%$ per il processo tribosone ($VVV$) e al $25\%$ per il processo $ZZjj-$EW per tenere conto dell'impatto potenzialmente elevato delle variazioni di scala.
+
+L'incertezza sulla luminosità integrata combinata del periodo 2015–2018 è dello $0.83\%$, ottenuta utilizzando il rivelatore LUCID-2 per le misure di luminosità primarie, integrate da misure che sfruttano il tracciatore interno e i calorimetri.
+
+L'effetto delle incertezze sistematiche sui risultati finali dopo il fit di massima verosimiglianza è mostrato nella Tabella~\ref{table:sysOnMu_summary}, dove viene presentato il dettaglio dei contributi alle incertezze sulle sezioni d'urto fiduciali misurate $\sigma_{\text{EW}}$ e $\sigma_{\text{strong}}$ (indicata nel testo originale come $\sigma_{\text{strong}}$). Le singole sorgenti di incertezza sistematica sono raggruppate nelle categorie di modellizzazione teorica ed sperimentale. Come mostrato nella tabella, le incertezze sistematiche nella modellizzazione dei processi \wzjjew\ e \wzjjqcd\ giocano un ruolo dominante, seguite dalle incertezze nella ricostruzione e calibrazione dei jet. Le incertezze sistematiche nel calcolo del momento trasverso mancante derivano direttamente dalla calibrazione dell'impulso e dell'energia di jet, elettroni e muoni, e sono incluse nelle rispettive righe della Tabella~\ref{table:sysOnMu_summary}. Vengono considerate anche le incertezze sistematiche nella modellizzazione degli altri fondi.
+
+\begin{table}[t]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{l c c}
+\hline
+\textbf{Sorgente di incertezza} & $\boldsymbol{\Delta\sigma_{\text{EW}} / \sigma_{\text{EW}}}$ [\%] & $\boldsymbol{\Delta\sigma_{\text{strong}} / \sigma_{\text{strong}}}$ [\%] \\
+\hline
+Modellizzazione teorica \wzjjew & 7.0 & 1.8 \\
+Modellizzazione teorica \wzjjqcd & 2.8 & 8.0 \\
+Interferenza \wzjjew\ e \wzjjqcd & 0.35 & 0.6 \\
+PDF e $\alpha_{\mathrm{s}}$ & 1.0 & 0.06 \\
+\hline
+Ricostruzione e scala jet & 2.3 & 5.0 \\
+Modellizzazione \textit{Pile-up} & 1.1 & 0.6 \\
+Ricostruzione e ID elettroni & 0.8 & 0.8 \\
+Ricostruzione e ID muoni & 0.9 & 0.9 \\
+\textit{b-tagging} e mistag rate & 0.10 & 0.11 \\
+Statistica Monte Carlo & 1.9 & 1.2 \\
+Fondo da leptoni \textit{fake} (misidentificati) & 2.3 & 2.3 \\
+Altri fondi irriducibili & 0.9 & 0.23 \\
+\hline
+Luminosità integrata & 0.7 & 0.9 \\
+\hline
+\textbf{Totale incertezza sistematica} & 16.0 & 12.0 \\
+\textbf{Incertezza statistica dei dati} & 10.0 & 6.0 \\
+\hline
+\textbf{Incertezza Totale} & 19.0 & 13.0 \\
+\hline
+\end{tabular}
+\caption{Impatto dei gruppi di incertezze sistematiche sulle sezioni d'urto fiduciali integrate misurate $\sigma_{\text{EW}}$ e $\sigma_{\text{strong}}$. Le incertezze sono riportate come percentuali. L'incertezza sistematica totale non corrisponde direttamente alla somma in quadratura delle singole sorgenti a causa delle correlazioni introdotte dal fit simultaneo, in particolare tra $\sigma_{\text{EW}}$ e $\sigma_{\text{strong}}$.}
+\label{table:sysOnMu_summary}
+\end{table}
+
+
+\section{Risultati}
+\label{sec:xsection_results}
+
+\subsection{Misure integrate di WZjj-EW e WZjj-strong}
+\label{sec:results_incl}
+
+\begin{figure}[htbp]
+\centering
+\subfloat[]{
+\includegraphics[width=0.4\textwidth]{Immagini/fig_03a.pdf}
+}
+\subfloat[]{
+\includegraphics[width=0.4\textwidth]{Immagini/fig_03b.pdf}
+}\\
+\subfloat[]{
+\includegraphics[width=0.4\textwidth]{Immagini/fig_03c.pdf}
+}
+\subfloat[]{
+\includegraphics[width=0.4\textwidth]{Immagini/fig_03d.pdf}
+}
+\caption{Distribuzioni post-fit: (a) \textit{score} del BDT nella regione di segnale per la categoria $N_{\text{jet}} = 2$, (b) \textit{score} del BDT per la categoria $N_{\text{jet}} \ge 3$, (c) \mjj\ nella regione di controllo $ZZ$-CR, e (d) \textit{score} del BDT della $b$-CR nella regione di controllo $b$-CR. Il segnale e i fondi sono normalizzati al numero di eventi attesi dopo il fit. La banda di incertezza attorno all'aspettazione del MC include tutte le incertezze sistematiche ottenute dal fit.}
+\label{fig:BDTScore}
+\end{figure}
+
+\begin{table}[htbp] 
+\centering
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{l c c c c}
+\hline
+\textbf{Processo} & \textbf{SR ($N_{\text{jet}} = 2$)} & \textbf{SR ($N_{\text{jet}} \ge 3$)} & \textbf{$b$-CR} & \textbf{$ZZ$-CR} \\
+\hline
+\hline
+\textbf{Dati osservati} & 169 & 477 & 666 & 210 \\
+\textbf{Totale atteso} & 170 $\pm$ 13 & 476 $\pm$ 22 & 667 $\pm$ 26 & 212 $\pm$ 14 \\
+\hline
+\wzjjew & 68 $\pm$ 14 & 55 $\pm$ 18 & 4.84 $\pm$ 0.27 & 0.724 $\pm$ 0.014 \\
+\wzjjqcd & 58 $\pm$ 16 & 307 $\pm$ 27 & 77 $\pm$ 18 & 6.3 $\pm$ 0.7 \\
+\wzjj-INT & 0.9 $\pm$ 0.4 & 4.4 $\pm$ 2.3 & 0.57 $\pm$ 0.29 & 0.22 $\pm$ 0.11 \\
+$t\bar{t}+V$ & 0.59 $\pm$ 0.10 & 18.3 $\pm$ 2.4 & 262 $\pm$ 34 & 9.0 $\pm$ 1.3 \\
+$tZj$ & 11.0 $\pm$ 1.9 & 25 $\pm$ 5 & 169 $\pm$ 30 & 0.54 $\pm$ 0.09 \\
+$ZZ$-QCD & 10.3 $\pm$ 1.0 & 34.6 $\pm$ 3.2 & 10.1 $\pm$ 0.5 & 171 $\pm$ 15 \\
+$ZZ$-EW & 1.9 $\pm$ 0.4 & 3.7 $\pm$ 0.9 & 0.21 $\pm$ 0.05 & 19 $\pm$ 5 \\
+$VVV$ & 0.41 $\pm$ 0.10 & 2.0 $\pm$ 0.5 & 0.39 $\pm$ 0.10 & 4.2 $\pm$ 1.0 \\
+Leptoni \textit{fake} & 18 $\pm$ 4 & 27 $\pm$ 6 & 143 $\pm$ 35 & 1.7 $\pm$ 0.5 \\
+\hline
+\end{tabular}
+\caption{Numero di eventi osservati e attesi nella regione di segnale (SR) per la produzione di $W^\pm Zjj$ e nelle due regioni di controllo, dopo l'esecuzione del fit. Vengono mostrati i conteggi post-fit per i segnali e per i processi di fondo. La categoria ``Leptoni \textit{fake}'' raggruppa i fondi con leptoni misidentificati. Vengono riportate le incertezze sistematiche totali post-fit correlate.}
+\label{tab:VBSyield_postfit}
+\end{table}
+
+Le distribuzioni post-fit dello \textit{score} del BDT nella regione di segnale per gli eventi con $N_{\text{jet}} = 2$ e $N_{\text{jet}} \ge 3$ sono presentate rispettivamente nelle Figure \ref{fig:BDTScore}(a) e (b). Le normalizzazioni dei fondi, del segnale e i parametri di disturbo (\textit{nuisance parameters}) sono regolati tramite il fit di verosimiglianza profilata (\textit{profile-likelihood fit}). Le distribuzioni post-fit di \mjj\ nella $ZZ$-CR e dello \textit{score} del BDT della $b$-CR nella $b$-CR sono presentate nelle Figure \ref{fig:BDTScore}(c) e (d). Le corrispondenti rese degli eventi post-fit sono dettagliate nella Tabella \ref{tab:VBSyield_postfit}. 
+
+I parametri di normalizzazione dei fondi $t\bar{t}V$ e $ZZ$, vincolati dai dati nelle regioni di controllo e di segnale, sono misurati essere $\mu_{t\bar{t}V} = 0.91 \pm 0.13$, $\mu_{tZj} = 1.26 \pm 0.22$ e $\mu_{ZZ} = 1.07 \pm 0.11$. Non si osserva alcuno spostamento (\textit{pull}) dei parametri di disturbo superiore a $0.5\sigma$.
+
+Le sezioni d'urto fiduciali integrate $\sigma_{\text{EW}}$ e $\sigma_{\text{strong}}$, per un dato canale di decadimento $W^\pm Z \rightarrow \ell'^{\pm}\nu\ell^+\ell^-$, dove $\ell$ e $\ell'$ rappresentano un elettrone o un muone, sono misurate essere:
+\begin{align*}
+\sigma_{\text{EW}} &= 0.368 \pm 0.037\,\text{(stat.)} \pm 0.059\,\text{(syst.)} \pm 0.003\,\text{(lumi.)} \unit{fb} = 0.37 \pm 0.07\,\unit{fb} \\
+\sigma_{\text{strong}} &= 1.093 \pm 0.066\,\text{(stat.)} \pm 0.131\,\text{(syst.)} \pm 0.009\,\text{(lumi.)} \unit{fb} = 1.09 \pm 0.14\,\unit{fb}
+\end{align*}
+dove le incertezze corrispondono, nell'ordine, all'errore statistico, sistematico e della luminosità. 
+
+La Tabella \ref{table:sysOnMu_summary} mostra le principali sorgenti di incertezza sulle sezioni d'urto misurate. La precisione delle misure è limitata dalle incertezze sistematiche, e in particolare dalle incertezze di modellizzazione dei generatori di eventi MC. Le incertezze sistematiche totali risentono inoltre delle correlazioni esistenti tra le sezioni d'urto misurate $\sigma_{\text{EW}}$ e $\sigma_{\text{strong}}$, che sono dell'ordine del $36\%$.
+
+Le corrispondenti previsioni teoriche calcolate da \textsc{MadGraph5\_aMC@NLO}+\textsc{Pythia8} (\textsc{MGPy8}) sono:
+\begin{align*}
+\sigma_{\text{EW}}^{\textsc{MGPy8}} &= 0.370 \pm 0.001\,\text{(stat.)} \pm 0.006\,\text{(PDF)} \; ^{+0.030}_{-0.026}\,\text{(scala)} \unit{fb} \\
+\sigma_{\text{strong}}^{\textsc{MGPy8}} &= 1.537 \pm 0.009\,\text{(stat.)} \pm 0.016\,\text{(PDF)} \; ^{+0.087}_{-0.149}\,\text{(scala)} \unit{fb}
+\end{align*}
+dove le incertezze corrispondono rispettivamente all'errore statistico, alle PDF e alle scale di QCD.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.49\textwidth]{Immagini/fig_04.pdf}
+\caption{Misure delle sezioni d'urto integrate $\sigma_{\text{EW}}$ e $\sigma_{\text{strong}}$ confrontate con le previsioni di \textsc{MGPy8} (triangolo rivolto verso l'alto) e \textsc{Sherpa} 2.2.12 (triangolo rivolto verso il basso). I contorni continui e tratteggiati attorno ai punti sperimentali corrispondono rispettivamente al $68\%$ e al $95\%$ CL.}
+\label{fig:2DContour_sigew_sigqcd_All_data}
+\end{figure}
+
+I valori misurati di $\sigma_{\text{EW}}$ e $\sigma_{\text{strong}}$ sono confrontati con le previsioni di \textsc{MGPy8} e \textsc{Sherpa}~2.2.12 nella Figura \ref{fig:2DContour_sigew_sigqcd_All_data}. Si osserva un ottimo accordo tra le predizioni MC e la sezione d'urto integrata di \wzjjew, mentre la sezione d'urto integrata di \wzjj-strong misurata risulta inferiore rispetto alle predizioni di entrambi i generatori MC di un fattore pari a $0.7$. Considerando l'incertezza teorica nella predizione di \textsc{MGPy8}, la misura attuale e la stima teorica concordano entro $1.8\sigma$. Un'osservazione simile riguardo alla sovrastima della modellizzazione della produzione forte di $WZjj$ è stata riscontrata dalla collaborazione ATLAS anche in uno spazio delle fasi differente, ed è coerente con le misure effettuate nelle precedenti pubblicazioni di ATLAS dedicate agli stati finali $WZjj$ e $WZ$.
+
+La sezione d'urto integrata totale di \wzjj\ nello spazio delle fasi fiduciale viene estratta dal fit ed è pari a $\sigma_{\text{tot}} = 1.462 \pm 0.133\,\unit{fb} = 1.462 \pm 0.063\,\text{(stat.)} \pm 0.118\,\text{(sys.)} \pm 0.012\,\text{(lumi.)} \unit{fb}$. La corrispondente predizione di \textsc{MGPy8} per la somma delle componenti forte ed elettrodebole (inclusi gli effetti di interferenza) è di $1.907 \pm 0.009\,\text{(stat.)} \pm 0.022\,\text{(PDF)} \; ^{+0.117}_{-0.175}\,\text{(scala)} \unit{fb}$.
+
+
+\subsection{Misure differenziali di WZjj-EW\ e WZjj-strong}
+\label{sec:results_ew_diff}
+
+Dividendo la regione di segnale in eventi con $N_{\text{jet}} = 2$ e $N_{\text{jet}} \ge 3$, vengono misurate le sezioni d'urto di produzione $\sigma_{\text{EW}}$ e $\sigma_{\text{strong}}$ per queste due categorie. Le misure sono confrontate nella Figura \ref{fig:2DContour_sigew_sigqcd_Nj_data} con le predizioni di \textsc{MGPy8} e \textsc{Sherpa}~2.2.12. 
+
+Per la categoria $N_{\text{jet}} \ge 3$, le sezioni d'urto elettrodeboli predette sono in buon accordo con il valore misurato, mentre la sezione d'urto forte predetta si trova entro circa $2\sigma$ dalla misura. Tuttavia, per la categoria $N_{\text{jet}} = 2$, la sezione d'urto forte misurata è inferiore di un fattore due rispetto al valore previsto sia da \textsc{MGPy8} che da \textsc{Sherpa}. I valori predetti di $\sigma_{\text{EW}}$ risultano in accordo entro $1\sigma$ con il valore misurato.
+
+\begin{figure}[htbp]
+\centering
+\subfloat[]{\includegraphics[width=0.49\textwidth]{Immagini/fig_05a.pdf}}
+\subfloat[]{\includegraphics[width=0.49\textwidth]{Immagini/fig_05b.pdf}}
+\caption{Sezioni d'urto misurate $\sigma_{\text{EW}}$ e $\sigma_{\text{strong}}$ per le categorie (a) $N_{\text{jet}} = 2$ e (b) $N_{\text{jet}} \ge 3$, confrontate con le previsioni di \textsc{MGPy8} e \textsc{Sherpa}~2.2.12. I contorni continui e tratteggiati corrispondono al $68\%$ e $95\%$ CL.}
+\label{fig:2DContour_sigew_sigqcd_Nj_data}
+\end{figure}
+
+Il rapporto $R_{2/3}$ tra il numero di eventi con $N_{\text{jet}} = 2$ e il numero di eventi con $N_{\text{jet}} \ge 3$ viene estratto dai dati tramite il fit simultaneo delle due categorie, ottenendo $R_{\text{EW}} = 1.70 \pm 0.71$ e $R_{\text{strong}} = 0.21 \pm 0.06$, rispettivamente per i processi elettrodeboli e forti. In confronto, i valori predetti da \textsc{MGPy8} (\textsc{Sherpa}) sono $R_{\text{EW}} = 1.43^{+0.06}_{-0.02}\;(1.67 \pm 0.13)$ e $R_{\text{strong}} = 0.36^{+0.02}_{-0.04}\;(0.38 \pm 0.03)$.
+
+Le sezioni d'urto di produzione $\sigma_{\text{EW}}$ e $\sigma_{\text{strong}}$ sono misurate in modo differenziale anche in tre \textit{bin} della variabile \mjj. Le misure sono confrontate nella Figura \ref{fig:2DContour_sigew_sigqcd_mjj_data} con le predizioni di \textsc{MGPy8} e \textsc{Sherpa}~2.2.12. Per l'intervallo $500 < \mjj < 1300\,\unit{GeV}$, le predizioni dei MC sovrastimano il valore di $\sigma_{\text{strong}}$ misurato di un fattore $1.4$. Per valori di \mjj\ superiori a $1300\,\unit{GeV}$, le predizioni dei MC concordano entro circa $2\sigma$ con le misure per entrambe le componenti.
+
+\begin{figure}[htbp]
+\centering
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Immagini/fig_06a.pdf}}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Immagini/fig_06b.pdf}}\\
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Immagini/fig_06c.pdf}}
+\caption{Sezioni d'urto misurate $\sigma_{\text{EW}}$ e $\sigma_{\text{strong}}$ per ciascun bin di \mjj: (a) $500 \le \mjj < 1300\,\unit{GeV}$, (b) $1300 \le \mjj < 2000\,\unit{GeV}$, e (c) $\mjj \ge 2000\,\unit{GeV}$, confrontate con le predizioni teoriche. I contorni indicano il $68\%$ e il $95\%$ CL.}
+\label{fig:2DContour_sigew_sigqcd_mjj_data}
+\end{figure}
+
+
+\subsection{Misure differenziali inclusive di WZjj}
+\label{sec:wzjj_diff_results}
+
+\begin{figure}[htbp]
+\centering
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Immagini/fig_07a.pdf}}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Immagini/fig_07b.pdf}}\\
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Immagini/fig_07c.pdf}}
+\caption{Sezione d'urto differenziale inclusiva di \wzjj\ misurata nello spazio delle fasi fiduciale del VBS in funzione di: (a) $\sum p_T^\ell$ (somma scalare dei $p_T$ dei tre leptoni), (b) $\Delta\phi(W,Z)$ e (c) \mtwz\ (massa trasversa del sistema $WZ$). Le barre di errore interne ed esterne sui punti dati rappresentano rispettivamente le incertezze statistiche e totali. Le misure sono confrontate con la somma delle predizioni riscalate di \textsc{MGPy8} (linea continua) e \textsc{Sherpa}~2.2.12 (linea punteggiata). I contributi separati di \wzjjew\ e \wzjjqcd\ sono rappresentati rispettivamente dalle linee tratteggiate e tratto-punto. In (a) e (c), l'asse $y$ destro si riferisce all'ultimo bin (separato da una linea verticale tratteggiata), che è integrato fino al valore massimo raggiunto nello spazio delle fasi. I pannelli inferiori mostrano i rapporti tra i dati e le predizioni di \textsc{MGPy8}.}
+\label{fig:diffXSection:SptL_dPhiWZ}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Immagini/fig_08a.pdf}}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Immagini/fig_08b.pdf}}\\
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Immagini/fig_08c.pdf}}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Immagini/fig_08d.pdf}}
+\caption{Sezione d'urto differenziale inclusiva di \wzjj\ misurata nello spazio delle fasi fiduciale del VBS in funzione di: (a) molteplicità esclusiva di jet con $p_T > 40\,\unit{GeV}$ ($N_{\text{jet}}^{40}$), (b) differenza assoluta in rapidità tra i due jet di \textit{tagging} ($\Delta y_{jj}$), (c) massa invariante dei jet di \textit{tagging} (\mjj), e (d) angolo azimutale tra i due jet di \textit{tagging} ($\Delta\phi_{jj}$). Le definizioni delle barre di errore, delle linee e dei pannelli inferiori seguono la convenzione di Figura~\ref{fig:diffXSection:SptL_dPhiWZ}.}
+\label{fig:diffXSection:dYjj_mjj}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Immagini/fig_09a.pdf}}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{Immagini/fig_09b.pdf}}
+\caption{Sezione d'urto differenziale inclusiva di \wzjj\ misurata nello spazio delle fasi fiduciale del VBS in funzione di: (a) $N_{\text{jet}}^{\text{gap}}$ (molteplicità esclusiva di jet con $p_T > 25\,\unit{GeV}$ nel gap di pseudorapidità tra i due jet di \textit{tagging}) e (b) $\zeta_{j3}$ (variabile di Zeppenfeld per il terzo jet). Le definizioni delle barre di errore, delle linee e dei pannelli inferiori seguono la convenzione di Figura~\ref{fig:diffXSection:SptL_dPhiWZ}.}
+\label{fig:diffXSection:3rdjet}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.45\textwidth]{Immagini/fig_10.pdf}
+\caption{Sezione d'urto differenziale inclusiva di \wzjj\ misurata nello spazio delle fasi fiduciale del VBS in funzione dello \textit{score} del BDT. Le barre di errore interne ed esterne sui punti dati rappresentano rispettivamente le incertezze statistiche e totali. I risultati sono confrontati con la combinazione dei contributi teorici riscalati.}
+\label{fig:diffXSection:BDT}
+\end{figure}
+
+
+Le misure delle sezioni d'urto differenziali inclusive di \wzjj\ sono eseguite in funzione di tre variabili cinematiche particolarmente sensibili a eventuali anomalie negli accoppiamenti quartici dei bosoni di gauge (aQGC): la somma scalare dei momenti trasversi dei tre leptoni carichi associati ai bosoni $W$ e $Z$ ($\sum p_T^\ell$), la differenza di angolo azimutale $\Delta\phi(W,Z)$ tra le direzioni del $W$ e del $Z$, e la massa trasversa del sistema $WZ$ (\mtwz). Queste distribuzioni sono presentate nella Figura \ref{fig:diffXSection:SptL_dPhiWZ}.
+
+Le misure vengono effettuate anche in funzione di variabili legate alla cinematica dei jet: la molteplicità esclusiva di jet con $p_T > 40\,\unit{GeV}$ ($N_{\text{jet}}^{40}$), la differenza assoluta in rapidità tra i due jet di \textit{tagging} ($\Delta y_{jj}$), la massa invariante dei jet di \textit{tagging} (\mjj), la molteplicità esclusiva di jet con $p_T > 25\,\unit{GeV}$ nel gap di pseudorapidità $\eta$ tra i due jet di \textit{tagging} ($N_{\text{jet}}^{\text{gap}}$), e l'angolo azimutale tra i due jet di \textit{tagging} ($\Delta\phi_{jj}$), mostrati in Figura \ref{fig:diffXSection:dYjj_mjj}.
+
+Le misure relative all'attività dei jet nella regione di gap tra i due jet di \textit{tagging} vengono eseguite anche sfruttando il sotto-campione di eventi nella SR in cui è presente un terzo jet con $p_T > 25\,\unit{GeV}$. La molteplicità esclusiva $N_{\text{jet}}^{\text{gap}}$ per jet con $p_T > 25\,\unit{GeV}$ nel gap in $\eta$ e la variabile di Zeppenfeld $\zeta_{j3}$ per il terzo jet sono presentate nella Figura \ref{fig:diffXSection:3rdjet}. La variabile $\zeta_{j3}$ è definita come:
+\begin{equation}
+\zeta_{j3} = \left| \frac{y_{j_3} - \frac{1}{2}\left(y_{j_1} + y_{j_2}\right)}{y_{j_1} - y_{j_2}} \right|
+\end{equation}
+dove $y_{j_i}$ rappresenta la rapidità del rispettivo jet $i$.
+
+Infine, viene eseguita una misura differenziale della sezione d'urto di produzione inclusiva di \wzjj\ in funzione dello \textit{score} del BDT, presentata nella Figura \ref{fig:diffXSection:BDT}. La predizione dello \textit{score} del BDT a livello di particella generata viene valutata utilizzando lo stesso BDT addestrato a livello del rivelatore, ma calcolato a partire dalle osservabili di input particellari.
+
+Le incertezze totali in queste misure differenziali sono dominate dall'errore statistico dei dati. I risultati differenziali sono confrontati con le predizioni di \textsc{MGPy8}, dopo aver riscalato le componenti separate \wzjjqcd\ e \wzjjew\ alle sezioni d'urto inclusive $\sigma_{\text{strong}}$ e $\sigma_{\text{EW}}$ ottenute dal fit di massima verosimiglianza sui dati. Gli effetti di interferenza tra i processi sono incorporati nella predizione della componente forte. Le misure sono confrontate anche con le predizioni indipendenti del generatore \textsc{Sherpa}~2.2.12.
+\newpage
+\section{Limiti sugli accoppiamenti di gauge quartici anomali}
+\label{sec:EFT_limits}
+
+La produzione \wzjjew\ può essere sensibile a effetti oltre il Modello Standard (SM) che influenzano le interazioni quartiche dei bosoni deboli. Gli eventi \wzjj\ misurati sono quindi utilizzati per cercare accoppiamenti di gauge quartici anomali (aQGC) utilizzando il formalismo delle teorie di campo efficaci (EFT). In questo modello, la Lagrangiana del Modello Standard $\mathcal{L}_{\mathrm{SM}}$ viene estesa in una Lagrangiana efficace $\mathcal{L}_{\mathrm{eff}}$ aggiungendo operatori di ordine superiore e i loro rispettivi coefficienti di Wilson come segue:
+
+\begin{equation} \label{eq:EFT_Lagrangian}
+\mathcal{L}_{\mathrm{eff}} = \mathcal{L}_{\mathrm{SM}}+\sum_i \frac{f_i^{(6)}}{\Lambda_i^2} O_i^{(6)}+\sum_j \frac{f_j^{(8)}}{\Lambda_j^4} O_j^{(8)}+\ldots \; ,
+\end{equation}
+
+dove $O_{i,j}^{(6),(8)}$ sono rispettivamente operatori di dimensione-6 e di dimensione-8, i quali coinvolgono i campi del Modello Standard con i rispettivi accoppiamenti adimensionali $f_i^{(6)}$ e $f_j^{(8)}$, mentre $\Lambda$ rappresenta la scala di energia dei nuovi processi. In questo studio vengono considerati solo operatori di dimensione-8 e si assume che tutti gli accoppiamenti di dimensione-6, i quali influenzano i vertici di gauge tripli, siano pari a zero. Gli accoppiamenti di dimensione-6 sono infatti già vincolati in maniera stringente da altri processi, in particolare dalla produzione inclusiva di dibosoni. L'effetto degli operatori di dimensione-6 nei processi VBS è di per sé di grande interesse, ma non viene studiato in questa sede. 
+
+Vengono presi in considerazione nove operatori indipendenti di dimensione-8 che conservano la parità e la coniugazione di carica. Gli operatori $O_{\mathrm{S}0,\, 1,\, 2}$ sono costruiti a partire dalla derivata covariante del doppietto di Higgs. Gli operatori $O_{\mathrm{T}0,\, 1,\, 2}$ sono costruiti a partire dai campi di gauge di $\mathrm{SU}_{\mathrm{L}}(2)$. Gli operatori misti $O_{\mathrm{M}0,\, 1,\, 7}$ coinvolgono sia i campi di gauge di $\mathrm{SU}_{\mathrm{L}}(2)$ sia il doppietto di Higgs. Poiché gli operatori $O_{\mathrm{S}0}$ e $O_{\mathrm{S}2}$ sono l'uno il coniugato hermitiano dell'altro, essi vengono fatti variare simultaneamente, assumendo coefficienti di identico valore $f_{\mathrm{S}0} = f_{\mathrm{S}2} = f_{\mathrm{S}02}$.
+
+L'ampiezza di scattering al quadrato predetta dalla teoria di campo efficace per la produzione \wzjj\ può essere scritta come:
+
+\begin{equation}
+\left| A_{\mathrm{SM}}+\sum_i c_i A_i \right|^2 = {\left| A_{\mathrm{SM}} \right| }^2 + \sum_i c_i \, 2 \operatorname{Re}(A^*_{\mathrm{SM}}A_i)+ \sum_i c_i^2 |A_i|^2 +\sum_{ij,i\neq j} c_i c_j \, 2 \operatorname{Re}(A_{i} A^*_{j}) \; ,
+\label{eq:EFT}
+\end{equation}
+
+dove $c_i = f_j^{(8)} / \Lambda^4$, $A_{\mathrm{SM}}$ è l'ampiezza di scattering del Modello Standard, $\sum_i c_i \, 2 \operatorname{Re}(A^*_{\mathrm{SM}} A_i)$ è l'ampiezza del termine di interferenza tra il Modello Standard e gli operatori di dimensione-8, $\sum_i {c_i}^2 |A_i|^2$ è il contributo puramente di dimensione-8, e $\sum_{ij,i\neq j} c_i c_j 2 \operatorname{Re}(A_i A^*_j)$ rappresenta l'ampiezza di interferenza incrociata tra due operatori di dimensione-8 (\textit{cross terms}).
+Questi diversi termini sono simulati separatamente utilizzando \textsc{MadGraph5\_aMC@NLO}~2.6.5 interfacciato con \textsc{Pythia}~8.240, fornendo campioni MC indipendenti. Vengono utilizzati gli stessi set di PDF e la medesima modellizzazione del \textit{parton shower} (PS) impiegati per gli eventi \wzjj\ del Modello Standard e dettagliati in precedenza. Gli eventi generati corrispondenti a un dato valore del coefficiente EFT $c_i$ (oppure alla coppia $c_i$ e $c_j$ per i termini incrociati) si ottengono moltiplicando i rispettivi campioni MC per il valore del coefficiente e sommandoli tra loro.
+
+Poiché la presenza di contributi aQGC non nulli tende ad aumentare la sezione d'urto di produzione degli eventi \wzjjew\ per grandi valori della massa invariante dibosonica, per la ricerca dei contributi EFT di dimensione-8 si utilizza una combinazione bidimensionale composta dallo \textit{score} del BDT (che isola il segnale \wzjjew\ dal fondo \wzjjqcd) e dalla massa trasversa \mtwz. Si utilizzano quattro \textit{bin} per lo \textit{score} del BDT ($[-1, -0.25, 0.17, 0.72, 1]$) e cinque \textit{bin} per \mtwz\ ($[0, 400, 750, 1050, 1350, \infty]\,\unit{GeV}$), disposti in un istogramma unidimensionale costituito da 20 \textit{bin} statisticamente indipendenti, come illustrato in Figura~\ref{fig:2D_EFTTemplate}. I bordi dei \textit{bin} sono stati ottimizzati per ottenere i limiti attesi più stringenti in assenza di un \textit{cut-off} di unitarizzazione.
+Questa distribuzione viene utilizzata per definire una funzione di verosimiglianza estesa, includendovi le stesse regioni di controllo descritte in precedenza. Le incertezze sperimentali e teoriche sono incorporate nel fit come parametri di disturbo (\textit{nuisance parameters}) vincolati in modo gaussiano. 
+Viene costruita una statistica di test basata sul rapporto delle verosimiglianze profilate (\textit{profile-likelihood ratio}) per stimare gli intervalli di confidenza per un dato $c_i$. Per ogni singolo coefficiente $c_i$, o per ogni coppia $(c_i, c_j)$ nel caso dei limiti bidimensionali, si esegue un fit di massima verosimiglianza sui dati ponendo temporaneamente a zero tutti gli altri coefficienti.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.6]{Immagini/fig_11.pdf}
+\caption{Distribuzione unidimensionale a livello di rivelatore derivante dalla combinazione bidimensionale delle variabili \textit{score} del BDT e \mtwz, utilizzata per estrarre i limiti sui coefficienti EFT. Sono mostrate le rese degli eventi previste dal fit eseguito sui dati assumendo la validità del solo Modello Standard. La banda di incertezza attorno all'attesa MC include le incertezze sistematiche totali ottenute dal fit. Vengono inoltre mostrati i contributi degli operatori $O_{\mathrm{T}0}$ e $O_{\mathrm{T}1}$ per valori puramente illustrativi dei rispettivi coefficienti di Wilson.}
+\label{fig:2D_EFTTemplate}
+\end{figure}
+
+\begin{table}[htbp]
+\caption{Intervalli di confidenza attesi e osservati al $95\%$ CL sui coefficienti di Wilson dei vari operatori di dimensione-8, senza l'applicazione di procedure di unitarizzazione. La notazione $\mathrm{S}02$ indica che ai coefficienti associati agli operatori $O_{\mathrm{S}0}$ e $O_{\mathrm{S}2}$ viene assegnato il medesimo valore numerico.}
+\label{tab:limitsNoCl}
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{c c c}
+\hline
+\textbf{Coefficiente} & \textbf{Atteso [$\unit{TeV}^{-4}$]} & \textbf{Osservato [$\unit{TeV}^{-4}$]} \\
+\hline
+\hline
+$f_{\mathrm{T}0}/{\Lambda}^4$ & $[-0.80, 0.80]$ & $[-0.57, 0.56]$ \\
+$f_{\mathrm{T}1}/{\Lambda}^4$ & $[-0.52, 0.49]$ & $[-0.39, 0.35]$ \\
+$f_{\mathrm{T}2}/{\Lambda}^4$ & $[-1.6, 1.4]$ & $[-1.2, 1.0]$ \\
+$f_{\mathrm{M}0}/{\Lambda}^4$ & $[-8.3, 8.3]$ & $[-5.8, 5.6]$ \\
+$f_{\mathrm{M}1}/{\Lambda}^4$ & $[-12.3, 12.2]$ & $[-8.6, 8.5]$ \\
+$f_{\mathrm{M}7}/{\Lambda}^4$ & $[-16.2, 16.2]$ & $[-11.3, 11.3]$ \\
+$f_{\mathrm{S}02}/{\Lambda}^4$ & $[-14.2, 14.2]$ & $[-10.4, 10.4]$ \\
+$f_{\mathrm{S}1}/{\Lambda}^4$ & $[-42, 41]$ & $[-30, 30]$ \\
+\hline
+\end{tabular}
+\end{table}
+
+Non si osserva alcuna deviazione rispetto alle previsioni del Modello Standard; i limiti inferiori e superiori attesi e osservati al $95\%$ di livello di confidenza (CL) per i coefficienti di Wilson considerati sono riportati nella Tabella~\ref{tab:limitsNoCl}. I coefficienti associati agli operatori $O_{\mathrm{T}0}$ e $O_{\mathrm{T}1}$ risultano essere i più stringenti. Tali limiti sono dominati dal contributo puramente di dimensione-8 presentato nell'Equazione~(\ref{eq:EFT}). Questi risultati sono simili a quelli ottenuti dall'esperimento CMS, anch'esso analizzando i canali di decadimento leptonici negli eventi \wzjj~\cite{CMS:2020gfh}. Sono stati inoltre ricavati i limiti bidimensionali al $95\%$ CL sulla coppia di operatori $O_{\mathrm{T}0}$ e $O_{\mathrm{T}1}$, mostrati nella Figura~\ref{fig:2D_exp_plots_reco}. Per ottenere questi risultati non è stata impiegata alcuna procedura di unitarizzazione.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.4]{Immagini/fig_12.pdf}
+\caption{Intervalli di confidenza bidimensionali al $95\%$ CL attesi (linea tratteggiata) e osservati (linea continua) per i coefficienti di Wilson associati alla coppia di operatori $O_{\mathrm{T}0}$ e $O_{\mathrm{T}1}$, senza l'uso di \textit{cut-off} di unitarizzazione.}
+\label{fig:2D_exp_plots_reco}
+\end{figure}
+
+Il framework EFT non rappresenta un modello fisico completo, e la presenza di operatori di dimensione-8 non nulli viola matematicamente l'unitarietà a livello albero qualora l'energia sia sufficientemente elevata. Limiti fisicamente più accurati possono essere ottenuti sopprimendo il contributo EFT al di sopra del limite di unitarietà e mantenendo attiva la sola predizione del Modello Standard per tutte le masse invarianti del sistema $WZ$, anche superata tale soglia. I limiti di unitarietà calcolati dalla Ref.~\cite{Almeida:2020ylr} vengono adoperati assumendo l'esistenza di un solo coefficiente di Wilson non nullo alla volta. Questi limiti di unitarietà sono presentati nella Figura~\ref{fig:clipping_T} per i coefficienti $f_{\mathrm{T}0}$ e $f_{\mathrm{T}1}$, affiancati dall'evoluzione degli intervalli attesi e osservati al $95\%$ CL tracciati in funzione della scala di \textit{cut-off} $m_{WZ}$ impiegata nella procedura di unitarizzazione.
+
+La Tabella~\ref{tab:limitsWithCl} presenta i singoli intervalli di esclusione al $95\%$ CL per ciascun coefficiente di Wilson, ottenuti imponendo un \textit{cut-off} di unitarizzazione in corrispondenza del limite teorico. Per l'operatore $O_{\mathrm{S}1}$ non è stato individuato alcun incrocio con la curva del limite di unitarietà nella regione scansionata oltre i $600\,\unit{GeV}$, pertanto per esso non viene riportato alcun limite.
+
+\begin{figure}[htbp]
+\centering
+\subfloat[]{\includegraphics[scale=0.4]{Immagini/fig_13a.pdf}}
+\subfloat[]{\includegraphics[scale=0.4]{Immagini/fig_13b.pdf}}
+\caption{Evoluzione in funzione della scala di \textit{cut-off} dei limiti individuali attesi (linee tratteggiate) e osservati (linee continue) al $95\%$ CL sui coefficienti di Wilson per gli operatori (a) $O_{\mathrm{T}0}$ e (b) $O_{\mathrm{T}1}$. L'area ombreggiata rappresenta la regione consentita dall'unitarietà. I limiti di unitarietà (linee tratto-punto) per ciascun operatore sono calcolati assumendo un solo coefficiente non nullo, secondo la Ref.~\cite{Almeida:2020ylr}.}
+\label{fig:clipping_T}
+\end{figure}
+
+\begin{table}[htbp]
+\caption{Intervalli di confidenza attesi e osservati al $95\%$ CL sui coefficienti di Wilson dei vari operatori di dimensione-8, ottenuti impostando un \textit{cut-off} di unitarizzazione esattamente in corrispondenza del limite unitario teorico (ossia nel punto di incrocio tra il limite sperimentale e il limite teorico). La notazione $\mathrm{S}02$ indica che i coefficienti associati agli operatori $O_{\mathrm{S}0}$ e $O_{\mathrm{S}2}$ assumono lo stesso valore.}
+\label{tab:limitsWithCl}
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{c c c}
+\hline
+\textbf{Coefficiente} & \textbf{Atteso [$\unit{TeV}^{-4}$]} & \textbf{Osservato [$\unit{TeV}^{-4}$]} \\
+\hline
+\hline
+$f_{\mathrm{T}0}/{\Lambda}^4$ & $[-7.0, 7.0]$ & $[-1.5, 1.6]$ \\
+$f_{\mathrm{T}1}/{\Lambda}^4$ & $[-1.1, 1.0]$ & $[-0.7, 0.6]$ \\
+$f_{\mathrm{T}2}/{\Lambda}^4$ & $[-12, 6]$ & $[-2.4, 1.8]$ \\
+$f_{\mathrm{M}0}/{\Lambda}^4$ & $[-60, 60]$ & $[-12, 12]$ \\
+$f_{\mathrm{M}1}/{\Lambda}^4$ & $[-32, 32]$ & $[-15, 15]$ \\
+$f_{\mathrm{M}7}/{\Lambda}^4$ & $[-30, 30]$ & $[-15, 15]$ \\
+$f_{\mathrm{S}02}/{\Lambda}^4$ & $[-41, 41]$ & $[-18, 18]$ \\
+$f_{\mathrm{S}1}/{\Lambda}^4$ & --- & --- \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Conclusioni}
+\label{sec:conclusion}
+
+In questo articolo vengono presentate le misure delle sezioni d'urto integrate e differenziali della produzione elettrodebole di una coppia \wz\ in associazione a due jet, e della sua sezione d'urto di produzione in collisioni $pp$ a $\sqrt{s} = 13\,\unit{TeV}$ all'LHC. I dati sono stati raccolti attraverso il rivelatore ATLAS e corrispondono a una luminosità integrata di $140\,\unit{fb}^{-1}$. Le misure sfruttano i canali di decadimento leptonico dei bosoni di gauge in elettroni o muoni e sono eseguite in uno spazio delle fasi fiduciale che modella l'accettanza del rivelatore per massimizzare la sensibilità nei confronti dei processi di produzione elettrodebole \wzjj.
+
+Le sezioni d'urto fiduciali integrate misurate per un singolo canale di decadimento leptonico per la produzione \wzjj\ elettrodebole e inclusiva risultano essere, rispettivamente, $\sigma_{W^\pm Zjj\mathrm{-EW} \rightarrow \ell' \nu \ell \ell jj} = 0.368 \pm 0.037\,\text{(stat.)} \pm 0.059\,\text{(syst.)} \pm 0.003\,\text{(lumi.)}\,\unit{fb}$ e $\sigma_{W^\pm Zjj \rightarrow \ell' \nu \ell \ell jj} = 1.462 \pm 0.063\,\text{(stat.)} \pm 0.118\,\text{(syst.)} \pm 0.012\,\text{(lumi.)}\,\unit{fb}$. A oggi, questa rappresenta la misurazione più precisa esistente della sezione d'urto di produzione \wzjjew. La sezione d'urto di produzione elettrodebole \wzjj\ risulta in accordo con le previsioni del Modello Standard calcolate al LO pari a $0.37 \pm 0.03\,\unit{fb}$, ricavate tramite il generatore di eventi MC \textsc{MadGraph5\_aMC@NLO}+\textsc{Pythia8} (\textsc{MGPy8}). Tuttavia, la sezione d'urto inclusiva per la produzione \wzjj\ si è rivelata inferiore alle previsioni del Modello Standard fornite dal generatore \textsc{MGPy8} ($1.91 \pm 0.17\,\unit{fb}$). Il motivo di tale discostamento risiede nel fatto che la sezione d'urto integrata \wzjjqcd\ è misurata essere inferiore rispetto alla previsione di \textsc{MGPy8} per un fattore di $0.7$, con una compatibilità di $1.8\sigma$ tra la misura sperimentale e l'attesa teorica.
+
+Le sezioni d'urto differenziali relative alla produzione forte ed elettrodebole di \wzjj\ sono state misurate in modo separato per la prima volta su campioni di eventi con esattamente due jet o con più di due jet, e in tre distinti intervalli (\textit{bin}) della massa invariante dei due jet di \textit{tagging}. Analizzando la produzione elettrodebole \wzjj, si è osservato che le previsioni Monte Carlo provenienti sia da \textsc{MGPy8} sia da \textsc{Sherpa}~2.2.12 concordano con i valori misurati entro due deviazioni standard in tutte le sub-categorie di eventi nella regione di segnale. La sezione d'urto per la produzione forte di \wzjj\ si è invece rivelata diffusamente mal modellizzata dalle stime teoriche fornite da ambo i generatori MC in quegli eventi caratterizzati da esattamente due jet con $p_T > 25\,\unit{GeV}$, così come nella regione di massa invariante compresa tra i $500$ e i $1300\,\unit{GeV}$. Le sezioni d'urto differenziali della produzione \wzjj, che inglobano simultaneamente il processo forte e quello elettrodebole, sono inoltre state misurate all'interno dello stesso spazio delle fasi in funzione di svariate osservabili cinematiche di interesse.
+
+Infine, gli eventi misurati \wzjj\ sono stati impiegati per stringere i vincoli teorici sugli accoppiamenti di gauge quartici anomali (\textit{aQGC}), definendo gli intervalli di confidenza al $95\%$ sugli operatori di dimensione-8 T0, T1, T2, M0, M1, M7, S02 e S1, con l'inclusione o meno del limite imposto dalla violazione dell'unitarietà a livello albero. Tali limiti risultano coerenti e similari a quelli estratti dalla Collaborazione CMS utilizzando lo stato finale \wzjj.
+
 \end{document}
