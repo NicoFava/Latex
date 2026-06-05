@@ -131,6 +131,29 @@ Gli eventi interessanti vengono selezionati dal sistema di \textit{trigger} di p
 Un'estesa suite di software è utilizzata per la ricostruzione e l'analisi dei dati reali e simulati, per le operazioni del rivelatore e per i sistemi di \textit{trigger} e acquisizione dati dell'esperimento.
 
 \section{Spazio delle fasi per la misura della sezione d'urto}
+Ad LHC quando si vuole misurare la sezione d'urto di un qualsiasi processo è "concettualmente semplice" in quando per un dato stato finale $X$ io devo contare le volte in cui vedo quello stato finale e ottengo la sezione d'urto:
+\begin{equation*}
+    \sigma = \frac{n_X}{\int Ldt}
+\end{equation*}
+Purtroppo però ci sono diversi problemi:
+\begin{itemize}
+    \item il detector ha zone cieche, tra il barrel e l'endcap ad esempio o molto vicino alla beam pipe. Oppure possono esserci regioni in cui le performance sono degradate o range di energie non ottimizzati per essere visti da determinati regioni del rivelatore. Quindi dobbiamo considerare una certa accettanza $A_X$ entro il quale il segnale è completamente ricostruito
+    \item Anche nella zona di accettanza, alcune selezioni sono necessarie per garantire che stiamo vedendo il segnale che ci serve e quindi è presente anche una certa efficienza di ricostruzione $\epsilon_X$ che dipende da queste selezioni.
+    \begin{equation*}
+        N^{\text{sel}}_X=A_X\cdot \epsilon_X \cdot n_X
+    \end{equation*}
+    \item praticamente sempre oltre al segnale che stiamo cercando di misurare, ci sono processi di fondo che possono produrre lo stesso stato finale. Quindi dobbiamo sottrarre questi processi di fondo $N^{\text{bkg}}_X$ per ottenere il numero di eventi selezionati che appartengono al processo che stiamo studiando:
+    \begin{equation*}
+        N^{\text{sel}}_X=N^{\text{sig}}_X+N^{\text{bkg}}_X \quad \Rightarrow \quad N^{\text{sig}}_X=N^{\text{sel}}_X-N^{\text{bkg}}_X
+    \end{equation*}
+\end{itemize}
+Quindi la sezione d'urto che misuriamo è:
+\begin{equation*}
+    \sigma = \frac{N^{\text{sig}}_X}{A_X\cdot \epsilon_X \cdot \int Ldt}
+\end{equation*}
+Quindi valutare praticamente il core dell'analisi è riuscire a valutare le quantità: $N^\text{bkg}, A_X $ e $\epsilon_X$.
+
+Quando uno fa un'analisi l'accettanza e l'efficienza viene determinata insieme attraverso la generazione di eventi simulati sul detector. Se ho uno stato finale complicato io posso pensarlo come prodotto cartesiano di tante accettanze di ciascuna particella e questa regione si chiama regione fiduciale. Quindi se io definisco una regione fiduciale a livello di particella generata, posso misurare la sezione d'urto in quella regione. Noi non possiamo neanche essere sicuro che veramente questi dati ci fossero oppure no. Posso dividere gli eventi dentro e fuori la regione fiduciale ma sono affidabili quelli che mi da il MC? Riduco e misuro solo al accettanza ed efficienza nella regione fiduciale.
 Le sezioni d'urto del processo $W^\pm Zjj$ vengono misurate all'interno di uno \textit{Spazio delle Fasi Fiduciale}, definito rigorosamente a livello di particella generata (\textit{Particle Level} o \textit{Truth Level}). Questa scelta svincola la definizione teorica della misura dagli effetti strumentali (quali l'accettanza geometrica, l'efficienza di ricostruzione e la risoluzione del rivelatore ATLAS), permettendo la successiva estrazione della sezione d'urto fisica differenziale tramite la procedura di \textit{Unfolding}.
 
 La regione fiduciale è definita dalla cinematica dello stato finale dei leptoni carichi (elettroni e muoni) \textit{prompt}, ovvero associati direttamente al decadimento dei bosoni $W^\pm$ e $Z$. I leptoni prodotti dal decadimento di adroni o dal decadimento di leptoni $\tau$ (e dei loro discendenti) sono considerati fondo e scartati dalla definizione del segnale.

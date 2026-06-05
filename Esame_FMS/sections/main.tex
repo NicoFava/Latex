@@ -1,0 +1,179 @@
+\section{Introduction}
+
+\begin{frame}{Probing the EW Sector and BSM Physics with $W^\pm Zjj$}
+    \begin{itemize}
+        \setlength{\itemsep}{1.5em} % Spazio per riempire bene la slide senza affollarla
+        
+        \item \textbf{Dataset:} $140\,\unit{fb}^{-1}$ of $pp$ collisions at $\sqrt{s} = 13\,\unit{TeV}$ (2015--2018).
+        
+        \item \textbf{Target:} Fully leptonic decays of $W^\pm Zjj$ production.
+        
+        \item \textbf{Measurements:} Integrated \& differential fiducial cross-sections ($\sigma_{\text{EW}}$ and $\sigma_{\text{strong}}$).
+        
+        \item \textbf{Goal:} Isolate Vector Boson Scattering (VBS).
+        
+        \item \textbf{New Physics:} EFT limits on Anomalous Quartic Gauge Couplings (aQGC).
+    \end{itemize}
+\end{frame}
+
+% =======================================================================
+
+\begin{frame}{The ATLAS Detector}
+    \begin{center}
+                \includegraphics[width=0.8\textwidth]{assets/fig_02.png}
+            \end{center}
+\end{frame}
+
+\section{Theoretical Framework}
+\begin{frame}{Gauge Boson Self-Interactions}
+    \begin{itemize}
+        \item The Electroweak (EW) sector of the Standard Model is based on the \textbf{non-abelian} gauge symmetry $SU(2)_L \times U(1)_Y$.
+        \item Unlike QED, the generators of $SU(2)_L$ do not commute. As a consequence, the physical vector bosons ($W^\pm, Z, \gamma$) self-interact.
+        \item This structure directly dictates the existence of \textbf{Triple} (TGC) and \textbf{Quartic} (QGC) Gauge Couplings:
+    \end{itemize}
+    
+    \begin{equation*}
+        \mathcal{L}_{\text{TGC}} = \frac{1}{2}g \epsilon_{abc} W_b^\mu W_c^\nu (\partial_\mu W_{a\nu} - \partial_\nu W_{a\mu}) \qquad  \mathcal{L}_{\text{QGC}}= \frac{1}{4}g^2 \epsilon_{abc} \epsilon_{ars} W_b^\mu W_c^\nu W_{r\mu} W_{s\nu} 
+    \end{equation*}
+ Probe these vertices to test the SM rigidity and search for anomalous couplings (aQGC) arising from New Physics.
+\end{frame}
+
+\begin{frame}{Experimental Signature: Vector Boson Scattering}
+    \textbf{Vector Boson Scattering} (VBS) $VV\to VV$ with $V=W/Z/\gamma$, is a key process with which to probe the $SU(2)_L\times U(1)_Y$ gauge symmetry of the \textbf{electroweak} (EW) theory that determines the \textbf{self-couplings} of vector bosons. To study these couplings, we exploit the purely electroweak production of \textbf{$W^\pm Zjj$}. 
+
+
+    \begin{center}
+    \begin{tikzpicture}
+        \node[inner sep=0pt] (ew_figs) at (0,0) {
+            \includegraphics[width=0.18\textwidth]{Immagini/fig_01a.pdf}\hspace{0.2cm}
+            \includegraphics[width=0.18\textwidth]{Immagini/fig_01b.pdf}\hspace{0.2cm}
+            \includegraphics[width=0.18\textwidth]{Immagini/fig_01c.pdf}\hspace{0.2cm}
+            \includegraphics[width=0.18\textwidth]{Immagini/fig_01d.pdf}
+        };
+        \draw[red, thick, rounded corners=3pt] 
+            ([xshift=-0.1cm, yshift=-0.1cm]ew_figs.south west) rectangle 
+            ([xshift=0.1cm, yshift=0.1cm]ew_figs.north east);
+        \node[red, right, font=\bfseries] at ([xshift=0.2cm]ew_figs.east) {$W^\pm Zjj$-EW};
+        \node[inner sep=0pt] (qcd_figs) at (0,-2.5) {
+            \includegraphics[width=0.16\textwidth]{Immagini/fig_02a.pdf}\hspace{0.2cm}
+            \includegraphics[width=0.16\textwidth]{Immagini/fig_02b.pdf}\hspace{0.2cm}
+            \includegraphics[width=0.16\textwidth]{Immagini/fig_02c.pdf}
+        };
+        \draw[blue, thick, rounded corners=3pt] 
+            ([xshift=-0.1cm, yshift=-0.1cm]qcd_figs.south west) rectangle 
+            ([xshift=0.1cm, yshift=0.1cm]qcd_figs.north east);
+        \node[blue, right, font=\bfseries] at ([xshift=0.2cm]qcd_figs.east) {$W^\pm Zjj$-QCD};
+        
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
+\begin{frame}{A little look at the Effective Field Theory (EFT)}
+    The $W^\pm Zjj$-EW production can be sensitive to effects beyond the SM affecting the quartic interactions of weak bosons. The measured $W^\pm Zjj$ events are therefore used to search for anomalous quartic gauge couplings (aQGC) using an EFT framework. In this model, the Lagrangian of the standard model is extended into an efficient Lagrangian by adding higher-order operators and their respective Wilson coefficients as follows:
+    \begin{equation*}
+        \mathcal{L}_{\mathrm{eff}} = \mathcal{L}_{\mathrm{SM}} + \sum_{i} \frac{f_{i}^{(6)}}{\Lambda^{2}} O_{i}^{(6)} + \sum_{j} \frac{f_{j}^{(8)}}{\Lambda^{4}} O_{j}^{(8)} + \dots 
+    \end{equation*}
+    Where:
+    \begin{itemize}
+        \item $O_{i,j}^{(6),(8)}$: are dimension-6 and dimension-8 operators;
+        \item $f_{i}^{(6)}$ e $f_{j}^{(8)}$: dimensionless couplings
+        \item $\Lambda$: is the energy scale of the new processes
+    \end{itemize}
+\end{frame}
+\begin{frame}{A little look at the Effective Field Theory (EFT)}
+    The squared scattering amplitude of the effective field theory predicion for $W^\pm Zjj$ production can be written as:
+    \begin{equation*}
+        \left| A_{\mathrm{SM}}+\sum_i c_i A_i \right|^2 = {\left| A_{\mathrm{SM}} \right| }^2 + \sum_i c_i \, 2 \mathrm{Re}(A^*_{\mathrm{SM}}A_i)+ \sum_i c_i^2 |A_i|^2 +\sum_{ij,i\neq j} c_i c_j \, 2 \mathrm{Re}(A_{i} A^*_{j})
+    \end{equation*}
+    \begin{itemize}
+        \item $c_i = f_j^{(8)} / \Lambda^4$, $A_{\mathrm{SM}}$ is the SM scattering amplitude;
+        \item $2 \operatorname{Re}(A^*_{\mathrm{SM}} A_i)$ is the amplitude of the interference term between the SM and the dimension-8 operators;
+        \item $\sum_i {c_i}^2 |A_i|^2$ is the pure dimension-8 contribution, and $\sum_{ij,i\neq j} c_i c_j 2 \operatorname{Re}(A_i A^*_j)$ is the amplitude of interferences between two dimension-8 operators, called cross terms.
+    \end{itemize}
+\end{frame}
+
+\section{Fiducial Phase Space and MC Simulation}
+
+\begin{frame}{Fiducial Phase Space for Leptons}
+    The $W^\pm Zjj$ cross-sections are measured in a fiducial phase space. Leptons produced in the decay of a hadron, a $\tau$-lepton, or their descendants are not considered in the definition of the fiducial phase space and are treated as background.
+    
+    \vspace{0.4cm} % Aggiunge un po' di respiro tra testo e tabella
+    
+    \begin{center}
+    \small % Rimpicciolisce leggermente il font per far stare tutto comodamente
+    \renewcommand{\arraystretch}{1.3} % Leggermente ridotto da 1.4 a 1.3 per ottimizzare lo spazio verticale
+    \begin{tabular}{llc}
+    \hline
+    \textbf{Category} & \textbf{Kinematic Variable} & \textbf{Requirement} \\
+    \hline
+    $Z$ leptons & Transverse momentum ($p_T^{\ell_Z}$) & $> 15\,\text{GeV}$ \\
+    $W$ lepton & Transverse momentum ($p_T^{\ell_W}$) & $> 20\,\text{GeV}$ \\
+    All leptons & Pseudorapidity ($|\eta_\ell|$) & $< 2.5$ \\
+    $Z$ boson & Invariant mass window ($|m_{\ell^+ \ell^-} - m_Z^{\text{PDG}}|$) & $< 10\,\text{GeV}$ \\
+    $W$ boson & Transverse mass ($m_T^W$) & $> 30\,\text{GeV}$ \\
+    Angular isolation & Distance between $Z$ leptons ($\Delta R(\ell_{Z1}, \ell_{Z2})$) & $> 0.2$ \\
+    Angular isolation & Distance between $W$ and $Z$ leptons ($\Delta R(\ell_W, \ell_Z)$) & $> 0.3$ \\
+    \hline
+    \end{tabular}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Fiducial Phase Space for Jets}
+    In addition, at least two jets are required, reconstructed using the anti-$k_t$ algorithm with radius parameter $R=0.4$. Hard processes with a $b$-quark in the initial or final states, such as $tZj$ production, are not considered as part of the $W^\pm Zjj$-EW events.
+    
+    \vspace{0.4cm} % Aggiunge un po' di respiro tra testo e tabella
+    
+    \begin{center}
+    \small % Rimpicciolisce leggermente il font per far stare tutto comodamente
+    \renewcommand{\arraystretch}{1.3} % Leggermente ridotto da 1.4 a 1.3 per ottimizzare lo spazio verticale
+    \begin{tabular}{llc}
+    \hline
+    \textbf{Category} & \textbf{Kinematic Variable} & \textbf{Requirement} \\
+    \hline
+    All jets & Transverse momentum ($p_T^j$) & $> 40\,\text{GeV}$ \\
+    All jets & Pseudorapidity ($|\eta_j|$) & $< 4.5$ \\
+    Angular isolation & Distance between jets and leptons ($\Delta R(j, \ell)$) & $> 0.3$ \\
+    Tagging jets & Opposite hemispheres ($\eta_{j1} \cdot \eta_{j2}$) & $< 0$ \\
+    Tagging jets & Invariant mass ($m_{jj}$) & $> 500\,\text{GeV}$ \\
+    \hline
+    \multicolumn{3}{c}{\textbf{Jet Veto}} \\
+    \hline
+    $b$-quark jets & Absence of $b$-jets in initial/final state & $N_{b\text{-jet}} = 0$ \\
+    \hline
+    \end{tabular}
+    \end{center}
+\end{frame}
+
+\begin{frame}{How to eliminate leptons ambiguity?}
+    \begin{itemize}
+        \item Leptons and final-state neutronos that do not originate from hadron or $\tau$-lepton decays, are matched to the $W^\pm$ and $Z$ boson decay products using an algorithmic approach, called the \textbf{resonant shape algorithm}. 
+        \item This algorithm is based on the value of an estimator expressing the product of the nominal line-shapes of the $W$ and $Z$ resonances:
+    \end{itemize}
+   
+    \vspace{0.4cm} % Aggiunge un po' di respiro tra testo e tabella
+
+    \begin{equation*}
+    P = \left| \frac{1}{ m^2_{(\ell^+,\ell^-)} - \left(m_Z^{\textrm{PDG}}\right)^2 + \textrm{i} \; \Gamma_Z^{\textrm{PDG}} \; m_Z^{\textrm{PDG}} } \right|^2  \times \; \left| \frac{1}{ m^2_{(\ell',\nu_{\ell'})} - \left(m_W^{\textrm{PDG}}\right)^2 + \textrm{i} \; \Gamma_W^{\textrm{PDG}} \; m_W^{\textrm{PDG}} } \right|^2 
+\end{equation*}
+\end{frame}
+
+\begin{frame}{Monte Carlo Simulation of the Signal}
+The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{MadGraph5\_aMC@NLO2.6.5} MC event generator, interfaced with \texttt{Pythia8.240}. The simulation was divided into distinct components:
+\begin{itemize}
+    \item \textbf{Electroweak production \wzjjew}: The actual signal. It is calculated at leading order (LO), considering purely electroweak processes (order $\alpha_\text{EW}^6$).
+    \item \textbf{QCD production \wzjjqcd}: Considered a background for the VBS analysis. This component is calculated at next-to-leading order (NLO) in QCD.
+    \item \textbf{Interference \wzjj-INT}: Quantifies the quantum interference between the EW and QCD production. It is calculated at LO and yields a positive contribution of 6\% in the fiducial region, reaching up to 12\% for events with three or more jets.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Monte Carlo Simulation of the Background}
+    In addition to the \wzjjqcd  \,production, there are numerous other Standard Model processes that can mimic the signal in the detector. These backgrounds fall into two categories based on how they are estimated:
+    \begin{itemize}
+    \item \textbf{Backgrounds with \textit{prompt} (real) leptons:} Processes such as the production of $ZZ$ pairs, $WW$, tribosons ($VVV$), or top quarks associated with vector bosons ($t\bar{t}V$, $tZj$). Their contribution is evaluated entirely using Monte Carlo simulations.
+    \item \textbf{Backgrounds with \textit{fake} leptons:} Events where a hadronic jet is misidentified as a lepton by the detector. Being an instrumental artifact that is complex to simulate accurately, this background is estimated directly using data-driven techniques.
+\end{itemize}
+
+    
+\end{frame}
+\section{Event selection \& Background estimation}
+\section{Measurement methodology and results}
+\section{Conclusion}

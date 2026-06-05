@@ -7,10 +7,21 @@
 % ==================///==================///==================///
 
 \documentclass{beamer}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{graphicx}
 \usepackage{amsfonts,amsmath,oldgerm}
 \usetheme{_statale}
 \usefonttheme[onlymath]{serif}
 
+
+\newcommand{\LO}{LO}
+\newcommand{\wzjjew}{$W^\pm Z jj-$ EW}
+\newcommand{\wzjjqcd}{$W^\pm Z jj-$ QCD}
+\newcommand{\wzjj}{$W^\pm Z jj$}
+\newcommand{\wz}{$W^\pm Z$}
+\newcommand{\mjj}{\ensuremath{m_{jj}}}
+\newcommand{\mtwz}{\ensuremath{m_T^{WZ}}}
 \newcommand{\testcolor}[1]{\colorbox{#1}{\textcolor{#1}{test}}~\texttt{#1}}
 \newcommand{\hrefcol}[2]{\textcolor{cyan}{\href{#1}{#2}}}
 \titlebackground*{assets/background}
@@ -19,11 +30,11 @@
 % ==================/// SPLASH PAGE
 % ==================///==================///==================///
 
-\title{Statale Beamer Presentation Theme}
-\subtitle{Using \LaTeX\ to prepare slides}
-\course{Master's Degree in Philosophical Science}
+\title{Measurements of electroweak $W^{\pm}Z$  boson pair production in association with two jets in $pp$ collisions at $\sqrt{s} = 13$~TeV with the ATLAS detector}
+\subtitle{Phenomenology of the Standard Model of Elementary Particles}
+\course{Master's Degree in Physics - Elementary Particles and Astroparticles}
 \author{Nicolò Favagrossa}
-\IDnumber{1234567}
+\IDnumber{68405A}
 
 % ==================///==================///==================///
 % ==================/// START PRESENTATION
@@ -31,32 +42,13 @@
 
 \begin{document}
 \maketitle
-
-\footlinecolor{maincolor}
-\begin{frame}
-
-Hi! I'm Giorgio and this template is a based on \hrefcol{https://www.overleaf.com/latex/templates/sintef-presentation/jhbhdffczpnx}{SINTEF Presentation} from \hrefcol{mailto:federico.zenith@sintef.no}{Federico Zenith} and its derivation \hrefcol{https://github.com/TOB-KNPOB/Beamer-LaTeX-Themes}{Beamer-LaTeX-Themes} from Liu Qilong
-
-\vspace{\baselineskip}
-
-In the following you find a brief introduction on how to use \LaTeX\ and the beamer package to prepare slides, based on the one written by \hrefcol{mailto:federico.zenith@sintef.no}{Federico Zenith} for \hrefcol{https://www.overleaf.com/latex/templates/sintef-presentation/jhbhdffczpnx}{SINTEF Presentation}
-
-This template is released under \hrefcol{https://creativecommons.org/licenses/by-nc/4.0/legalcode}{Creative Commons CC BY 4.0} license
-
-\end{frame}
+    
 
 % ==================///==================///==================///
 % ==================/// BODY'S PRESENTATION
 % ==================///==================///==================///
 
-\input{sections/introduction}
-
-\input{sections/personalization}
-
-\input{chapters/special_slides}
-
-\input{sections/summary}
-
+\input{sections/main.tex}
 % ==================///==================///==================///
 % ==================/// END PRESENTATION
 % ==================///==================///==================///
