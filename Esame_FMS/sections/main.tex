@@ -460,10 +460,10 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
             % Riquadro Blu per QCD
             \begin{tcolorbox}[colframe=blue!70!black, colback=blue!5, boxrule=1pt, arc=4pt, 
                               left=2pt, right=2pt, top=4pt, bottom=4pt, 
-                              title=\textbf{QCD + Int. (Strong Production)}]
+                              title=\textbf{Strong + Int.}]
                 \centering \small
-                $\sigma_{\text{obs}}^{\text{QCD}} = 1.093 \pm 0.066_{\text{stat}} \pm 0.131_{\text{syst}}\,\unit{fb}$ \\[0.15cm]
-                $\sigma_{\text{th}}^{\text{QCD}} = 1.537 \pm 0.150\,\unit{fb}$ \\[0.15cm]
+                $\sigma_{\text{obs}}^{\text{strong}} = 1.093 \pm 0.066_{\text{stat}} \pm 0.131_{\text{syst}}\,\unit{fb}$ \\[0.15cm]
+                $\sigma_{\text{th}}^{\text{strong}} = 1.537 \pm 0.150\,\unit{fb}$ \\[0.15cm]
                 \textcolor{orange}{$\Rightarrow$ Deficit factor $\sim 0.7$ ($1.8\sigma$ tension)}
             \end{tcolorbox}
         \end{column}
@@ -477,4 +477,201 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
         
     \end{columns}
 \end{frame}
+
+\begin{frame}{\wzjjew $\,$ and \wzjj-strong ($N_{jets}=2$), SR ($N_{jets}\ge 3$) }
+    \begin{figure}[t]
+    \setcounter{subfigure}{0}
+
+        \centering
+        \subfloat[]{
+            \includegraphics[width=0.42\textwidth]{Immagini/fig_05a.pdf}
+        }
+        \subfloat[]{
+            \includegraphics[width=0.42\textwidth]{Immagini/fig_05b.pdf}
+        }
+    \end{figure}
+\end{frame}
+
+\begin{frame}{\wzjjew and \wzjj-strong in differents $m_{jj}$ bins}
+    \setcounter{subfigure}{0}
+    \begin{figure}[t]
+        \centering
+        \subfloat[]{
+            \includegraphics[width=0.31\textwidth]{Immagini/fig_06a.pdf}
+        }
+        \subfloat[]{
+            \includegraphics[width=0.31\textwidth]{Immagini/fig_06b.pdf}
+        }
+        \subfloat[]{
+            \includegraphics[width=0.31\textwidth]{Immagini/fig_06c.pdf}
+        }
+    \end{figure}
+\end{frame}
+
+\begin{frame}{\wzjj $\,$ differential measurements}
+    Differential mesurements of \wzjj$\,$ production cross-section are performed as a function of three variables sensitive to anomalies in the quartic gauge coupling in \wzjj$\,$ events:
+    
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item the scalar sum of the trasverse momenta of the three charged leptons associated with $W$ and $Z$ bosons $\sum p_\text{T}^\ell$;
+        \vspace{0.2cm}
+        \item the difference in azimuthal angle $\Delta\phi(W,Z)$ between the $W$ and $Z$ bosons' directions;
+        %controllre come è definita
+        \vspace{0.2cm}
+        \item the trasverse mass of the $W^\pm Z$ system $m_\text{T}^{WZ}$.
+    \end{itemize}
+\end{frame}
+\begin{frame}{\wzjj $\,$ differential measurements}
+    \setcounter{subfigure}{0}
+    \begin{figure}[t]
+        \centering
+        \subfloat[]{
+            \includegraphics[width=0.31\textwidth]{Immagini/fig_07a.pdf}
+        }
+        \subfloat[]{
+            \includegraphics[width=0.31\textwidth]{Immagini/fig_07b.pdf}
+        }
+        \subfloat[]{
+            \includegraphics[width=0.31\textwidth]{Immagini/fig_07c.pdf}
+        }
+    \end{figure}
+    %Forse dicono perchè sono scalati di quei fattori le line tratteggiate e perchè di fianco alla simulazione c'è scritto scaled
+
+    %magari posso dire che sono state fatte misure differenziali anche rispetto ad altre variabili cinematiche o comunque di altre quantità che ho omesso.
+\end{frame}
+\begin{frame}{Search for aQGC: Methodology}
+    {\small Anomalous Quartic Gauge Couplings (aQGC) modeled via EFT dimension-8 operators drastically enhance the cross-section at high energy scales ($\hat{s}$).}
+    
+    \smallskip
+    \textbf{The 2D Fit Strategy}
+    {\small
+    \begin{itemize}
+        \item \textbf{Observables:} The search exploits a 2D distribution combining the BDT score (to separate EWK from QCD) and the transverse mass $m_T^{WZ}$ (sensitive to $\hat{s}$).
+        \item \textbf{Binning:} 4 Bins in BDT score $\times$ 5 bins in $m_T^{WZ}$ $\rightarrow$ Unrolled into a 1D histogram of 20 statistically independent bins.
+        \item \textbf{Test Statistic:} Profiled Likelihood Ratio $q(\vec{c})$ to extract 95\% Confidence Level (CL) limits on the Wilson coefficients $f_j^{(8)}/\Lambda^4$.
+    \end{itemize}
+    }
+    
+    \vfill % Spinge il blocco seguente verso il fondo in modo bilanciato
+    
+    \begin{block}{The Matrix Element}
+    \small
+    The limits are strongly dominated by the pure dimension-8 contribution (quadratic term $c_i^2|A_i|^2$) rather than the SM-EFT interference.
+    \end{block}
+\end{frame}
+
+\begin{frame}{2D BDT vs $m_T^{WZ}$ Distribution for EFT Search}    
+\begin{center}                
+    \includegraphics[width=0.55\textwidth]{Immagini/fig_11.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}{EFT Limits (Without Unitarization)}
+    \begin{columns}[T]
+        
+        \begin{column}{0.45\textwidth}
+            \textbf{\textcolor{blue!80!black}{1D Limits (95\% CL)}}
+            
+            \smallskip
+            {\scriptsize 
+            \renewcommand{\arraystretch}{1.15} % Spazio tra le righe ridotto da 1.3 a 1.15
+            \begin{table}
+                \begin{tabular}{lcc}
+                \hline
+                \textbf{Coupling} & \textbf{Obs. [TeV$^{-4}$]} & \textbf{Exp. [TeV$^{-4}$]} \\
+                \hline
+                $f_{T0}/\Lambda^4$ & $[-0.57, 0.56]$ & $[-0.80, 0.80]$ \\
+                $f_{T1}/\Lambda^4$ & $[-0.39, 0.35]$ & $[-0.52, 0.49]$ \\
+                $f_{T2}/\Lambda^4$ & $[-1.2, 1.0]$ & $[-1.6, 1.4]$ \\
+                $f_{M0}/\Lambda^4$ & $[-5.8, 5.6]$ & $[-8.3, 8.3]$ \\
+                \hline
+                \end{tabular}
+            \end{table}
+            }
+            \smallskip
+            
+            {\small
+            \begin{itemize}
+                \item Limits extracted setting one coefficient non-zero at a time.
+            \end{itemize}
+            }
+        \end{column}
+        
+        \begin{column}{0.55\textwidth}
+            \begin{center}
+                \textbf{\textcolor{blue!80!black}{2D Contour ($f_{T0}$ vs $f_{T1}$)}}
+                
+                \smallskip
+                % Aggiunto limite in altezza
+                \includegraphics[width=0.9\textwidth,height=0.6\textheight,keepaspectratio]{Immagini/fig_12.pdf}
+            \end{center}
+        \end{column}
+        
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Tree-Level Unitarity Violation and Clipping}
+    \textbf{The Unitarity Bound}
+    
+    {\small The EFT is not a UV-complete model. Non-zero dimension-8 operators violate tree-level unitarity at high energies.}
+    
+    \smallskip
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \textbf{The "Clipping" Technique}
+            {\footnotesize % Ridotto da \small a \footnotesize per salvare spazio
+            \begin{itemize}
+                \item EFT contributions are removed above a cut-off scale $E_c$ ($m_{WZ} > E_c$).
+                \item Replaced by SM predictions to restore unitarity.
+                \item Limits degrade (widen) as the cut-off $E_c$ becomes more stringent (lower values).
+            \end{itemize}
+            }
+            
+            \medskip
+            {\scriptsize
+            \textbf{Unitarized Limits (at crossing bound):}
+            \begin{itemize}
+                \item $f_{T0}/\Lambda^4 \in [-1.5, 1.6]$ TeV$^{-4}$
+                \item $f_{T1}/\Lambda^4 \in [-0.7, 0.6]$ TeV$^{-4}$
+            \end{itemize}
+            }
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{center}
+                % Limite verticale anche qui
+                \includegraphics[width=0.95\textwidth,height=0.55\textheight,keepaspectratio]{Immagini/fig_13a.pdf}
+                
+                \smallskip
+                {\scriptsize Evolution of 95\% CL limits vs cut-off scale\par}
+            \end{center}
+        \end{column}
+    \end{columns}
+\end{frame}
 \section{Conclusion}
+
+\begin{frame}{Conclusions: VBS as a Precision Probe for the EWK Sector}
+    
+    \begin{block}{From Discovery to Precision Measurement (Run 2, 140 fb$^{-1}$)}
+        \begin{itemize}
+            \item \textbf{Integrated cross-section:} $\sigma_{WZjj\text{-EW}} = 0.368 \pm 0.037 \text{ (stat)} \pm 0.059 \text{ (syst)} \text{ fb}$.
+            \item \textbf{Differential measurements} (via Bayesian Unfolding) on aQGC-sensitive variables: $m_{jj}, \Delta\phi, m_T^{WZ}, \sum p_T^\ell$.
+        \end{itemize}
+    \end{block}
+    
+    \begin{block}{Standard Model Verification and Modelling Challenges}
+        \begin{itemize}
+            \item \textbf{EWK Production:} Excellent Data/Theory agreement in the Signal Region.
+            \item \textbf{QCD Background:} Tension of $\mathbf{1.8\sigma}$ (Data $\sim 30\%$ lower than nominal \textsc{MadGraph}).
+        \end{itemize}
+    \end{block}
+    
+    \begin{block}{Limits on New Physics (EFT) and Unitarity}
+        \begin{itemize}
+            \item No high-energy kinematic excesses observed.
+            \item \textbf{95\% CL limits} set on 9 dimension-8 operators (via Profiled Likelihood Ratio).
+            \item Limits unitarized via theoretical \textbf{clipping} to prevent tree-level unitarity violation.
+        \end{itemize}
+    \end{block}
+
+\end{frame}
