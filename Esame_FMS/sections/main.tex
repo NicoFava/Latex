@@ -90,6 +90,9 @@
         \item $\sum_i {c_i}^2 |A_i|^2$ is the pure dimension-8 contribution, and $\sum_{ij,i\neq j} c_i c_j 2 \operatorname{Re}(A_i A^*_j)$ is the amplitude of interferences between two dimension-8 operators, called cross terms.
     \end{itemize}
 \end{frame}
+\begin{frame}{A little look at the Effective Field Theory (EFT)}
+    
+\end{frame}
 
 \section{Fiducial Phase Space and MC Simulations}
 
@@ -165,18 +168,14 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Monte Carlo Simulation of the Background}
-    In addition to the \wzjjqcd  \,production, there are numerous other Standard Model processes that can mimic the signal in the detector. These backgrounds fall into two categories based on how they are estimated:
+\begin{frame}{Background adn Detector Simulation}
+    In addition to the \wzjjqcd  \,production, there are other processes that can mimic the signal in the detector.
     \begin{itemize}
     \item \textbf{Backgrounds with \textit{prompt} (real) leptons:} Processes such as the production of $ZZ$ pairs, $WW$, tribosons ($VVV$), or top quarks associated with vector bosons ($t\bar{t}V$, $tZj$). Their contribution is evaluated entirely using Monte Carlo simulations.
-    \item \textbf{Backgrounds with \textit{fake} leptons:} Events where a hadronic jet is misidentified as a lepton by the detector. Being an instrumental artifact that is complex to simulate accurately, this background is estimated directly using data-driven techniques.
+    \item \textbf{Backgrounds with \textit{fake} leptons:} Events where a hadronic jet is misidentified as a lepton by the detector. Estimated directly using data-driven techniques.
 \end{itemize}
-\end{frame}
+    All generated MC events were passed throught the ATLAS detector simulation, based om \texttt{Geant4}, and processed using the same recostruction software used for the data..
 
-\begin{frame}{Detector Simulation}
-    All generated MC events were passed throught the ATLAS detector simulation, based om \texttt{Geant4}, and processed using the same recostruction software used for the data.
-
-    Furthermore, the lepton and jet momentum scale and resolution, the lepton reconstruction, identification, isolation and trigger efficiencies and the pile-up jets and b-jet veto efficiencies in the simulation were corrected to match those measured in data.
 \end{frame}
     
 \section{Event selection \& Background estimation}
@@ -304,7 +303,7 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
 \end{frame}
 
 \begin{frame}{Irreducible Backgrounds}
-    \textbf{Constrained via Control Regions (CRs):}
+    \textbf{Constrained via Control Regions (ZZ-CR \& b-CR):}
     \begin{itemize}
         \item \textbf{$ZZ \to 4\ell$ ($ZZjj$-QCD):} Survives via lepton acceptance loss. Constrained in the orthogonal \textbf{ZZ-CR} (requiring a 4th \textit{loose} lepton).
         \item \textbf{Top-quark ($t\bar{t}+V, tZj$):} Survives via b-tagging inefficiency. Constrained in the \textbf{b-CR} (inverting the b-veto, $\ge 1$ b-jet).
@@ -313,7 +312,6 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
     \textbf{Estimated via Pure Monte Carlo:}
     \begin{itemize}
         \item \textbf{Tribosons ($VVV$) \& $ZZjj$-EW:} Yields too low to define a dedicated CR. 
-        \item Handled as Gaussian \textit{Nuisance Parameters} ($\theta$) in the Profile Likelihood Ratio.
     \end{itemize}
 \end{frame}
 
@@ -331,7 +329,7 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
         \item Solves a linear system to estimate the fake contribution directly in the Signal Region.
     \end{itemize}
 \end{frame}
-\begin{frame}{Expected and Observed Numbers of Events}
+\begin{frame}{Expected and Observed Numbers of Events Pre-Fit}
     \begin{table}[htbp] 
     \centering
     \footnotesize % Essenziale per far entrare 12 righe verticalmente
@@ -370,14 +368,14 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
     \begin{itemize}
         \item \textit{Jet Kinematics:} $m_{jj}, \Delta\eta_{jj}, \Delta\phi_{jj}$, jet multiplicity.
         \item \textit{Boson Kinematics:} $p_T^W, p_T^Z, m_T^{WZ}$.
-        \item \textit{Mixed Correlations:} $Z$-centrality ($\zeta_{lep}$), event balance.
+        \item \textit{Mixed Correlations:} $\ell$-centrality ($\zeta_{lep}$), event balance.
     \end{itemize}
     \textbf{BDT Output:}
     \begin{itemize}
         \item \textbf{The Score}: A single output that allows you to differentiate the signal.
     \end{itemize}
     \vspace{0.2cm}
-    \textit{Note: The BDT is also used to differential the background in the b-CR between $t\bar{t}V$ $tZj$.}
+    \textit{Note: A different BDT is also used to differential the background in the b-CR between $t\bar{t}V$ $tZj$.}
 \end{frame}
 
 \begin{frame}{The Global Profile Likelihood Fit}
@@ -419,6 +417,7 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
         }
     \end{figure}
 \end{frame}
+
 \begin{frame}{Fiducial Cross-Section Extraction}    
     The fiducial cross-sections are extracted directly from the profile-likelihood fit. The normalisation factors ($\mu_{EW}$, $\mu_{QCD}$) scale the theoretical MC predictions within the fiducial phase space:
     
@@ -436,7 +435,6 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
     \vspace{0.3cm}
     \begin{itemize}
         \item \textbf{Interference term:} $\mu_{INT}$ is constrained as $\sqrt{\mu_{EW}} \cdot \sqrt{\mu_{QCD}}$.
-        \item \textbf{Categorization:} Splitting by $N_{\text{jets}}$ minimizes the dependency on the MC modelling of QCD radiation.
     \end{itemize}
 \end{frame}
 \begin{frame}{Results and Comparison with SM Predictions}
@@ -492,7 +490,7 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
     \end{figure}
 \end{frame}
 
-\begin{frame}{\wzjjew and \wzjj-strong in differents $m_{jj}$ bins}
+\begin{frame}{\wzjjew$\,$ and \wzjj-strong in differents $m_{jj}$ bins}
     \setcounter{subfigure}{0}
     \begin{figure}[t]
         \centering
@@ -552,12 +550,6 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
     \end{itemize}
     }
     
-    \vfill % Spinge il blocco seguente verso il fondo in modo bilanciato
-    
-    \begin{block}{The Matrix Element}
-    \small
-    The limits are strongly dominated by the pure dimension-8 contribution (quadratic term $c_i^2|A_i|^2$) rather than the SM-EFT interference.
-    \end{block}
 \end{frame}
 
 \begin{frame}{2D BDT vs $m_T^{WZ}$ Distribution for EFT Search}    
@@ -569,41 +561,35 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
 \begin{frame}{EFT Limits (Without Unitarization)}
     \begin{columns}[T]
         
-        \begin{column}{0.45\textwidth}
+        \begin{column}{0.5\textwidth}
             \textbf{\textcolor{blue!80!black}{1D Limits (95\% CL)}}
             
-            \smallskip
-            {\scriptsize 
-            \renewcommand{\arraystretch}{1.15} % Spazio tra le righe ridotto da 1.3 a 1.15
             \begin{table}
                 \begin{tabular}{lcc}
                 \hline
-                \textbf{Coupling} & \textbf{Obs. [TeV$^{-4}$]} & \textbf{Exp. [TeV$^{-4}$]} \\
+                \textbf{Coupling} & \textbf{Exp. [TeV$^{-4}$]} & \textbf{Obs. [TeV$^{-4}$]} \\
                 \hline
-                $f_{T0}/\Lambda^4$ & $[-0.57, 0.56]$ & $[-0.80, 0.80]$ \\
-                $f_{T1}/\Lambda^4$ & $[-0.39, 0.35]$ & $[-0.52, 0.49]$ \\
-                $f_{T2}/\Lambda^4$ & $[-1.2, 1.0]$ & $[-1.6, 1.4]$ \\
-                $f_{M0}/\Lambda^4$ & $[-5.8, 5.6]$ & $[-8.3, 8.3]$ \\
+                $f_{\mathrm{T}0}/{\Lambda}^4$ & $[-0.80, 0.80]$ & $[-0.57, 0.56]$ \\
+                $f_{\mathrm{T}1}/{\Lambda}^4$ & $[-0.52, 0.49]$ & $[-0.39, 0.35]$ \\
+                $f_{\mathrm{T}2}/{\Lambda}^4$ & $[-1.6, 1.4]$ & $[-1.2, 1.0]$ \\
+                $f_{\mathrm{M}0}/{\Lambda}^4$ & $[-8.3, 8.3]$ & $[-5.8, 5.6]$ \\
+                $f_{\mathrm{M}1}/{\Lambda}^4$ & $[-12.3, 12.2]$ & $[-8.6, 8.5]$ \\
+                $f_{\mathrm{M}7}/{\Lambda}^4$ & $[-16.2, 16.2]$ & $[-11.3, 11.3]$ \\
+                $f_{\mathrm{S}02}/{\Lambda}^4$ & $[-14.2, 14.2]$ & $[-10.4, 10.4]$ \\
+                $f_{\mathrm{S}1}/{\Lambda}^4$ & $[-42, 41]$ & $[-30, 30]$ \\    
                 \hline
                 \end{tabular}
             \end{table}
-            }
-            \smallskip
             
-            {\small
-            \begin{itemize}
-                \item Limits extracted setting one coefficient non-zero at a time.
-            \end{itemize}
-            }
+
         \end{column}
         
-        \begin{column}{0.55\textwidth}
+        \begin{column}{0.5\textwidth}
+            \textbf{\textcolor{blue!80!black}{2D Contour ($f_{T0}$ vs $f_{T1}$)}}
             \begin{center}
-                \textbf{\textcolor{blue!80!black}{2D Contour ($f_{T0}$ vs $f_{T1}$)}}
                 
-                \smallskip
                 % Aggiunto limite in altezza
-                \includegraphics[width=0.9\textwidth,height=0.6\textheight,keepaspectratio]{Immagini/fig_12.pdf}
+                \includegraphics[width=0.98\textwidth]{Immagini/fig_12.pdf}
             \end{center}
         \end{column}
         
@@ -613,9 +599,8 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
 \begin{frame}{Tree-Level Unitarity Violation and Clipping}
     \textbf{The Unitarity Bound}
     
-    {\small The EFT is not a UV-complete model. Non-zero dimension-8 operators violate tree-level unitarity at high energies.}
+    {\small The EFT is not a complete model. Non-zero dimension-8 operators violate tree-level unitarity at high energies.}
     
-    \smallskip
     \begin{columns}[T]
         \begin{column}{0.5\textwidth}
             \textbf{The "Clipping" Technique}
@@ -623,7 +608,6 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
             \begin{itemize}
                 \item EFT contributions are removed above a cut-off scale $E_c$ ($m_{WZ} > E_c$).
                 \item Replaced by SM predictions to restore unitarity.
-                \item Limits degrade (widen) as the cut-off $E_c$ becomes more stringent (lower values).
             \end{itemize}
             }
             
@@ -634,13 +618,14 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
                 \item $f_{T0}/\Lambda^4 \in [-1.5, 1.6]$ TeV$^{-4}$
                 \item $f_{T1}/\Lambda^4 \in [-0.7, 0.6]$ TeV$^{-4}$
             \end{itemize}
+            Evolution of 95\% CL limits vs cut-off scale $\,\,\,\,\,\,\,\Rightarrow$
             }
         \end{column}
         
         \begin{column}{0.5\textwidth}
             \begin{center}
                 % Limite verticale anche qui
-                \includegraphics[width=0.95\textwidth,height=0.55\textheight,keepaspectratio]{Immagini/fig_13a.pdf}
+                \includegraphics[width=0.83\textwidth]{Immagini/fig_13a.pdf}
                 
                 \smallskip
                 {\scriptsize Evolution of 95\% CL limits vs cut-off scale\par}
@@ -668,10 +653,18 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
     
     \begin{block}{Limits on New Physics (EFT) and Unitarity}
         \begin{itemize}
-            \item No high-energy kinematic excesses observed.
-            \item \textbf{95\% CL limits} set on 9 dimension-8 operators (via Profiled Likelihood Ratio).
-            \item Limits unitarized via theoretical \textbf{clipping} to prevent tree-level unitarity violation.
+            \item \textbf{95\% CL limits} set on 9 (8) dimension-8 operators without (with) consideration of tree-level unitarity violation.
+            \item These constraints are similar to those obtained bay the CMS Collaboration.
         \end{itemize}
     \end{block}
 
 \end{frame}
+
+
+
+
+
+
+
+
+
