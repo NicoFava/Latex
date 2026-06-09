@@ -581,20 +581,31 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
 \end{frame}
 
 \begin{frame}{\wzjj $\,$ differential measurements}
+
+    {\small Differential measurements of \wzjj$\,$ production cross-section are performed as a function of variables sensitive to anomalies in the quartic gauge coupling.}
     
-    Differential measurements of \wzjj$\,$ production cross-section are performed as a function of three variables sensitive to anomalies in the quartic gauge coupling in \wzjj$\,$ events:
+    \vspace{0.2cm}
     
-    \vspace{0.4cm}
-    
-    \begin{description}
-        \setlength{\itemsep}{0.4cm} % Gestisce la spaziatura di tutto l'elenco in automatico
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Kinematic Variables}
+                \small
+                \begin{description}
+                    \setlength{\itemsep}{0.3cm}
+                    \item[$\mathbf{\sum p_\text{T}^\ell}$] Scalar sum of the transverse momenta of the three charged leptons ($W, Z$).
+                    \item[$\mathbf{\Delta\phi(W,Z)}$] Difference in azimuthal angle between the $W$ and $Z$ bosons' directions.
+                    \item[$\mathbf{m_\text{T}^{WZ}}$] Transverse mass of the $W^\pm Z$ system.
+                \end{description}
+            \end{block}
+        \end{column}
         
-        \item[$\mathbf{\sum p_\text{T}^\ell}$] the scalar sum of the transverse momenta of the three charged leptons associated with $W$ and $Z$ bosons;
-        
-        \item[$\mathbf{\Delta\phi(W,Z)}$] the difference in azimuthal angle between the $W$ and $Z$ bosons' directions; % controllare come è definita
-        
-        \item[$\mathbf{m_\text{T}^{WZ}}$] the transverse mass of the $W^\pm Z$ system.
-    \end{description}
+        \begin{column}{0.5\textwidth}
+            \centering
+            \vspace{-0.3cm}
+            % Inserisci qui il plot della sezione d'urto differenziale (es. pt, delta_phi o mT)
+            \includegraphics[width=0.73\textwidth]{Immagini/fig_07a.pdf}
+        \end{column}
+    \end{columns}
     
 \end{frame}
 
@@ -602,43 +613,27 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
     \setcounter{subfigure}{0}
     \begin{figure}[t]
         \centering
+
         \subfloat[]{
-            \includegraphics[width=0.31\textwidth]{Immagini/fig_07a.pdf}
+            \includegraphics[width=0.38\textwidth]{Immagini/fig_07b.pdf}
         }
         \subfloat[]{
-            \includegraphics[width=0.31\textwidth]{Immagini/fig_07b.pdf}
-        }
-        \subfloat[]{
-            \includegraphics[width=0.31\textwidth]{Immagini/fig_07c.pdf}
+            \includegraphics[width=0.38\textwidth]{Immagini/fig_07c.pdf}
         }
     \end{figure}
     %Forse dicono perchè sono scalati di quei fattori le line tratteggiate e perchè di fianco alla simulazione c'è scritto scaled
 
     %magari posso dire che sono state fatte misure differenziali anche rispetto ad altre variabili cinematiche o comunque di altre quantità che ho omesso.
 \end{frame}
-\begin{frame}{Search for aQGC: Methodology}
-    {\small Anomalous Quartic Gauge Couplings (aQGC) modeled via EFT dimension-8 operators drastically enhance the cross-section at high energy scales ($\hat{s}$).}
-    
-    \smallskip
-    \textbf{The 2D Fit Strategy}
-    {\small
-    \begin{itemize}
-        \item \textbf{Observables:} The search exploits a 2D distribution combining the BDT score (to separate EWK from QCD) and the transverse mass $m_T^{WZ}$ (sensitive to $\hat{s}$).
-        \item \textbf{Binning:} 4 Bins in BDT score $\times$ 5 bins in $m_T^{WZ}$ $\rightarrow$ Unrolled into a 1D histogram of 20 statistically independent bins.
-        \item \textbf{Test Statistic:} Profiled Likelihood Ratio $q(\vec{c})$ to extract 95\% Confidence Level (CL) limits on the Wilson coefficients $f_j^{(8)}/\Lambda^4$.
-    \end{itemize}
-    }
-    
-\end{frame}
 
 \begin{frame}{Search for aQGC: Methodology}
 
-    {\small Anomalous Quartic Gauge Couplings (aQGC) modeled via \textbf{EFT dimension-8 operators} drastically enhance the cross-section at high energy scales ($\hat{s}$).}
+    {\small Anomalous Quartic Gauge Couplings modeled via \textbf{EFT dimension-8 operators} drastically enhance the cross-section at high energy scales ($\hat{s}$).}
     
     \vspace{0.2cm}
     
     \begin{columns}[T]
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.45\textwidth}
             \begin{block}{2D Fit Strategy}
                 \small
                 \begin{itemize}
@@ -651,8 +646,9 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
         
         \begin{column}{0.5\textwidth}
             \centering
+            \vspace{-0.55cm}
             % Decommenta e modifica il nome del file quando avrai l'immagine
-            \includegraphics[width=0.95\textwidth]{Immagini/fig_11.pdf}
+            \includegraphics[width=1\textwidth]{Immagini/fig_11.pdf}
         \end{column}
     \end{columns}
     
@@ -689,7 +685,7 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
             \begin{center}
                 
                 % Aggiunto limite in altezza
-                \includegraphics[width=0.98\textwidth]{Immagini/fig_12.pdf}
+                \includegraphics[width=0.93\textwidth]{Immagini/fig_12.pdf}
             \end{center}
         \end{column}
         
@@ -697,22 +693,19 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
 \end{frame}
 
 \begin{frame}{Tree-Level Unitarity Violation and Clipping}
-    \textbf{The Unitarity Bound}
-    
-    {\small The EFT is not a complete model. Non-zero dimension-8 operators violate tree-level unitarity at high energies.}
+    The EFT is not a complete model. Non-zero dimension-8 operators violate tree-level unitarity at high energies.
     
     \begin{columns}[T]
         \begin{column}{0.5\textwidth}
             \textbf{The "Clipping" Technique}
-            {\footnotesize % Ridotto da \small a \footnotesize per salvare spazio
+            {\small % Ridotto da \small a \footnotesize per salvare spazio
             \begin{itemize}
                 \item EFT contributions are removed above a cut-off scale $E_c$ ($m_{WZ} > E_c$).
                 \item Replaced by SM predictions to restore unitarity.
             \end{itemize}
             }
             
-            \medskip
-            {\scriptsize
+            {\small
             \textbf{Unitarized Limits (at crossing bound):}
             \begin{itemize}
                 \item $f_{T0}/\Lambda^4 \in [-1.5, 1.6]$ TeV$^{-4}$
@@ -724,11 +717,10 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
         
         \begin{column}{0.5\textwidth}
             \begin{center}
+                \vspace{-0.7cm}
                 % Limite verticale anche qui
-                \includegraphics[width=0.83\textwidth]{Immagini/fig_13a.pdf}
+                \includegraphics[width=0.98\textwidth]{Immagini/fig_13a.pdf}
                 
-                \smallskip
-                {\scriptsize Evolution of 95\% CL limits vs cut-off scale\par}
             \end{center}
         \end{column}
     \end{columns}
@@ -740,13 +732,13 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
     \begin{block}{From Discovery to Precision Measurement (Run 2, 140 fb$^{-1}$)}
         \begin{itemize}
             \item \textbf{Integrated cross-section:} $\sigma_{WZjj\text{-EW}} = 0.368 \pm 0.037 \text{ (stat)} \pm 0.059 \text{ (syst)} \text{ fb}$.
-            \item \textbf{Differential measurements} (via Bayesian Unfolding) on aQGC-sensitive variables: $m_{jj}, \Delta\phi, m_T^{WZ}, \sum p_T^\ell$.
+            \item \textbf{Differential measurements} (via Bayesian Unfolding) on aQGC-sensitive variables.
         \end{itemize}
     \end{block}
     
     \begin{block}{Standard Model Verification and Modelling Challenges}
         \begin{itemize}
-            \item \textbf{EWK Production:} Excellent Data/Theory agreement in the Signal Region.
+            \item \textbf{EW Production:} Excellent Data/Theory agreement in the Signal Region.
             \item \textbf{QCD Background:} Tension of $\mathbf{1.8\sigma}$ (Data $\sim 30\%$ lower than nominal \textsc{MadGraph}).
         \end{itemize}
     \end{block}
