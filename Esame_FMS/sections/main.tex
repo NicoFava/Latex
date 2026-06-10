@@ -242,7 +242,7 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
     \hline
     \textbf{Jets} & Clustered via \textit{anti-$k_t$} algorithm ($R=0.4$) \newline
     $p_T > 25\,\mathrm{GeV}$, $|\eta| < 4.5$ \newline
-    Pile-up suppression:\textit{tight} ($p_T < 60\,\mathrm{GeV}, |\eta| < 2.4$) and \newline \textit{loose} ($p_T < 120\,\mathrm{GeV}, 2.5 < |\eta| < 4.5$) \\
+    Pile-up suppression (JVT):\textit{tight} ($p_T < 60\,\mathrm{GeV}, |\eta| < 2.4$) and \newline \textit{loose} ($p_T < 120\,\mathrm{GeV}, 2.5 < |\eta| < 4.5$) \\
     \hline
     \textbf{Missing Energy ($E_{\mathrm{T}}^{\mathrm{miss}}$)} & Proxy for the undetected neutrino. \newline Computed as the negative vector sum of all calibrated \textit{hard} objects (leptons, jets) plus a track-based \textit{soft} term. \\
     \hline
@@ -275,28 +275,6 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
     \end{table}
 \end{frame}
 
-\begin{frame}{Signal Region (SR): VBS Topology}
-    \framesubtitle{4 Event selection \& Background estimation}
-    \begin{table}[htbp]
-    \centering
-    \small
-    \renewcommand{\arraystretch}{1.3}
-    \begin{tabular}{p{3cm} p{7.5cm}}
-    \hline
-    \textbf{Category} & \textbf{Selection Criteria} \\
-    \hline
-    \textbf{Tagging Jets} & The two highest-$p_T$ jets in the event ($p_T > 40\,\mathrm{GeV}$) \newline
-    Must reside in opposite hemispheres ($\eta_{j1} \cdot \eta_{j2} < 0$) \\
-    \hline
-    \textbf{Kinematic Cuts} & $m_{jj} > 150\,\mathrm{GeV}$ (rejects triboson background) \newline
-    \textbf{$m_{jj} > 500\,\mathrm{GeV}$} (isolates the EWK VBS process from QCD) \\
-    \hline
-    \textbf{Background Veto} & \textbf{Exact b-veto} ($N_{b\text{-jet}} = 0$) \newline (strongly suppresses top-quark background) \\
-    \hline
-    \end{tabular}
-    \end{table}
-\end{frame}
-
 %\begin{frame}{Background Estimation Strategy}
     %\textbf{Two Main Categories:}
     %\begin{itemize}
@@ -316,10 +294,8 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
 \begin{frame}{Irreducible Backgrounds}
     
     % Scritta normale dopo il titolo
-    Irreducible backgrounds feature true prompt leptons mimicking the signal topology. 
-    While rare processes like \textbf{Tribosons ($VVV$)} and \textbf{$ZZjj$-EW} are estimated via \textbf{Pure Monte Carlo} due to their low yields, the dominant sources are constrained using dedicated \textbf{Control Regions}:
-    
-    \vspace{0.4cm}
+    Irreducible backgrounds feature true prompt leptons mimicking the signal topology.     
+    \vspace{0.1cm}
     
     % Due box affiancati per le Control Regions
     \begin{columns}[T]
@@ -337,7 +313,7 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
         
         % Secondo Box: b-CR
         \begin{column}{0.48\textwidth}
-            \begin{block}{b-tag Control Region (b-CR)}
+            \begin{block}{b Control Region (b-CR)}
                 \begin{itemize}
                     \item \textbf{Background:} Top-quark ($t\bar{t}+V, tZj$).
                     \item \textbf{Origin:} Survives via b-tagging inefficiency.
@@ -347,6 +323,9 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
         \end{column}
         
     \end{columns}
+    \vspace{0.4cm}
+    While rare processes like \textbf{Tribosons ($VVV$)} and \textbf{$ZZjj$-EW} are estimated via \textbf{pure Monte Carlo} due to their low yields, the dominant sources are constrained using dedicated \textbf{Control Regions}:
+
 
 \end{frame}
 
@@ -742,14 +721,17 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
             \item \textbf{QCD Background:} Tension of $\mathbf{1.8\sigma}$ (Data $\sim 30\%$ lower than nominal \textsc{MadGraph}).
         \end{itemize}
     \end{block}
-    
+
+    {
+    \setbeamercolor{block title}{fg=white, bg=red!70!black} % Titolo: testo bianco, sfondo rosso scuro
+    \setbeamercolor{block body}{bg=red!5}
     \begin{block}{Limits on New Physics (EFT) and Unitarity}
         \begin{itemize}
             \item \textbf{95\% CL limits} set on 9 (8) dimension-8 operators without (with) consideration of tree-level unitarity violation.
             \item These constraints are similar to those obtained bay the CMS Collaboration.
         \end{itemize}
     \end{block}
-
+    }
 \end{frame}
 
 
