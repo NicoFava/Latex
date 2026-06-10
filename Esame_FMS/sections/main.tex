@@ -41,14 +41,14 @@
 \begin{frame}{Gauge Boson Self-Interactions}
     \begin{itemize}
         \item The Electroweak (EW) sector of the Standard Model is based on the \textbf{non-abelian} gauge symmetry $SU(2)_L \times U(1)_Y$.
-        \item Unlike QED, the generators of $SU(2)_L$ do not commute. As a consequence, the physical vector bosons ($W^\pm, Z, \gamma$) self-interact.
+        \item Unlike QED, the generators of $SU(2)_L$ do not commute. As a consequence, the physical vector bosons ($W^\pm, Z, \gamma$) \textbf{self-interact}.
         \item This structure directly dictates the existence of \textbf{Triple} (TGC) and \textbf{Quartic} (QGC) Gauge Couplings:
     \end{itemize}
     
     \begin{equation*}
         \mathcal{L}_{\text{TGC}} = \frac{1}{2}g \epsilon_{abc} W_b^\mu W_c^\nu (\partial_\mu W_{a\nu} - \partial_\nu W_{a\mu}) \qquad  \mathcal{L}_{\text{QGC}}= \frac{1}{4}g^2 \epsilon_{abc} \epsilon_{ars} W_b^\mu W_c^\nu W_{r\mu} W_{s\nu} 
     \end{equation*}
- Probe these vertices to test the SM rigidity and search for anomalous couplings (aQGC) arising from New Physics.
+ Probe these vertices to test the SM rigidity and search for anomalous couplings (aQGC) arising from \textbf{New Physics}.
 \end{frame}
 
 \begin{frame}{Experimental Signature: Vector Boson Scattering}
@@ -81,7 +81,7 @@
     \end{center}
 \end{frame}
 \begin{frame}{A little look at the Effective Field Theory (EFT)}
-    The $W^\pm Zjj$-EW production can be sensitive to effects beyond the SM affecting the quartic interactions of weak bosons. The measured $W^\pm Zjj$ events are therefore used to search for anomalous quartic gauge couplings (aQGC) using an EFT framework. In this model, the Lagrangian of the standard model is extended into an efficient Lagrangian by adding higher-order operators and their respective Wilson coefficients as follows:
+    The $W^\pm Zjj$-EW production can be sensitive to effects beyond the SM affecting the quartic interactions of weak bosons. The measured $W^\pm Zjj$ events are therefore used to search for anomalous quartic gauge couplings (aQGC) using an \textbf{EFT framework}. In this model, the Lagrangian of the standard model is extended into an efficient Lagrangian by adding higher-order operators and their respective \textbf{Wilson coefficients} as follows:
     \begin{equation*}
         \mathcal{L}_{\mathrm{eff}} = \mathcal{L}_{\mathrm{SM}} + \sum_{i} \frac{f_{i}^{(6)}}{\Lambda^{2}} O_{i}^{(6)} + \sum_{j} \frac{f_{j}^{(8)}}{\Lambda^{4}} O_{j}^{(8)} + \dots 
     \end{equation*}
@@ -107,7 +107,7 @@
 \section{Fiducial Phase Space and MC Simulations}
 
 \begin{frame}{Fiducial Phase Space for Leptons}
-    The $W^\pm Zjj$ cross-sections are measured in a fiducial phase space. Leptons produced in the decay of a hadron, a $\tau$-lepton, or their descendants are not considered in the definition of the fiducial phase space and are treated as background.
+    The $W^\pm Zjj$ cross-sections are measured in a \textbf{fiducial phase space}. Leptons produced in the decay of a hadron, a $\tau$-lepton, or their descendants are not considered in the definition of the fiducial phase space and are treated as background.
     
     \vspace{0.4cm} % Aggiunge un po' di respiro tra testo e tabella
     
@@ -131,7 +131,7 @@
 \end{frame}
 
 \begin{frame}{Fiducial Phase Space for Jets}
-    In addition, at least two jets are required, reconstructed using the anti-$k_t$ algorithm with radius parameter $R=0.4$. Hard processes with a $b$-quark in the initial or final states, such as $tZj$ production, are not considered as part of the $W^\pm Zjj$-EW events.
+    In addition, at least \textbf{two jets are required}, reconstructed using the anti-$k_t$ algorithm with radius parameter $R=0.4$. Hard processes with a $b$-quark in the initial or final states, such as $tZj$ production, are not considered as part of the $W^\pm Zjj$-EW events.
     
     \vspace{0.4cm} % Aggiunge un po' di respiro tra testo e tabella
     
@@ -184,7 +184,7 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
     \item \textbf{Backgrounds with \textit{prompt} (real) leptons:} Processes such as the production of $ZZ$ pairs, $WW$, tribosons ($VVV$), or top quarks associated with vector bosons ($t\bar{t}V$, $tZj$). Their contribution is evaluated entirely using Monte Carlo simulations.
     \item \textbf{Backgrounds with \textit{fake} leptons:} Events where a hadronic jet is misidentified as a lepton by the detector. Estimated directly using data-driven techniques.
 \end{itemize}
-    All generated MC events were passed throught the ATLAS detector simulation, based om \texttt{Geant4}, and processed using the same recostruction software used for the data..
+    All generated MC events were passed throught the ATLAS detector simulation, based om \texttt{Geant4}, and processed using the same recostruction software used for the data.
 
 \end{frame}
     
@@ -198,7 +198,7 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
     \vspace{0.3cm}
     \textbf{Physics Objects Reconstruction:}
     \begin{itemize}
-        \item \textbf{Prompt Leptons} $e, \mu, \nu$ $(E_T^{miss})$: Reconstructed combining ID tracks with ECAL clusters or MS tracks. Strict isolation and impact parameter criteria are applied to reject non-prompt background.
+        \item \textbf{Prompt Leptons} $e, \mu, \nu$ $(E_T^{miss})$: Reconstructed combining ID tracks with ECAL clusters or MS tracks. Strict isolation and impact parameter criteria are applied to reject non-prompt leptons.
         \item \textbf{Hadronic Jets:} Clustered using the \textit{anti-$k_t$} algorithm ($R=0.4$). 
         \item \textbf{b-tagging:} Deep-learning algorithms identify displaced vertices from b-hadron decays (crucial for top-quark veto).
     \end{itemize}
@@ -341,7 +341,7 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
                 \vspace{0.1cm}
                 \begin{itemize}
                     \item \textbf{$Z+\text{jets}$:} A hadronic jet (e.g., charged pion) is misidentified as a lepton. $E_T^{miss}$ is faked by finite Jet Energy Resolution.
-                    \item \textbf{$Z\gamma$:} A true photon mimics an electron, typically via asymmetric $\gamma \rightarrow e^+e^-$ conversions in the tracker material.
+                    \item \textbf{$Z\gamma$:} A true photon mimics an electron.
                 \end{itemize}
             \end{block}
         \end{column}
@@ -499,10 +499,10 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
             % Riquadro Rosso per EWK
             \begin{tcolorbox}[colframe=red!70!black, colback=red!5, boxrule=1pt, arc=4pt, 
                               left=2pt, right=2pt, top=4pt, bottom=4pt, % Riduco i margini interni
-                              title=\textbf{VBS (EWK Production)}]
+                              title=\textbf{VBS (EW Production)}]
                 \centering \small % Centro il testo e lo rimpicciolisco leggermente
-                $\sigma_{\text{obs}}^{\text{EWK}} = 0.368 \pm 0.037_{\text{stat}} \pm 0.059_{\text{syst}}\,\unit{fb}$ \\[0.15cm]
-                $\sigma_{\text{th}}^{\text{EWK}} = 0.370 \pm 0.030\,\unit{fb}$ \\[0.15cm]
+                $\sigma_{\text{obs}}^{\text{EW}} = 0.368 \pm 0.037_{\text{stat}} \pm 0.059_{\text{syst}}\,\unit{fb}$ \\[0.15cm]
+                $\sigma_{\text{th}}^{\text{EW}} = 0.370 \pm 0.030\,\unit{fb}$ \\[0.15cm]
                 \textcolor{green!70!black}{$\Rightarrow$ Excellent SM agreement}
             \end{tcolorbox}
             
@@ -708,7 +708,7 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
 
 \begin{frame}{Conclusions: VBS as a Precision Probe for the EWK Sector}
     
-    \begin{block}{From Discovery to Precision Measurement (Run 2, 140 fb$^{-1}$)}
+    \begin{block}{From Discovery to Precision Measurement (2015-2018, 140 fb$^{-1}$)}
         \begin{itemize}
             \item \textbf{Integrated cross-section:} $\sigma_{WZjj\text{-EW}} = 0.368 \pm 0.037 \text{ (stat)} \pm 0.059 \text{ (syst)} \text{ fb}$.
             \item \textbf{Differential measurements} (via Bayesian Unfolding) on aQGC-sensitive variables.
