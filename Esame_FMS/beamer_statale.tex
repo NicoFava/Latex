@@ -55,4 +55,46 @@
 % ==================///==================///==================///
 
 \backmatter
+\appendix
+\begin{frame}[noframenumbering]
+    \begin{center}
+        \Huge \textbf{BACKUP}
+    \end{center}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Monte Carlo Simulation of the Signal}
+The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{MadGraph5\_aMC@NLO2.6.5} MC event generator, interfaced with \texttt{Pythia8.240}. The simulation was divided into distinct components:
+\begin{itemize}
+    \item \textbf{Electroweak production \wzjjew}: The actual signal. It is calculated at leading order (LO), considering purely electroweak processes (order $\alpha_\text{EW}^6$).
+    \item \textbf{QCD production \wzjjqcd}: Considered a background for the VBS analysis. This component is calculated at next-to-leading order (NLO) in QCD.
+    \item \textbf{Interference \wzjj-INT}: Quantifies the quantum interference between the EW and QCD production. It is calculated at LO and yields a positive contribution of 6\% in the fiducial region, reaching up to 12\% for events with three or more jets.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Background and Detector Simulation}
+    In addition to the \wzjjqcd  \,production, there are other processes that can mimic the signal in the detector.
+    \begin{itemize}
+    \item \textbf{Backgrounds with \textit{prompt} (real) leptons:} Processes such as the production of $ZZ$ pairs, $WW$, tribosons ($VVV$), or top quarks associated with vector bosons ($t\bar{t}V$, $tZj$). Their contribution is evaluated entirely using Monte Carlo simulations.
+    \item \textbf{Backgrounds with \textit{fake} leptons:} Events where a hadronic jet is misidentified as a lepton by the detector. Estimated directly using data-driven techniques.
+\end{itemize}
+    All generated MC events were passed throught the ATLAS detector simulation, based om \texttt{Geant4}, and processed using the same recostruction software used for the data.
+
+\end{frame}
+
+\begin{frame}[noframenumbering]{The Global Likelihood Fit}
+    \textbf{Simultaneous Extended Binned Negative Log-Likelihood:}
+    \vspace{-0.2cm}
+    \begin{equation*}
+        -\ln\mathcal{L}(\boldsymbol{\mu}, \boldsymbol{K}, \boldsymbol{\nu}) = \sum_{r} \sum_{i} \left( \mu_{\text{exp}}^{[r,i]} - N^{[r,i]} \ln \mu_{\text{exp}}^{[r,i]} \right) + \sum_{j} \frac{\nu_j^2}{2}
+    \end{equation*}
+        
+    \begin{itemize}
+        \item \textbf{Regions ($r$):} SR ($N_{\text{jets}}=2$), SR ($N_{\text{jets}}\ge 3$), $b$-CR, ZZ-CR.
+        \item \textbf{Observables ($N^{[r,i]}$):} bins BDT score in SRs and in b-CR and $m_{jj}$ in ZZ-CR.
+        \item \textbf{Parameters of Interest ($\boldsymbol{\mu}$):} Strength modifiers $\mu_{\text{EW}}$ and $\mu_{\text{QCD}}$.
+        \item \textbf{Unconstrained Parameters ($\boldsymbol{K}$):} Background normalizations ($K_{t\bar{t}V}, K_{tZj}, K_{ZZ}$) extracted dynamically from CRs.
+        \item \textbf{Nuisance Parameters ($\boldsymbol{\nu}$):} Theoretical/experimental systematics, constrained by the Gaussian penalty term $\nu_j^2/2$.
+    \end{itemize}
+\end{frame}
+
 \end{document}

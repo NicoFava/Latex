@@ -158,7 +158,7 @@
 
 \begin{frame}{How to eliminate leptons ambiguity?}
     \begin{itemize}
-        \item Leptons and final-state neutronos that do not originate from hadron or $\tau$-lepton decays, are matched to the $W^\pm$ and $Z$ boson decay products using an algorithmic approach, called the \textbf{resonant shape algorithm}. 
+        \item Leptons and final-state neutrinos that do not originate from hadron or $\tau$-lepton decays, are matched to the $W^\pm$ and $Z$ boson decay products using an algorithmic approach, called the \textbf{resonant shape algorithm}. 
         \item This algorithm is based on the value of an estimator expressing the product of the nominal line-shapes of the $W$ and $Z$ resonances:
     \end{itemize}
    
@@ -169,23 +169,41 @@
 \end{equation*}
 \end{frame}
 
-\begin{frame}{Monte Carlo Simulation of the Signal}
-The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{MadGraph5\_aMC@NLO2.6.5} MC event generator, interfaced with \texttt{Pythia8.240}. The simulation was divided into distinct components:
-\begin{itemize}
-    \item \textbf{Electroweak production \wzjjew}: The actual signal. It is calculated at leading order (LO), considering purely electroweak processes (order $\alpha_\text{EW}^6$).
-    \item \textbf{QCD production \wzjjqcd}: Considered a background for the VBS analysis. This component is calculated at next-to-leading order (NLO) in QCD.
-    \item \textbf{Interference \wzjj-INT}: Quantifies the quantum interference between the EW and QCD production. It is calculated at LO and yields a positive contribution of 6\% in the fiducial region, reaching up to 12\% for events with three or more jets.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Background adn Detector Simulation}
-    In addition to the \wzjjqcd  \,production, there are other processes that can mimic the signal in the detector.
-    \begin{itemize}
-    \item \textbf{Backgrounds with \textit{prompt} (real) leptons:} Processes such as the production of $ZZ$ pairs, $WW$, tribosons ($VVV$), or top quarks associated with vector bosons ($t\bar{t}V$, $tZj$). Their contribution is evaluated entirely using Monte Carlo simulations.
-    \item \textbf{Backgrounds with \textit{fake} leptons:} Events where a hadronic jet is misidentified as a lepton by the detector. Estimated directly using data-driven techniques.
-\end{itemize}
-    All generated MC events were passed throught the ATLAS detector simulation, based om \texttt{Geant4}, and processed using the same recostruction software used for the data.
-
+\begin{frame}{Simulation and Background Overview}
+    \begin{columns}[T] % L'opzione [T] allinea i blocchi in alto
+        
+        % Colonna di SINISTRA: Segnale e Componenti WZjj
+        \begin{column}{0.48\textwidth}
+            \begin{block}{Signal \& $W^\pm Zjj$ Components}
+                \small
+                Generated with \texttt{MG5\_aMC@NLO} + \texttt{Pythia8}:
+                \begin{itemize}
+                    \item \textbf{EW (\wzjjew):} Signal, purely electroweak (LO, $\mathcal{O}(\alpha_\text{EW}^6)$).
+                    \item \textbf{QCD (\wzjjqcd):} VBS background (NLO in QCD).
+                    \item \textbf{Interference:} EW-QCD quantum int. (LO), $+6\div12\%$ contribution in SR.
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        % Colonna di DESTRA: Altri Fondi e Simulazione Rivelatore
+        \begin{column}{0.48\textwidth}
+            \begin{block}{Other Backgrounds}
+                \small
+                \begin{itemize}
+                    \item \textbf{Prompt Leptons:} $ZZ$, $WW$, $VVV$, $t\bar{t}V$, $tZj$. Estimated via MC simulations.
+                    \item \textbf{Fake Leptons:} Misidentified jets. Estimated via data-driven techniques.
+                \end{itemize}
+            \end{block}
+            
+            \vspace{0.2cm} % Leggero spazio tra i due blocchi
+            
+            \begin{block}{Detector Simulation}
+                \small
+                All MC samples processed through \texttt{Geant4} ATLAS detector simulation and standard reconstruction software.
+            \end{block}
+        \end{column}
+        
+    \end{columns}
 \end{frame}
     
 \section{Event selection \& Background estimation}
@@ -431,42 +449,46 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
     
 \end{frame}
 
-\begin{frame}{The Global Likelihood Fit}
-    \textbf{Simultaneous Extended Binned Negative Log-Likelihood:}
-    \vspace{-0.2cm}
-    \begin{equation*}
-        -\ln\mathcal{L}(\boldsymbol{\mu}, \boldsymbol{K}, \boldsymbol{\nu}) = \sum_{r} \sum_{i} \left( \mu_{\text{exp}}^{[r,i]} - N^{[r,i]} \ln \mu_{\text{exp}}^{[r,i]} \right) + \sum_{j} \frac{\nu_j^2}{2}
-    \end{equation*}
+\begin{frame}{The Global Likelihood Fit \& Post-fit distributions SR ($N_{jets}=2$)}
+    \begin{columns}[c] % L'opzione [c] allinea verticalmente al centro le due colonne
+        \vspace{-2cm}
+        % Colonna di sinistra: Lista degli oggetti nel box
+        \begin{column}{0.55\textwidth}
+            \begin{block}{Fit Components}
+                \begin{itemize}
+                    \item \textbf{Regions ($r$):} SR ($N_{\text{jets}}=2$), SR ($N_{\text{jets}}\ge 3$), $b$-CR, ZZ-CR.
+                    \item \textbf{Parameters of Interest ($\boldsymbol{\mu}$):} Strength modifiers $\mu_{\text{EW}}$ and $\mu_{\text{QCD}}$.
+                    \item \textbf{Unconstrained Parameters ($\boldsymbol{K}$):} Background normalizations ($K_{t\bar{t}V}, K_{tZj}, K_{ZZ}$) extracted dynamically from CRs.
+                    \item \textbf{Nuisance Parameters ($\boldsymbol{\nu}$):} Theoretical/experimental systematics, constrained by a Gaussian penalty term.
+                \end{itemize}
+            \end{block}
+        \end{column}
         
-    \begin{itemize}
-        \item \textbf{Regions ($r$):} SR ($N_{\text{jets}}=2$), SR ($N_{\text{jets}}\ge 3$), $b$-CR, ZZ-CR.
-        \item \textbf{Observables ($N^{[r,i]}$):} bins BDT score in SRs and in b-CR and $m_{jj}$ in ZZ-CR.
-        \item \textbf{Parameters of Interest ($\boldsymbol{\mu}$):} Strength modifiers $\mu_{\text{EW}}$ and $\mu_{\text{QCD}}$.
-        \item \textbf{Unconstrained Parameters ($\boldsymbol{K}$):} Background normalizations ($K_{t\bar{t}V}, K_{tZj}, K_{ZZ}$) extracted dynamically from CRs.
-        \item \textbf{Nuisance Parameters ($\boldsymbol{\nu}$):} Theoretical/experimental systematics, constrained by the Gaussian penalty term $\nu_j^2/2$.
-    \end{itemize}
+        % Colonna di destra: Figura A
+        \begin{column}{0.45\textwidth}
+            \vspace{-1.2cm}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{Immagini/fig_03a.pdf}
+                % Se ti serve una didascalia sotto l'immagine, rimuovi il % qui sotto:
+                % \caption*{Post-fit SR ($N_{\text{jets}}=2$)} 
+            \end{figure}
+        \end{column}
+        
+    \end{columns}
 \end{frame}
 
-\begin{frame}{Post-fit distributions SR ($N_{jets}=2$), SR ($N_{jets}\ge 3$) }
+\begin{frame}{Post-fit distributions SR ($N_{jets}\ge 3$), ZZ-CR and b-CR }
     \begin{figure}[t]
         \centering
         \subfloat[]{
-            \includegraphics[width=0.39\textwidth]{Immagini/fig_03a.pdf}
+            \includegraphics[width=0.33\textwidth]{Immagini/fig_03b.pdf}
         }
         \subfloat[]{
-            \includegraphics[width=0.39\textwidth]{Immagini/fig_03b.pdf}
-        }
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Post-fit distributions ZZ-CR, b-CR }
-    \begin{figure}[t]
-        \centering
-        \subfloat[]{
-            \includegraphics[width=0.39\textwidth]{Immagini/fig_03c.pdf}
+            \includegraphics[width=0.33\textwidth]{Immagini/fig_03c.pdf}
         }
         \subfloat[]{
-            \includegraphics[width=0.39\textwidth]{Immagini/fig_03d.pdf}
+            \includegraphics[width=0.33\textwidth]{Immagini/fig_03d.pdf}
         }
     \end{figure}
 \end{frame}
