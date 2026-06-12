@@ -56,6 +56,7 @@
 
 \backmatter
 \appendix
+\section*{BACKUP}
 \begin{frame}[noframenumbering]
     \begin{center}
         \Huge \textbf{BACKUP}
@@ -138,4 +139,49 @@ The simulation of $W^\pm Zjj$ events was primarily generated using the \texttt{M
     \end{itemize}
 \end{frame}
 
+\begin{frame}[noframenumbering]{Uncertainties Breakdown in $W^\pm Zjj$ Fit}
+    \vspace{-2mm}
+    
+    \begin{columns}[T]
+        % --- Colonna Sinistra ---
+        \begin{column}{0.48\textwidth}
+            
+            \begin{block}{1. Statistical}
+                \begin{itemize}
+                    \item \textbf{Impact:} EW $10\%$ $|$ QCD $6\%$
+                    \item \textbf{Origin:} Poisson stat. ($1/\sqrt{N}$)
+                    \item \textbf{Note:} EW signal ($\mathcal{O}(\alpha_{EW}^6)$) has low cross-section $\rightarrow$ stat-limited.
+                \end{itemize}
+            \end{block}
+                        
+            \begin{block}{3. Experimental}
+                \begin{itemize}
+                    \item \textbf{JES / JER} (\textit{$\sim 2.3\%$ EW, $5\%$ QCD}): Fwd jets calibration induces BDT \textit{shape} variations.
+                    \item \textbf{Fake Leptons} (\textit{$2.3\%$ EW}): Estimated via data-driven \textbf{Matrix Method}.
+                \end{itemize}
+            \end{block}
+            
+        \end{column}
+        
+        % --- Colonna Destra ---
+        \begin{column}{0.48\textwidth}
+            
+            \begin{block}{2. Luminosity}
+                \begin{itemize}
+                    \item \textbf{Impact:} EW $0.7\%$ $|$ QCD $0.9\%$
+                    \item \textbf{Origin:} \textit{vdM scans}.
+                    \item \textbf{Note:} Global normalization constraint for MC backgrounds.
+                \end{itemize}
+            \end{block}
+                        
+            \begin{block}{4. Theoretical (Modelling)}
+                \begin{itemize}
+                    \item \textbf{QCD Scales} ($\mu_R, \mu_F$): Alters EW BDT shape up to $20\%$.
+                    \item \textbf{Generators \& PS}: MadGraph vs Sherpa shows up to $30\%$ deviation in high BDT tails.
+                \end{itemize}
+            \end{block}
+            
+        \end{column}
+    \end{columns}
+\end{frame}
 \end{document}
