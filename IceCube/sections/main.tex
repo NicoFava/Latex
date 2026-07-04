@@ -1,0 +1,57 @@
+\section{Introduction}
+% --- FRAME 1: ICECUBE OVERVIEW ---
+\begin{frame}{The IceCube Neutrino Observatory}
+    \begin{columns}[T] % 'T' allinea il contenuto in alto, guadagnando spazio
+        \begin{column}{0.5\textwidth}
+            \small % Riduce leggermente la dimensione del testo
+            \textbf{A Gigaton Cherenkov Detector}
+            \vspace{0.2cm}
+            \begin{itemize}
+                \setlength{\itemsep}{3pt} % Riduce lo spazio tra gli elementi
+                \item \textbf{Location:} South Pole, Antarctica
+                \item \textbf{Volume:} $\sim 1\text{ km}^3$ of glacial ice
+                \item \textbf{Depth:} 1450\,m -- 2450\,m
+                \item \textbf{Layout:} 86 strings, 5160 DOMs
+                \item \textbf{Sub-detectors:} 
+                \begin{itemize}
+                    \item \textit{IceTop:} Surface array
+                    \item \textit{DeepCore:} Denser inner core
+                \end{itemize}
+            \end{itemize}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \centering
+            % keepaspectratio impedisce che l'immagine si deformi, limitandone l'altezza massima
+            \includegraphics[width=\textwidth]{Immagini/ArrayWSeasonsLabels_crop.pdf}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% --- FRAME 2: DOM CHARACTERISTICS ---
+\begin{frame}{The Digital Optical Module (DOM)}
+    \begin{columns}[T]
+        \begin{column}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\textwidth, height=0.65\textheight, keepaspectratio]{Immagini/domfig1a-DOM3DModel.png}
+        \end{column}
+        
+        \begin{column}{0.55\textwidth}
+            \small
+            \textbf{The Fundamental Detection Unit}
+            \vspace{0.2cm}
+            \begin{itemize}
+                \setlength{\itemsep}{3pt}
+                \item \textbf{Function:} Detects \& digitizes Cherenkov light
+                \item \textbf{Key Components:}
+                \begin{itemize}
+                    \item \textbf{PMT:} 10'' photomultiplier
+                    \item \textbf{Shield:} Mu-metal grid
+                    \item \textbf{Mainboard:} Autonomous digitization \& timestamping
+                    \item \textbf{Vessel:} Pressure glass sphere
+                \end{itemize}
+                \item \textbf{Data:} Sends digital signals to surface
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
