@@ -286,23 +286,23 @@
 }
 
 % Define sectioning and table of contents
-\AtBeginSection[]
-{
-    \begingroup
-    \themecolor{main}
-    \begin{frame}{Table of Contents}
-        \tableofcontents[currentsection]
-    \end{frame}
-    \endgroup
-}
+%\AtBeginSection[]
+%{
+   % \begingroup
+    %\themecolor{main}
+    %\begin{frame}{Table of Contents}
+     %   \tableofcontents[currentsection]
+   % \end{frame}
+   % \endgroup
+%}
 
 % style of section presented in the table of contents
-\setbeamertemplate{section in toc}{$\blacktriangleright$~\inserttocsection}
+%\setbeamertemplate{section in toc}{$\blacktriangleright$~\inserttocsection}
 
 % automate subtitle of each frame
-\makeatletter
-    \pretocmd\beamer@checkframetitle{\framesubtitle{\thesection \, \secname}}
-\makeatother
+%\makeatletter
+   % \pretocmd\beamer@checkframetitle{\framesubtitle{\thesection \, \secname}}
+%\makeatother
 
 % avoid numbering of frames that are breaked into multiply slides
 \setbeamertemplate{frametitle continuation}{}
