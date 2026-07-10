@@ -8,12 +8,21 @@
 
 \documentclass{beamer}
 \usepackage{amsfonts,amsmath,oldgerm}
+% Attiva i bordi arrotondati e l'ombra per i blocchi
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\usepackage{booktabs}
+% Imposta i colori (modifica "blue" con il colore del tuo tema)
+\setbeamercolor{block title}{bg=blue!70!black, fg=white}
+\setbeamercolor{block body}{bg=blue!10, fg=black}
+\definecolor{blustatale}{RGB}{7,27,80} % Blu ufficiale Unimi
+\usepackage{tcolorbox}
 \usetheme{_statale}
 \usefonttheme[onlymath]{serif}
 \usepackage{tikz}
 \newcommand{\testcolor}[1]{\colorbox{#1}{\textcolor{#1}{test}}~\texttt{#1}}
 \newcommand{\hrefcol}[2]{\textcolor{cyan}{\href{#1}{#2}}}
 \titlebackground*{assets/background}
+\date{July 21, 2026}
 
 % ==================///==================///==================///
 % ==================/// SPLASH PAGE

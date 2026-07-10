@@ -27,7 +27,7 @@
 \begin{frame}{Dataset Selection \& Spatial Cuts}
     
     % Testo discorsivo conciso in alto
-    The \textbf{Tracks dataset} provides the excellent angular resolution ($\lesssim 1^\circ$) required for point-source astronomy. 
+    The \textbf{Tracks dataset} provides the excellent angular resolution ($\sim 1^\circ-2^\circ$) required for point-source astronomy. 
     
     The analysis is strictly confined to a narrow \textbf{declination band} ($\delta \in [-3^\circ, +5^\circ]$).
     
@@ -40,7 +40,7 @@
     
 \end{frame}
 
-\begin{frame}{Physical Motivation: The Declination Band}
+\begin{frame}{Data-Driven Background Estimation via RA Scrambling}
     \begin{columns}[c]
         
         % Colonna Immagine
@@ -53,19 +53,18 @@
         
         % Colonna Testo
         \begin{column}{0.48\textwidth}
-            \textbf{1. Declination Band}
+            \textbf{Declination Band}
             \begin{itemize}
-                \item \textbf{Target:} NGC 1068 ($\delta \approx -0.06^\circ$)
-                \item \textbf{Window:} $\delta \in [-3^\circ, +5^\circ]$
-                \item[$\rightarrow$] Uniform detector acceptance
+                \item NGC 1068 ($\delta \approx -0.01^\circ$)
+                \item $\delta \in [-3^\circ, +5^\circ]$
+                \item[$\rightarrow$] Approximation: Uniform detector acceptance within the band.
             \end{itemize}
             
             \vspace{0.5cm}
             
-            \textbf{2. Background Estimation}
+            \textbf{Background Estimation}
             \begin{itemize}
-                \item \textbf{Method:} RA Scrambling
-                \item \textbf{Action:} Fix $\delta$, randomize RA
+                \item Fix $\delta$, randomize RA
                 \item[$\rightarrow$] Data-driven background (incorporates exposure)
             \end{itemize}
         \end{column}
@@ -74,31 +73,37 @@
 \end{frame}
 
 \begin{frame}{First naive signal search for NGC 1068}
-    \begin{columns}[c] % Allineamento verticale al centro
+    \begin{columns}[c] % Vertical alignment at the center
         
-        % Colonna di sinistra: Immagine
-        \begin{column}{0.58\textwidth}
+        % Left Column: Image
+        \begin{column}{0.6\textwidth}
+            \vspace{-0.6cm}
             \centering
             \includegraphics[width=\textwidth]{Immagini/02b_binned_scrambling_counting.png}
         \end{column}
         
-        % Colonna di destra: Box dei risultati
-        \begin{column}{0.42\textwidth}
+        % Right Column: Polished Results Table
+        \begin{column}{0.43\textwidth}
             
-            % Puoi usare "alertblock" al posto di "block" se vuoi farlo risaltare di più
-            \begin{block}{Counting Analysis Results}
-                \small % Rimpicciolisce leggermente il testo per non farlo sbordare
-                \begin{itemize}
-                    \setlength{\itemsep}{0.3em} % Dà un po' di respiro tra le righe
-                    \item \textbf{Simulated Skies:} $10^4$
-                    \item \textbf{Observed Events:} $936$
-                    \item \textbf{Expected Bkg:} $856.7 \pm 29.1$
-                    \item \textbf{Excess Events:} $79.3$
-                    \item \textbf{p-value:} $3.3 \times 10^{-3}$
-                    \item \textbf{Significance:} $2.72\sigma$
-                \end{itemize}
-            \end{block}
             
+            \begin{tcolorbox}[colback=maincolor!5!white, colframe=maincolor, title=Counting Analysis Results]
+    \centering
+    \small
+    \begin{tabular}{ll}
+        \textbf{Parameter} & \textbf{Value} \\
+        Simulated Skies & $10^4$ \\
+        Observed Events & $936$ \\
+        Exp. Background & $856.7 \pm 29.1$ \\
+        
+        \textbf{Excess Events} & $+79.3$ \\
+        \textbf{\textit{p}-value} & $3.3 \times 10^{-3}$ \\
+        \textbf{Significance} & $2.72\sigma$ \\
+    \end{tabular}
+\end{tcolorbox}
+            
+            \vspace{0.4cm}
+            \footnotesize
+            \textcolor{gray}{\textit{Note: A simple binned circular search provides a solid baseline but we can do better.}}
         \end{column}
         
     \end{columns}
@@ -114,7 +119,7 @@
     \vspace{-0.3cm}
     \begin{itemize}
         \item $N$: Total events in the declination band.
-        \item $n_s$: Number of signal events (\textit{free parameter} to be maximized).
+        \item $n_s$: Number of signal events (\textit{free parameter}).
     \end{itemize}
 
     \vspace{0.3cm}
@@ -136,78 +141,92 @@
         \begin{column}{0.48\textwidth}
             \centering{\textbf{Background PDF ($\mathcal{B}_i$)}}
             \begin{equation*}
-                \mathcal{B}_i(\delta_i) = \frac{1}{\Delta \Omega_{\text{band}}} = \frac{1}{2\pi (\sin \delta_{\text{max}} - \sin \delta_{\text{min}})}
+                \mathcal{B}_i = \frac{1}{\Delta \Omega_{\text{band}}} = \frac{1}{2\pi (\sin \delta_{\text{max}} - \sin \delta_{\text{min}})}
             \end{equation*}
         \end{column}
         
     \end{columns}
 \end{frame}
 
-\begin{frame}{Results: Unbinned Spatial Likelihood Scan}
-    \begin{columns}[c]
+\begin{frame}{Unbinned Maximum Likelihood Scan}
+    \begin{columns}[T] % L'opzione [T] allinea le colonne in alto
         
-        % Colonna Sinistra: Il Grafico
+        % Colonna di Sinistra: Metodologia e Risultati
         \begin{column}{0.55\textwidth}
-            \vspace{-0.5cm}
-            \begin{figure}
-                \centering
-                % Inserisci qui l'immagine del tuo likelihood scan
-                \includegraphics[width=\textwidth]{Immagini/03_likelihood_scan.png}
-            \end{figure}
+            \begin{itemize}
+                \item The Test Statistic ($TS$) is evaluated as the likelihood ratio against the null hypothesis:
+                \begin{equation*}
+                    TS = 2\log\left(\frac{\mathcal{L}(\hat{n}_s)}{\mathcal{L}(n_s=0)}\right)
+                \end{equation*}
+            \end{itemize}
+            
+            \begin{itemize}
+                \item \textbf{Best-fit signal:} $\hat{n}_s = 71.64^{+18.08}_{-16.94}\,\,\,\,68.27\%\,\text{C.L.}$
+                \item \textbf{Observed TS:} $TS_{obs} = 24.46$
+                \item \textbf{Significance:} $4.9\sigma$ $p_{value}=3.8\times10^{-7}$ (assuming the conditions of Wilks' theorem are satisfied)  
+                
+            \end{itemize}
         \end{column}
         
-        % Colonna Destra: I Dati Scientifici
-        \begin{column}{0.48\textwidth}
-            
-            \begin{block}{Best-Fit Signal}
-                \begin{itemize}
-                    \item $\hat{n}_s = 71.64_{-16.94}^{+18.08}$ \hfill ($1\sigma$ C.L.)
-                    \item $2\sigma$ interval: $[38.94, 108.91]$
-                \end{itemize}
-            \end{block}
-            
-            \begin{block}{Statistical Significance}
-                \begin{itemize}
-                    \item $TS_{\text{obs}} = 24.46$
-                    \item Local p-value $< 2.0 \times 10^{-4}$ \\
-                    \small{(0 background fluctuations in 5000 trials)}
-                    \item Significance: $\ge 3.54\sigma$
-                \end{itemize}
-            \end{block}
-            
+        % Colonna di Destra: Grafico
+        \begin{column}{0.55\textwidth}
+            \begin{figure}
+                \centering
+                % Assicurati che il percorso dell'immagine sia corretto rispetto al tuo main.tex
+                \includegraphics[width=\textwidth]{Immagini/03_likelihood_scan.png}
+            \end{figure}
         \end{column}
         
     \end{columns}
 \end{frame}
 
-
-\begin{frame}{Future Directions}
-    \textbf{Enhancing the Likelihood Model:}
-    \begin{itemize}
-        \item \textbf{Energy Integration:} Add energy-dependent PDFs (e.g., injecting an $E^{-3.2}$ source spectrum) to boost signal-background discrimination.
-        \item \textbf{Source Morphology:} Test extended spatial models instead of a strict point-source approximation.
-    \end{itemize}
+\begin{frame}{Significance Assessment (Targeted Search)}
     
-    \vspace{0.5cm}
+    % Testo introduttivo sopra le colonne (a tutta larghezza)
+    Empirical background TS distribution derived via Right Ascension scrambling ($N=5000$) 
+    to bypass Wilks' theorem asymptotic approximations at the target declination.
     
-    \textbf{Astrophysical Context:}
+    \vspace{0.2cm}
+    
+    \begin{columns}[c]
+        
+        % Colonna Sinistra: Il Grafico (Dominante)
+        \begin{column}{0.60\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{Immagini/04_ts_distribution.png}
+            \end{figure}
+        \end{column}
+        
+        % Colonna Destra: I Risultati nel Box
+        \begin{column}{0.37\textwidth}
+            \begin{tcolorbox}[colback=maincolor!5!white, colframe=maincolor, title=Statistical Results]
     \begin{itemize}
-        \item \textbf{Time-Dependent Search:} Investigate temporal correlations with known AGN flaring activities.
-        \item \textbf{Multi-Messenger Approach:} Cross-correlate neutrino arrivals with X-ray and $\gamma$-ray astronomical catalogs.
+        \item \text{INSERT} background fluctuations.
+        \item \textbf{Significance:} \text{INSERT}
+        \item \textbf{p-value:} \text{INSERT}
     \end{itemize}
+\end{tcolorbox}
+        \end{column}
+        
+    \end{columns}
 \end{frame}
 
-
-\begin{frame}{Conclusions}
-    \begin{itemize}
-        \item[\checkmark] \textbf{Methodology:} Successfully implemented a complete, unbinned spatial likelihood pipeline using a data-driven background (RA scrambling).
-        
-        \vspace{0.3cm}
-        
-        \item[\checkmark] \textbf{Detection:} Found a statistically significant neutrino excess ($\ge 3.54\sigma$) originating from the NGC 1068 coordinates.
-        
-        \vspace{0.3cm}
-        
-        \item[\checkmark] \textbf{Consistency:} Despite the "spatial-only" simplification, the estimated signal ($\hat{n}_s \approx 72$) is remarkably consistent with the complex official IceCube findings.
-    \end{itemize}
+\begin{frame}{Conclusions \& Outlook}
+    
+    \begin{tcolorbox}[colback=green!5!white, colframe=green!60!black, title=Conclusions: A Solid Spatial-Only Baseline]
+        \begin{itemize}
+            \item[\checkmark] \textbf{Methodology:} Successfully implemented a data-driven, unbinned spatial likelihood pipeline.
+            \item[\checkmark] \textbf{Detection:} Found a statistically significant neutrino excess originating from NGC 1068.
+        \end{itemize}
+    \end{tcolorbox}
+    
+    
+    \begin{tcolorbox}[colback=red!5!white, colframe=red!70!black, title=Current Limitations \& Future Directions]
+        \begin{itemize}
+            \item \textbf{Lack of Energy Discrimination:} Need to integrate energy-dependent PDFs.
+            \item \textbf{Strict Point-Source Approximation:} Must implement extended spatial models.
+        \end{itemize}
+    \end{tcolorbox}
+    
 \end{frame}
