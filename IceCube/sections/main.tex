@@ -53,26 +53,27 @@
         
         % Colonna Testo
         \begin{column}{0.48\textwidth}
-            \textbf{Declination Band}
+            \textbf{Analysis Region}
             \begin{itemize}
-                \item NGC 1068 ($\delta \approx -0.01^\circ$)
-                \item $\delta \in [-3^\circ, +5^\circ]$
-                \item[$\rightarrow$] Approximation: Uniform detector acceptance within the band.
+                \item \textbf{Target:} NGC 1068 ($\delta \approx -0.01^\circ$)
+                \item \textbf{Band Cut:} $\delta \in [-3^\circ, +5^\circ]$
+                \item Assumes locally uniform detector acceptance.
             \end{itemize}
             
-            \vspace{0.5cm}
+            \vspace{0.1cm}
             
-            \textbf{Background Estimation}
+            \textbf{Background Modeling}
             \begin{itemize}
-                \item Fix $\delta$, randomize RA
-                \item[$\rightarrow$] Data-driven background (incorporates exposure)
+                \item \textbf{Technique:} Right Ascension (RA) Scrambling
+                \item \textbf{Process:} Fix $\delta_i$, randomize $\alpha_i$
+                \item Data-driven baseline intrinsically accounting for exposure dependencies.
             \end{itemize}
         \end{column}
         
     \end{columns}
 \end{frame}
 
-\begin{frame}{First naive signal search for NGC 1068}
+\begin{frame}{First signal search for NGC 1068}
     \begin{columns}[c] % Vertical alignment at the center
         
         % Left Column: Image
@@ -103,7 +104,7 @@
             
             \vspace{0.4cm}
             \footnotesize
-            \textcolor{gray}{\textit{Note: A simple binned circular search provides a solid baseline but we can do better.}}
+            \textcolor{gray}{\textit{Note: A simple binned circular search provides a solid baseline but does not exploit other important information.}}
         \end{column}
         
     \end{columns}
@@ -148,7 +149,7 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{Unbinned Maximum Likelihood Scan}
+\begin{frame}{Likelihood Scan and Best-Fit Results}
     \begin{columns}[T] % L'opzione [T] allinea le colonne in alto
         
         % Colonna di Sinistra: Metodologia e Risultati
@@ -180,7 +181,7 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{Significance Assessment (Targeted Search)}
+\begin{frame}{Post-trial Significance Assessment via RA Scrambling}
     
     % Testo introduttivo sopra le colonne (a tutta larghezza)
     Empirical background TS distribution derived via Right Ascension scrambling ($N=5000$) 
@@ -214,18 +215,34 @@
 
 \begin{frame}{Conclusions \& Outlook}
     
-    \begin{tcolorbox}[colback=green!5!white, colframe=green!60!black, title=Conclusions: A Solid Spatial-Only Baseline]
+    % Box Verde: Conclusioni (Margini ridotti e font \small)
+    \vspace{-0.1cm}
+    \begin{tcolorbox}[
+        colback=green!5!white, 
+        colframe=green!60!black, 
+        title=A Solid Spatial-Only Baseline,
+        boxsep=1pt, top=2pt, bottom=2pt, left=4pt, right=4pt % Compatta lo spazio interno
+    ]
+        \small % Riduce leggermente la dimensione del testo per l'intero box
         \begin{itemize}
-            \item[\checkmark] \textbf{Methodology:} Successfully implemented a data-driven, unbinned spatial likelihood pipeline.
-            \item[\checkmark] \textbf{Detection:} Found a statistically significant neutrino excess originating from NGC 1068.
+            \item[\checkmark]Successfully implemented a data-driven, unbinned spatial likelihood.
+            \item[\checkmark] Identified a clear neutrino excess spatially consistent with NGC 1068, yielding a robust, model-independent empirical significance.
         \end{itemize}
     \end{tcolorbox}
     
     
-    \begin{tcolorbox}[colback=red!5!white, colframe=red!70!black, title=Current Limitations \& Future Directions]
+    % Box Rosso: Limitazioni e Futuro (Margini ridotti e font \small)
+    \begin{tcolorbox}[
+        colback=red!5!white, 
+        colframe=red!70!black, 
+        title=Current Limitations \& Future Directions,
+        boxsep=1pt, top=2pt, bottom=2pt, left=4pt, right=4pt % Compatta lo spazio interno
+    ]
+        \small
         \begin{itemize}
-            \item \textbf{Lack of Energy Discrimination:} Need to integrate energy-dependent PDFs.
-            \item \textbf{Strict Point-Source Approximation:} Must implement extended spatial models.
+            \item[!] \textbf{Energy Discrimination:} Neglecting lepton energy discards crucial separation power between hard astrophysical spectra and atmospheric backgrounds.
+            \item[!] \textbf{Computational Complexity:} True neutrino energy unfolding requires demanding Monte Carlo simulations and advanced Instrument Response Functions (IRFs).
+            \item[!] \textbf{Outlook:} Integrate energy-dependent PDFs to fully unlock the dataset's potential, and benchmark this custom pipeline against the official IceCube \textbf{SkyLLH} framework.
         \end{itemize}
     \end{tcolorbox}
     
