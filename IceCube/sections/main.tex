@@ -170,7 +170,7 @@
         \end{column}
         
         % Colonna di Destra: Grafico
-        \begin{column}{0.55\textwidth}
+        \begin{column}{0.58\textwidth}
             \begin{figure}
                 \centering
                 % Assicurati che il percorso dell'immagine sia corretto rispetto al tuo main.tex
@@ -184,10 +184,9 @@
 \begin{frame}{Post-trial Significance Assessment via RA Scrambling}
     
     % Testo introduttivo sopra le colonne (a tutta larghezza)
-    Empirical background TS distribution derived via Right Ascension scrambling ($N=5000$) 
+    Empirical background TS distribution derived via Right Ascension scrambling ($N=10^6$) 
     to bypass Wilks' theorem asymptotic approximations at the target declination.
     
-    \vspace{0.2cm}
     
     \begin{columns}[c]
         
@@ -200,14 +199,13 @@
         \end{column}
         
         % Colonna Destra: I Risultati nel Box
-        \begin{column}{0.37\textwidth}
+        \begin{column}{0.42\textwidth}
             \begin{tcolorbox}[colback=maincolor!5!white, colframe=maincolor, title=Statistical Results]
-    \begin{itemize}
-        \item \text{INSERT} background fluctuations.
-        \item \textbf{Significance:} \text{INSERT}
-        \item \textbf{p-value:} \text{INSERT}
-    \end{itemize}
-\end{tcolorbox}
+                \begin{itemize}
+                    \item $0$ background fluctuations out of $10^6$ exceeded the observed TS.
+                    \item \textbf{p-value:} $< 1 \times 10^{-6}$
+                \end{itemize}
+            \end{tcolorbox}
         \end{column}
         
     \end{columns}
