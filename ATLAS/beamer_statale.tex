@@ -1,0 +1,264 @@
+% **************************************************************
+% Hi! Edit this file for your presentation!
+% **************************************************************
+
+% ==================///==================///==================///
+% ==================/// LATEX'S STUFF
+% ==================///==================///==================///
+
+\documentclass{beamer}
+\usepackage{amsfonts,amsmath,oldgerm}
+% Attiva i bordi arrotondati e l'ombra per i blocchi
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\usepackage{booktabs}
+% Imposta i colori (modifica "blue" con il colore del tuo tema)
+\setbeamercolor{block title}{bg=blue!70!black, fg=white}
+\setbeamercolor{block body}{bg=blue!10, fg=black}
+\definecolor{blustatale}{RGB}{7,27,80} % Blu ufficiale Unimi
+\usepackage{tcolorbox}
+\usetheme{_statale}
+\usefonttheme[onlymath]{serif}
+\usepackage{tikz}
+\newcommand{\testcolor}[1]{\colorbox{#1}{\textcolor{#1}{test}}~\texttt{#1}}
+\newcommand{\hrefcol}[2]{\textcolor{cyan}{\href{#1}{#2}}}
+\titlebackground*{assets/background}
+\date{July 21, 2026}
+
+% ==================///==================///==================///
+% ==================/// SPLASH PAGE
+% ==================///==================///==================///
+
+\title{Higgs Boson at the LHC - Who produced this Higgs?}
+\course{Master's Degree in Physics}
+\author{\href{mailto:nicolo.favagrossa@studenti.unimi.it}{Nicolò Favagrossa}}
+%\IDnumber{68405A}
+
+% ==================///==================///==================///
+% ==================/// START PRESENTATION
+% ==================///==================///==================///
+
+\begin{document}
+\maketitle
+
+\footlinecolor{maincolor}
+
+% ==================///==================///==================///
+% ==================/// BODY'S PRESENTATION
+% ==================///==================///==================///
+
+\input{sections/main.tex}
+
+% ==================///==================///==================///
+% ==================/// END PRESENTATION
+% ==================///==================///==================///
+
+\backmatter
+\appendix
+\section*{BACKUP}
+\begin{frame}[noframenumbering]
+    \begin{center}
+        \Huge \textbf{BACKUP}
+    \end{center}
+\end{frame}
+
+% --- BACKUP SLIDE 1: Other Kinematic Distributions ---
+\begin{frame}[noframenumbering]{Backup: Extended Kinematic Agreement (VBF)}
+    \textbf{Sample A vs VBF Expectation} \\
+    Beyond the key signal region variable ($m_{jj}$), the full topological profile of the sample is in excellent agreement with the Vector Boson Fusion hypothesis.
+    \begin{columns}[T]
+        \begin{column}{0.49\textwidth}
+            \centering
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_m_jj_H4l_A.png} \\
+            \vspace{0.1cm}
+        \end{column}
+        \begin{column}{0.49\textwidth}
+            \centering
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_pT_H_H4l_A.png} \\
+            \vspace{0.1cm}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% --- BACKUP SLIDE 3: Hypothesis Testing Grids (Samples B, C, D) ---
+\begin{frame}[noframenumbering]{Backup: Hypothesis Rejection for ggF, ZH, WH}
+    \vspace{-0.2cm}
+    \textbf{Cross-checking all hypotheses in their respective Signal Regions:}
+    \vspace{0.2cm}
+    \begin{columns}[T]
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample B vs All} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_pT_H_H4l_B.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Key: $p_T^H$. Strong match for \textbf{ggF}.}
+        \end{column}
+        
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample C vs All} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_m_ll_H4l_C.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Key: $m_{\ell\ell}$. Strong match for \textbf{ZH}.}
+        \end{column}
+        
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample D vs All} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_m_WT_H4l_D.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Key: $m_T^W$. Strong match for \textbf{WH}.}
+        \end{column}
+    \end{columns}
+    \vspace{0.2cm}
+    \centering
+    \small{The grid comparisons demonstrate that each sample unambiguously prefers a single production mechanism, with alternative hypotheses yielding $\chi^2/\text{NDF}$ values orders of magnitude larger.}
+\end{frame}
+
+% --- BACKUP SLIDE 4: VBF Variable on Non-VBF Samples ---
+\begin{frame}[noframenumbering]{Backup: VBF Signature ($m_{jj}$) on Non-VBF Samples}
+    \begin{columns}[T]
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample B (ggF)} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_m_jj_H4l_B.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Severe shape mismatch in SR.}
+        \end{column}
+        
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample C (ZH)} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_m_jj_H4l_C.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Severe shape mismatch in SR.}
+        \end{column}
+        
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample D (WH)} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_m_jj_H4l_D.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Severe shape mismatch in SR.}
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.5cm}
+    \centering
+    \small{Applying the VBF signal region selection ($m_{jj} \in [400, 1100]$ GeV) to non-VBF samples yields drastically poor fits, proving the high rejecting power of the dijet invariant mass against other mechanisms.}
+\end{frame}
+
+% --- BACKUP SLIDE 5: ggF Variable on Non-ggF Samples ---
+\begin{frame}[noframenumbering]{Backup: ggF Signature ($p_T^H$) on Non-ggF Samples}
+    \begin{columns}[T]
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample A (VBF)} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_pT_H_H4l_A.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Poor fit across all templates.}
+        \end{column}
+        
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample C (ZH)} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_pT_H_H4l_C.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Poor fit across all templates.}
+        \end{column}
+        
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample D (WH)} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_pT_H_H4l_D.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Poor fit across all templates.}
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.5cm}
+    \centering
+    \small{The low-$p_T^H$ signal region correctly isolates ggF; when evaluating samples with hard scatterings (VBF, VH) in this regime, the observed kinematics are entirely incompatible with the expected shapes.}
+\end{frame}
+
+% --- BACKUP SLIDE 6: ZH Variable on Non-ZH Samples ---
+\begin{frame}[noframenumbering]{Backup: ZH Signature ($m_{\ell\ell}$) on Non-ZH Samples}
+    \begin{columns}[T]
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample A (VBF)} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_m_ll_H4l_A.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Lack of a clear Z peak.}
+        \end{column}
+        
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample B (ggF)} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_m_ll_H4l_B.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Lack of a clear Z peak.}
+        \end{column}
+        
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample D (WH)} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_m_ll_H4l_D.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Lacks the extra lepton pair.}
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.5cm}
+    \centering
+    \small{The invariant mass of the extra leptons $m_{\ell\ell}$ searches for an associated Z boson. Non-ZH samples fail to populate the expected Z-mass window ($[80, 100]$ GeV), making it an unambiguous discriminant.}
+\end{frame}
+
+% --- BACKUP SLIDE 7: WH Variable on Non-WH Samples ---
+\begin{frame}[noframenumbering]{Backup: WH Signature ($m_T^W$) on Non-WH Samples}
+    \begin{columns}[T]
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample A (VBF)} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_m_WT_H4l_A.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Inconsistent transverse mass.}
+        \end{column}
+        
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample B (ggF)} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_m_WT_H4l_B.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Inconsistent transverse mass.}
+        \end{column}
+        
+        \begin{column}{0.33\textwidth}
+            \centering
+            \textbf{Sample C (ZH)} \\
+            \vspace{0.1cm}
+            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/grid_m_WT_H4l_C.png} \\
+            \vspace{0.1cm}
+            \footnotesize{Inconsistent transverse mass.}
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.5cm}
+    \centering
+    \small{The transverse mass $m_T^W$ computed from the extra lepton and $E_T^{\text{miss}}$ acts as an excellent veto. Samples lacking an associated W boson production display $\chi^2$ values that completely reject the WH hypothesis.}
+\end{frame}
+
+\end{document}
