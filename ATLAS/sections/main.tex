@@ -1,14 +1,50 @@
+%\begin{frame}{Higgs Boson Production Mechanisms}
+%    \begin{columns}[T] 
+%        \begin{column}{0.5\textwidth}
+%            \centering
+%            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/fig_02.png}
+%            
+%            \vspace{0.47cm} 
+%            \tiny{\href{https://atlas.cern/Resources/Schematics}{Source: atlas.cern}}
+%        \end{column}
+%        
+%        \begin{column}{0.5\textwidth}
+%            \centering
+%            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/Higgs_prod_graphs_new2.jpg}
+%            
+%            \vspace{1.4cm}
+%            \tiny{\href{https://sites.uci.edu/energyobserver/2012/11/26/higgs-production-and-decay-channels/}{Source: sites.uci.edu}}
+%        \end{column}
+%        
+%    \end{columns}
+%\end{frame}
+
 \begin{frame}{Higgs Boson Production Mechanisms}
     \begin{columns}[T] 
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.55\textwidth}
             \centering
-            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/fig_02.png}
-            
-            \vspace{0.47cm} 
-            \tiny{\href{https://atlas.cern/Resources/Schematics}{Source: atlas.cern}}
+            \vspace{0.2cm}
+            {\small Cross-sections at $\sqrt{s} = 8$ TeV for $m_H = 125$ GeV}\\[0.3cm]
+            \renewcommand{\arraystretch}{1.3} % Aumenta leggermente lo spazio tra le righe per leggibilità
+            \begin{tabular}{lcc}
+                \hline
+                \textbf{Production} & $\mathbf{\sigma_H}$ \textbf{(pb)} & \textbf{(\%)} \\
+                \hline
+                ggF & $19.27$ & $87.2\%$ \\
+                VBF & $1.578$ & $7.1\%$ \\
+                $WH$  & $0.7046$ & $3.2\%$ \\
+                $ZH$  & $0.4153$ & $1.9\%$ \\
+                $t\bar{t}H$ & $0.1293$ & $0.6\%$ \\
+                \hline
+            \end{tabular}
+
+
+            \vspace{0.8cm}
+            \tiny{\href{https://www0.mi.infn.it/~fanti/Particelle3/09-HiggsObservation.pdf}{Source: Prof. Fanti's Slides}}
         \end{column}
         
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.50\textwidth}
+            \vspace{0.7cm}
             \centering
             \includegraphics[width=\textwidth, keepaspectratio]{Immagini/Higgs_prod_graphs_new2.jpg}
             
@@ -22,17 +58,53 @@
 
 
 % --- SLIDE 1: MC Generation Chain (Solo Testo) ---
+%\begin{frame}{Simulation Workflow: Monte Carlo Generation}
+%    \textbf{Theoretical Setup \& Generation Chain:}
+%    \vspace{0.3cm}
+%    \begin{itemize}
+%        \item \textbf{Hard Process:} Generation of the four main Higgs production mechanisms %(ggF, VBF, WH, ZH) using \texttt{MadGraph5\_aMC@NLO}.
+%        \vspace{0.2cm}
+%        \item \textbf{Parton-Level (LHE):} Extraction of parton-level kinematics to validate the theoretical predictions and ensure consistency with known characteristics.
+%        \vspace{0.2cm}
+%        \item \textbf{Shower \& Hadronization:} Evolution of hard-scattering events via \texttt{Pythia8} to simulate parton showering, hadronization, and the production of stable particles.
+%        \vspace{0.2cm}
+%        \item \textbf{Detector Simulation:} Processing of the hadronized events through \texttt{Delphes} to accurately emulate the ATLAS detector response (efficiencies, smearing, and particle reconstruction).
+%    \end{itemize}
+%\end{frame}
+
 \begin{frame}{Simulation Workflow: Monte Carlo Generation}
-    \textbf{Theoretical Setup \& Generation Chain:}
+    \centering
+    \begin{tikzpicture}[
+        node distance=1.3cm,
+        startstop/.style={rectangle, rounded corners, minimum width=3cm, minimum height=0.8cm,text centered, draw=blue!50, fill=blue!10, font=\bfseries},
+        process/.style={rectangle, minimum width=3cm, minimum height=0.8cm, text centered, draw=orange!70, fill=orange!10},
+        arrow/.style={thick,->,>=stealth}
+    ]
+
+    % Nodes
+    \node (mg5) [startstop] {Hard Process};
+    \node (lhe) [process, below of=mg5] {Parton Level (LHE)};
+    \node (py8) [process, below of=lhe] {Shower \& Hadronization};
+    \node (delphes) [startstop, below of=py8, draw=green!50, fill=green!10] {Detector Simulation};
+
+    % Arrows & Side Labels
+    \draw [arrow] (mg5) -- (lhe);
+    \draw [arrow] (lhe) -- (py8);
+    \draw [arrow] (py8) -- (delphes);
+
+    % Software labels
+    \node [right of=mg5, xshift=3cm, font=\small\ttfamily] {MadGraph5\_aMC@NLO};
+    \node [right of=lhe, xshift=3cm, font=\small\itshape] {Validation \& Kinematics};
+    \node [right of=py8, xshift=3cm, font=\small\ttfamily] {Pythia8};
+    \node [right of=delphes, xshift=3cm, font=\small\ttfamily] {Delphes};
+
+    \end{tikzpicture}
+
     \vspace{0.3cm}
     \begin{itemize}
-        \item \textbf{Hard Process:} Generation of the four main Higgs production mechanisms (ggF, VBF, WH, ZH) using \texttt{MadGraph5\_aMC@NLO}.
-        \vspace{0.2cm}
-        \item \textbf{Parton-Level (LHE):} Extraction of parton-level kinematics to validate the theoretical predictions and ensure consistency with known characteristics.
-        \vspace{0.2cm}
-        \item \textbf{Shower \& Hadronization:} Evolution of hard-scattering events via \texttt{Pythia8} to simulate parton showering, hadronization, and the production of stable particles.
-        \vspace{0.2cm}
-        \item \textbf{Detector Simulation:} Processing of the hadronized events through \texttt{Delphes} to accurately emulate the ATLAS detector response (efficiencies, smearing, and particle reconstruction).
+        \small
+        \item \textbf{Assumptions:} Inclusive Higgs decays (SM BRs) and \texttt{Delphes} fast-simulation.
+        \item \textbf{Analysis Caveat:} Discrepancies in decay phase space and detector modeling are qualitatively considered during sample comparisons.
     \end{itemize}
 \end{frame}
 
@@ -48,6 +120,9 @@
             \includegraphics[width=\textwidth, keepaspectratio]{Immagini/dEta_jj_parton_comparison.png}
         \end{column}
     \end{columns}
+    \vspace{0.1cm}
+    \centering
+    \small{Sanity check of the parton-level kinematics: the distributions of the \textbf{number of jets} and the \textbf{pseudorapidity gap between the two leading jets} are consistent with theoretical expectations for each production mechanism.}
 \end{frame}
 
 % --- SLIDE 3: Detector Level & Signatures (Solo Testo) ---
@@ -117,35 +192,34 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{Deep Dive: Vector Boson Fusion (VBF) Topology}
+\begin{frame}{Deep Dive: VBF Topology \& Backgrounds}
+    \vspace{0.2cm} % Slight vertical buffer for breathing room
     \begin{columns}[T]
         
-        % Colonna Sinistra: Risposte ai 3 punti chiave
-        \begin{column}{0.63\textwidth}
+        % Left Column: Physics concepts
+        \begin{column}{0.55\textwidth}
             \small
-            \textbf{Background Classification for VBF:}
+            \textbf{Background Discrimination:}
             \begin{itemize}
-                \item \textbf{Irreducible Background:} \textit{ggF + $\ge 2$ jets}. Same experimental final state.
-                \item \textbf{Reducible Backgrounds:} \textit{WH / ZH} associated production. 
+                \item \textbf{Irreducible (ggF + $\ge 2$ jets):} Shares the identical $H+jj$ final state. Separable \textit{only} by exploiting the unique VBF kinematics.
+                \item \textbf{Reducible (WH / ZH):} Associated vector bosons. Suppressed via $m_T^W$ and $m_{ll}$ shape.
             \end{itemize}
             
-            \textbf{Key Separating Observables:}
-            \begin{itemize}
-                \item \textbf{$\Delta\eta_{jj}$:} Large pseudorapidity gap.
-                \item \textbf{$m_{jj}$:} Hard invariant mass.
-            \end{itemize}
+            \vspace{0.1cm}
             
-            \textbf{Decay-Independent Features:}
+            \textbf{Key VBF Signatures:}
             \begin{itemize}
-                \item The kinematic properties of the forward-backward tagging jets ($m_{jj}$, $\Delta\eta_{jj}$) depend strictly on the t-channel $W/Z$ exchange of the production vertex.
+                \item \textbf{$m_{jj}$:} Hard invariant mass spectrum.
+                \item \textbf{$\Delta\eta_{jj}$:} Large pseudorapidity gap due to forward-backward tagging jets.
             \end{itemize}
         \end{column}
         
-        % Colonna Destra: Il grafico di dEta_jj
-        \begin{column}{0.47\textwidth}
+        % Right Column: dEta_jj plot
+        \begin{column}{0.46\textwidth} % Adjusted so 0.55 + 0.42 = 0.97 (leaves a 3% center gutter)
             \begin{figure}
                 \centering
-                \includegraphics[width=\textwidth, keepaspectratio]{Immagini/dEta_jj_shower_comparison.png}
+                % Kept your original path and scaling
+                \includegraphics[width=\linewidth, keepaspectratio]{Immagini/dEta_jj_shower_comparison.png}
             \end{figure}
         \end{column}
         
@@ -154,89 +228,124 @@
 
 
 % --- SLIDE 7: Blind Samples Analysis (Higgs Peak) ---
-\begin{frame}{Blind Samples Analysis: Higgs Reconstruction}
+%\begin{frame}{Blind Samples Analysis: Higgs Reconstruction}
+%    \begin{columns}[T]
+%        \begin{column}{0.55\textwidth}
+%            \begin{enumerate}
+%               \item \textbf{Reconstruction:} Identify the Higgs candidate via its decay products ($H \to ZZ^* \to 4\ell$).
+%                \vspace{0.1cm}
+%                \item \textbf{Mass Window:} Select events in the Higgs mass peak region ($m_{4\ell} \simeq 125$ GeV).
+%                \vspace{0.1cm}
+%               \item \textbf{Kinematics Extraction:} Build distributions for the associated objects (jets, extra leptons, $E_T^{\text{miss}}$).
+%                \vspace{0.1cm}
+%                \item \textbf{Template Matching:} Compare with MadGraph MC expectations to deduce the production mechanism.
+%            \end{enumerate}
+%        \end{column}
+%        
+%        \begin{column}{0.45\textwidth}
+%            \centering
+%            \includegraphics[width=\textwidth, keepaspectratio]{Immagini/H4l_A_m4l.png}
+%        \end{column}
+%    \end{columns}
+%\end{frame}
+
+\begin{frame}{Blind Samples Analysis: Workflow}
     \begin{columns}[T]
-        \begin{column}{0.55\textwidth}
-            \textbf{Analysis Strategy on Blind Samples:}
-            \vspace{0.2cm}
-            \begin{enumerate}
-                \item \textbf{Reconstruction:} Identify the Higgs candidate via its decay products ($H \to ZZ^* \to 4\ell$).
-                \vspace{0.1cm}
-                \item \textbf{Mass Window:} Select events in the Higgs mass peak region ($m_{4\ell} \simeq 125$ GeV).
-                \vspace{0.1cm}
-                \item \textbf{Kinematics Extraction:} Build distributions for the associated objects (jets, extra leptons, $E_T^{\text{miss}}$).
-                \vspace{0.1cm}
-                \item \textbf{Template Matching:} Compare with MadGraph MC expectations to deduce the production mechanism.
-            \end{enumerate}
+        
+        % Colonna Sinistra: Diagramma di flusso
+        \begin{column}{0.5\textwidth}
+            \centering
+            \vspace*{0.1cm}
+            
+            \textbf{1. Reconstruction} \\
+            \textit{\small $H \to ZZ^* \to 4\ell$ candidate} \\
+            \vspace{0.1cm}
+            {\Large $\Downarrow$} \\
+            \vspace{0.1cm}
+            
+            \textbf{2. Mass Window} \\
+            \textit{\small Signal isolation ($m_{4\ell} \simeq 125$ GeV)} \\
+            \vspace{0.1cm}
+            {\Large $\Downarrow$} \\
+            \vspace{0.1cm}
+            
+            \textbf{3. Kinematics Extraction} \\
+            \textit{\small Associated features (jets, $l^\pm$, $E_T^{\text{miss}}$)} \\
+            \vspace{0.1cm}
+            {\Large $\Downarrow$} \\
+            \vspace{0.1cm}
+            
+            \textbf{4. Template Matching} \\
+            \textit{\small Data vs. MadGraph MC}
         \end{column}
         
-        \begin{column}{0.45\textwidth}
+        % Colonna Destra: Il grafico
+        \begin{column}{0.6\textwidth}
             \centering
+            \vspace*{0.5cm} % Centra l'immagine rispetto al diagramma
             \includegraphics[width=\textwidth, keepaspectratio]{Immagini/H4l_A_m4l.png}
-            
-            \vspace{0.2cm}
-            \footnotesize{Invariant mass $m_{4\ell}$ for Sample A clearly showing the Higgs peak.}
         \end{column}
+        
     \end{columns}
 \end{frame}
 
 % --- SLIDE 8: Signal Regions & VBF match ---
 \begin{frame}{Signal Regions \& VBF Identification}
+    \vspace{0.1cm}
     \begin{columns}[T]
-        \begin{column}{0.45\textwidth}
-            \textbf{Signal Regions Recall:}
+        
+        % Left Column: Slightly wider to prevent text squeezing (0.52)
+        \begin{column}{0.52\textwidth}
+            \small
+            \textbf{VBF Signal Region Definition:}
             \begin{itemize}
-                \item \textbf{VBF:} $m_{jj} \in [400, 1100]$ GeV
-                \item \textbf{ggF:} $p_T^H \in [0, 100]$ GeV
-                \item \textbf{ZH:} $m_{\ell\ell} \in [80, 100]$ GeV
-                \item \textbf{WH:} $m_T^W \in [0, 120]$ GeV
+                \item \textbf{Phase Space Selection:} Decided on the dijet system constructed from the two leading-$p_{\text{T}}$ jets.
+                \item \textbf{Inferred SR Cut:} $m_{jj} \in [400, 1100]\ \text{GeV}$ to maximize VBF sensitivity and reject QCD-dominated background shapes.
             \end{itemize}
             
-            \vspace{0.6cm}
-            \textbf{Identifying VBF (Sample A):} \\
-            \vspace{0.2cm}
-            The dijet invariant mass ($m_{jj}$) shows excellent shape agreement with the VBF MC template in the high-mass signal region, successfully isolating the signature from irreducible backgrounds.
+            \vspace{0.4cm}
+            
+            \textbf{VBF Matching (Sample A):}
+            \begin{itemize}
+                \item The reconstructed $m_{jj}$ distribution of \textbf{Sample A} exhibits excellent shape compatibility with the VBF MC template.
+            \end{itemize}
         \end{column}
         
         \begin{column}{0.55\textwidth}
             \centering
             \includegraphics[width=\textwidth, keepaspectratio]{Immagini/compare_m_jj_H4l_A_vs_VBF.png}
+            \footnotesize{ Events in SR: Data = $27.8\%$   $||$ MC expectation = $29.9\%$}
         \end{column}
     \end{columns}
 \end{frame}
 
 % --- SLIDE 9: Identifying ggF, ZH, WH ---
 \begin{frame}{Kinematic Matching for ggF, ZH, and WH}
-    \vspace{-0.2cm}
     \textbf{Identifying the remaining blind samples:}
-    \vspace{0.2cm}
     \begin{columns}[T]
         \begin{column}{0.33\textwidth}
             \centering
             \textbf{ggF (Sample B)} \\
-            \vspace{0.1cm}
             \includegraphics[width=\textwidth, keepaspectratio]{Immagini/compare_pT_H_H4l_B_vs_ggF.png} \\
-            \footnotesize{Key Variable: $p_T^H$}
+            \footnotesize{ Events in SR:\\ Data = $86.7\%$   $||$ MC = $88.0\%$}
         \end{column}
         
         \begin{column}{0.33\textwidth}
             \centering
             \textbf{ZH (Sample C)} \\
-            \vspace{0.1cm}
             \includegraphics[width=\textwidth, keepaspectratio]{Immagini/compare_m_ll_H4l_C_vs_ZH.png} \\
-            \footnotesize{Key Variable: $m_{\ell\ell}$}
+            \footnotesize{ Events in SR:\\ Data = $43.8\%$   $||$ MC = $77.7\%$}
         \end{column}
         
         \begin{column}{0.33\textwidth}
             \centering
             \textbf{WH (Sample D)} \\
-            \vspace{0.1cm}
             \includegraphics[width=\textwidth, keepaspectratio]{Immagini/compare_m_WT_H4l_D_vs_WH.png} \\
-            \footnotesize{Key Variable: $m_T^W$}
+            \footnotesize{ Events in SR:\\ Data = $98.5\%$   $||$ MC = $97.2\%$}
         \end{column}
     \end{columns}
     
-    \vspace{0.4cm}
+    \vspace{0.3cm}
     \centering
     \small{Each sample exhibits strong shape compatibility with its respective MC expectation within the specifically defined Signal Region.}
 \end{frame}
@@ -245,21 +354,98 @@
 \begin{frame}{Statistical Validation ($\chi^2$ Shape Test)}
     To quantitatively confirm the visual matches, a $\chi^2$ shape test was performed comparing the Data samples to the MC templates in the corresponding Signal Regions.
     
-    \vspace{0.4cm}
+    \vspace{0.2cm}
     \centering
     \renewcommand{\arraystretch}{1.3}
     \begin{tabular}{l c c l}
         \hline
         \textbf{Blind Sample} & \textbf{Best MC Match} & \textbf{Key Variable} & \textbf{Shape Test ($\chi^2$/NDF)} \\ \hline
-        \textbf{Sample A} & VBF & $m_{jj}$ & $\mathbf{7.08}$ (Strong Match) \\
-        \textbf{Sample B} & ggF & $p_T^H$ & Consistent Shape \\
-        \textbf{Sample C} & ZH & $m_{\ell\ell}$ & Consistent Shape \\ 
-        \textbf{Sample D} & WH & $m_T^W$ & $\mathbf{2.19}$ (Strong Match) \\ \hline
+        \textbf{Sample A} & VBF & $m_{jj}$ & $\mathbf{7.08}$ \\
+        \textbf{Sample B} & ggF & $p_T^H$ & $\mathbf{3.03}$  \\
+        \textbf{Sample C} & ZH & $m_{\ell\ell}$ & $\mathbf{5.06}$  \\ 
+        \textbf{Sample D} & WH & $m_T^W$ & $\mathbf{2.19}$ \\ \hline
     \end{tabular}
     
-    \vspace{0.6cm}
+    \vspace{0.2cm}
     \begin{itemize}
-        \item The shape tests strongly reject the null hypotheses for mismatched combinations (e.g., Sample D vs ZH yields $\chi^2/\text{NDF} \approx 1000$).
-        \item \textbf{Conclusion:} The designed kinematic discriminants successfully and reliably decouple the Higgs production mechanisms at the detector level.
+        \item The shape tests strongly reject the null hypotheses for mismatched combinations (e.g., Sample D vs ZH yields $\chi^2/\text{NDF} >999$).
+        \item The designed kinematic discriminants successfully and reliably decouple the Higgs production mechanisms at the detector level.
     \end{itemize}
+\end{frame}
+
+% --- SLIDE 11: Conclusions & Limitations ---
+%\begin{frame}{Conclusions \& Limitations}
+    
+    % Box Verde: Successi e Risultati (Margini ridotti e font \small)
+%    \vspace{-0.1cm}
+%    \begin{tcolorbox}[
+%        colback=green!5!white, 
+%        colframe=green!60!black, 
+%        title=Successes \& Key Results,
+%        boxsep=1pt, top=2pt, bottom=2pt, left=4pt, right=4pt
+%    ]
+%        \small
+%        \begin{itemize}
+%            \item[\checkmark] \textbf{Kinematic Profiling:} Successfully established highly-discriminating "golden variables" ($m_{jj}$, $p_T^H$, $m_{\ell\ell}$, $m_T^W$) to isolate specific Higgs production modes.
+%            \vspace{-0.2cm}
+%            \item[\checkmark] \textbf{Sample Unblinding:} Correctly and reliably identified all anonymous ATLAS Open Data samples (Sample A = VBF, B = ggF, C = ZH, D = WH).
+%            %\item[\checkmark] \textbf{Statistical Robustness:} Visual template matching was quantitatively validated through local $\chi^2/\text{NDF}$ shape tests, rejecting mismatched hypotheses.
+%        \end{itemize}
+%    \end{tcolorbox}
+    
+    
+    % Box Rosso: Limitazioni (Margini ridotti e font \small)
+%    \begin{tcolorbox}[
+%        colback=red!5!white, 
+%        colframe=red!70!black, 
+%        title=Current Limitations \& Future Outlook,
+%        boxsep=1pt, top=2pt, bottom=2pt, left=4pt, right=4pt
+%    ]
+%        \small
+%        \begin{itemize}
+%            \item[!] \textbf{Single-Variable Cuts:} Quantitative discrimination relied strictly on a single "golden" variable per channel, ignoring multi-dimensional correlations that were only qualitatively observed.
+%            \vspace{-0.3cm}
+%            \item[!] \textbf{Inclusive MC Decays:} Monte Carlo samples were generated with inclusive Higgs decays, introducing phase-space mismatches and lower statistics in leptonic channels compared to the filtered ATLAS data.
+%           \vspace{-0.3cm}
+%            \item[!] \textbf{Decay Decoupling (Outlook):} A rigorous analysis may requires forcing the $H \to ZZ^* \to 4\ell$ decay at generator level. This would allow a clean subtraction of the Higgs decay products to isolate and study only the associated production system (jets, extra leptons, $E_T^{\text{miss}}$).
+%        \end{itemize}
+%    \end{tcolorbox}
+%    
+%\end{frame}
+
+\begin{frame}{Conclusions \& Limitations}
+    
+    % Box Verde: Successi e Risultati
+    \vspace{-0.1cm}
+    \begin{tcolorbox}[
+        colback=green!5!white, 
+        colframe=green!60!black, 
+        title=Successes \& Key Results,
+        boxsep=1pt, top=2pt, bottom=2pt, left=4pt, right=4pt
+    ]
+        \small
+        \begin{itemize}
+            \setlength{\itemsep}{0.1cm} % Gestisce lo spazio tra gli item automaticamente
+            \item[\checkmark] \textbf{Kinematic Profiling:} Identified optimal "golden variables" ($m_{jj}$, $p_T^H$, $m_{\ell\ell}$, $m_T^W$) to successfully isolate each Higgs production mode.
+            \item[\checkmark] \textbf{Sample Unblinding:} Correctly matched all anonymous ATLAS Open Data samples (A = VBF, B = ggF, C = ZH, D = WH).
+        \end{itemize}
+    \end{tcolorbox}
+    
+    \vspace{0.1cm}
+    
+    % Box Rosso: Limitazioni e Outlook
+    \begin{tcolorbox}[
+        colback=red!5!white, 
+        colframe=red!70!black, 
+        title=Current Limitations \& Future Outlook,
+        boxsep=1pt, top=2pt, bottom=2pt, left=4pt, right=4pt
+    ]
+        \small
+        \begin{itemize}
+            \setlength{\itemsep}{0.1cm}
+            \item[!] \textbf{1D Discrimination:} Quantitative matching relied strictly on single variables, ignoring multivariate kinematic correlations.
+            \item[!] \textbf{Decay Decoupling (Outlook):} Future steps require forcing $H \to 4\ell$ at the generator level to cleanly subtract the Higgs products and purely study the associated signature (jets, extra $l^\pm$, $E_T^{\text{miss}}$).
+        \end{itemize}
+    \end{tcolorbox}
+    
 \end{frame}
