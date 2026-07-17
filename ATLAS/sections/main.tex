@@ -103,7 +103,7 @@
     \vspace{0.3cm}
     \begin{itemize}
         \small
-        \item \textbf{Assumptions:} Inclusive Higgs decays (SM BRs) and \texttt{Delphes} fast-simulation.
+        \item \textbf{Assumptions:} Inclusive Higgs decays (SM BRs).
         \item \textbf{Analysis Caveat:} Discrepancies in decay phase space and detector modeling are qualitatively considered during sample comparisons.
     \end{itemize}
 \end{frame}
@@ -128,10 +128,9 @@
 % --- SLIDE 3: Detector Level & Signatures (Solo Testo) ---
 \begin{frame}{Experimental Signatures at Detector Level}
     \begin{itemize}
-        \item Following the Delphes simulation, the analysis relies exclusively on reconstructed kinematic variables to mimic experimental conditions.
         \item \textbf{Signal Region (SR) Strategy:} Selection of a single, highly-discriminating variable for each mechanism to optimize the signal-to-background ratio.
         \item \textbf{Golden Variables Identified:}\\
-        \vspace{0.3cm}
+        \vspace{0.6cm}
         \centering
             \begin{tabular}{ccc}
                 \hline
@@ -193,7 +192,6 @@
 \end{frame}
 
 \begin{frame}{Deep Dive: VBF Topology \& Backgrounds}
-    \vspace{0.2cm} % Slight vertical buffer for breathing room
     \begin{columns}[T]
         
         % Left Column: Physics concepts
@@ -201,21 +199,22 @@
             \small
             \textbf{Background Discrimination:}
             \begin{itemize}
-                \item \textbf{Irreducible (ggF + $\ge 2$ jets):} Shares the identical $H+jj$ final state. Separable \textit{only} by exploiting the unique VBF kinematics.
-                \item \textbf{Reducible (WH / ZH):} Associated vector bosons. Suppressed via $m_T^W$ and $m_{ll}$ shape.
+                \item \textbf{Irreducible (ggF + $\ge 2$ jets):} 
+                Yields the exact same $H+jj$ final state. Cannot be rejected by particle identification. Separable \textit{only} via VBF-specific kinematics.
+                \item \textbf{Reducible (VH):} 
+                Different true final states. Suppressed via explicit vetos (e.g., extra leptons).
             \end{itemize}
             
-            \vspace{0.1cm}
             
             \textbf{Key VBF Signatures:}
             \begin{itemize}
+                \item \textbf{$\Delta\eta_{jj}$:} Large pseudorapidity gap between the two forward-backward tagging jets.
                 \item \textbf{$m_{jj}$:} Hard invariant mass spectrum.
-                \item \textbf{$\Delta\eta_{jj}$:} Large pseudorapidity gap due to forward-backward tagging jets.
             \end{itemize}
         \end{column}
         
         % Right Column: dEta_jj plot
-        \begin{column}{0.46\textwidth} % Adjusted so 0.55 + 0.42 = 0.97 (leaves a 3% center gutter)
+        \begin{column}{0.46\textwidth} % Adjusted so 0.55 + 0.46 = 1.01 (works well depending on margins)
             \begin{figure}
                 \centering
                 % Kept your original path and scaling
@@ -300,7 +299,7 @@
             \textbf{VBF Signal Region Definition:}
             \begin{itemize}
                 \item \textbf{Phase Space Selection:} Decided on the dijet system constructed from the two leading-$p_{\text{T}}$ jets.
-                \item \textbf{Inferred SR Cut:} $m_{jj} \in [400, 1100]\ \text{GeV}$ to maximize VBF sensitivity and reject QCD-dominated background shapes.
+                \item \textbf{SR Cut:} $m_{jj} \in [400, 1100]\ \text{GeV}$ to maximize VBF sensitivity.
             \end{itemize}
             
             \vspace{0.4cm}
@@ -351,9 +350,7 @@
 \end{frame}
 
 % --- SLIDE 10: Statistical Validation ---
-\begin{frame}{Statistical Validation ($\chi^2$ Shape Test)}
-    To quantitatively confirm the visual matches, a $\chi^2$ shape test was performed comparing the Data samples to the MC templates in the corresponding Signal Regions.
-    
+\begin{frame}{Statistical Validation ($\chi^2$ Shape Test)}    
     \vspace{0.2cm}
     \centering
     \renewcommand{\arraystretch}{1.3}
@@ -369,7 +366,7 @@
     \vspace{0.2cm}
     \begin{itemize}
         \item The shape tests strongly reject the null hypotheses for mismatched combinations (e.g., Sample D vs ZH yields $\chi^2/\text{NDF} >999$).
-        \item The designed kinematic discriminants successfully and reliably decouple the Higgs production mechanisms at the detector level.
+        \item The non-optimal results for all the $\chi^2$ test values are attributed to all the previously discussed limitations (use of single-variable and the inclusive Higgs decays in the MC generation).
     \end{itemize}
 \end{frame}
 
