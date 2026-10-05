@@ -1,0 +1,141 @@
+% **************************************************************
+% Hi! Edit this file for your presentation!
+% **************************************************************
+
+% ==================///==================///==================///
+% ==================/// LATEX'S STUFF
+% ==================///==================///==================///
+
+\documentclass{beamer}
+\usepackage{amsfonts,amsmath,oldgerm}
+% Attiva i bordi arrotondati e l'ombra per i blocchi
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\usepackage{booktabs}
+% Imposta i colori (modifica "blue" con il colore del tuo tema)
+\setbeamercolor{block title}{bg=blue!70!black, fg=white}
+\setbeamercolor{block body}{bg=blue!10, fg=black}
+\definecolor{blustatale}{RGB}{7,27,80} % Blu ufficiale Unimi
+\usepackage{tcolorbox}
+\usetheme{_statale}
+\usefonttheme[onlymath]{serif}
+\usepackage{tikz}
+\newcommand{\testcolor}[1]{\colorbox{#1}{\textcolor{#1}{test}}~\texttt{#1}}
+\newcommand{\hrefcol}[2]{\textcolor{cyan}{\href{#1}{#2}}}
+\titlebackground*{assets/background}
+\date{October 5, 2026}
+
+% ==================///==================///==================///
+% ==================/// SPLASH PAGE
+% ==================///==================///==================///
+
+\title{Silicon Tracker Simulation and Performance Analysis using Geant4}
+\subtitle{From multiple scattering and resolution limits to secondary vertex and mass reconstruction}
+%\course{Master's Degree in Physics}
+\author{\href{mailto:nicolo.favagrossa@studenti.unimi.it}{Nicolò Favagrossa}}
+%\IDnumber{68405A}
+
+% ==================///==================///==================///
+% ==================/// START PRESENTATION
+% ==================///==================///==================///
+
+\begin{document}
+\maketitle
+
+\footlinecolor{maincolor}
+
+% ==================///==================///==================///
+% ==================/// BODY'S PRESENTATION
+% ==================///==================///==================///
+
+\input{sections/main.tex}
+
+% ==================///==================///==================///
+% ==================/// END PRESENTATION
+% ==================///==================///==================///
+
+\backmatter
+\appendix
+\section*{BACKUP}
+\begin{frame}[noframenumbering]
+    \begin{center}
+        \Huge \textbf{BACKUP}
+    \end{center}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Invariant mass resolution}
+    
+    \footnotesize
+    
+    For a symmetric 2-body decay (e.g., $J/\psi \to \mu^+\mu^-$ where $p_1 = p_2 \equiv p_\mu$), the invariant mass simplifies to:
+    \begin{equation*}
+        M_{\mu\mu} \approx 2 p_\mu \sin\left(\frac{\phi}{2}\right)
+    \end{equation*}
+    
+    
+    Applying relative error propagation yields a compact formula driven by two main terms:
+    \begin{equation*}
+        \frac{\sigma_{M_{\mu\mu}}}{M_{\mu\mu}} = \sqrt{ \left(\frac{\sigma_{p_\mu}}{p_\mu}\right)^2 + \left(\frac{\sigma_\phi}{2\tan(\phi/2)}\right)^2 }
+    \end{equation*}
+    
+    
+    \begin{itemize}
+        \item \textbf{Momentum term:} The relative momentum resolution is directly determined by the curvature ($\kappa$) resolution of the tracker:
+        \begin{equation*}
+            \frac{\sigma_{p_\mu}}{p_\mu} = \frac{\sigma_\kappa}{\kappa}
+        \end{equation*}
+        
+        \item \textbf{Angular term ($\phi = \phi_1 - \phi_2$):} Assuming independent and identical angular measurement errors for both tracks ($\sigma_{\phi_1} = \sigma_{\phi_2} \equiv \sigma_{\phi_0}$):
+        \begin{equation*}
+            \sigma_\phi = \sqrt{\sigma_{\phi_1}^2 + \sigma_{\phi_2}^2} = \sqrt{2}\sigma_{\phi_0}
+        \end{equation*}
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}[noframenumbering]{Vertex resolution derivation}
+    
+    \footnotesize
+    
+    \begin{columns}[T]
+        % Colonna di sinistra: Geometria
+        \begin{column}{0.48\textwidth}
+            Symmetric decay along the $x$-axis with opening angle $\varphi$. Linear track approximation near the origin:
+            \begin{align*}
+                y_1 &= \tan(\varphi/2) x + d_1 \\
+                y_2 &= -\tan(\varphi/2) x + d_2
+            \end{align*}
+            
+            \vspace{0.4cm}
+            
+            Equating the trajectories ($y_1 = y_2$) to find the intersection point along the flight direction:
+            \begin{equation*}
+                x_v = \frac{d_2 - d_1}{2\tan(\varphi/2)}
+            \end{equation*}
+        \end{column}
+        
+        % Colonna di destra: Propagazione errori
+        \begin{column}{0.48\textwidth}
+            Assuming negligible angular uncertainty and independent, identical impact parameter errors ($\sigma_{d_1} = \sigma_{d_2} \equiv \sigma_{d_0}$):
+            \begin{equation*}
+                \sigma_{x_v}^2 = \left(\frac{\partial x_v}{\partial d_1}\right)^2 \sigma_{d_0}^2 + \left(\frac{\partial x_v}{\partial d_2}\right)^2 \sigma_{d_0}^2
+            \end{equation*}
+            
+            \vspace{0.2cm}
+            
+            Evaluating the partial derivatives directly yields the longitudinal resolution:
+            \begin{equation*}
+                \sigma_{x_v} = \sqrt{ \frac{\sigma_{d_0}^2}{4\tan^2(\varphi/2)} + \frac{\sigma_{d_0}^2}{4\tan^2(\varphi/2)} }
+            \end{equation*}
+            
+            \vspace{-0.2cm} % Compressione per far risaltare il risultato finale
+            \begin{equation*}
+                \sigma_{x_v} = \frac{\sigma_{d_0}}{\sqrt{2}\tan(\varphi/2)}
+            \end{equation*}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+
+
+\end{document}

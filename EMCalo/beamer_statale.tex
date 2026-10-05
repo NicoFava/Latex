@@ -1,0 +1,112 @@
+% **************************************************************
+% Hi! Edit this file for your presentation!
+% **************************************************************
+
+% ==================///==================///==================///
+% ==================/// LATEX'S STUFF
+% ==================///==================///==================///
+
+\documentclass{beamer}
+\usepackage{amsfonts,amsmath,oldgerm}
+% Attiva i bordi arrotondati e l'ombra per i blocchi
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\usepackage{booktabs}
+% Imposta i colori (modifica "blue" con il colore del tuo tema)
+\setbeamercolor{block title}{bg=blue!70!black, fg=white}
+\setbeamercolor{block body}{bg=blue!10, fg=black}
+\definecolor{blustatale}{RGB}{7,27,80} % Blu ufficiale Unimi
+\usepackage{tcolorbox}
+\usetheme{_statale}
+\usefonttheme[onlymath]{serif}
+\usepackage{tikz}
+\newcommand{\testcolor}[1]{\colorbox{#1}{\textcolor{#1}{test}}~\texttt{#1}}
+\newcommand{\hrefcol}[2]{\textcolor{cyan}{\href{#1}{#2}}}
+\titlebackground*{assets/background}
+\date{October 5, 2026}
+
+% ==================///==================///==================///
+% ==================/// SPLASH PAGE
+% ==================///==================///==================///
+
+\title{Comparative Study of Homogeneous and Sampling Electromagnetic Calorimeters}
+\subtitle{A Geant4 and ROOT Analysis of Shower Containment, Passive Material Effects, and Sampling Fluctuations in $PbWO_4$ and $LAr/Pb$}
+%\course{Master's Degree in Physics}
+\author{\href{mailto:nicolo.favagrossa@studenti.unimi.it}{Nicolò Favagrossa}}
+%\IDnumber{68405A}
+
+% ==================///==================///==================///
+% ==================/// START PRESENTATION
+% ==================///==================///==================///
+
+\begin{document}
+\maketitle
+
+\footlinecolor{maincolor}
+
+% ==================///==================///==================///
+% ==================/// BODY'S PRESENTATION
+% ==================///==================///==================///
+
+\input{sections/main.tex}
+
+% ==================///==================///==================///
+% ==================/// END PRESENTATION
+% ==================///==================///==================///
+
+\backmatter
+
+\appendix
+\section*{BACKUP}
+\begin{frame}[noframenumbering]
+    \begin{center}
+        \Huge \textbf{BACKUP}
+    \end{center}
+\end{frame}
+
+% --- BACKUP SLIDE 1 ---
+\begin{frame}[noframenumbering]{Resolving the resolution anomaly}
+
+    In a pure Geant4 simulation lacking photon collection inefficiencies and electronic noise, the intrinsic stochastic term is extremely small. Therefore, even minor event-by-event fluctuations caused by longitudinal leakage become the dominant source of error at high energies, breaking the ideal $\propto 1/\sqrt{E}$ scaling. By doubling the $PbWO_4$ detector length to $50\,\text{cm}$, the shower tail is fully contained.
+    \vspace{-0.2cm}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.39\textwidth]{Immagini/energy_response_analysis_1cm.png}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}[noframenumbering]{Fluctuations in sampling calorimeters}
+    
+    \footnotesize % Riduce leggermente il font per far stare comodamente tutti i passaggi
+    
+    According to Rossi's Approximation B, the energy resolution is dominated by fluctuations in the number of charged particle crossings ($N_x$) in the active layers.
+    
+    \vspace{-0.1cm} % Recupera spazio sotto l'introduzione
+    
+    \begin{itemize}
+        \setlength{\itemsep}{0pt} % Rimuove lo spazio verticale extra tra i punti elenco
+        
+        \item \textbf{Visible energy ($E_{vis}$):}
+        \vspace{-0.2cm} % Annulla lo spazio bianco automatico dell'equazione
+        \begin{equation*}
+            E_{vis} = N_x \Delta E_{active} = N_x \left(\frac{dE}{dx}\right)_{active} d_{active}
+        \end{equation*}
+        
+        \item \textbf{Number of crossings ($N_x$):} Expressed via the sampling fraction $f_{samp}$:
+        \vspace{-0.2cm}
+        \begin{equation*}
+            f_{samp} = \frac{E_{vis}}{E} \implies N_x = \frac{f_{samp} E}{\Delta E_{active}}
+        \end{equation*}
+        
+        \item \textbf{Poisson fluctuations:}
+        \vspace{-0.2cm}
+        \begin{equation*}
+            \frac{\sigma(E_{vis})}{E_{vis}} = \frac{\sigma(N_x)}{N_x} = \frac{1}{\sqrt{N_x}} = \sqrt{\frac{\Delta E_{active}}{f_{samp} E}} \propto \sqrt{\frac{d_{active}}{f_{samp}}} \frac{1}{\sqrt{E}}
+        \end{equation*}
+    \end{itemize}
+    
+    At a fixed sampling fraction $f_{samp}$, the ratio of energy deposited in the active vs. passive layers is constant. Thus, the thicknesses are strictly proportional: $d_{active} \propto C \,d_{passive}$.
+    
+\end{frame}
+
+\end{document}
